@@ -1,3 +1,29 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url('https://cdn.shopify.com/s/files/1/0276/7473/8770/files/Gilroy-Regular.woff2?v=1772561024') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('https://cdn.shopify.com/s/files/1/0276/7473/8770/files/Gilroy-Bold.woff2?v=1772561024') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-body-family: 'Gilroy', sans-serif;
+  --font-body-style: normal;
+  --font-body-weight: 400;
+  --font-body-weight-bold: 700;
+  --font-heading-family: 'Gilroy', sans-serif;
+  --font-heading-style: normal;
+  --font-heading-weight: 700;
+}
+
 :root {
   --alpha-button-background: 1;
   --alpha-button-border: 1;
