@@ -423,7 +423,6 @@
   .banner__box {
     width: auto;
     max-width: 32rem;
-    min-width: 32rem;
   }
 }
 
