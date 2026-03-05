@@ -1,0 +1,156 @@
+{{ 'section-angled-banner.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  #AngledBanner-{{ section.id }} {
+    --angled-banner-left-bg: {{ section.settings.left_background }};
+    --angled-banner-left-text: {{ section.settings.left_text_color }};
+    --angled-banner-right-bg: {{ section.settings.right_background }};
+    --angled-banner-min-height: {{ section.settings.min_height }}px;
+    --angled-banner-slant-top: {{ section.settings.slant_top }}%;
+    --angled-banner-slant-bottom: {{ section.settings.slant_bottom }}%;
+  }
+{%- endstyle -%}
+
+{%- liquid
+  assign fetch_priority = 'auto'
+  if section.index == 1
+    assign fetch_priority = 'high'
+  endif
+-%}
+
+<div id="AngledBanner-{{ section.id }}" class="angled-banner">
+  <div class="angled-banner__inner">
+    <div class="angled-banner__text">
+      {%- if section.settings.heading != blank -%}
+        <h2 class="angled-banner__heading">{{ section.settings.heading }}</h2>
+      {%- endif -%}
+      {%- if section.settings.subheading != blank -%}
+        <div class="angled-banner__subheading">{{ section.settings.subheading }}</div>
+      {%- endif -%}
+      {%- if section.settings.button_label != blank -%}
+        <a
+          href="{{ section.settings.button_link | default: '#' }}"
+          class="angled-banner__btn button"
+        >
+          {{ section.settings.button_label }}
+        </a>
+      {%- endif -%}
+    </div>
+    <div class="angled-banner__media">
+      {%- if section.settings.image != blank -%}
+        {{
+          section.settings.image
+          | image_url: width: 1200
+          | image_tag:
+            class: 'angled-banner__image',
+            widths: '600, 900, 1200',
+            sizes: '(min-width: 750px) 45vw, 100vw',
+            fetchpriority: fetch_priority
+        }}
+      {%- else -%}
+        {{ 'product-apparel-2' | placeholder_svg_tag: 'placeholder-svg angled-banner__placeholder' }}
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Angled Banner",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Healthy snacks with nothing to hide."
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "<p>One ingredient + real spices = snacks you can actually feel good about.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "left_background",
+      "label": "Left background",
+      "default": "#f5f0e8"
+    },
+    {
+      "type": "color",
+      "id": "left_text_color",
+      "label": "Left text color",
+      "default": "#2d1a0e"
+    },
+    {
+      "type": "color",
+      "id": "right_background",
+      "label": "Right background",
+      "default": "#d4922a"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "min_height",
+      "min": 300,
+      "max": 800,
+      "step": 50,
+      "unit": "px",
+      "label": "Min height",
+      "default": 500
+    },
+    {
+      "type": "range",
+      "id": "slant_top",
+      "min": 50,
+      "max": 70,
+      "step": 1,
+      "label": "Slant — top edge %",
+      "default": 58
+    },
+    {
+      "type": "range",
+      "id": "slant_bottom",
+      "min": 40,
+      "max": 65,
+      "step": 1,
+      "label": "Slant — bottom edge %",
+      "default": 50
+    }
+  ],
+  "presets": [
+    {
+      "name": "Angled Banner"
+    }
+  ]
+}
+{% endschema %}
