@@ -55,6 +55,8 @@
         "stack_images_on_mobile": false,
         "mobile_content_alignment": "center",
         "show_text_below": true,
+        "home_slant_left_height": 90,
+        "home_slant_right_height": 120,
         "home_slant_left_color": "#fef5ee",
         "home_slant_right_color": "#5b1830"
       }
