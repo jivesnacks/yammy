@@ -502,11 +502,16 @@
 }
 
 .banner__buttons {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  max-width: 45rem;
+  width: 100%;
+  max-width: 100%;
   word-break: break-word;
+}
+
+.banner__buttons > * {
+  flex: 1 1 0;
 }
 
 @media screen and (max-width: 749px) {
@@ -535,15 +540,8 @@
   margin-top: 2rem;
 }
 
-.banner__buttons--custom-width > .button {
-  width: min(100%, var(--banner-button-width));
-  min-width: min(100%, var(--banner-button-width));
-  max-width: 100%;
-}
-
-.banner__buttons--custom-width.banner__buttons--multiple > * {
-  flex-grow: 0;
-  min-width: min(100%, var(--banner-button-width));
+.banner__buttons:not(.banner__buttons--multiple) > * {
+  width: 100%;
 }
 
 @media screen and (max-width: 749px) {
