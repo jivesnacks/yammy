@@ -27,6 +27,13 @@
   #Banner-{{ section.id }}::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
+
+  {%- if request.page_type == 'index' and section.index == 1 -%}
+    #Banner-{{ section.id }} {
+      --banner-home-left-slant-color: {{ section.settings.home_slant_left_color }};
+      --banner-home-right-slant-color: {{ section.settings.home_slant_right_color }};
+    }
+  {%- endif -%}
 {%- endstyle -%}
 
 {%- liquid
@@ -364,6 +371,22 @@
       "id": "show_text_below",
       "default": true,
       "label": "t:sections.image-banner.settings.show_text_below.label"
+    },
+    {
+      "type": "header",
+      "content": "Homepage slants"
+    },
+    {
+      "type": "color",
+      "id": "home_slant_left_color",
+      "label": "Left slant color",
+      "default": "#efb487"
+    },
+    {
+      "type": "color",
+      "id": "home_slant_right_color",
+      "label": "Right slant color",
+      "default": "#5b1830"
     }
   ],
   "blocks": [
