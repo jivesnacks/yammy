@@ -20,7 +20,7 @@
     --banner-home-right-slant-overlap: clamp(3.2rem, 3.6vw, 5rem);
     --banner-home-left-slant-visible: clamp(1.2rem, 1.4vw, 1.8rem);
     --banner-home-right-slant-visible: clamp(1.8rem, 2vw, 2.6rem);
-    --banner-home-left-slant-width: 56%;
+    --banner-home-left-slant-width: 100%;
     --banner-home-right-slant-width: 58%;
     --banner-home-left-slant-color: #efb487;
     --banner-home-right-slant-color: rgb(var(--color-foreground));
