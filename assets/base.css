@@ -1243,15 +1243,25 @@ button.shopify-payment-button__button--unbranded {
 }
 
 .button,
+.button-label,
 .shopify-challenge__button,
-.customer button {
+.customer button,
+button.shopify-payment-button__button--unbranded {
+  font-family: 'Gilroy', var(--font-body-family);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.button,
+.shopify-challenge__button,
+.customer button,
+button.shopify-payment-button__button--unbranded {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   border: 0;
   padding: 0 3rem;
   cursor: pointer;
-  font: inherit;
   font-size: 1.5rem;
   text-decoration: none;
   color: rgb(var(--color-button-text));
