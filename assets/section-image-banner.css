@@ -16,42 +16,52 @@
 
 @media screen and (min-width: 990px) {
   .banner--home-slants {
+    --banner-home-left-slant-overlap: clamp(2.8rem, 3vw, 4.4rem);
+    --banner-home-right-slant-overlap: clamp(3.2rem, 3.6vw, 5rem);
+    --banner-home-left-slant-visible: clamp(1.2rem, 1.4vw, 1.8rem);
+    --banner-home-right-slant-visible: clamp(1.8rem, 2vw, 2.6rem);
     --banner-home-left-slant-width: 56%;
     --banner-home-right-slant-width: 58%;
-    --banner-home-left-slant-height: clamp(1.8rem, 2vw, 2.8rem);
-    --banner-home-right-slant-height: clamp(2.6rem, 3vw, 4.4rem);
     --banner-home-left-slant-color: #efb487;
     --banner-home-right-slant-color: rgb(var(--color-foreground));
+    overflow: visible;
   }
 
   .banner--home-slants .banner__top-slants {
     position: absolute;
-    inset: 0 0 auto;
+    inset: 0;
     display: block;
-    height: var(--banner-home-right-slant-height);
+    overflow: visible;
     pointer-events: none;
     z-index: 2;
   }
 
   .banner--home-slants .banner__top-slant {
     position: absolute;
-    top: 0;
   }
 
   .banner--home-slants .banner__top-slant--left {
-    left: 0;
+    left: -0.3rem;
+    top: calc(-1 * var(--banner-home-left-slant-overlap));
     width: var(--banner-home-left-slant-width);
-    height: var(--banner-home-left-slant-height);
+    height: calc(var(--banner-home-left-slant-overlap) + var(--banner-home-left-slant-visible));
     background: var(--banner-home-left-slant-color);
-    clip-path: polygon(0 0, 100% 0, 100% 34%, 0 100%);
+    transform-origin: bottom left;
+    transform: skewY(-1.8deg);
   }
 
   .banner--home-slants .banner__top-slant--right {
-    right: 0;
+    right: -0.3rem;
+    top: calc(-1 * var(--banner-home-right-slant-overlap));
     width: var(--banner-home-right-slant-width);
-    height: var(--banner-home-right-slant-height);
+    height: calc(var(--banner-home-right-slant-overlap) + var(--banner-home-right-slant-visible));
     background: var(--banner-home-right-slant-color);
-    clip-path: polygon(0 28%, 100% 0, 100% 100%, 0 100%);
+    transform-origin: bottom right;
+    transform: skewY(2.3deg);
+  }
+
+  body:has(.banner--home-slants) .section-header .header-wrapper--border-bottom {
+    border-bottom-color: transparent;
   }
 }
 
