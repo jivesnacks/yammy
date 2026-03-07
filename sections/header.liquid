@@ -70,6 +70,27 @@
       padding-top: 0.5rem;
     }
   }
+
+  /* Slanted header bottom edge */
+  .header-wrapper {
+    position: relative;
+    background: transparent !important;
+  }
+
+  .header-wrapper::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-background, rgb(var(--color-background)));
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 60px), 0 100%);
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .header {
+    position: relative;
+    z-index: 1;
+  }
 </style>
 
 {%- style -%}
