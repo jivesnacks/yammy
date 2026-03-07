@@ -2378,9 +2378,9 @@ input[type='checkbox'] {
 
 @media screen and (min-width: 990px) {
   .header-wrapper--home-slant {
-    --header-home-left-slant-height: clamp(1.2rem, 1.6vw, 2.2rem);
-    --header-home-right-slant-height: clamp(1.6rem, 2vw, 2.8rem);
-    --header-home-left-slant-width: 56%;
+    --header-home-left-slant-height: clamp(1.4rem, 1.8vw, 2.4rem);
+    --header-home-right-slant-height: clamp(1.8rem, 2.2vw, 3rem);
+    --header-home-left-slant-width: 57%;
     --header-home-right-slant-width: 58%;
     --header-home-left-slant-color: #efb487;
     --header-home-right-slant-color: rgb(var(--color-foreground));
@@ -2401,27 +2401,25 @@ input[type='checkbox'] {
   .header-wrapper--home-slant::after {
     content: '';
     position: absolute;
-    top: calc(100% - 0.2rem);
+    top: calc(100% - 1px);
     pointer-events: none;
   }
 
   .header-wrapper--home-slant::before {
-    left: -0.4rem;
+    left: -0.2rem;
     width: var(--header-home-left-slant-width);
     height: var(--header-home-left-slant-height);
     background: var(--header-home-left-slant-color);
-    transform-origin: top left;
-    transform: skewY(-2.4deg);
+    clip-path: polygon(0 38%, 100% 0, 100% 30%, 0 100%);
     z-index: 1;
   }
 
   .header-wrapper--home-slant::after {
-    right: -0.4rem;
+    right: -0.2rem;
     width: var(--header-home-right-slant-width);
     height: var(--header-home-right-slant-height);
     background: var(--header-home-right-slant-color);
-    transform-origin: top right;
-    transform: skewY(2.8deg);
+    clip-path: polygon(0 0, 100% 18%, 100% 100%, 0 36%);
     z-index: 2;
   }
 
