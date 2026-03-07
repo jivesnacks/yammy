@@ -22,6 +22,7 @@
     --banner-home-right-slant-visible: clamp(1.8rem, 2vw, 2.6rem);
     --banner-home-left-slant-width: 100%;
     --banner-home-right-slant-width: 58%;
+    --banner-home-left-slant-run: 220%;
     --banner-home-left-slant-color: #efb487;
     --banner-home-right-slant-color: rgb(var(--color-foreground));
     overflow: visible;
@@ -41,13 +42,12 @@
   }
 
   .banner--home-slants .banner__top-slant--left {
-    left: -0.3rem;
+    left: 0;
     top: calc(-1 * var(--banner-home-left-slant-overlap));
     width: var(--banner-home-left-slant-width);
     height: calc(var(--banner-home-left-slant-overlap) + var(--banner-home-left-slant-visible));
     background: var(--banner-home-left-slant-color);
-    transform-origin: bottom left;
-    transform: skewY(-1.8deg);
+    clip-path: polygon(0 0, 0 100%, var(--banner-home-left-slant-run) 0);
   }
 
   .banner--home-slants .banner__top-slant--right {
@@ -56,8 +56,7 @@
     width: var(--banner-home-right-slant-width);
     height: calc(var(--banner-home-right-slant-overlap) + var(--banner-home-right-slant-visible));
     background: var(--banner-home-right-slant-color);
-    transform-origin: bottom right;
-    transform: skewY(2.3deg);
+    clip-path: polygon(0 50%, 100% 0, 100% 100%);
   }
 
   body:has(.banner--home-slants) .section-header .header-wrapper--border-bottom {
