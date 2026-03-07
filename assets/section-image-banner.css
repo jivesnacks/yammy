@@ -452,7 +452,7 @@
 }
 
 .banner__text {
-  font-weight: 600;
+  font-size: 2em;
 }
 
 .banner__box > * + .banner__text {
