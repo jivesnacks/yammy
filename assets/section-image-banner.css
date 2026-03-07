@@ -51,7 +51,7 @@
   }
 
   .banner--home-slants .banner__top-slant--right {
-    right: -0.3rem;
+    right: 0;
     top: calc(-1 * var(--banner-home-right-slant-overlap));
     width: var(--banner-home-right-slant-width);
     height: calc(var(--banner-home-right-slant-overlap) + var(--banner-home-right-slant-visible));
