@@ -451,6 +451,10 @@
   height: 100%;
 }
 
+.banner__text {
+  font-weight: 600;
+}
+
 .banner__box > * + .banner__text {
   margin-top: 1.5rem;
 }
