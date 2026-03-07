@@ -1249,7 +1249,7 @@ button.shopify-payment-button__button--unbranded {
 button.shopify-payment-button__button--unbranded {
   font-family: 'Gilroy', var(--font-body-family);
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .button,
