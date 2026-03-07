@@ -147,7 +147,10 @@
             </div>
           {%- when 'buttons' -%}
             <div
-              class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
+              class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}{% if block.settings.button_width > 0 %} banner__buttons--custom-width{% endif %}"
+              {% if block.settings.button_width > 0 %}
+                style="--banner-button-width: {{ block.settings.button_width }}px;"
+              {% endif %}
               {{ block.shopify_attributes }}
             >
               {%- if block.settings.button_label_1 != blank -%}
@@ -534,6 +537,17 @@
           "id": "button_style_secondary_2",
           "default": false,
           "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_2.label"
+        },
+        {
+          "type": "range",
+          "id": "button_width",
+          "min": 0,
+          "max": 400,
+          "step": 10,
+          "unit": "px",
+          "label": "Button width",
+          "info": "Set to 0 to use the default auto width.",
+          "default": 0
         }
       ]
     }

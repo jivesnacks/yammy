@@ -535,6 +535,17 @@
   margin-top: 2rem;
 }
 
+.banner__buttons--custom-width > .button {
+  width: min(100%, var(--banner-button-width));
+  min-width: min(100%, var(--banner-button-width));
+  max-width: 100%;
+}
+
+.banner__buttons--custom-width.banner__buttons--multiple > * {
+  flex-grow: 0;
+  min-width: min(100%, var(--banner-button-width));
+}
+
 @media screen and (max-width: 749px) {
   .banner:not(.slideshow) .rte a,
   .banner:not(.slideshow) .inline-richtext a:hover,
