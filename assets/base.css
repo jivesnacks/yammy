@@ -1260,7 +1260,7 @@ button.shopify-payment-button__button--unbranded {
   justify-content: center;
   align-items: center;
   border: 0;
-  padding: 0 3rem;
+  padding: 1.6rem 3rem;
   cursor: pointer;
   font-size: 2rem;
   text-decoration: none;
@@ -1351,13 +1351,13 @@ button.shopify-payment-button__button--unbranded {
 
 .button--tertiary {
   font-size: 1.2rem;
-  padding: 1rem 1.5rem;
+  padding: 1.6rem 1.5rem;
   min-width: calc(9rem + var(--buttons-border-width) * 2);
   min-height: calc(3.5rem + var(--buttons-border-width) * 2);
 }
 
 .button--small {
-  padding: 1.2rem 2.6rem;
+  padding: 1.6rem 2.6rem;
 }
 
 /* Shopify Accelerated Checkout */
