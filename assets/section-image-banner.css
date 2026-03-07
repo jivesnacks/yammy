@@ -10,6 +10,51 @@
   text-align: center;
 }
 
+.banner__top-slants {
+  display: none;
+}
+
+@media screen and (min-width: 990px) {
+  .banner--home-slants {
+    --banner-home-left-slant-width: 56%;
+    --banner-home-right-slant-width: 58%;
+    --banner-home-left-slant-height: clamp(1.8rem, 2vw, 2.8rem);
+    --banner-home-right-slant-height: clamp(2.6rem, 3vw, 4.4rem);
+    --banner-home-left-slant-color: #efb487;
+    --banner-home-right-slant-color: rgb(var(--color-foreground));
+  }
+
+  .banner--home-slants .banner__top-slants {
+    position: absolute;
+    inset: 0 0 auto;
+    display: block;
+    height: var(--banner-home-right-slant-height);
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  .banner--home-slants .banner__top-slant {
+    position: absolute;
+    top: 0;
+  }
+
+  .banner--home-slants .banner__top-slant--left {
+    left: 0;
+    width: var(--banner-home-left-slant-width);
+    height: var(--banner-home-left-slant-height);
+    background: var(--banner-home-left-slant-color);
+    clip-path: polygon(0 0, 100% 0, 100% 34%, 0 100%);
+  }
+
+  .banner--home-slants .banner__top-slant--right {
+    right: 0;
+    width: var(--banner-home-right-slant-width);
+    height: var(--banner-home-right-slant-height);
+    background: var(--banner-home-right-slant-color);
+    clip-path: polygon(0 28%, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
 /* Needed for gradient continuity with or without animation, the transform scopes the gradient to its container which happens already when animation are turned on */
 .banner__box.gradient {
   transform: perspective(0);
