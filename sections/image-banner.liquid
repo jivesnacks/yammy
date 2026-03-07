@@ -30,6 +30,8 @@
 
   {%- if request.page_type == 'index' and section.index == 1 -%}
     #Banner-{{ section.id }} {
+      --banner-home-left-slant-height: {{ section.settings.home_slant_left_height }}px;
+      --banner-home-right-slant-height: {{ section.settings.home_slant_right_height }}px;
       --banner-home-left-slant-color: {{ section.settings.home_slant_left_color }};
       --banner-home-right-slant-color: {{ section.settings.home_slant_right_color }};
     }
@@ -375,6 +377,26 @@
     {
       "type": "header",
       "content": "Homepage slants"
+    },
+    {
+      "type": "range",
+      "id": "home_slant_left_height",
+      "min": 24,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "label": "Left triangle height",
+      "default": 56
+    },
+    {
+      "type": "range",
+      "id": "home_slant_right_height",
+      "min": 24,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "label": "Right triangle height",
+      "default": 72
     },
     {
       "type": "color",

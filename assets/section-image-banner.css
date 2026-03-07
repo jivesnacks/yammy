@@ -16,10 +16,12 @@
 
 @media screen and (min-width: 990px) {
   .banner--home-slants {
-    --banner-home-left-slant-overlap: clamp(2.8rem, 3vw, 4.4rem);
-    --banner-home-right-slant-overlap: clamp(3.2rem, 3.6vw, 5rem);
-    --banner-home-left-slant-visible: clamp(1.2rem, 1.4vw, 1.8rem);
-    --banner-home-right-slant-visible: clamp(1.8rem, 2vw, 2.6rem);
+    --banner-home-left-slant-height: 56px;
+    --banner-home-right-slant-height: 72px;
+    --banner-home-left-slant-overlap: calc(var(--banner-home-left-slant-height) * 0.72);
+    --banner-home-right-slant-overlap: calc(var(--banner-home-right-slant-height) * 0.66);
+    --banner-home-left-slant-visible: calc(var(--banner-home-left-slant-height) - var(--banner-home-left-slant-overlap));
+    --banner-home-right-slant-visible: calc(var(--banner-home-right-slant-height) - var(--banner-home-right-slant-overlap));
     --banner-home-left-slant-width: 100%;
     --banner-home-right-slant-width: 58%;
     --banner-home-left-slant-run: 220%;
