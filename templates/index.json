@@ -61,6 +61,43 @@
         "home_slant_right_color": "#5b1830"
       }
     },
+    "ss_scrolling_announcement_bar_9rHzTM": {
+      "type": "ss-scrolling-announcement-bar",
+      "blocks": {
+        "text_AyQBfG": {
+          "type": "text",
+          "settings": {
+            "text": "Free Shipping"
+          }
+        },
+        "text_pqybaG": {
+          "type": "text",
+          "settings": {
+            "text": "Free Returns"
+          }
+        }
+      },
+      "block_order": [
+        "text_AyQBfG",
+        "text_pqybaG"
+      ],
+      "name": "SS - Scrolling announcement bar",
+      "settings": {
+        "insert_css_class_target": ".header, .pageheader, .section-header, #announcement, .toolbar, .header__wrapper",
+        "text_custom": true,
+        "ss_font_family": "questrial_n4",
+        "text_size": 12,
+        "link": "",
+        "animation_duration": 44,
+        "animation_direction": "right",
+        "pause_hover": false,
+        "text_color": "#FFFFFF",
+        "bg": "#000000",
+        "hover_opacity": 90,
+        "padding_vertical": 1.5,
+        "padding_horizontal": 0
+      }
+    },
     "multicolumn": {
       "type": "multicolumn",
       "blocks": {
@@ -246,6 +283,7 @@
   },
   "order": [
     "image_banner",
+    "ss_scrolling_announcement_bar_9rHzTM",
     "multicolumn",
     "rich_text",
     "featured_collection",
