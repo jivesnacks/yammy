@@ -54,6 +54,10 @@
   margin-top: 2rem;
 }
 
+.rich-text__accent {
+  color: var(--rich-text-accent-color);
+}
+
 .rich-text__blocks > * + a {
   margin-top: 3rem;
 }
