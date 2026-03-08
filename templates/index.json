@@ -67,19 +67,33 @@
         "text_AyQBfG": {
           "type": "text",
           "settings": {
-            "text": "Free Shipping"
+            "text": "The Asian Superfood Snack"
+          }
+        },
+        "text_Ca3i7D": {
+          "type": "text",
+          "settings": {
+            "text": "All Natural Ingredients"
           }
         },
         "text_pqybaG": {
           "type": "text",
           "settings": {
-            "text": "Free Returns"
+            "text": "4g Fiber per Bag"
+          }
+        },
+        "text_FErCnK": {
+          "type": "text",
+          "settings": {
+            "text": "12 Vitamins & Minerals"
           }
         }
       },
       "block_order": [
         "text_AyQBfG",
-        "text_pqybaG"
+        "text_Ca3i7D",
+        "text_pqybaG",
+        "text_FErCnK"
       ],
       "name": "SS - Scrolling announcement bar",
       "settings": {
