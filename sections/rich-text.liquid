@@ -54,7 +54,7 @@
               <div
                 class="rich-text__text rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
-                style="--rich-text-accent-color: {{ block.settings.accent_color }};{% if settings.animations_reveal_on_scroll %} --animation-order: {{ forloop.index }};{% endif %}"
+                style="--rich-text-accent-color: {{ block.settings.accent_color }}; font-size: {{ block.settings.font_size }}px;{% if settings.animations_reveal_on_scroll %} --animation-order: {{ forloop.index }};{% endif %}"
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
                 {% endif %}
@@ -313,6 +313,16 @@
           "id": "accent_color",
           "label": "Accent color",
           "default": "#EE9441"
+        },
+        {
+          "type": "range",
+          "id": "font_size",
+          "min": 12,
+          "max": 32,
+          "step": 1,
+          "unit": "px",
+          "label": "Font size",
+          "default": 15
         }
       ]
     },
