@@ -28,7 +28,7 @@
               <h2
                 class="rich-text__heading rte inline-richtext {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
-                style="--rich-text-accent-color: {{ block.settings.accent_color }};{% if settings.animations_reveal_on_scroll %} --animation-order: {{ forloop.index }};{% endif %}"
+                style="--rich-text-accent-color: {{ block.settings.accent_color }}; letter-spacing: {{ block.settings.letter_spacing }}px;{% if settings.animations_reveal_on_scroll %} --animation-order: {{ forloop.index }};{% endif %}"
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
                 {% endif %}
@@ -206,6 +206,16 @@
           "id": "accent_color",
           "label": "Accent color",
           "default": "#EE9441"
+        },
+        {
+          "type": "range",
+          "id": "letter_spacing",
+          "min": -5,
+          "max": 20,
+          "step": 1,
+          "unit": "px",
+          "label": "Letter spacing",
+          "default": 0
         },
         {
           "type": "select",
