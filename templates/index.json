@@ -136,6 +136,7 @@
           "settings": {
             "heading": "Meet your new snack obsession [[(seriously)]]",
             "accent_color": "#ec6608",
+            "letter_spacing": -2,
             "heading_size": "h0"
           }
         },
