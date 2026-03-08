@@ -22,6 +22,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Landslide';
+  src: url('https://cdn.shopify.com/s/files/1/0276/7473/8770/files/Landslide.woff2?v=1772999958') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --font-body-family: 'Gilroy', sans-serif;
   --font-body-style: normal;

@@ -1,5 +1,7 @@
 <style>
-  {{ section.settings.ss_font_family | font_face: font_display: 'swap' }}
+  {% if section.settings.text_custom %}
+    {{ section.settings.ss_font_family | font_face: font_display: 'swap' }}
+  {% endif %}
 
   .ss-announcement-bar,
   .ss-announcement-bar__message {
@@ -76,6 +78,12 @@
     padding: 0;
     margin: 0;
     line-height: 1;
+    {% if section.settings.text_custom %}
+      font-family: 'Landslide', {{ section.settings.ss_font_family.family }}, var(--font-heading-family);
+    {% else %}
+    font-family: 'Landslide', var(--font-heading-family);
+    {% endif %}
+    font-weight: 400;
     font-size: {{section.settings.text_size}}px;
   }
   #orig.reverse .announcement-bar__message {
@@ -83,8 +91,9 @@
     flex-direction: row-reverse;
   }
   .ss-announcement-bar__message li {
-
     line-height: 1;
+    font-family: inherit;
+    font-weight: inherit;
     font-size: {{section.settings.text_size}}px;
     display: inline-block;
     padding-right: 114px;
@@ -133,13 +142,8 @@
 
 {% if section.settings.text_custom %}
   <style>
-    .ss-announcement-bar__message {
-      font-family: {{section.settings.ss_font_family.family}};
-      font-weight: {{section.settings.ss_font_family.weight}};
-    }
-
+    .ss-announcement-bar__message,
     .ss-announcement-bar__message li {
-      font-family: {{section.settings.ss_font_family.family}};
       font-weight: {{section.settings.ss_font_family.weight}};
     }
   </style>
