@@ -144,7 +144,8 @@
           "type": "text",
           "settings": {
             "text": "<p>Every flavor starts with one simple base</p>",
-            "accent_color": "#ee9441"
+            "accent_color": "#ee9441",
+            "font_size": 24
           }
         }
       },
