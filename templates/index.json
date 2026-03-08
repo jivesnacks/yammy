@@ -83,7 +83,7 @@
       ],
       "name": "SS - Scrolling announcement bar",
       "settings": {
-        "insert_css_class_target": ".header, .pageheader, .section-header, #announcement, .toolbar, .header__wrapper",
+        "insert_css_class_target": "",
         "text_custom": true,
         "ss_font_family": "questrial_n4",
         "text_size": 12,
