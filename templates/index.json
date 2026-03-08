@@ -104,11 +104,11 @@
         "link": "",
         "animation_duration": 200,
         "animation_direction": "right",
-        "pause_hover": false,
-        "text_color": "#FFFFFF",
-        "bg": "#000000",
+        "pause_hover": true,
+        "text_color": "#fcc86c",
+        "bg": "#511d29",
         "hover_opacity": 90,
-        "padding_vertical": 1.5,
+        "padding_vertical": 2,
         "padding_horizontal": 0
       }
     },
