@@ -102,7 +102,7 @@
         "ss_font_family": "questrial_n4",
         "text_size": 20,
         "link": "",
-        "animation_duration": 16,
+        "animation_duration": 200,
         "animation_direction": "right",
         "pause_hover": false,
         "text_color": "#FFFFFF",
