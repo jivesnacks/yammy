@@ -236,6 +236,8 @@
         "show_rating": true,
         "quick_add": "standard",
         "quick_add_button_style": "primary",
+        "product_title_size_mobile": 16,
+        "product_title_size_desktop": 20,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
