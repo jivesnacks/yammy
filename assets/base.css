@@ -1258,6 +1258,7 @@ button.shopify-payment-button__button--unbranded {
   font-family: 'Gilroy', var(--font-body-family);
   font-style: normal;
   font-weight: 600;
+  text-transform: var(--buttons-text-transform, none);
 }
 
 .button,

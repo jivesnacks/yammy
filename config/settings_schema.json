@@ -269,6 +269,12 @@
         "default": 0
       },
       {
+        "type": "checkbox",
+        "id": "buttons_uppercase",
+        "label": "Uppercase button text",
+        "default": false
+      },
+      {
         "type": "header",
         "content": "t:settings_schema.global.settings.header__shadow.content"
       },
