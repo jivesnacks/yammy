@@ -127,7 +127,8 @@
                   show_rating: section.settings.show_rating,
                   skip_styles: skip_card_product_styles,
                   section_id: section.id,
-                  quick_add: section.settings.quick_add
+                  quick_add: section.settings.quick_add,
+                  quick_add_button_style: section.settings.quick_add_button_style
                 %}
               </li>
               {%- assign skip_card_product_styles = true -%}
@@ -465,6 +466,23 @@
         {
           "value": "bulk",
           "label": "t:sections.main-collection-product-grid.settings.quick_add.options.option_3"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "quick_add_button_style",
+      "label": "Quick add button style",
+      "info": "Applies to product cards in this featured collection section.",
+      "default": "secondary",
+      "options": [
+        {
+          "value": "primary",
+          "label": "Primary"
+        },
+        {
+          "value": "secondary",
+          "label": "Secondary"
         }
       ]
     },
