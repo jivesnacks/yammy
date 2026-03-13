@@ -355,7 +355,9 @@
           "settings": {
             "show_sample_reviews": true,
             "review_selection": "all",
-            "products": [],
+            "products": [
+              "yammy-dried-sweet-potato-sticks"
+            ],
             "show_media_only": false,
             "display_order": "media_first",
             "columns_desktop": 3,
@@ -393,7 +395,7 @@
     "rich_text",
     "featured_collection",
     "multirow_dQQNRM",
-    "image_with_text_mXxk48",
-    "1773189566f20baaba"
+    "1773189566f20baaba",
+    "image_with_text_mXxk48"
   ]
 }
