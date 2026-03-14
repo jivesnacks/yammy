@@ -41,7 +41,8 @@
         "email_form_THYjUp": {
           "type": "email_form",
           "settings": {
-            "text_alignment": "left"
+            "text_alignment": "left",
+            "button_text": "Sign up"
           }
         }
       },
@@ -53,7 +54,7 @@
       ],
       "name": "t:sections.newsletter.presets.name",
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-3",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 0
