@@ -63,12 +63,30 @@
 @media screen and (min-width: 750px) {
   .newsletter-form__input-row {
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
+    gap: 1rem;
   }
 
   .newsletter-form__input-row .field {
     flex: 1;
   }
+
+  .newsletter-form__input-row .field__input {
+    height: 100%;
+  }
+
+  .newsletter-form__input-row .newsletter__button {
+    margin: 0;
+  }
+}
+
+.newsletter-form--with-button {
+  max-width: none;
+  width: 100%;
+}
+
+.newsletter-form--with-button .newsletter-form__field-wrapper {
+  max-width: none;
 }
 
 .newsletter__button {

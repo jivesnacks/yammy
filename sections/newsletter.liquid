@@ -101,7 +101,7 @@
               }
             </style>
             <div class="newsletter-email-form--{{ block.id }}" {{ block.shopify_attributes }}>
-              {% form 'customer', class: 'newsletter-form' %}
+              {% form 'customer', class: 'newsletter-form{% if block.settings.button_text != blank %} newsletter-form--with-button{% endif %}' %}
                 <input type="hidden" name="contact[tags]" value="newsletter">
                 <div
                   class="newsletter-form__field-wrapper{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
