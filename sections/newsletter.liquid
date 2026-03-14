@@ -22,15 +22,19 @@
         {%- when '@app' -%}
           {% render block %}
         {%- when 'heading' -%}
+          {%- assign highlighted_heading = block.settings.heading
+            | replace: '[[', '<span class="newsletter__accent">'
+            | replace: ']]', '</span>'
+          -%}
           <h2
             class="inline-richtext {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {{ block.shopify_attributes }}
+            style="--newsletter-accent-color: {{ block.settings.accent_color }};{% if settings.animations_reveal_on_scroll %} --animation-order: {{ forloop.index }};{% endif %}"
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
-              style="--animation-order: {{ forloop.index }};"
             {% endif %}
           >
-            {{ block.settings.heading }}
+            {{ highlighted_heading }}
           </h2>
         {%- when 'paragraph' -%}
           <div
@@ -180,7 +184,14 @@
           "type": "inline_richtext",
           "id": "heading",
           "default": "t:sections.newsletter.blocks.heading.settings.heading.default",
-          "label": "t:sections.newsletter.blocks.heading.settings.heading.label"
+          "label": "t:sections.newsletter.blocks.heading.settings.heading.label",
+          "info": "Wrap colored words in [[double brackets]]."
+        },
+        {
+          "type": "color",
+          "id": "accent_color",
+          "label": "Accent color",
+          "default": "#EE9441"
         },
         {
           "type": "select",

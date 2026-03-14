@@ -19,6 +19,10 @@
   margin-top: 2rem;
 }
 
+.newsletter__accent {
+  color: var(--newsletter-accent-color);
+}
+
 .newsletter__wrapper > * + .newsletter-form {
   margin-top: 3rem;
 }
