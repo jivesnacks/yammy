@@ -17,7 +17,8 @@
         "heading_n87whN": {
           "type": "heading",
           "settings": {
-            "heading": "Get in on the good stuff",
+            "heading": "[[Get in]] on the good stuff",
+            "accent_color": "#ec6608",
             "heading_size": "h0"
           }
         },
