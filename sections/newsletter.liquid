@@ -110,7 +110,10 @@
                     style="--animation-order: {{ forloop.index }};"
                   {% endif %}
                 >
-                  <div class="field">
+                  {%- if block.settings.button_text != blank -%}
+                  <div class="newsletter-form__input-row">
+                {%- endif -%}
+                <div class="field">
                     <input
                       id="NewsletterForm--{{ section.id }}"
                       type="email"
@@ -134,18 +137,26 @@
                     <label class="field__label" for="NewsletterForm--{{ section.id }}">
                       {{ 'newsletter.label' | t }}
                     </label>
-                    <button
-                      type="submit"
-                      class="newsletter-form__button field__button"
-                      name="commit"
-                      id="Subscribe"
-                      aria-label="{{ 'newsletter.button_label' | t }}"
-                    >
-                      <span class="svg-wrapper">
-                        {{- 'icon-arrow.svg' | inline_asset_content -}}
-                      </span>
-                    </button>
+                    {%- if block.settings.button_text == blank -%}
+                      <button
+                        type="submit"
+                        class="newsletter-form__button field__button"
+                        name="commit"
+                        id="Subscribe"
+                        aria-label="{{ 'newsletter.button_label' | t }}"
+                      >
+                        <span class="svg-wrapper">
+                          {{- 'icon-arrow.svg' | inline_asset_content -}}
+                        </span>
+                      </button>
+                    {%- endif -%}
                   </div>
+                {%- if block.settings.button_text != blank -%}
+                  <button type="submit" class="newsletter__button button" name="commit">
+                    {{ block.settings.button_text }}
+                  </button>
+                  </div>
+                {%- endif -%}
                   {%- if form.errors -%}
                     <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
                       <span class="svg-wrapper">
@@ -392,6 +403,12 @@
             { "value": "right", "label": "Right" }
           ],
           "default": "center"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text",
+          "info": "Enter text to show a button instead of the arrow icon"
         }
       ]
     },
