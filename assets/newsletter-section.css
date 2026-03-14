@@ -76,8 +76,13 @@
   }
 
   .newsletter-form__input-row .newsletter__button {
+    display: block;
     margin: 0;
     align-self: stretch;
+  }
+
+  .newsletter-form__input-row .newsletter-form__button {
+    display: none;
   }
 }
 
@@ -92,6 +97,7 @@
 }
 
 .newsletter__button {
+  display: none;
   margin-top: 3rem;
   width: fit-content;
 }

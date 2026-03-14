@@ -108,7 +108,11 @@
               {%- endif -%}
             </style>
             <div class="newsletter-email-form--{{ block.id }}" {{ block.shopify_attributes }}>
-              {% form 'customer', class: 'newsletter-form{% if block.settings.button_text != blank %} newsletter-form--with-button{% endif %}' %}
+              {%- assign form_class = 'newsletter-form' -%}
+              {%- if block.settings.button_text != blank -%}
+                {%- assign form_class = 'newsletter-form newsletter-form--with-button' -%}
+              {%- endif -%}
+              {% form 'customer', class: form_class %}
                 <input type="hidden" name="contact[tags]" value="newsletter">
                 <div
                   class="newsletter-form__field-wrapper{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -144,19 +148,17 @@
                     <label class="field__label" for="NewsletterForm--{{ section.id }}">
                       {{ 'newsletter.label' | t }}
                     </label>
-                    {%- if block.settings.button_text == blank -%}
-                      <button
-                        type="submit"
-                        class="newsletter-form__button field__button"
-                        name="commit"
-                        id="Subscribe"
-                        aria-label="{{ 'newsletter.button_label' | t }}"
-                      >
-                        <span class="svg-wrapper">
-                          {{- 'icon-arrow.svg' | inline_asset_content -}}
-                        </span>
-                      </button>
-                    {%- endif -%}
+                    <button
+                      type="submit"
+                      class="newsletter-form__button field__button"
+                      name="commit"
+                      id="Subscribe"
+                      aria-label="{{ 'newsletter.button_label' | t }}"
+                    >
+                      <span class="svg-wrapper">
+                        {{- 'icon-arrow.svg' | inline_asset_content -}}
+                      </span>
+                    </button>
                   </div>
                 {%- if block.settings.button_text != blank -%}
                   <button type="submit" class="newsletter__button button" name="commit">
