@@ -68,11 +68,13 @@
   }
 
   .newsletter-form__input-row .field {
+    display: flex;
+    align-items: center;
     flex: 1;
   }
 
   .newsletter-form__input-row .field__input {
-    height: 100%;
+    width: 100%;
   }
 
   .newsletter-form__input-row .newsletter__button {
@@ -80,13 +82,14 @@
   }
 }
 
-.newsletter-form--with-button {
+.newsletter-form--with-button.newsletter-form {
   max-width: none;
   width: 100%;
 }
 
 .newsletter-form--with-button .newsletter-form__field-wrapper {
   max-width: none;
+  width: 100%;
 }
 
 .newsletter__button {
