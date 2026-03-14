@@ -40,7 +40,9 @@
         },
         "email_form_THYjUp": {
           "type": "email_form",
-          "settings": {}
+          "settings": {
+            "text_alignment": "left"
+          }
         }
       },
       "block_order": [
