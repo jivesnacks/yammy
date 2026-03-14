@@ -87,7 +87,10 @@
               {{ block.settings.text }}
             </div>
           {%- when 'email_form' -%}
-            <div {{ block.shopify_attributes }}>
+            {%- assign form_align = 'flex-start' -%}
+            {%- if block.settings.text_alignment == 'center' -%}{%- assign form_align = 'center' -%}{%- endif -%}
+            {%- if block.settings.text_alignment == 'right' -%}{%- assign form_align = 'flex-end' -%}{%- endif -%}
+            <div {{ block.shopify_attributes }} style="text-align: {{ block.settings.text_alignment }}; display: flex; flex-direction: column; align-items: {{ form_align }}">
               {% form 'customer', class: 'newsletter-form' %}
                 <input type="hidden" name="contact[tags]" value="newsletter">
                 <div
@@ -367,7 +370,20 @@
     {
       "type": "email_form",
       "name": "t:sections.newsletter.blocks.email_form.name",
-      "limit": 1
+      "limit": 1,
+      "settings": [
+        {
+          "type": "select",
+          "id": "text_alignment",
+          "label": "Text alignment",
+          "options": [
+            { "value": "left", "label": "Left" },
+            { "value": "center", "label": "Center" },
+            { "value": "right", "label": "Right" }
+          ],
+          "default": "center"
+        }
+      ]
     },
     {
       "type": "@app"
