@@ -32,7 +32,8 @@
         "paragraph_tP96Lj": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
+            "text": "<p>New flavors. Exclusive offers. Sign up and stay snacking.</p>",
+            "font_size": 20
           }
         },
         "email_form_THYjUp": {
