@@ -26,14 +26,16 @@
           "settings": {
             "heading": "[[Get in]] on the good stuff",
             "accent_color": "#ec6608",
-            "heading_size": "h0"
+            "heading_size": "h0",
+            "text_alignment": "left"
           }
         },
         "paragraph_tP96Lj": {
           "type": "paragraph",
           "settings": {
             "text": "<p>New flavors. Exclusive offers. Sign up and stay snacking.</p>",
-            "font_size": 20
+            "font_size": 20,
+            "text_alignment": "left"
           }
         },
         "email_form_THYjUp": {
