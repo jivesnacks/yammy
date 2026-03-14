@@ -38,14 +38,14 @@
           {% endif %}
         >
           <div
-            class="newsletter__image media{% if block.settings.image == blank %} placeholder{% endif %}"
+            class="newsletter__image media global-media-settings{% if block.settings.image == blank %} placeholder{% endif %}"
             style="padding-bottom: {% if block.settings.image != blank %}{{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}{% else %}100{% endif %}%;"
           >
             {%- if block.settings.image != blank -%}
               {{
                 block.settings.image
                 | image_url: width: 1600
-                | image_tag: widths: '320, 480, 640, 800, 1100, 1400, 1600', sizes: '(min-width: 990px) 50vw, 100vw', loading: 'lazy'
+                | image_tag: widths: '320, 480, 640, 800, 1100, 1400, 1600', sizes: '(min-width: 990px) 40vw, 100vw', loading: 'lazy'
               }}
             {%- else -%}
               {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
@@ -173,14 +173,14 @@
           {% endif %}
         >
           <div
-            class="newsletter__image media{% if block.settings.image == blank %} placeholder{% endif %}"
+            class="newsletter__image media global-media-settings{% if block.settings.image == blank %} placeholder{% endif %}"
             style="padding-bottom: {% if block.settings.image != blank %}{{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}{% else %}100{% endif %}%;"
           >
             {%- if block.settings.image != blank -%}
               {{
                 block.settings.image
                 | image_url: width: 1600
-                | image_tag: widths: '320, 480, 640, 800, 1100, 1400, 1600', sizes: '(min-width: 990px) 50vw, 100vw', loading: 'lazy'
+                | image_tag: widths: '320, 480, 640, 800, 1100, 1400, 1600', sizes: '(min-width: 990px) 40vw, 100vw', loading: 'lazy'
               }}
             {%- else -%}
               {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}

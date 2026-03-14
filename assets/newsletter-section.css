@@ -34,13 +34,7 @@
   width: 100%;
 }
 
-.newsletter__image {
-  border-radius: var(--media-radius);
-}
-
-.newsletter__image > img,
 .newsletter__image .placeholder-svg {
-  border-radius: inherit;
   background-color: rgba(var(--color-foreground), 0.04);
   fill: rgba(var(--color-foreground), 0.2);
 }
@@ -79,12 +73,12 @@
   }
 
   .newsletter__wrapper--with-image .newsletter__image-block {
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 40%;
+    max-width: 40%;
   }
 
   .newsletter__wrapper--with-image .newsletter__content {
-    flex: 1 1 50%;
-    max-width: 50%;
+    flex: 1 1 60%;
+    max-width: 60%;
   }
 }
