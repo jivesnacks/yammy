@@ -88,7 +88,10 @@
                     </div>
                   {%- when 'link_list' -%}
                     {%- if block.settings.menu != blank -%}
-                      <ul class="footer-block__details-content list-unstyled">
+                      <ul
+                        class="footer-block__details-content list-unstyled"
+                        style="--footer-menu-font-size: {{ block.settings.menu_font_size | default: 14 }}px;"
+                      >
                         {%- for link in block.settings.menu.links -%}
                           <li>
                             <a
@@ -343,6 +346,16 @@
           "id": "menu",
           "default": "footer",
           "label": "t:sections.footer.blocks.link_list.settings.menu.label"
+        },
+        {
+          "type": "range",
+          "id": "menu_font_size",
+          "min": 10,
+          "max": 30,
+          "step": 1,
+          "unit": "px",
+          "label": "Menu font size (desktop)",
+          "default": 14
         }
       ]
     },
