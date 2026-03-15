@@ -71,25 +71,26 @@
             "alignment": "center"
           }
         },
+        "footer-1": {
+          "type": "link_list",
+          "settings": {
+            "heading": "",
+            "menu": "footer",
+            "menu_font_size": 16
+          }
+        },
         "footer-2": {
           "type": "text",
           "settings": {
             "heading": "",
             "subtext": "<p><strong>Address</strong></p><p>1401 21st St Suite R<br/>Sacramento, CA, 95811, US</p><p><strong>Email</strong></p><p><a href=\"mailto:support@jivesnacks.com\" target=\"_blank\" title=\"mailto:support@jivesnacks.com\">support@jivesnacks.com</a></p>"
           }
-        },
-        "footer-1": {
-          "type": "link_list",
-          "settings": {
-            "heading": "",
-            "menu": "footer"
-          }
         }
       },
       "block_order": [
         "image_nbqQk9",
-        "footer-2",
-        "footer-1"
+        "footer-1",
+        "footer-2"
       ],
       "settings": {
         "color_scheme": "scheme-5",
