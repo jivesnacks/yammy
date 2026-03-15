@@ -24,6 +24,10 @@
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
+
+    .section-{{ section.id }}-padding .footer__blocks-wrapper {
+      --grid-desktop-horizontal-spacing: {{ section.settings.desktop_block_spacing }}px;
+    }
   }
 {%- endstyle -%}
 
@@ -504,6 +508,16 @@
       "default": true,
       "label": "t:sections.footer.settings.show_policy.label",
       "info": "t:sections.footer.settings.show_policy.info"
+    },
+    {
+      "type": "range",
+      "id": "desktop_block_spacing",
+      "min": 0,
+      "max": 60,
+      "step": 4,
+      "unit": "px",
+      "label": "Desktop horizontal block spacing",
+      "default": 24
     },
     {
       "type": "header",
