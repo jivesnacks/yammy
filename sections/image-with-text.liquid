@@ -92,11 +92,16 @@
             {%- for block in section.blocks -%}
               {% case block.type %}
                 {%- when 'heading' -%}
+                  {%- assign highlighted_heading = block.settings.heading
+                    | replace: '[[', '<span class="image-with-text__accent">'
+                    | replace: ']]', '</span>'
+                  -%}
                   <h2
                     class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}"
                     {{ block.shopify_attributes }}
+                    style="--image-with-text-accent-color: {{ block.settings.accent_color }};"
                   >
-                    {{ block.settings.heading }}
+                    {{ highlighted_heading }}
                   </h2>
                 {%- when 'caption' -%}
                   <p
@@ -373,7 +378,14 @@
           "type": "inline_richtext",
           "id": "heading",
           "default": "t:sections.image-with-text.blocks.heading.settings.heading.default",
-          "label": "t:sections.image-with-text.blocks.heading.settings.heading.label"
+          "label": "t:sections.image-with-text.blocks.heading.settings.heading.label",
+          "info": "Wrap colored words in [[double brackets]]."
+        },
+        {
+          "type": "color",
+          "id": "accent_color",
+          "label": "Accent color",
+          "default": "#EE9441"
         },
         {
           "type": "select",
