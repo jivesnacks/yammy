@@ -322,13 +322,17 @@
   }
 
   .image-with-text.image-with-text--preserve-media-radius.collapse-corners:not(.image-with-text--overlap)
+    :is(.grid:not(.image-with-text__grid--reverse), .image-with-text__grid--reverse)
     .image-with-text__media-item:after,
   .image-with-text.image-with-text--preserve-media-radius.collapse-corners:not(.image-with-text--overlap)
+    :is(.grid:not(.image-with-text__grid--reverse), .image-with-text__grid--reverse)
     .image-with-text__media,
   .image-with-text.image-with-text--preserve-media-radius.collapse-corners:not(.image-with-text--overlap)
+    :is(.grid:not(.image-with-text__grid--reverse), .image-with-text__grid--reverse)
     .image-with-text__media
     img,
   .image-with-text.image-with-text--preserve-media-radius.collapse-corners:not(.image-with-text--overlap)
+    :is(.grid:not(.image-with-text__grid--reverse), .image-with-text__grid--reverse)
     .image-with-text__media
     .placeholder-svg {
     border-radius: var(--media-radius);
