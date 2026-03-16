@@ -346,14 +346,15 @@
         "heading_g983Ld": {
           "type": "heading",
           "settings": {
-            "heading": "From family memory to your pantry",
+            "heading": "From our family memory to [[your pantry]]",
+            "accent_color": "#ec6608",
             "heading_size": "h0"
           }
         },
         "text_dx9VVP": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>We're a family-owned company bringing you the yummiest healthy snacks made with the simplest ingredients. No compromises, just snacks that honor both your cravings and your wellbeing.</p>",
             "text_style": "body"
           }
         }
