@@ -346,8 +346,8 @@
         "heading_g983Ld": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
+            "heading": "From family memory to your pantry",
+            "heading_size": "h0"
           }
         },
         "text_dx9VVP": {
@@ -369,6 +369,8 @@
         "desktop_image_width": "medium",
         "layout": "image_first",
         "image_behavior": "none",
+        "use_custom_image_border_thickness": true,
+        "custom_image_border_thickness": 2,
         "content_layout": "no-overlap",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
