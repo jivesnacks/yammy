@@ -50,11 +50,7 @@
         <div class="bento-grid__items{% if section.settings.columns_desktop == '2' %} bento-grid__items--2-col{% endif %}">
           {%- for block in section.blocks -%}
             {%- liquid
-              assign highlighted_heading = block.settings.heading
-                | escape
-                | newline_to_br
-                | replace: '[[', '<span class="bento-grid__heading-accent">'
-                | replace: ']]', '</span>'
+              assign highlighted_heading = block.settings.heading | escape | newline_to_br | replace: '[[', '<span class="bento-grid__heading-accent">' | replace: ']]', '</span>'
 
               assign mobile_media_first = true
               if block.settings.mobile_media_position == 'text_first'
