@@ -341,6 +341,80 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "bento_grid_kk3Q9G": {
+      "type": "bento-grid",
+      "blocks": {
+        "item_pFnmdN": {
+          "type": "item",
+          "settings": {
+            "heading": "The [[texture]]\nyou've been\nmissing",
+            "text": "<p>Perfectly chewy, endlessly snackable. Our sweet potato sticks aren't crunchy chips or mushy fruit leather. They're the satisfying chew your cravings have been asking for.</p>",
+            "desktop_media_position": "left",
+            "mobile_media_position": "image_first",
+            "content_vertical_alignment": "space-between"
+          }
+        },
+        "item_CtbGXG": {
+          "type": "item",
+          "settings": {
+            "heading": "[[Ingredients]]\nyou can\nactually\npronounce",
+            "text": "<p>Sweet potatoes + spices. That's it. No \"natural flavors,\" no seed oils, no ingredients you need to Google. Just real food that respects your body and your taste buds.</p>",
+            "desktop_media_position": "left",
+            "mobile_media_position": "image_first",
+            "content_vertical_alignment": "space-between"
+          }
+        },
+        "item_xLFM4U": {
+          "type": "item",
+          "settings": {
+            "heading": "[[Flavors]]\nwith stories",
+            "text": "<p>Korean BBQ from family gatherings. Snickerdoodle from childhood memories. Toasted Sesame &amp; Seaweed from coastal traditions. Every flavor connects you to something real.</p>",
+            "desktop_media_position": "left",
+            "mobile_media_position": "image_first",
+            "content_vertical_alignment": "space-between"
+          }
+        },
+        "item_PPtLKP": {
+          "type": "item",
+          "settings": {
+            "heading": "[[Nutrition]] that\nactually does\nsomething",
+            "text": "<p>12 essential vitamins and minerals per serving. Fiber and protein that keep you satisfied for hours. When you're snacking on actual sweet potatoes, you're getting actual nourishment.</p>",
+            "desktop_media_position": "left",
+            "mobile_media_position": "image_first",
+            "content_vertical_alignment": "space-between"
+          }
+        }
+      },
+      "block_order": [
+        "item_pFnmdN",
+        "item_CtbGXG",
+        "item_xLFM4U",
+        "item_PPtLKP"
+      ],
+      "name": "Bento grid",
+      "settings": {
+        "section_color_scheme": "",
+        "columns_desktop": "2",
+        "desktop_media_width": "50",
+        "text_alignment": "left",
+        "card_background": "#F6DECD",
+        "card_border_color": "#5B2944",
+        "heading_color": "#5B2944",
+        "accent_color": "#F96A00",
+        "body_color": "#5B2944",
+        "card_border_width": 2,
+        "card_radius": 18,
+        "grid_gap": 28,
+        "card_min_height_desktop": 500,
+        "mobile_image_height": 280,
+        "heading_size_mobile": 40,
+        "heading_size_desktop": 58,
+        "body_size_mobile": 18,
+        "body_size_desktop": 24,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -350,6 +424,7 @@
     "rich_text",
     "featured_collection",
     "multirow_dQQNRM",
-    "image_with_text_mXxk48"
+    "image_with_text_mXxk48",
+    "bento_grid_kk3Q9G"
   ]
 }
