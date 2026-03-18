@@ -1,6 +1,449 @@
+{% doc %}
+  @prompt
+    a bento grid that allows me to add an image and text to each element of the grid
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-bento-grid-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+  }
+
+  .ai-bento-grid__container-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    gap: {{ block.settings.grid_gap }}px;
+  }
+
+  .ai-bento-grid__item-{{ ai_gen_id }} {
+    position: relative;
+    overflow: hidden;
+    border-radius: {{ block.settings.item_border_radius }}px;
+    background-color: {{ block.settings.item_background_color }};
+    border: {{ block.settings.item_border_thickness }}px solid {{ block.settings.item_border_color }};
+  }
+
+  .ai-bento-grid__item-{{ ai_gen_id }}--1 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .ai-bento-grid__item-{{ ai_gen_id }}--2 {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .ai-bento-grid__item-{{ ai_gen_id }}--3 {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .ai-bento-grid__item-{{ ai_gen_id }}--4 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .ai-bento-grid__item-{{ ai_gen_id }}--5 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .ai-bento-grid__item-{{ ai_gen_id }}--6 {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .ai-bento-grid__image-wrapper-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .ai-bento-grid__image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-bento-grid__placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ai-bento-grid__placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-bento-grid__empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+
+  .ai-bento-grid__content-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: {{ block.settings.content_padding }}px;
+    background: {{ block.settings.overlay_color }};
+    color: {{ block.settings.text_color }};
+  }
+
+  .ai-bento-grid__title-{{ ai_gen_id }} {
+    margin: 0 0 8px 0;
+    font-size: {{ block.settings.title_size }}px;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .ai-bento-grid__text-{{ ai_gen_id }} {
+    margin: 0;
+    font-size: {{ block.settings.text_size }}px;
+    line-height: 1.4;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-bento-grid__container-{{ ai_gen_id }} {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, 150px);
+    }
+
+    .ai-bento-grid__item-{{ ai_gen_id }}--1 {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .ai-bento-grid__item-{{ ai_gen_id }}--2 {
+      grid-column: span 2;
+      grid-row: span 1;
+    }
+
+    .ai-bento-grid__item-{{ ai_gen_id }}--3 {
+      grid-column: span 2;
+      grid-row: span 1;
+    }
+
+    .ai-bento-grid__item-{{ ai_gen_id }}--4 {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+
+    .ai-bento-grid__item-{{ ai_gen_id }}--5 {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+
+    .ai-bento-grid__item-{{ ai_gen_id }}--6 {
+      grid-column: span 2;
+      grid-row: span 1;
+    }
+
+    .ai-bento-grid__title-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.title_size }}px * 0.85);
+    }
+
+    .ai-bento-grid__text-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.text_size }}px * 0.9);
+    }
+  }
+{% endstyle %}
+
+<bento-grid-{{ ai_gen_id }} class="ai-bento-grid-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-bento-grid__container-{{ ai_gen_id }}">
+    {% for i in (1..6) %}
+      {% liquid
+        assign image_key = 'item_' | append: i | append: '_image'
+        assign title_key = 'item_' | append: i | append: '_title'
+        assign text_key = 'item_' | append: i | append: '_text'
+        
+        assign item_image = block.settings[image_key]
+        assign item_title = block.settings[title_key]
+        assign item_text = block.settings[text_key]
+      %}
+      
+      <div class="ai-bento-grid__item-{{ ai_gen_id }} ai-bento-grid__item-{{ ai_gen_id }}--{{ i }}">
+        <div class="ai-bento-grid__image-wrapper-{{ ai_gen_id }}">
+          {% if item_image %}
+            <img
+              src="{{ item_image | image_url: width: 800 }}"
+              alt="{{ item_image.alt | escape }}"
+              loading="lazy"
+              width="{{ item_image.width }}"
+              height="{{ item_image.height }}"
+              class="ai-bento-grid__image-{{ ai_gen_id }}"
+            >
+          {% else %}
+            <div class="ai-bento-grid__placeholder-{{ ai_gen_id }}">
+              {{ 'image' | placeholder_svg_tag }}
+              <div class="ai-bento-grid__empty-state-{{ ai_gen_id }}">
+                Add image {{ i }}
+              </div>
+            </div>
+          {% endif %}
+        </div>
+        
+        {% if item_title != blank or item_text != blank %}
+          <div class="ai-bento-grid__content-{{ ai_gen_id }}">
+            {% if item_title != blank %}
+              <h3 class="ai-bento-grid__title-{{ ai_gen_id }}">{{ item_title }}</h3>
+            {% endif %}
+            {% if item_text != blank %}
+              <p class="ai-bento-grid__text-{{ ai_gen_id }}">{{ item_text }}</p>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</bento-grid-{{ ai_gen_id }}>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Bento grid",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "grid_gap",
+      "label": "Gap between items",
+      "min": 4,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Item style"
+    },
+    {
+      "type": "color",
+      "id": "item_background_color",
+      "label": "Background",
+      "default": "#f4f4f4"
+    },
+    {
+      "type": "range",
+      "id": "item_border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "item_border_thickness",
+      "label": "Border thickness",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "color",
+      "id": "item_border_color",
+      "label": "Border color",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "header",
+      "content": "Content style"
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay background",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "content_padding",
+      "label": "Content padding",
+      "min": 8,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Title size",
+      "min": 12,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Text size",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Item 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_1_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "item_1_title",
+      "label": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "item_1_text",
+      "label": "Text"
+    },
+    {
+      "type": "header",
+      "content": "Item 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_2_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "item_2_title",
+      "label": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "item_2_text",
+      "label": "Text"
+    },
+    {
+      "type": "header",
+      "content": "Item 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_3_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "item_3_title",
+      "label": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "item_3_text",
+      "label": "Text"
+    },
+    {
+      "type": "header",
+      "content": "Item 4"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_4_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "item_4_title",
+      "label": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "item_4_text",
+      "label": "Text"
+    },
+    {
+      "type": "header",
+      "content": "Item 5"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_5_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "item_5_title",
+      "label": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "item_5_text",
+      "label": "Text"
+    },
+    {
+      "type": "header",
+      "content": "Item 6"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_6_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "item_6_title",
+      "label": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "item_6_text",
+      "label": "Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bento grid"
+    }
+  ]
+}
 {% endschema %}
