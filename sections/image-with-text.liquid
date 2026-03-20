@@ -1,4 +1,5 @@
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
+{{ 'component-badge.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -92,16 +93,23 @@
             {%- for block in section.blocks -%}
               {% case block.type %}
                 {%- when 'heading' -%}
-                  {%- assign highlighted_heading = block.settings.heading
-                    | replace: '[[', '<span class="image-with-text__accent">'
-                    | replace: ']]', '</span>'
-                  -%}
                   <h2
                     class="image-with-text__heading inline-richtext {{ block.settings.heading_size }}"
                     {{ block.shopify_attributes }}
-                    style="--image-with-text-accent-color: {{ block.settings.accent_color }};"
                   >
-                    {{ highlighted_heading }}
+                    {%- assign heading_parts = block.settings.heading | split: '[[' -%}
+                    {%- for part in heading_parts -%}
+                      {%- if forloop.first -%}
+                        {{ part }}
+                      {%- else -%}
+                        {%- assign badge_parts = part | split: ']]' -%}
+                        <span class="ybadge-wrap" style="--ybadge-bg: {{ block.settings.badge_bg }}; --ybadge-border: {{ block.settings.badge_border }}; --ybadge-text: {{ block.settings.badge_text }}; --ybadge-shadow: {{ block.settings.badge_shadow }};">
+                          <span class="ybadge-shadow" aria-hidden="true"></span>
+                          <span class="ybadge-back" aria-hidden="true"></span>
+                          <span class="ybadge-front">{{ badge_parts[0] }}</span>
+                        </span>{{ badge_parts[1] }}
+                      {%- endif -%}
+                    {%- endfor -%}
                   </h2>
                 {%- when 'caption' -%}
                   <p
@@ -379,13 +387,35 @@
           "id": "heading",
           "default": "t:sections.image-with-text.blocks.heading.settings.heading.default",
           "label": "t:sections.image-with-text.blocks.heading.settings.heading.label",
-          "info": "Wrap colored words in [[double brackets]]."
+          "info": "Wrap words in [[double brackets]] to apply the badge treatment."
+        },
+        {
+          "type": "header",
+          "content": "Badge style"
         },
         {
           "type": "color",
-          "id": "accent_color",
-          "label": "Accent color",
-          "default": "#EE9441"
+          "id": "badge_bg",
+          "label": "Badge background",
+          "default": "#F5C542"
+        },
+        {
+          "type": "color",
+          "id": "badge_border",
+          "label": "Badge border",
+          "default": "#3D1523"
+        },
+        {
+          "type": "color",
+          "id": "badge_text",
+          "label": "Badge text",
+          "default": "#3D1523"
+        },
+        {
+          "type": "color",
+          "id": "badge_shadow",
+          "label": "Badge shadow",
+          "default": "#3D1523"
         },
         {
           "type": "select",

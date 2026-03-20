@@ -398,10 +398,6 @@
   margin-bottom: 0;
 }
 
-.image-with-text__accent {
-  color: var(--image-with-text-accent-color);
-}
-
 .image-with-text__text p {
   margin-top: 0;
   margin-bottom: 1rem;

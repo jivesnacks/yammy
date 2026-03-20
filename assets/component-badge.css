@@ -1,0 +1,53 @@
+.ybadge-wrap {
+  display: inline-block;
+  position: relative;
+  isolation: isolate;
+  vertical-align: middle;
+  margin-bottom: 8px;
+}
+
+/* Shadow: same trapezoid shape, offset down-left, hard-edged */
+.ybadge-shadow {
+  position: absolute;
+  inset: 0;
+  background: var(--ybadge-shadow, #3D1523);
+  clip-path: polygon(0 0, 100% 0, calc(100% - 16px) 100%, 0 100%);
+  transform: translate(-6px, 8px);
+  z-index: 0;
+}
+
+/* Border: dark trapezoid, full size */
+.ybadge-back {
+  position: absolute;
+  inset: 0;
+  background: var(--ybadge-border, #3D1523);
+  clip-path: polygon(0 0, 100% 0, calc(100% - 16px) 100%, 0 100%);
+  z-index: 1;
+}
+
+/*
+  Fill: yellow trapezoid, clipped 6px inset on all sides.
+  Right-bottom point = calc(100% - 22px) because the outer slant
+  is already 16px from right, plus 6px border = 22px total.
+  This ensures a uniform ~6px dark border along the slanted edge.
+*/
+.ybadge-front {
+  position: relative;
+  display: block;
+  background: var(--ybadge-bg, #F5C542);
+  color: var(--ybadge-text, #3D1523);
+  clip-path: polygon(
+    6px 6px,
+    calc(100% - 6px) 6px,
+    calc(100% - 22px) calc(100% - 6px),
+    6px calc(100% - 6px)
+  );
+  padding: 0.06em 0.6em 0.1em 0.35em;
+  white-space: nowrap;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  z-index: 2;
+}
