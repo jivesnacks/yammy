@@ -135,9 +135,14 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-            {%- assign highlighted_heading = block.settings.heading
-              | replace: '[[', '<span class="banner__heading-highlight">'
-              | replace: ']]', '</span>'
+            {%- liquid
+              capture highlight_open
+                echo '<span class="banner__heading-highlight"><svg class="banner__heading-highlight-shape" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" focusable="false"><polygon class="banner__heading-highlight-shadow" points="0,0 100,0 97,100 0,100" transform="translate(-3 7)"></polygon><polygon class="banner__heading-highlight-face" points="0,0 100,0 97,100 0,100"></polygon></svg><span class="banner__heading-highlight-text">'
+              endcapture
+
+              assign highlighted_heading = block.settings.heading
+                | replace: '[[', highlight_open
+                | replace: ']]', '</span></span>'
             -%}
             <h2
               class="banner__heading inline-richtext {{ block.settings.heading_size }}"
