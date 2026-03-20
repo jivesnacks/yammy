@@ -36,6 +36,42 @@
       --banner-home-right-slant-color: {{ section.settings.home_slant_right_color }};
     }
   {%- endif -%}
+
+  .ybadge-wrap {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-bottom: 8px;
+    isolation: isolate;
+  }
+  .ybadge-shadow {
+    position: absolute;
+    inset: 0;
+    background: var(--ybadge-shadow, #3D1523);
+    clip-path: polygon(0 0, 100% 0, calc(100% - 16px) 100%, 0 100%);
+    transform: translate(-6px, 8px);
+    z-index: 0;
+  }
+  .ybadge-border {
+    display: block;
+    position: relative;
+    z-index: 1;
+    background: var(--ybadge-border, #3D1523);
+    clip-path: polygon(0 0, 100% 0, calc(100% - 16px) 100%, 0 100%);
+    padding: 3px;
+  }
+  .ybadge-fill {
+    display: block;
+    background: var(--ybadge-bg, #F5C542);
+    color: var(--ybadge-text, #3D1523);
+    padding: 0.06em 1.5em 0.1em 0.3em;
+    white-space: nowrap;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    text-transform: inherit;
+  }
 {%- endstyle -%}
 
 {%- liquid
@@ -139,7 +175,20 @@
               class="banner__heading inline-richtext {{ block.settings.heading_size }}"
               {{ block.shopify_attributes }}
             >
-              {{ block.settings.heading }}
+              {%- assign heading_parts = block.settings.heading | split: '[[' -%}
+              {%- for part in heading_parts -%}
+                {%- if forloop.first -%}
+                  {{ part }}
+                {%- else -%}
+                  {%- assign badge_parts = part | split: ']]' -%}
+                  <span class="ybadge-wrap" style="--ybadge-bg: {{ block.settings.badge_bg }}; --ybadge-border: {{ block.settings.badge_border }}; --ybadge-text: {{ block.settings.badge_text }}; --ybadge-shadow: {{ block.settings.badge_shadow }};">
+                    <span class="ybadge-shadow" aria-hidden="true"></span>
+                    <span class="ybadge-border">
+                      <span class="ybadge-fill">{{ badge_parts[0] }}</span>
+                    </span>
+                  </span>{{ badge_parts[1] }}
+                {%- endif -%}
+              {%- endfor -%}
             </h2>
           {%- when 'text' -%}
             <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
@@ -450,6 +499,38 @@
           ],
           "default": "h1",
           "label": "t:sections.all.heading_size.label"
+        },
+        {
+          "type": "header",
+          "content": "Badge style"
+        },
+        {
+          "type": "paragraph",
+          "content": "Wrap words in [[double brackets]] to apply the badge treatment."
+        },
+        {
+          "type": "color",
+          "id": "badge_bg",
+          "label": "Badge background",
+          "default": "#F5C542"
+        },
+        {
+          "type": "color",
+          "id": "badge_border",
+          "label": "Badge border",
+          "default": "#3D1523"
+        },
+        {
+          "type": "color",
+          "id": "badge_text",
+          "label": "Badge text",
+          "default": "#3D1523"
+        },
+        {
+          "type": "color",
+          "id": "badge_shadow",
+          "label": "Badge shadow",
+          "default": "#3D1523"
         }
       ]
     },
