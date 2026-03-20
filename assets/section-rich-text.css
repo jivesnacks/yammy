@@ -45,6 +45,15 @@
   overflow-wrap: break-word;
 }
 
+.rich-text__accent {
+  color: var(--rich-text-accent-color);
+}
+
+.rich-text__text p,
+.rich-text__text li {
+  font-size: inherit;
+}
+
 .rich-text__blocks > * {
   margin-top: 0;
   margin-bottom: 0;
