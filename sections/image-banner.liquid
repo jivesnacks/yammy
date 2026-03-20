@@ -142,7 +142,7 @@
             <h2
               class="banner__heading inline-richtext {{ block.settings.heading_size }}"
               {{ block.shopify_attributes }}
-              style="--banner-heading-highlight-background: {{ block.settings.highlight_background_color }}; --banner-heading-highlight-border: {{ block.settings.highlight_border_color }}; --banner-heading-highlight-text: {{ block.settings.highlight_text_color }};"
+              style="--banner-heading-highlight-background: {{ block.settings.highlight_background_color }}; --banner-heading-highlight-border: {{ block.settings.highlight_border_color }}; --banner-heading-highlight-text: {{ block.settings.highlight_text_color }}; --banner-heading-highlight-shadow: {{ block.settings.highlight_shadow_color }};"
             >
               {{ highlighted_heading }}
             </h2>
@@ -477,6 +477,12 @@
           "id": "highlight_text_color",
           "label": "Highlight text",
           "default": "#4E2416"
+        },
+        {
+          "type": "color",
+          "id": "highlight_shadow_color",
+          "label": "Highlight shadow",
+          "default": "#7A4A35"
         }
       ]
     },
