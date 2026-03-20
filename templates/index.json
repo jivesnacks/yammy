@@ -15,8 +15,11 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Chew on something <em>good</em>.",
-            "heading_size": "h0"
+            "heading": "Chew on something [[<em>good</em>.]]",
+            "heading_size": "h0",
+            "highlight_background_color": "#fcc86c",
+            "highlight_border_color": "#511d29",
+            "highlight_text_color": "#511d29"
           }
         },
         "text": {
