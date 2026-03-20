@@ -141,6 +141,10 @@
               endcapture
 
               assign highlighted_heading = block.settings.heading
+                | replace: '&#91;&#91;', highlight_open
+                | replace: '&#93;&#93;', '</span></span>'
+                | replace: '&lbrack;&lbrack;', highlight_open
+                | replace: '&rbrack;&rbrack;', '</span></span>'
                 | replace: '[[', highlight_open
                 | replace: ']]', '</span></span>'
             -%}
