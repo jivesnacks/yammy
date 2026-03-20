@@ -262,7 +262,7 @@
             "badge_border": "#511d29",
             "badge_text": "#511d29",
             "badge_shadow": "#511d29",
-            "letter_spacing": 0,
+            "letter_spacing": -2,
             "heading_size": "h0"
           }
         },
