@@ -15,7 +15,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Chew on something [[GOOD]]",
+            "heading": "CHEW ON SOMETHING [[GOOD]]",
             "heading_size": "h0",
             "badge_bg": "#fcc86c",
             "badge_border": "#511d29",
@@ -55,7 +55,8 @@
         "desktop_content_position": "middle-left",
         "desktop_content_alignment": "left",
         "show_text_box": false,
-        "color_scheme": "scheme-3",
+        "content_box_width": 54,
+        "color_scheme": "scheme-1",
         "stack_images_on_mobile": false,
         "mobile_content_alignment": "center",
         "show_text_below": true,
