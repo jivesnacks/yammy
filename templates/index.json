@@ -76,6 +76,12 @@
             "text": "THE ASIAN SUPERFOOD SNACK"
           }
         },
+        "text_aJkja8": {
+          "type": "text",
+          "settings": {
+            "text": "4G FIBER"
+          }
+        },
         "text_FErCnK": {
           "type": "text",
           "settings": {
@@ -97,6 +103,7 @@
       },
       "block_order": [
         "text_AyQBfG",
+        "text_aJkja8",
         "text_FErCnK",
         "text_Ca3i7D",
         "text_pqybaG"
