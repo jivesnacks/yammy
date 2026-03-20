@@ -198,7 +198,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Meet your new snack obsession [[(seriously)]]",
+            "heading": "Five flavors. One perfect chew.[[Meet your new snack obsession.]]",
             "badge_bg": "#fcc86c",
             "badge_border": "#511d29",
             "badge_text": "#511d29",
@@ -206,19 +206,10 @@
             "letter_spacing": -2,
             "heading_size": "h0"
           }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Every flavor starts with one simple base</p>",
-            "accent_color": "#ee9441",
-            "font_size": 24
-          }
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "heading"
       ],
       "settings": {
         "desktop_content_position": "center",
