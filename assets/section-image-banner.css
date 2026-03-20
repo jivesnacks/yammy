@@ -93,7 +93,7 @@
   .banner--content-align-left.banner--desktop-transparent .banner__box,
   .banner--content-align-right.banner--desktop-transparent .banner__box,
   .banner--medium.banner--desktop-transparent .banner__box {
-    max-width: 35rem;
+    max-width: var(--banner-box-max-width, 35rem);
   }
 }
 
@@ -417,7 +417,7 @@
   .banner--desktop-transparent .banner__box {
     padding: 4rem 0;
     background: transparent;
-    max-width: 35rem;
+    max-width: var(--banner-box-max-width, 35rem);
     border: none;
     border-radius: 0;
     box-shadow: none;
@@ -482,13 +482,13 @@
 @media screen and (min-width: 750px) {
   .banner__box {
     width: auto;
-    max-width: 35rem;
+    max-width: var(--banner-box-max-width, 35rem);
   }
 }
 
 @media screen and (min-width: 1400px) {
   .banner__box {
-    max-width: 35rem;
+    max-width: var(--banner-box-max-width, 35rem);
   }
 }
 
