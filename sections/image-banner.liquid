@@ -209,7 +209,7 @@
               {%- endfor -%}
             </h2>
           {%- when 'text' -%}
-            <div class="banner__text rte {{ block.settings.text_style }}" style="font-weight: 600;" {{ block.shopify_attributes }}>
+            <div class="banner__text rte {{ block.settings.text_style }}" style="font-family: 'Landslide', sans-serif; font-size: {{ block.settings.text_size }}px;" {{ block.shopify_attributes }}>
               <p>{{ block.settings.text }}</p>
             </div>
           {%- when 'buttons' -%}
@@ -572,6 +572,16 @@
           "id": "text",
           "default": "t:sections.image-banner.blocks.text.settings.text.default",
           "label": "t:sections.image-banner.blocks.text.settings.text.label"
+        },
+        {
+          "type": "range",
+          "id": "text_size",
+          "min": 12,
+          "max": 48,
+          "step": 1,
+          "unit": "px",
+          "label": "Font size",
+          "default": 16
         },
         {
           "type": "select",
