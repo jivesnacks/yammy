@@ -62,10 +62,10 @@
     z-index: 1;
   }
   /*
-    Fill: yellow trapezoid, clipped 4px inset on all sides.
-    Right-bottom point = calc(100% - 20px) because the outer slant
-    is already 16px from right, plus 4px border = 20px total.
-    This ensures a uniform ~4px dark border along the slanted edge.
+    Fill: yellow trapezoid, clipped 6px inset on all sides.
+    Right-bottom point = calc(100% - 22px) because the outer slant
+    is already 16px from right, plus 6px border = 22px total.
+    This ensures a uniform ~6px dark border along the slanted edge.
   */
   .ybadge-front {
     position: relative;
@@ -73,12 +73,12 @@
     background: var(--ybadge-bg, #F5C542);
     color: var(--ybadge-text, #3D1523);
     clip-path: polygon(
-      4px 4px,
-      calc(100% - 4px) 4px,
-      calc(100% - 20px) calc(100% - 4px),
-      4px calc(100% - 4px)
+      6px 6px,
+      calc(100% - 6px) 6px,
+      calc(100% - 22px) calc(100% - 6px),
+      6px calc(100% - 6px)
     );
-    padding: 0.06em 1.6em 0.1em 0.35em;
+    padding: 0.06em 0.6em 0.1em 0.35em;
     white-space: nowrap;
     font-weight: inherit;
     font-size: inherit;
