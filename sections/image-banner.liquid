@@ -135,11 +135,16 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
+            {%- assign highlighted_heading = block.settings.heading
+              | replace: '[[', '<span class="banner__heading-highlight">'
+              | replace: ']]', '</span>'
+            -%}
             <h2
               class="banner__heading inline-richtext {{ block.settings.heading_size }}"
               {{ block.shopify_attributes }}
+              style="--banner-heading-highlight-background: {{ block.settings.highlight_background_color }}; --banner-heading-highlight-border: {{ block.settings.highlight_border_color }}; --banner-heading-highlight-text: {{ block.settings.highlight_text_color }};"
             >
-              {{ block.settings.heading }}
+              {{ highlighted_heading }}
             </h2>
           {%- when 'text' -%}
             <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
@@ -450,6 +455,28 @@
           ],
           "default": "h1",
           "label": "t:sections.all.heading_size.label"
+        },
+        {
+          "type": "paragraph",
+          "content": "Wrap words in [[double brackets]] to render the boxed highlight style."
+        },
+        {
+          "type": "color",
+          "id": "highlight_background_color",
+          "label": "Highlight background",
+          "default": "#F5C94A"
+        },
+        {
+          "type": "color",
+          "id": "highlight_border_color",
+          "label": "Highlight border",
+          "default": "#4E2416"
+        },
+        {
+          "type": "color",
+          "id": "highlight_text_color",
+          "label": "Highlight text",
+          "default": "#4E2416"
         }
       ]
     },
