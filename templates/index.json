@@ -26,7 +26,8 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "One ingredient + real spices = snacks you can actually feel good about.",
+            "text": "SWEET POTATO + REAL SPICES = AN INDULGENCE YOU CAN ACTUALLY FEEL GOOD ABOUT",
+            "text_size": 24,
             "text_style": "body"
           }
         },
