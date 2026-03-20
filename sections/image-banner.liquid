@@ -40,10 +40,11 @@
   .ybadge-wrap {
     display: inline-block;
     position: relative;
+    isolation: isolate;
     vertical-align: middle;
     margin-bottom: 8px;
-    isolation: isolate;
   }
+  /* Shadow: same trapezoid shape, offset down-left, hard-edged */
   .ybadge-shadow {
     position: absolute;
     inset: 0;
@@ -52,25 +53,39 @@
     transform: translate(-6px, 8px);
     z-index: 0;
   }
-  .ybadge-border {
-    display: block;
-    position: relative;
-    z-index: 1;
+  /* Border: dark trapezoid, full size */
+  .ybadge-back {
+    position: absolute;
+    inset: 0;
     background: var(--ybadge-border, #3D1523);
     clip-path: polygon(0 0, 100% 0, calc(100% - 16px) 100%, 0 100%);
-    padding: 3px;
+    z-index: 1;
   }
-  .ybadge-fill {
+  /*
+    Fill: yellow trapezoid, clipped 4px inset on all sides.
+    Right-bottom point = calc(100% - 20px) because the outer slant
+    is already 16px from right, plus 4px border = 20px total.
+    This ensures a uniform ~4px dark border along the slanted edge.
+  */
+  .ybadge-front {
+    position: relative;
     display: block;
     background: var(--ybadge-bg, #F5C542);
     color: var(--ybadge-text, #3D1523);
-    padding: 0.06em 1.5em 0.1em 0.3em;
+    clip-path: polygon(
+      4px 4px,
+      calc(100% - 4px) 4px,
+      calc(100% - 20px) calc(100% - 4px),
+      4px calc(100% - 4px)
+    );
+    padding: 0.06em 1.6em 0.1em 0.35em;
     white-space: nowrap;
     font-weight: inherit;
     font-size: inherit;
     line-height: inherit;
     letter-spacing: inherit;
     text-transform: inherit;
+    z-index: 2;
   }
 {%- endstyle -%}
 
@@ -183,9 +198,8 @@
                   {%- assign badge_parts = part | split: ']]' -%}
                   <span class="ybadge-wrap" style="--ybadge-bg: {{ block.settings.badge_bg }}; --ybadge-border: {{ block.settings.badge_border }}; --ybadge-text: {{ block.settings.badge_text }}; --ybadge-shadow: {{ block.settings.badge_shadow }};">
                     <span class="ybadge-shadow" aria-hidden="true"></span>
-                    <span class="ybadge-border">
-                      <span class="ybadge-fill">{{ badge_parts[0] }}</span>
-                    </span>
+                    <span class="ybadge-back" aria-hidden="true"></span>
+                    <span class="ybadge-front">{{ badge_parts[0] }}</span>
                   </span>{{ badge_parts[1] }}
                 {%- endif -%}
               {%- endfor -%}
