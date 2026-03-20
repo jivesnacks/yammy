@@ -10,7 +10,7 @@
 .ybadge-shadow {
   position: absolute;
   inset: 0;
-  background: var(--ybadge-shadow, #3D1523);
+  background: var(--ybadge-shadow, #511D29);
   clip-path: polygon(0 0, 100% 0, calc(100% - 16px) 100%, 0 100%);
   transform: translate(-6px, 8px);
   z-index: 0;
@@ -20,7 +20,7 @@
 .ybadge-back {
   position: absolute;
   inset: 0;
-  background: var(--ybadge-border, #3D1523);
+  background: var(--ybadge-border, #511D29);
   clip-path: polygon(0 0, 100% 0, calc(100% - 16px) 100%, 0 100%);
   z-index: 1;
 }
@@ -34,8 +34,8 @@
 .ybadge-front {
   position: relative;
   display: block;
-  background: var(--ybadge-bg, #F5C542);
-  color: var(--ybadge-text, #3D1523);
+  background: var(--ybadge-bg, #FCC86C);
+  color: var(--ybadge-text, #511D29);
   clip-path: polygon(
     6px 6px,
     calc(100% - 6px) 6px,
