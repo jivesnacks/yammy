@@ -17,10 +17,10 @@
           "settings": {
             "heading": "Chew on something [[GOOD]]",
             "heading_size": "h0",
-            "highlight_background_color": "#fcc86c",
-            "highlight_border_color": "#511d29",
-            "highlight_text_color": "#511d29",
-            "highlight_shadow_color": "#511d29"
+            "badge_bg": "#fcc86c",
+            "badge_border": "#511d29",
+            "badge_text": "#511d29",
+            "badge_shadow": "#511d29"
           }
         },
         "text": {
