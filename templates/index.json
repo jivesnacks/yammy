@@ -109,7 +109,7 @@
         "text_size": 24,
         "link": "",
         "animation_duration": 200,
-        "animation_direction": "right",
+        "animation_direction": "left",
         "pause_hover": true,
         "text_color": "#fcc86c",
         "bg": "#511d29",
