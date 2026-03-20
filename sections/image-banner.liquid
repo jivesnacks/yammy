@@ -135,9 +135,14 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-            {%- assign highlighted_heading = block.settings.heading
-              | replace: '[[', '<span class="banner__heading-highlight">'
-              | replace: ']]', '</span>'
+            {%- liquid
+              capture highlight_open
+                echo '<span class="banner__heading-highlight"><span class="banner__heading-highlight-bg" aria-hidden="true"></span><span class="banner__heading-highlight-text">'
+              endcapture
+
+              assign highlighted_heading = block.settings.heading
+                | replace: '[[', highlight_open
+                | replace: ']]', '</span></span>'
             -%}
             <h2
               class="banner__heading inline-richtext {{ block.settings.heading_size }}"
