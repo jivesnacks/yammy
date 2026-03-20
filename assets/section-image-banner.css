@@ -501,7 +501,7 @@
   color: var(--banner-heading-highlight-text, #4e2416);
   display: inline-block;
   line-height: 1;
-  padding: 0.22em 0.72em 0.26em 0.64em;
+  padding: 0.22em 0.9em 0.26em 0.64em;
   position: relative;
   isolation: isolate;
   z-index: 0;
@@ -511,8 +511,8 @@
 .banner__heading-highlight::after {
   content: '';
   position: absolute;
-  inset: 0 -0.22em 0 0;
-  clip-path: polygon(0 0, 100% 0, 98.5% 100%, 0 100%);
+  inset: 0 -0.38em 0 0;
+  clip-path: polygon(0 0, 100% 0, 99.35% 100%, 0 100%);
   pointer-events: none;
 }
 
