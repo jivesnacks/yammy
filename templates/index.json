@@ -26,7 +26,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "SWEET POTATO + REAL SPICES = AN INDULGENCE YOU CAN <span style=\"text-decoration:underline\">ACTUALLY</span> FEEL GOOD ABOUT",
+            "text": "SWEET POTATO + REAL SPICES = AN INDULGENCE YOU CAN <span style=\"text-decoration:underline\"><em>ACTUALLY</em></span> FEEL GOOD ABOUT",
             "text_size": 24,
             "text_style": "body"
           }
