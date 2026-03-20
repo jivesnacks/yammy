@@ -15,7 +15,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Healthy snacks with nothing to hide.",
+            "heading": "Chew on something <em>good</em>.",
             "heading_size": "h0"
           }
         },
@@ -326,80 +326,6 @@
         "padding_bottom": 52
       }
     },
-    "bento_grid_kk3Q9G": {
-      "type": "bento-grid",
-      "blocks": {
-        "item_pFnmdN": {
-          "type": "item",
-          "settings": {
-            "heading": "The [[texture]]\nyou've been\nmissing",
-            "text": "<p>Perfectly chewy, endlessly snackable. Our sweet potato sticks aren't crunchy chips or mushy fruit leather. They're the satisfying chew your cravings have been asking for.</p>",
-            "desktop_media_position": "left",
-            "mobile_media_position": "image_first",
-            "content_vertical_alignment": "space-between"
-          }
-        },
-        "item_CtbGXG": {
-          "type": "item",
-          "settings": {
-            "heading": "[[Ingredients]]\nyou can\nactually\npronounce",
-            "text": "<p>Sweet potatoes + spices. That's it. No \"natural flavors,\" no seed oils, no ingredients you need to Google. Just real food that respects your body and your taste buds.</p>",
-            "desktop_media_position": "left",
-            "mobile_media_position": "image_first",
-            "content_vertical_alignment": "space-between"
-          }
-        },
-        "item_xLFM4U": {
-          "type": "item",
-          "settings": {
-            "heading": "[[Flavors]]\nwith stories",
-            "text": "<p>Korean BBQ from family gatherings. Snickerdoodle from childhood memories. Toasted Sesame &amp; Seaweed from coastal traditions. Every flavor connects you to something real.</p>",
-            "desktop_media_position": "left",
-            "mobile_media_position": "image_first",
-            "content_vertical_alignment": "space-between"
-          }
-        },
-        "item_PPtLKP": {
-          "type": "item",
-          "settings": {
-            "heading": "[[Nutrition]] that\nactually does\nsomething",
-            "text": "<p>12 essential vitamins and minerals per serving. Fiber and protein that keep you satisfied for hours. When you're snacking on actual sweet potatoes, you're getting actual nourishment.</p>",
-            "desktop_media_position": "left",
-            "mobile_media_position": "image_first",
-            "content_vertical_alignment": "space-between"
-          }
-        }
-      },
-      "block_order": [
-        "item_pFnmdN",
-        "item_CtbGXG",
-        "item_xLFM4U",
-        "item_PPtLKP"
-      ],
-      "name": "Bento grid",
-      "settings": {
-        "section_color_scheme": "",
-        "columns_desktop": "2",
-        "desktop_media_width": "50",
-        "text_alignment": "left",
-        "card_background": "#fbe0c8",
-        "card_border_color": "#511d29",
-        "heading_color": "#511d29",
-        "accent_color": "#ec6608",
-        "body_color": "#511d29",
-        "card_border_width": 2,
-        "card_radius": 8,
-        "grid_gap": 28,
-        "card_min_height_desktop": 500,
-        "mobile_image_height": 280,
-        "heading_size_mobile": 36,
-        "heading_size_desktop": 36,
-        "body_size_mobile": 20,
-        "body_size_desktop": 20,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "image_with_text_mXxk48": {
       "type": "image-with-text",
       "blocks": {
@@ -451,7 +377,6 @@
     "featured_collection",
     "multirow_dQQNRM",
     "rich_text_wCA3Xb",
-    "bento_grid_kk3Q9G",
     "image_with_text_mXxk48"
   ]
 }
