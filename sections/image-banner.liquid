@@ -135,11 +135,21 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
+            {%- liquid
+              capture highlight_open
+                echo '<span class="banner__heading-highlight"><svg class="banner__heading-highlight-shape" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" focusable="false"><polygon class="banner__heading-highlight-shadow" points="1.5,1.5 98.5,1.5 97.2,98.5 1.5,98.5" transform="translate(-3 8)"></polygon><polygon class="banner__heading-highlight-face" points="1.5,1.5 98.5,1.5 97.2,98.5 1.5,98.5"></polygon></svg><span class="banner__heading-highlight-text">'
+              endcapture
+
+              assign highlighted_heading = block.settings.heading
+                | replace: '[[', highlight_open
+                | replace: ']]', '</span></span>'
+            -%}
             <h2
               class="banner__heading inline-richtext {{ block.settings.heading_size }}"
               {{ block.shopify_attributes }}
+              style="--banner-heading-highlight-background: {{ block.settings.highlight_background_color }}; --banner-heading-highlight-border: {{ block.settings.highlight_border_color }}; --banner-heading-highlight-text: {{ block.settings.highlight_text_color }}; --banner-heading-highlight-shadow: {{ block.settings.highlight_shadow_color }};"
             >
-              {{ block.settings.heading }}
+              {{ highlighted_heading }}
             </h2>
           {%- when 'text' -%}
             <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
@@ -450,6 +460,34 @@
           ],
           "default": "h1",
           "label": "t:sections.all.heading_size.label"
+        },
+        {
+          "type": "paragraph",
+          "content": "Wrap words in [[double brackets]] to render the badge style."
+        },
+        {
+          "type": "color",
+          "id": "highlight_background_color",
+          "label": "Badge background",
+          "default": "#F8CC73"
+        },
+        {
+          "type": "color",
+          "id": "highlight_border_color",
+          "label": "Badge border",
+          "default": "#5A2431"
+        },
+        {
+          "type": "color",
+          "id": "highlight_text_color",
+          "label": "Badge text",
+          "default": "#5A2431"
+        },
+        {
+          "type": "color",
+          "id": "highlight_shadow_color",
+          "label": "Badge shadow",
+          "default": "#5A2431"
         }
       ]
     },
