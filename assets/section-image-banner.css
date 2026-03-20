@@ -497,46 +497,6 @@
   letter-spacing: -0.03em;
 }
 
-.banner__heading-highlight {
-  display: inline-block;
-  isolation: isolate;
-  line-height: 1;
-  max-width: 100%;
-  position: relative;
-  vertical-align: baseline;
-  z-index: 0;
-}
-
-.banner__heading-highlight-shape {
-  height: 100%;
-  inset: 0;
-  overflow: visible;
-  pointer-events: none;
-  position: absolute;
-  width: 100%;
-  z-index: -1;
-}
-
-.banner__heading-highlight-shadow {
-  fill: var(--banner-heading-highlight-shadow, #5a2431);
-}
-
-.banner__heading-highlight-face {
-  fill: var(--banner-heading-highlight-background, #f8cc73);
-  stroke: var(--banner-heading-highlight-border, #5a2431);
-  stroke-linejoin: miter;
-  stroke-width: 2.6;
-  vector-effect: non-scaling-stroke;
-}
-
-.banner__heading-highlight-text {
-  color: var(--banner-heading-highlight-text, #5a2431);
-  display: block;
-  padding: 0.24em 0.84em 0.28em 0.76em;
-  position: relative;
-  z-index: 1;
-}
-
 .banner__box .banner__heading + * {
   margin-top: 1rem;
 }
