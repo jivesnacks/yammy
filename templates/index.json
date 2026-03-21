@@ -333,7 +333,7 @@
       "name": "SS - Image with text #24",
       "settings": {
         "layout": "image_content",
-        "image_item_width": 50,
+        "image_item_width": 40,
         "layout_gap": 60,
         "content_align": "left",
         "content_align_mobile": "center",
@@ -369,7 +369,7 @@
         "progress_bar_bg": "#5b1830",
         "image_item_border_color": "#121212",
         "background_style": "solid",
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "background_gradient": "linear-gradient(180deg, #FFFFFF 0%, #F2F2F2 100%)",
         "border_color": "#121212",
         "margin_top": 0,
