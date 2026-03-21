@@ -289,6 +289,101 @@
         "padding_bottom": 52
       }
     },
+    "ss_image_with_text_24_HCJ9EY": {
+      "type": "ss-image-with-text-24",
+      "blocks": {
+        "item_kF3jHM": {
+          "type": "item",
+          "settings": {
+            "heading": "<h3>Everything starts with a sweet potato</h3>",
+            "text": "<p>Selected for its fragrant flavor and sweetness</p>"
+          }
+        },
+        "item_HXJdkw": {
+          "type": "item",
+          "settings": {
+            "heading": "<h3>Cut into snack-size strips</h3>",
+            "text": ""
+          }
+        },
+        "item_zAx98Q": {
+          "type": "item",
+          "settings": {
+            "heading": "<h3>Baked to caramelized perfection</h3>",
+            "text": ""
+          }
+        },
+        "item_QrigmD": {
+          "type": "item",
+          "settings": {
+            "heading": "<h3>Seasoned with real spices</h3>",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_kF3jHM",
+        "item_HXJdkw",
+        "item_zAx98Q",
+        "item_QrigmD"
+      ],
+      "name": "SS - Image with text #24",
+      "settings": {
+        "layout": "image_content",
+        "image_item_width": 50,
+        "layout_gap": 60,
+        "content_align": "left",
+        "content_align_mobile": "center",
+        "features_advanced": true,
+        "items_mt": 40,
+        "items_mt_mobile": 20,
+        "items_gap": 40,
+        "item_padding_horizontal": 24,
+        "item_padding_horizontal_mobile": 0,
+        "progress_bar_width": 2,
+        "image_item_ratio": "portrait",
+        "image_item_ratio_mobile": "landscape",
+        "image_item_radius": 0,
+        "image_item_border_thickness": 0,
+        "item_heading_custom": true,
+        "item_heading_font": "questrial_n4",
+        "item_heading_size": 24,
+        "item_heading_size_mobile": 20,
+        "item_heading_advanced": false,
+        "item_heading_height": 130,
+        "item_heading_mt": 0,
+        "item_text_custom": false,
+        "item_text_font": "josefin_sans_n4",
+        "item_text_size": 18,
+        "item_text_size_mobile": 18,
+        "item_text_advanced": true,
+        "item_text_height": 150,
+        "item_text_mt": 12,
+        "item_text_mt_mobile": 12,
+        "text_hide_on_mobile": false,
+        "item_heading_color": "#5b1830",
+        "item_text_color": "#5b1830",
+        "progress_bar_bg": "#5b1830",
+        "image_item_border_color": "#121212",
+        "background_style": "solid",
+        "background_color": "#FFFFFF",
+        "background_gradient": "linear-gradient(180deg, #FFFFFF 0%, #F2F2F2 100%)",
+        "border_color": "#121212",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "width": "page",
+        "content_width": 1200,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    },
     "image_with_text_mXxk48": {
       "type": "image-with-text",
       "blocks": {
@@ -333,164 +428,6 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "ss_image_with_text_24_HCJ9EY": {
-      "type": "ss-image-with-text-24",
-      "blocks": {
-        "heading_xFf7G8": {
-          "type": "heading",
-          "settings": {
-            "heading": "<h2>Image with text #24</h2>",
-            "heading_custom": false,
-            "heading_font": "josefin_sans_n4",
-            "heading_size": 48,
-            "heading_size_mobile": 32,
-            "heading_advanced": false,
-            "heading_height": 130,
-            "heading_mt": 0,
-            "heading_mt_mobile": 0,
-            "heading_color": "#121212"
-          }
-        },
-        "text_MAfVM7": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers.</p>",
-            "text_custom": false,
-            "text_font": "josefin_sans_n4",
-            "text_size": 18,
-            "text_size_mobile": 16,
-            "text_advanced": false,
-            "text_height": 150,
-            "text_mt": 12,
-            "text_mt_mobile": 12,
-            "text_color": "#121212"
-          }
-        },
-        "button_dki9QA": {
-          "type": "button",
-          "settings": {
-            "button": "Shop now",
-            "button_url": "",
-            "open_in_new_tab": false,
-            "button_style": "outline",
-            "button_custom": false,
-            "button_font": "josefin_sans_n4",
-            "button_size": 16,
-            "button_size_mobile": 16,
-            "button_advanced": false,
-            "button_height": 100,
-            "button_padding_horizontal": 32,
-            "button_padding_horizontal_mobile": 32,
-            "button_padding_vertical": 16,
-            "button_padding_vertical_mobile": 16,
-            "button_radius": 100,
-            "button_border_thickness": 1,
-            "button_mt": 24,
-            "button_mt_mobile": 16,
-            "use_shadow": false,
-            "button_color": "#121212",
-            "button_hover_color": "#121212",
-            "button_bg_color": "#F7F7F7",
-            "button_bg_hover_color": "#FFFFFF",
-            "button_border_color": "#121212",
-            "button_border_hover_color": "#121212"
-          }
-        },
-        "item_kF3jHM": {
-          "type": "item",
-          "settings": {
-            "heading": "<h3>Feature heading</h3>",
-            "text": "<p>A short description of this feature.</p>"
-          }
-        },
-        "item_HXJdkw": {
-          "type": "item",
-          "settings": {
-            "heading": "<h3>Feature heading</h3>",
-            "text": "<p>A short description of this feature.</p>"
-          }
-        },
-        "item_zAx98Q": {
-          "type": "item",
-          "settings": {
-            "heading": "<h3>Feature heading</h3>",
-            "text": "<p>A short description of this feature.</p>"
-          }
-        },
-        "item_QrigmD": {
-          "type": "item",
-          "settings": {
-            "heading": "<h3>Feature heading</h3>",
-            "text": "<p>A short description of this feature.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_xFf7G8",
-        "text_MAfVM7",
-        "button_dki9QA",
-        "item_kF3jHM",
-        "item_HXJdkw",
-        "item_zAx98Q",
-        "item_QrigmD"
-      ],
-      "name": "SS - Image with text #24",
-      "settings": {
-        "layout": "image_content",
-        "image_item_width": 50,
-        "layout_gap": 60,
-        "content_align": "left",
-        "content_align_mobile": "center",
-        "features_advanced": false,
-        "items_mt": 40,
-        "items_mt_mobile": 20,
-        "items_gap": 40,
-        "item_padding_horizontal": 24,
-        "item_padding_horizontal_mobile": 0,
-        "progress_bar_width": 2,
-        "image_item_ratio": "portrait",
-        "image_item_ratio_mobile": "landscape",
-        "image_item_radius": 0,
-        "image_item_border_thickness": 0,
-        "item_heading_custom": true,
-        "item_heading_font": "questrial_n4",
-        "item_heading_size": 24,
-        "item_heading_size_mobile": 20,
-        "item_heading_advanced": false,
-        "item_heading_height": 130,
-        "item_heading_mt": 0,
-        "item_text_custom": false,
-        "item_text_font": "josefin_sans_n4",
-        "item_text_size": 18,
-        "item_text_size_mobile": 18,
-        "item_text_advanced": false,
-        "item_text_height": 150,
-        "item_text_mt": 12,
-        "item_text_mt_mobile": 12,
-        "text_hide_on_mobile": false,
-        "item_heading_color": "#121212",
-        "item_text_color": "#121212",
-        "progress_bar_bg": "#121212",
-        "image_item_border_color": "#121212",
-        "background_style": "solid",
-        "background_color": "#FFFFFF",
-        "background_gradient": "linear-gradient(180deg, #FFFFFF 0%, #F2F2F2 100%)",
-        "border_color": "#121212",
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "margin_horizontal": 0,
-        "margin_horizontal_mobile": 0,
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "padding_horizontal": 5,
-        "padding_horizontal_mobile": 1.5,
-        "width": "page",
-        "content_width": 1200,
-        "border_thickness": 0,
-        "section_radius": 0,
-        "lazy": true
-      }
     }
   },
   "order": [
@@ -500,7 +437,7 @@
     "rich_text",
     "featured_collection",
     "rich_text_wCA3Xb",
-    "image_with_text_mXxk48",
-    "ss_image_with_text_24_HCJ9EY"
+    "ss_image_with_text_24_HCJ9EY",
+    "image_with_text_mXxk48"
   ]
 }
