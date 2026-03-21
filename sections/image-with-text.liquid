@@ -100,14 +100,21 @@
                     {%- assign heading_parts = block.settings.heading | split: '[[' -%}
                     {%- for part in heading_parts -%}
                       {%- if forloop.first -%}
-                        {{ part }}
+                        {%- assign line_parts = part | split: '||' -%}
+                        {%- for line in line_parts -%}
+                          {{ line }}{%- unless forloop.last -%}<br>{%- endunless -%}
+                        {%- endfor -%}
                       {%- else -%}
                         {%- assign badge_parts = part | split: ']]' -%}
                         <span class="ybadge-wrap" style="--ybadge-bg: {{ block.settings.badge_bg }}; --ybadge-border: {{ block.settings.badge_border }}; --ybadge-text: {{ block.settings.badge_text }}; --ybadge-shadow: {{ block.settings.badge_shadow }};">
                           <span class="ybadge-shadow" aria-hidden="true"></span>
                           <span class="ybadge-back" aria-hidden="true"></span>
                           <span class="ybadge-front">{{ badge_parts[0] }}</span>
-                        </span>{{ badge_parts[1] }}
+                        </span>
+                        {%- assign line_parts = badge_parts[1] | split: '||' -%}
+                        {%- for line in line_parts -%}
+                          {{ line }}{%- unless forloop.last -%}<br>{%- endunless -%}
+                        {%- endfor -%}
                       {%- endif -%}
                     {%- endfor -%}
                   </h2>
