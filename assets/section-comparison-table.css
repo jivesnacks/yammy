@@ -29,6 +29,24 @@
   color: rgb(var(--color-foreground));
 }
 
+.comparison-table__header-image {
+  margin-bottom: 0.8rem;
+}
+
+.comparison-table__header-image img {
+  display: block;
+  max-width: 100px;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+@media screen and (min-width: 750px) {
+  .comparison-table__header-image img {
+    max-width: 140px;
+  }
+}
+
 .comparison-table__row {
   border-bottom: 1px solid var(--comparison-table-border-color);
 }
@@ -103,10 +121,15 @@
   .comparison-table__header-cell {
     flex: 1;
     text-align: center;
+    padding: 0.8rem 1rem;
   }
 
   .comparison-table__header-cell:first-child {
     display: none;
+  }
+
+  .comparison-table__header-image {
+    margin-bottom: 0.4rem;
   }
 
   .comparison-table__row {
