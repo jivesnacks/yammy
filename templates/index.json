@@ -397,6 +397,76 @@
         "lazy": true
       }
     },
+    "comparison_table_AbeWNw": {
+      "type": "comparison-table",
+      "blocks": {
+        "feature_pUWUk8": {
+          "type": "feature",
+          "settings": {
+            "feature": "Energy that keeps you going all day",
+            "brand_value": "yes",
+            "brand_custom_text": "",
+            "competitor_value": "no",
+            "competitor_custom_text": ""
+          }
+        },
+        "feature_GCeeXB": {
+          "type": "feature",
+          "settings": {
+            "feature": "4g Fiber",
+            "brand_value": "yes",
+            "brand_custom_text": "",
+            "competitor_value": "no",
+            "competitor_custom_text": ""
+          }
+        },
+        "feature_NGjwe6": {
+          "type": "feature",
+          "settings": {
+            "feature": "3g Protein",
+            "brand_value": "yes",
+            "brand_custom_text": "",
+            "competitor_value": "no",
+            "competitor_custom_text": ""
+          }
+        },
+        "feature_Jfx9Kn": {
+          "type": "feature",
+          "settings": {
+            "feature": "12 Vitamins & Minerals",
+            "brand_value": "yes",
+            "brand_custom_text": "",
+            "competitor_value": "no",
+            "competitor_custom_text": ""
+          }
+        },
+        "feature_jNaiDG": {
+          "type": "feature",
+          "settings": {
+            "feature": "No Added Sugar (Original Flavor)",
+            "brand_value": "yes",
+            "brand_custom_text": "",
+            "competitor_value": "no",
+            "competitor_custom_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "feature_pUWUk8",
+        "feature_GCeeXB",
+        "feature_NGjwe6",
+        "feature_Jfx9Kn",
+        "feature_jNaiDG"
+      ],
+      "name": "Comparison table",
+      "settings": {
+        "brand_name": "Yammy",
+        "competitor_name": "Gummy Candies & Fruit Snacks",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "rich_text_FegwLY": {
       "type": "rich-text",
       "blocks": {
@@ -501,6 +571,7 @@
     "featured_collection",
     "rich_text_wCA3Xb",
     "ss_image_with_text_24_HCJ9EY",
+    "comparison_table_AbeWNw",
     "rich_text_FegwLY",
     "image_with_text_mXxk48"
   ]
