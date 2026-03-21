@@ -198,7 +198,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Five flavors. One perfect chew. [[Find your new snack obsession.]]",
+            "heading": "Find your new snack || [[obsession.]]",
             "badge_bg": "#fcc86c",
             "badge_border": "#511d29",
             "badge_text": "#511d29",
@@ -206,10 +206,19 @@
             "letter_spacing": -2,
             "heading_size": "h0"
           }
+        },
+        "text_bgKd7V": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Five flavors. One perfect chew.</p>",
+            "accent_color": "#ee9441",
+            "font_size": 28
+          }
         }
       },
       "block_order": [
-        "heading"
+        "heading",
+        "text_bgKd7V"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -271,7 +280,7 @@
           "settings": {
             "text": "<p>Minimally processed. Maximally delicious.</p>",
             "accent_color": "#ee9441",
-            "font_size": 32
+            "font_size": 28
           }
         }
       },
