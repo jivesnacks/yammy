@@ -295,6 +295,7 @@
         "item_kF3jHM": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/SweetPotato.png",
             "heading": "<h3>Everything starts with a sweet potato</h3>",
             "text": "<p>Selected for its fragrant flavor and sweetness</p>"
           }
@@ -302,6 +303,7 @@
         "item_HXJdkw": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/SweetPotatoStrip.png",
             "heading": "<h3>Cut into snack-size strips</h3>",
             "text": ""
           }
@@ -309,6 +311,7 @@
         "item_zAx98Q": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/DriedSweetPotato.png",
             "heading": "<h3>Baked to caramelized perfection</h3>",
             "text": ""
           }
