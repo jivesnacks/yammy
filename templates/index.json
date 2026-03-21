@@ -296,7 +296,7 @@
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/SweetPotato.png",
-            "heading": "<h3>Everything starts with an Asian sweet potato</h3>",
+            "heading": "<h3>Everything starts with an Asian sweet potato.</h3>",
             "text": ""
           }
         },
@@ -304,7 +304,7 @@
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/SweetPotatoStrip.png",
-            "heading": "<h3>Cut into snack-size strips</h3>",
+            "heading": "<h3>Cut into snack-size strips.</h3>",
             "text": ""
           }
         },
@@ -312,7 +312,7 @@
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/DriedSweetPotato.png",
-            "heading": "<h3>Baked to caramelized perfection</h3>",
+            "heading": "<h3>Baked to caramelized perfection.</h3>",
             "text": ""
           }
         },
@@ -320,7 +320,7 @@
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/KBBQDriedSweetPotato.png",
-            "heading": "<h3>Seasoned with real spices</h3>",
+            "heading": "<h3>Seasoned with real spices.</h3>",
             "text": ""
           }
         }
