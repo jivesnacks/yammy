@@ -15,7 +15,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "CHEW ON SOMETHING [[GOOD]]",
+            "heading": "CHEW ON SOMETHING [[GOOD.]]",
             "heading_size": "h0",
             "badge_bg": "#fcc86c",
             "badge_border": "#511d29",
@@ -26,7 +26,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "SWEET POTATO + REAL SPICES = AN INDULGENCE YOU CAN <span style=\"text-decoration:underline\"><em>ACTUALLY</em></span> FEEL GOOD ABOUT",
+            "text": "SWEET POTATO + REAL SPICES = AN INDULGENCE YOU CAN <span style=\"text-decoration:underline\"><em>ACTUALLY</em></span> FEEL GOOD ABOUT.",
             "text_size": 24,
             "text_style": "body"
           }
@@ -404,10 +404,10 @@
           "type": "heading",
           "settings": {
             "heading": "Get Yammy on || [[repeat.]]",
-            "badge_bg": "#FCC86C",
-            "badge_border": "#511D29",
-            "badge_text": "#511D29",
-            "badge_shadow": "#511D29",
+            "badge_bg": "#fcc86c",
+            "badge_border": "#511d29",
+            "badge_text": "#511d29",
+            "badge_shadow": "#511d29",
             "letter_spacing": 0,
             "heading_size": "h0"
           }
@@ -416,7 +416,7 @@
           "type": "text",
           "settings": {
             "text": "<p>The smartest way to outsmart your daily cravings. Save 15% on every delivery, zero strings attached.</p>",
-            "accent_color": "#EE9441",
+            "accent_color": "#ee9441",
             "font_size": 24
           }
         },
