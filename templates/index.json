@@ -346,7 +346,7 @@
         "item_padding_horizontal_mobile": 0,
         "progress_bar_width": 2,
         "image_item_ratio": "portrait",
-        "image_item_ratio_mobile": "landscape",
+        "image_item_ratio_mobile": "portrait",
         "image_item_radius": 0,
         "image_item_border_thickness": 0,
         "item_heading_custom": true,
