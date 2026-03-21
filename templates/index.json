@@ -397,6 +397,56 @@
         "lazy": true
       }
     },
+    "rich_text_FegwLY": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_r8wQtt": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get Yammy on || [[repeat.]]",
+            "badge_bg": "#FCC86C",
+            "badge_border": "#511D29",
+            "badge_text": "#511D29",
+            "badge_shadow": "#511D29",
+            "letter_spacing": 0,
+            "heading_size": "h0"
+          }
+        },
+        "text_tdQPHi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The smartest way to outsmart your daily cravings. Save 15% on every delivery, zero strings attached.</p>",
+            "accent_color": "#EE9441",
+            "font_size": 24
+          }
+        },
+        "button_7k73Wx": {
+          "type": "button",
+          "settings": {
+            "button_label": "Subscribe & Save",
+            "button_link": "shopify://products/yammy-original-dried-sweet-potato-sticks-5-pack-soft-chewy-asian-snack",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_r8wQtt",
+        "text_tdQPHi",
+        "button_7k73Wx"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "image_with_text_mXxk48": {
       "type": "image-with-text",
       "blocks": {
@@ -451,6 +501,7 @@
     "featured_collection",
     "rich_text_wCA3Xb",
     "ss_image_with_text_24_HCJ9EY",
+    "rich_text_FegwLY",
     "image_with_text_mXxk48"
   ]
 }
