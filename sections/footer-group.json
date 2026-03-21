@@ -24,8 +24,11 @@
         "heading_n87whN": {
           "type": "heading",
           "settings": {
-            "heading": "[[Get in]] on the good stuff",
-            "accent_color": "#ec6608",
+            "heading": "Get in on the [[good stuff]]",
+            "badge_bg": "#fcc86c",
+            "badge_border": "#511d29",
+            "badge_text": "#511d29",
+            "badge_shadow": "#511d29",
             "heading_size": "h0",
             "text_alignment": "left"
           }
