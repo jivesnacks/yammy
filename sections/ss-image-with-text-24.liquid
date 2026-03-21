@@ -236,6 +236,7 @@
   .image-with-text-item-heading-{{ section.id }} * {
     margin: 0;
     width: 100%;
+    font-family: 'Gilroy', sans-serif;
     font-size: {{ item_heading_size_mobile }}px;
     color: {{ item_heading_color }};
     line-height: {{ item_heading_height }}%;
@@ -250,6 +251,7 @@
 
   .image-with-text-item-text-{{ section.id }} * {
     margin: 0;
+    font-family: 'Gilroy', sans-serif;
     font-size: {{ item_text_size_mobile }}px;
     color: {{ item_text_color }};
     line-height: {{ item_text_height }}%;
@@ -496,7 +498,7 @@
     {{ item_heading_font | font_face: font_display: 'swap' }}
 
     .image-with-text-item-heading-{{ section.id }} * {
-      font-family: {{ item_heading_font.family }}, {{ item_heading_font.fallback_families }};
+      font-family: 'Gilroy', {{ item_heading_font.family }}, {{ item_heading_font.fallback_families }};
       font-weight: {{ item_heading_font.weight }};
       font-style: {{ item_heading_font.style }};
     }
@@ -508,7 +510,7 @@
     {{ item_text_font | font_face: font_display: 'swap' }}
 
     .image-with-text-item-text-{{ section.id }} *  {
-      font-family: {{ item_text_font.family }}, {{ item_text_font.fallback_families }};
+      font-family: 'Gilroy', {{ item_text_font.family }}, {{ item_text_font.fallback_families }};
       font-weight: {{ item_text_font.weight }};
       font-style: {{ item_text_font.style }};
     }
@@ -556,6 +558,7 @@
 
         .image-with-text-heading-{{ block.id }} * {
           margin: 0;
+          font-family: 'Gilroy', sans-serif;
           font-size: {{ block.settings.heading_size_mobile }}px;
           color: {{ block.settings.heading_color }};
           line-height: {{ block.settings.heading_height }}%;
@@ -583,7 +586,7 @@
           {{ block.settings.heading_font | font_face: font_display: 'swap' }}
 
           .image-with-text-heading-{{ block.id }} * {
-            font-family: {{ block.settings.heading_font.family }}, {{ block.settings.heading_font.fallback_families }};
+            font-family: 'Gilroy', {{ block.settings.heading_font.family }}, {{ block.settings.heading_font.fallback_families }};
             font-weight: {{ block.settings.heading_font.weight }};
             font-style: {{ block.settings.heading_font.style }};
           }
@@ -601,6 +604,7 @@
 
         .image-with-text-text-{{ block.id }} * {
           margin: 0;
+          font-family: 'Gilroy', sans-serif;
           font-size: {{ block.settings.text_size_mobile }}px;
           color: {{ block.settings.text_color }};
           line-height: {{ block.settings.text_height }}%;
@@ -628,7 +632,7 @@
           {{ block.settings.text_font | font_face: font_display: 'swap' }}
 
           .image-with-text-text-{{ block.id }} * {
-            font-family: {{ block.settings.text_font.family }}, {{ block.settings.text_font.fallback_families }};
+            font-family: 'Gilroy', {{ block.settings.text_font.family }}, {{ block.settings.text_font.fallback_families }};
             font-weight: {{ block.settings.text_font.weight }};
             font-style: {{ block.settings.text_font.style }};
           }
@@ -653,6 +657,7 @@
           gap: 10px;
           width: 100%;
           margin: 0;
+          font-family: 'Gilroy', sans-serif;
           font-size: {{ block.settings.button_size_mobile }}px;
           color: {{ block.settings.button_color }};
           line-height: {{ block.settings.button_height }}%;
@@ -715,7 +720,7 @@
           {{ block.settings.button_font | font_face: font_display: 'swap' }}
 
           .image-with-text-button-{{ block.id }} {
-            font-family: {{ block.settings.button_font.family }}, {{ block.settings.button_font.fallback_families }};
+            font-family: 'Gilroy', {{ block.settings.button_font.family }}, {{ block.settings.button_font.fallback_families }};
             font-weight: {{ block.settings.button_font.weight }};
             font-style: {{ block.settings.button_font.style }};
           }
