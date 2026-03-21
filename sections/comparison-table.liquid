@@ -24,7 +24,7 @@
   }
 {%- endstyle -%}
 
-<div class="comparison-table color-{{ section.settings.color_scheme }} gradient">
+<div class="comparison-table comparison-table--{{ section.id }} color-{{ section.settings.color_scheme }} gradient">
   <div
     class="page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     {% if settings.animations_reveal_on_scroll %}
@@ -36,9 +36,33 @@
         <tr class="comparison-table__header-row">
           <th class="comparison-table__header-cell" scope="col"></th>
           <th class="comparison-table__header-cell comparison-table__header-cell--brand" scope="col">
+            {%- if section.settings.brand_image != blank -%}
+              <div class="comparison-table__header-image">
+                {{
+                  section.settings.brand_image
+                  | image_url: width: 400
+                  | image_tag:
+                    widths: '50, 100, 150, 200, 300, 400',
+                    sizes: '(min-width: 750px) 200px, 100px',
+                    loading: 'lazy'
+                }}
+              </div>
+            {%- endif -%}
             {{- section.settings.brand_name | escape -}}
           </th>
           <th class="comparison-table__header-cell" scope="col">
+            {%- if section.settings.competitor_image != blank -%}
+              <div class="comparison-table__header-image">
+                {{
+                  section.settings.competitor_image
+                  | image_url: width: 400
+                  | image_tag:
+                    widths: '50, 100, 150, 200, 300, 400',
+                    sizes: '(min-width: 750px) 200px, 100px',
+                    loading: 'lazy'
+                }}
+              </div>
+            {%- endif -%}
             {{- section.settings.competitor_name | escape -}}
           </th>
         </tr>
@@ -136,10 +160,20 @@
   },
   "settings": [
     {
+      "type": "image_picker",
+      "id": "brand_image",
+      "label": "Brand image"
+    },
+    {
       "type": "text",
       "id": "brand_name",
       "label": "Brand name",
       "default": "Yammy"
+    },
+    {
+      "type": "image_picker",
+      "id": "competitor_image",
+      "label": "Competitor image"
     },
     {
       "type": "text",
