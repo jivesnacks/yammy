@@ -319,6 +319,7 @@
         "item_QrigmD": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/KBBQDriedSweetPotato.png",
             "heading": "<h3>Seasoned with real spices</h3>",
             "text": ""
           }
