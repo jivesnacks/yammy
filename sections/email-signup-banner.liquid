@@ -2,7 +2,6 @@
 {{ 'component-newsletter.css' | asset_url | stylesheet_tag }}
 {{ 'newsletter-section.css' | asset_url | stylesheet_tag }}
 {{ 'section-email-signup-banner.css' | asset_url | stylesheet_tag }}
-{{ 'component-badge.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   #Banner-{{ section.id }}::after {
@@ -64,27 +63,8 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-            <h2 class="email-signup-banner__heading inline-richtext {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
-              {%- assign heading_parts = block.settings.heading | split: '[[' -%}
-              {%- for part in heading_parts -%}
-                {%- if forloop.first -%}
-                  {%- assign line_parts = part | split: '||' -%}
-                  {%- for line in line_parts -%}
-                    {{ line }}{%- unless forloop.last -%}<br>{%- endunless -%}
-                  {%- endfor -%}
-                {%- else -%}
-                  {%- assign badge_parts = part | split: ']]' -%}
-                  <span class="ybadge-wrap" style="--ybadge-bg: {{ block.settings.badge_bg }}; --ybadge-border: {{ block.settings.badge_border }}; --ybadge-text: {{ block.settings.badge_text }}; --ybadge-shadow: {{ block.settings.badge_shadow }};">
-                    <span class="ybadge-shadow" aria-hidden="true"></span>
-                    <span class="ybadge-back" aria-hidden="true"></span>
-                    <span class="ybadge-front">{{ badge_parts[0] }}</span>
-                  </span>
-                  {%- assign line_parts = badge_parts[1] | split: '||' -%}
-                  {%- for line in line_parts -%}
-                    {{ line }}{%- unless forloop.last -%}<br>{%- endunless -%}
-                  {%- endfor -%}
-                {%- endif -%}
-              {%- endfor -%}
+            <h2 class="email-signup-banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+              {{ block.settings.heading | escape }}
             </h2>
           {%- when 'paragraph' -%}
             <div class="newsletter__subheading rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
@@ -339,7 +319,7 @@
       "limit": 1,
       "settings": [
         {
-          "type": "inline_richtext",
+          "type": "text",
           "id": "heading",
           "default": "t:sections.email-signup-banner.blocks.heading.settings.heading.default",
           "label": "t:sections.email-signup-banner.blocks.heading.settings.heading.label"
@@ -371,38 +351,6 @@
           ],
           "default": "h1",
           "label": "t:sections.all.heading_size.label"
-        },
-        {
-          "type": "header",
-          "content": "Badge style"
-        },
-        {
-          "type": "paragraph",
-          "content": "Wrap words in [[double brackets]] to apply the badge treatment."
-        },
-        {
-          "type": "color",
-          "id": "badge_bg",
-          "label": "Badge background",
-          "default": "#FCC86C"
-        },
-        {
-          "type": "color",
-          "id": "badge_border",
-          "label": "Badge border",
-          "default": "#511D29"
-        },
-        {
-          "type": "color",
-          "id": "badge_text",
-          "label": "Badge text",
-          "default": "#511D29"
-        },
-        {
-          "type": "color",
-          "id": "badge_shadow",
-          "label": "Badge shadow",
-          "default": "#511D29"
         }
       ]
     },

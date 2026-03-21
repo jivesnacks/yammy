@@ -1,5 +1,6 @@
 {{ 'component-newsletter.css' | asset_url | stylesheet_tag }}
 {{ 'newsletter-section.css' | asset_url | stylesheet_tag }}
+{{ 'component-badge.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -61,19 +62,34 @@
           {%- when '@app' -%}
             {% render block %}
           {%- when 'heading' -%}
-            {%- assign highlighted_heading = block.settings.heading
-              | replace: '[[', '<span class="newsletter__accent">'
-              | replace: ']]', '</span>'
-            -%}
             <h2
               class="inline-richtext {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
               {{ block.shopify_attributes }}
-              style="--newsletter-accent-color: {{ block.settings.accent_color }}; text-align: {{ block.settings.text_alignment }};{% if settings.animations_reveal_on_scroll %} --animation-order: {{ forloop.index }};{% endif %}"
+              style="text-align: {{ block.settings.text_alignment }};{% if settings.animations_reveal_on_scroll %} --animation-order: {{ forloop.index }};{% endif %}"
               {% if settings.animations_reveal_on_scroll %}
                 data-cascade
               {% endif %}
             >
-              {{ highlighted_heading }}
+              {%- assign heading_parts = block.settings.heading | split: '[[' -%}
+              {%- for part in heading_parts -%}
+                {%- if forloop.first -%}
+                  {%- assign line_parts = part | split: '||' -%}
+                  {%- for line in line_parts -%}
+                    {{ line }}{%- unless forloop.last -%}<br>{%- endunless -%}
+                  {%- endfor -%}
+                {%- else -%}
+                  {%- assign badge_parts = part | split: ']]' -%}
+                  <span class="ybadge-wrap" style="--ybadge-bg: {{ block.settings.badge_bg }}; --ybadge-border: {{ block.settings.badge_border }}; --ybadge-text: {{ block.settings.badge_text }}; --ybadge-shadow: {{ block.settings.badge_shadow }};">
+                    <span class="ybadge-shadow" aria-hidden="true"></span>
+                    <span class="ybadge-back" aria-hidden="true"></span>
+                    <span class="ybadge-front">{{ badge_parts[0] }}</span>
+                  </span>
+                  {%- assign line_parts = badge_parts[1] | split: '||' -%}
+                  {%- for line in line_parts -%}
+                    {{ line }}{%- unless forloop.last -%}<br>{%- endunless -%}
+                  {%- endfor -%}
+                {%- endif -%}
+              {%- endfor -%}
             </h2>
           {%- when 'paragraph' -%}
             <div
@@ -286,13 +302,35 @@
           "id": "heading",
           "default": "t:sections.newsletter.blocks.heading.settings.heading.default",
           "label": "t:sections.newsletter.blocks.heading.settings.heading.label",
-          "info": "Wrap colored words in [[double brackets]]."
+          "info": "Wrap words in [[double brackets]] to apply the badge treatment. Use || for line breaks."
+        },
+        {
+          "type": "header",
+          "content": "Badge style"
         },
         {
           "type": "color",
-          "id": "accent_color",
-          "label": "Accent color",
-          "default": "#EE9441"
+          "id": "badge_bg",
+          "label": "Badge background",
+          "default": "#FCC86C"
+        },
+        {
+          "type": "color",
+          "id": "badge_border",
+          "label": "Badge border",
+          "default": "#511D29"
+        },
+        {
+          "type": "color",
+          "id": "badge_text",
+          "label": "Badge text",
+          "default": "#511D29"
+        },
+        {
+          "type": "color",
+          "id": "badge_shadow",
+          "label": "Badge shadow",
+          "default": "#511D29"
         },
         {
           "type": "select",
