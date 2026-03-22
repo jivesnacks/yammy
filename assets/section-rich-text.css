@@ -1,5 +1,36 @@
 .rich-text {
   z-index: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.rich-text__stars {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.rich-text__star {
+  position: absolute;
+}
+
+.rich-text__star--1 {
+  width: var(--star-size);
+  height: var(--star-size);
+  transform: rotate(-15deg);
+}
+
+.rich-text__star--2 {
+  width: var(--star-size-medium);
+  height: var(--star-size-medium);
+  transform: rotate(10deg);
+}
+
+.rich-text__star--3 {
+  width: var(--star-size-small);
+  height: var(--star-size-small);
+  transform: rotate(25deg);
 }
 
 .rich-text__wrapper {

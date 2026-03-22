@@ -17,6 +17,17 @@
 
 <div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
   <div class="rich-text content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
+    {%- if section.settings.show_stars and section.settings.star_image != blank -%}
+      {%- assign star_size = section.settings.star_size -%}
+      {%- assign star_size_medium = star_size | times: 0.75 | round: 0 -%}
+      {%- assign star_size_small = star_size | times: 0.55 | round: 0 -%}
+      {%- assign star_src_size = star_size | times: 2 -%}
+      <div class="rich-text__stars" aria-hidden="true" style="--star-size: {{ star_size }}px; --star-size-medium: {{ star_size_medium }}px; --star-size-small: {{ star_size_small }}px;">
+        <img class="rich-text__star rich-text__star--1" src="{{ section.settings.star_image | image_url: width: star_src_size }}" alt="" loading="lazy" style="top: {{ section.settings.star_1_top }}%; left: {{ section.settings.star_1_left }}%;">
+        <img class="rich-text__star rich-text__star--2" src="{{ section.settings.star_image | image_url: width: star_src_size }}" alt="" loading="lazy" style="top: {{ section.settings.star_2_top }}%; left: {{ section.settings.star_2_left }}%;">
+        <img class="rich-text__star rich-text__star--3" src="{{ section.settings.star_image | image_url: width: star_src_size }}" alt="" loading="lazy" style="top: {{ section.settings.star_3_top }}%; left: {{ section.settings.star_3_left }}%;">
+      </div>
+    {%- endif -%}
     <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %}">
       <div class="rich-text__blocks {{ section.settings.content_alignment }}">
         {%- for block in section.blocks -%}
@@ -178,6 +189,103 @@
       "id": "full_width",
       "default": true,
       "label": "t:sections.rich-text.settings.full_width.label"
+    },
+    {
+      "type": "header",
+      "content": "Decorative icons"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_stars",
+      "default": false,
+      "label": "Show decorative icons"
+    },
+    {
+      "type": "image_picker",
+      "id": "star_image",
+      "label": "Decoration image"
+    },
+    {
+      "type": "range",
+      "id": "star_size",
+      "min": 10,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Decoration size",
+      "default": 24
+    },
+    {
+      "type": "header",
+      "content": "Icon 1 position"
+    },
+    {
+      "type": "range",
+      "id": "star_1_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Top",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "star_1_left",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Left",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Icon 2 position"
+    },
+    {
+      "type": "range",
+      "id": "star_2_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Top",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "star_2_left",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Left",
+      "default": 82
+    },
+    {
+      "type": "header",
+      "content": "Icon 3 position"
+    },
+    {
+      "type": "range",
+      "id": "star_3_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Top",
+      "default": 70
+    },
+    {
+      "type": "range",
+      "id": "star_3_left",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Left",
+      "default": 5
     },
     {
       "type": "header",
