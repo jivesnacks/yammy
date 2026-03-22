@@ -225,6 +225,15 @@
         "content_alignment": "center",
         "color_scheme": "scheme-1",
         "full_width": true,
+        "show_stars": true,
+        "star_image": "shopify://shop_images/YammyStar.svg",
+        "star_size": 48,
+        "star_1_top": 15,
+        "star_1_left": 8,
+        "star_2_top": 10,
+        "star_2_left": 82,
+        "star_3_top": 70,
+        "star_3_left": 5,
         "padding_top": 40,
         "padding_bottom": 0
       }
@@ -294,6 +303,14 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
+        "show_stars": false,
+        "star_size": 24,
+        "star_1_top": 15,
+        "star_1_left": 8,
+        "star_2_top": 10,
+        "star_2_left": 82,
+        "star_3_top": 70,
+        "star_3_left": 5,
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -431,6 +448,14 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
+        "show_stars": false,
+        "star_size": 24,
+        "star_1_top": 15,
+        "star_1_left": 8,
+        "star_2_top": 10,
+        "star_2_left": 82,
+        "star_3_top": 70,
+        "star_3_left": 5,
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -560,6 +585,14 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
+        "show_stars": false,
+        "star_size": 24,
+        "star_1_top": 15,
+        "star_1_left": 8,
+        "star_2_top": 10,
+        "star_2_left": 82,
+        "star_3_top": 70,
+        "star_3_left": 5,
         "padding_top": 40,
         "padding_bottom": 52
       }
