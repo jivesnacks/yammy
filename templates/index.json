@@ -509,7 +509,7 @@
         "icon_size": 48,
         "check_color": "#2e7d32",
         "cross_color": "#c62828",
-        "color_scheme": "",
+        "color_scheme": "scheme-d01e4061-0369-4979-bf0a-70fd04a83492",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -520,7 +520,7 @@
         "heading_r8wQtt": {
           "type": "heading",
           "settings": {
-            "heading": "Get Yammy on || [[repeat.]]",
+            "heading": "Get Yammy on || [[repeat]]",
             "badge_bg": "#fcc86c",
             "badge_border": "#511d29",
             "badge_text": "#511d29",
