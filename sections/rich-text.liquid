@@ -22,7 +22,6 @@
       <div class="rich-text__stars" aria-hidden="true">
         <img class="rich-text__star" src="{{ section.settings.star_image | image_url: width: star_src_size }}" alt="" loading="lazy" style="top: {{ section.settings.star_1_top }}%; left: {{ section.settings.star_1_left }}%; width: {{ section.settings.star_size }}px; height: {{ section.settings.star_size }}px;">
         <img class="rich-text__star" src="{{ section.settings.star_image | image_url: width: star_src_size }}" alt="" loading="lazy" style="top: {{ section.settings.star_2_top }}%; left: {{ section.settings.star_2_left }}%; width: {{ section.settings.star_size }}px; height: {{ section.settings.star_size }}px;">
-        <img class="rich-text__star" src="{{ section.settings.star_image | image_url: width: star_src_size }}" alt="" loading="lazy" style="top: {{ section.settings.star_3_top }}%; left: {{ section.settings.star_3_left }}%; width: {{ section.settings.star_size }}px; height: {{ section.settings.star_size }}px;">
       </div>
     {%- endif -%}
     <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %}">
@@ -259,30 +258,6 @@
       "unit": "%",
       "label": "Left",
       "default": 82
-    },
-    {
-      "type": "header",
-      "content": "Icon 3"
-    },
-    {
-      "type": "range",
-      "id": "star_3_top",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "%",
-      "label": "Top",
-      "default": 70
-    },
-    {
-      "type": "range",
-      "id": "star_3_left",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "%",
-      "label": "Left",
-      "default": 5
     },
     {
       "type": "header",
