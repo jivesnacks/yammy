@@ -37,7 +37,7 @@
           "type": "paragraph",
           "settings": {
             "text": "<p>New flavors. Exclusive offers. Sign up and stay snacking.</p>",
-            "font_size": 20,
+            "font_size": 24,
             "text_alignment": "left"
           }
         },
