@@ -33,6 +33,12 @@
     --banner-box-max-width: {{ section.settings.content_box_width }}rem;
   }
 
+  @media screen and (max-width: 749px) {
+    #Banner-{{ section.id }} .banner__media > img {
+      object-position: {{ section.settings.mobile_image_position_x }}% center;
+    }
+  }
+
   {%- if request.page_type == 'index' and section.index == 1 -%}
     #Banner-{{ section.id }} {
       --banner-home-left-slant-height: {{ section.settings.home_slant_left_height }}px;
@@ -390,7 +396,17 @@
       "id": "stack_images_on_mobile",
       "default": true,
       "label": "t:sections.image-banner.settings.stack_images_on_mobile.label"
-    },    
+    },
+    {
+      "type": "range",
+      "id": "mobile_image_position_x",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Mobile image horizontal position",
+      "default": 50
+    },
     {
       "type": "select",
       "id": "mobile_content_alignment",
