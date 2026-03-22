@@ -15,7 +15,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Chew on something [[good.]]",
+            "heading": "Chew on something [[good]]",
             "heading_size": "h0",
             "badge_bg": "#fcc86c",
             "badge_border": "#511d29",
@@ -198,7 +198,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Find your new snack || [[obsession.]]",
+            "heading": "Find your new snack || [[obsession]]",
             "badge_bg": "#fcc86c",
             "badge_border": "#511d29",
             "badge_text": "#511d29",
@@ -266,7 +266,7 @@
         "heading_9kFQDP": {
           "type": "heading",
           "settings": {
-            "heading": "Meet nature's || [[gummy candy.]]",
+            "heading": "Meet nature's || [[gummy candy]]",
             "badge_bg": "#fcc86c",
             "badge_border": "#511d29",
             "badge_text": "#511d29",
@@ -397,6 +397,44 @@
         "lazy": true
       }
     },
+    "rich_text_r4La6H": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_H3nF6M": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ditch the || [[sugar crash]]",
+            "badge_bg": "#FCC86C",
+            "badge_border": "#511D29",
+            "badge_text": "#511D29",
+            "badge_shadow": "#511D29",
+            "letter_spacing": -2,
+            "heading_size": "h0"
+          }
+        },
+        "text_9fqNm9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Swap empty calories for <span style=\"text-decoration:underline\">real</span> nutrition and all-day energy.</p>",
+            "accent_color": "#EE9441",
+            "font_size": 28
+          }
+        }
+      },
+      "block_order": [
+        "heading_H3nF6M",
+        "text_9fqNm9"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "comparison_table_AbeWNw": {
       "type": "comparison-table",
       "blocks": {
@@ -469,6 +507,8 @@
         "header_font_size": 20,
         "font_size": 20,
         "icon_size": 48,
+        "check_color": "#2e7d32",
+        "cross_color": "#c62828",
         "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
@@ -578,6 +618,7 @@
     "featured_collection",
     "rich_text_wCA3Xb",
     "ss_image_with_text_24_HCJ9EY",
+    "rich_text_r4La6H",
     "comparison_table_AbeWNw",
     "rich_text_FegwLY",
     "image_with_text_mXxk48"
