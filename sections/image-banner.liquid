@@ -75,6 +75,7 @@
     <div class="banner__decorations{% unless section.settings.show_decorations_mobile %} banner__decorations--hide-mobile{% endunless %}" aria-hidden="true">
       <img class="banner__decoration" src="{{ section.settings.decoration_image | image_url: width: deco_src_size }}" alt="" loading="lazy" style="top: {{ section.settings.decoration_1_top }}%; left: {{ section.settings.decoration_1_left }}%; width: {{ section.settings.decoration_size }}px; height: {{ section.settings.decoration_size }}px;">
       <img class="banner__decoration" src="{{ section.settings.decoration_image | image_url: width: deco_src_size }}" alt="" loading="lazy" style="top: {{ section.settings.decoration_2_top }}%; left: {{ section.settings.decoration_2_left }}%; width: {{ section.settings.decoration_size }}px; height: {{ section.settings.decoration_size }}px;">
+      <img class="banner__decoration" src="{{ section.settings.decoration_image | image_url: width: deco_src_size }}" alt="" loading="lazy" style="top: {{ section.settings.decoration_3_top }}%; left: {{ section.settings.decoration_3_left }}%; width: {{ section.settings.decoration_size }}px; height: {{ section.settings.decoration_size }}px;">
     </div>
   {%- endif -%}
   {%- if request.page_type == 'index' and section.index == 1 -%}
@@ -494,6 +495,30 @@
       "unit": "%",
       "label": "Left",
       "default": 82
+    },
+    {
+      "type": "header",
+      "content": "Icon 3"
+    },
+    {
+      "type": "range",
+      "id": "decoration_3_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Top",
+      "default": 70
+    },
+    {
+      "type": "range",
+      "id": "decoration_3_left",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Left",
+      "default": 5
     },
     {
       "type": "header",
