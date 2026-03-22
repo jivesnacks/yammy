@@ -23,6 +23,10 @@
     }
   }
 
+  .comparison-table--{{ section.id }} .comparison-table__header-cell {
+    font-size: {{ section.settings.header_font_size | times: 0.1 }}rem;
+  }
+
   .comparison-table--{{ section.id }} .comparison-table__cell {
     font-size: {{ section.settings.font_size | times: 0.1 }}rem;
   }
@@ -216,6 +220,16 @@
       "unit": "px",
       "label": "Value column width (desktop)",
       "default": 200
+    },
+    {
+      "type": "range",
+      "id": "header_font_size",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Header font size",
+      "default": 14
     },
     {
       "type": "range",
