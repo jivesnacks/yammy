@@ -19,7 +19,7 @@
   <div class="rich-text content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
     {%- if section.settings.show_stars and section.settings.star_image != blank -%}
       {%- assign star_src_size = section.settings.star_size | times: 2 -%}
-      <div class="rich-text__stars" aria-hidden="true">
+      <div class="rich-text__stars{% unless section.settings.show_stars_mobile %} rich-text__stars--hide-mobile{% endunless %}" aria-hidden="true">
         <img class="rich-text__star" src="{{ section.settings.star_image | image_url: width: star_src_size }}" alt="" loading="lazy" style="top: {{ section.settings.star_1_top }}%; left: {{ section.settings.star_1_left }}%; width: {{ section.settings.star_size }}px; height: {{ section.settings.star_size }}px;">
         <img class="rich-text__star" src="{{ section.settings.star_image | image_url: width: star_src_size }}" alt="" loading="lazy" style="top: {{ section.settings.star_2_top }}%; left: {{ section.settings.star_2_left }}%; width: {{ section.settings.star_size }}px; height: {{ section.settings.star_size }}px;">
       </div>
@@ -195,6 +195,12 @@
       "id": "show_stars",
       "default": false,
       "label": "Show decorative icons"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_stars_mobile",
+      "default": true,
+      "label": "Show on mobile"
     },
     {
       "type": "image_picker",

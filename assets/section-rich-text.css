@@ -15,6 +15,12 @@
   position: absolute;
 }
 
+@media screen and (max-width: 749px) {
+  .rich-text__stars--hide-mobile {
+    display: none;
+  }
+}
+
 .rich-text__wrapper {
   display: flex;
   justify-content: center;
