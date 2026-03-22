@@ -403,7 +403,17 @@
         "feature_pUWUk8": {
           "type": "feature",
           "settings": {
-            "feature": "Main ingredient",
+            "feature": "Main Ingredient",
+            "brand_value": "custom",
+            "brand_custom_text": "Real sweet potatoes",
+            "competitor_value": "custom",
+            "competitor_custom_text": "Sugars and sweeteners"
+          }
+        },
+        "feature_jNaiDG": {
+          "type": "feature",
+          "settings": {
+            "feature": "No Added Sugar",
             "brand_value": "yes",
             "brand_custom_text": "",
             "competitor_value": "no",
@@ -439,33 +449,24 @@
             "competitor_value": "no",
             "competitor_custom_text": ""
           }
-        },
-        "feature_jNaiDG": {
-          "type": "feature",
-          "settings": {
-            "feature": "No Added Sugar (Original Flavor)",
-            "brand_value": "yes",
-            "brand_custom_text": "",
-            "competitor_value": "no",
-            "competitor_custom_text": ""
-          }
         }
       },
       "block_order": [
         "feature_pUWUk8",
+        "feature_jNaiDG",
         "feature_GCeeXB",
         "feature_NGjwe6",
-        "feature_Jfx9Kn",
-        "feature_jNaiDG"
+        "feature_Jfx9Kn"
       ],
       "name": "Comparison table",
       "settings": {
         "brand_image": "shopify://shop_images/YammyOriginalComparison.png",
-        "brand_name": "Yammy (Original Flavor)",
+        "brand_name": "Yammy Sweet Potato Sticks (Original)",
         "competitor_image": "shopify://shop_images/GummyCandyComparison.png",
         "competitor_name": "Gummy Candies & Fruit Snacks",
-        "feature_column_width": 200,
-        "column_width": 150,
+        "feature_column_width": 150,
+        "column_width": 200,
+        "header_font_size": 20,
         "font_size": 20,
         "icon_size": 48,
         "color_scheme": "",
