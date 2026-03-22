@@ -42,6 +42,22 @@
     width: {{ section.settings.icon_size | times: 0.06 }}rem;
     height: {{ section.settings.icon_size | times: 0.06 }}rem;
   }
+
+  .comparison-table--{{ section.id }} .comparison-table__check {
+    background-color: {{ section.settings.check_color | color_modify: 'alpha', 0.1 }};
+  }
+
+  .comparison-table--{{ section.id }} .comparison-table__check svg {
+    color: {{ section.settings.check_color }};
+  }
+
+  .comparison-table--{{ section.id }} .comparison-table__cross {
+    background-color: {{ section.settings.cross_color | color_modify: 'alpha', 0.1 }};
+  }
+
+  .comparison-table--{{ section.id }} .comparison-table__cross svg {
+    color: {{ section.settings.cross_color }};
+  }
 {%- endstyle -%}
 
 <div class="comparison-table comparison-table--{{ section.id }} color-{{ section.settings.color_scheme }} gradient">
@@ -250,6 +266,18 @@
       "unit": "px",
       "label": "Icon size",
       "default": 24
+    },
+    {
+      "type": "color",
+      "id": "check_color",
+      "label": "Checkmark color",
+      "default": "#2e7d32"
+    },
+    {
+      "type": "color",
+      "id": "cross_color",
+      "label": "Cross color",
+      "default": "#c62828"
     },
     {
       "type": "color_scheme",
