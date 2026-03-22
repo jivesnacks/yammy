@@ -59,6 +59,7 @@
         "content_box_width": 48,
         "color_scheme": "scheme-1",
         "stack_images_on_mobile": false,
+        "mobile_image_position_x": 95,
         "mobile_content_alignment": "center",
         "show_text_below": true,
         "show_decorations": true,
