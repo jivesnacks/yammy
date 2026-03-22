@@ -466,6 +466,8 @@
         "competitor_name": "Gummy Candies & Fruit Snacks",
         "feature_column_width": 200,
         "column_width": 150,
+        "font_size": 20,
+        "icon_size": 48,
         "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
