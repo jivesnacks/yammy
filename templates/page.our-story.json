@@ -12,6 +12,11 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "title_alignment": "center",
+        "badge_bg": "#fcc86c",
+        "badge_border": "#511d29",
+        "badge_text": "#511d29",
+        "badge_shadow": "#511d29",
         "padding_top": 28,
         "padding_bottom": 28
       }
