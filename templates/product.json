@@ -59,9 +59,18 @@
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Materials",
-            "icon": "leather",
-            "content": "",
+            "heading": "Ingredients",
+            "icon": "leaf",
+            "content": "{{ block.settings.page.metafields.custom.ingredients | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "collapsible-row-3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Storage Instructions",
+            "icon": "question_mark",
+            "content": "<p>Store in a cool, dry place away from light.</p><p>Must be refrigerated after opening to maintain safety.</p>",
             "page": ""
           }
         },
@@ -70,25 +79,7 @@
           "settings": {
             "heading": "Shipping & Returns",
             "icon": "truck",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Dimensions",
-            "icon": "ruler",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Care Instructions",
-            "icon": "heart",
-            "content": "",
+            "content": "<p><strong>Shipping:</strong> Free shipping over $35. Arrives within 3-5 business days.<br/><br/><strong>Returns: </strong>Your satisfaction is guaranteed. Return for any reason, no questions asked.</p>",
             "page": ""
           }
         },
@@ -109,9 +100,8 @@
         "buy_buttons",
         "description",
         "collapsible-row-0",
-        "collapsible-row-1",
-        "collapsible-row-2",
         "collapsible-row-3",
+        "collapsible-row-1",
         "share"
       ],
       "settings": {
