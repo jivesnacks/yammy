@@ -23,18 +23,19 @@
           "type": "heading",
           "settings": {
             "heading": "Growing up with [[junk food]]",
-            "badge_bg": "#FCC86C",
-            "badge_border": "#511D29",
-            "badge_text": "#511D29",
-            "badge_shadow": "#511D29",
+            "badge_bg": "#fcc86c",
+            "badge_border": "#511d29",
+            "badge_text": "#511d29",
+            "badge_shadow": "#511d29",
             "heading_size": "h0"
           }
         },
         "text_kEQGxb": {
           "type": "text",
           "settings": {
-            "text": "<p>It's nice to meet you! We're Dennis and Stephanie, co-founders of Yammy.</p><p>We grew up with junk food - our favorites were Reeses and Snickers. We loved the taste, but hated the sugar crash afterward.<br/><br/>When we started looking for a healthier option that actually delivered that same satisfaction, we hit a wall. It just didn't exist. So, we decided to make it ourselves.</p>",
-            "text_style": "body"
+            "text": "<p>It's nice to meet you! We're Dennis and Stephanie, co-founders of Yammy.</p><p>We loved sweets growing up (Reeses and Snickers, anyone?), but hated the sugar crash afterward.</p><p>When we started looking for a healthier option, we hit a wall. So, we decided to make it ourselves.</p>",
+            "text_style": "body",
+            "font_size": 20
           }
         }
       },
@@ -68,10 +69,10 @@
           "type": "heading",
           "settings": {
             "heading": "Inspired by ||  [[Asian tradition]]",
-            "badge_bg": "#FCC86C",
-            "badge_border": "#511D29",
-            "badge_text": "#511D29",
-            "badge_shadow": "#511D29",
+            "badge_bg": "#fcc86c",
+            "badge_border": "#511d29",
+            "badge_text": "#511d29",
+            "badge_shadow": "#511d29",
             "letter_spacing": 0,
             "heading_size": "h0"
           }
@@ -80,7 +81,7 @@
           "type": "text",
           "settings": {
             "text": "<p>It turns out, the answer wasn't hiding in some high-tech food lab. We found our inspiration in a snack my mom grew up eating: dried sweet potatoes. </p><p>People have been enjoying this simple, single-ingredient treat for hundreds of years because of its natural sweetness and the clean, steady energy it gives.</p>",
-            "accent_color": "#EE9441",
+            "accent_color": "#ee9441",
             "font_size": 20
           }
         }
@@ -114,10 +115,10 @@
           "type": "heading",
           "settings": {
             "heading": "Meet [[Yammy]]",
-            "badge_bg": "#FCC86C",
-            "badge_border": "#511D29",
-            "badge_text": "#511D29",
-            "badge_shadow": "#511D29",
+            "badge_bg": "#fcc86c",
+            "badge_border": "#511d29",
+            "badge_text": "#511d29",
+            "badge_shadow": "#511d29",
             "letter_spacing": 0,
             "heading_size": "h0"
           }
@@ -126,7 +127,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
-            "accent_color": "#EE9441",
+            "accent_color": "#ee9441",
             "font_size": 15
           }
         }
