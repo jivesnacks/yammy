@@ -69,6 +69,15 @@
             "page": ""
           }
         },
+        "collapsible_tab_gFBn9B": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Allergens",
+            "icon": "nut_free",
+            "content": "{{ product.metafields.shopify[\"allergen-information\"] | metafield_tag: field: 'label' }}",
+            "page": ""
+          }
+        },
         "collapsible-row-3": {
           "type": "collapsible_tab",
           "settings": {
@@ -105,6 +114,7 @@
         "buy_buttons",
         "description",
         "collapsible-row-0",
+        "collapsible_tab_gFBn9B",
         "collapsible-row-3",
         "collapsible-row-1",
         "share"
