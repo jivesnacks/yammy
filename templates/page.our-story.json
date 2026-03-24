@@ -113,50 +113,50 @@
         "padding_bottom": 52
       }
     },
-    "rich_text_qRhitw": {
-      "type": "rich-text",
+    "image_with_text_KMhpeG": {
+      "type": "image-with-text",
       "blocks": {
-        "heading_GJQBDn": {
+        "heading_fDq6TK": {
           "type": "heading",
           "settings": {
             "heading": "[[Meet Yammy]]",
-            "badge_bg": "#fcc86c",
-            "badge_border": "#511d29",
-            "badge_text": "#511d29",
-            "badge_shadow": "#511d29",
-            "letter_spacing": 0,
+            "badge_bg": "#FCC86C",
+            "badge_border": "#511D29",
+            "badge_text": "#511D29",
+            "badge_shadow": "#511D29",
             "heading_size": "h0"
           }
         },
-        "text_rYTwHC": {
+        "text_eUxj7p": {
           "type": "text",
           "settings": {
             "text": "<p>We took the clean energy of sweet potato and added bold, exciting flavors from Snickerdoodle to Sriracha. Finally, a craveworthy treat that is actually good for you, or as we like to call it, Yammy.</p>",
-            "accent_color": "#ee9441",
+            "text_style": "body",
             "font_size": 20
           }
         }
       },
       "block_order": [
-        "heading_GJQBDn",
-        "text_rYTwHC"
+        "heading_fDq6TK",
+        "text_eUxj7p"
       ],
-      "name": "t:sections.rich-text.presets.name",
+      "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "show_stars": false,
-        "show_stars_mobile": false,
-        "star_image": "shopify://shop_images/YammyStar.svg",
-        "star_size": 36,
-        "star_1_top": 15,
-        "star_1_left": 8,
-        "star_2_top": 10,
-        "star_2_left": 82,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "image": "shopify://shop_images/YammyCharacter.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "use_custom_image_border_thickness": false,
+        "custom_image_border_thickness": 1,
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "featured_collection_V3T9EN": {
@@ -196,7 +196,7 @@
     "main",
     "image_with_text_XPBmPz",
     "rich_text_PWKjHz",
-    "rich_text_qRhitw",
+    "image_with_text_KMhpeG",
     "featured_collection_V3T9EN"
   ]
 }
