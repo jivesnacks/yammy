@@ -90,7 +90,7 @@
         "collapsible-row-1": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Shipping",
+            "heading": "Free Shipping Over $25",
             "icon": "truck",
             "content": "<p>Free shipping over $25. Arrives within 3-5 business days.</p>",
             "page": ""
