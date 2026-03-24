@@ -1,4 +1,5 @@
 {{ 'section-main-page.css' | asset_url | stylesheet_tag }}
+{{ 'component-badge.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -15,8 +16,12 @@
 {%- endstyle -%}
 
 <div class="page-width page-width--narrow section-{{ section.id }}-padding">
-  <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-    {{ page.title | escape }}
+  <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}" style="text-align: {{ section.settings.title_alignment }};">
+    <span class="ybadge-wrap" style="--ybadge-bg: {{ section.settings.badge_bg }}; --ybadge-border: {{ section.settings.badge_border }}; --ybadge-text: {{ section.settings.badge_text }}; --ybadge-shadow: {{ section.settings.badge_shadow }};">
+      <span class="ybadge-shadow" aria-hidden="true"></span>
+      <span class="ybadge-back" aria-hidden="true"></span>
+      <span class="ybadge-front">{{ page.title | escape }}</span>
+    </span>
   </h1>
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     {{ page.content }}
@@ -29,6 +34,54 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "select",
+      "id": "title_alignment",
+      "label": "Page name alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "Badge colors"
+    },
+    {
+      "type": "color",
+      "id": "badge_bg",
+      "label": "Badge background",
+      "default": "#FCC86C"
+    },
+    {
+      "type": "color",
+      "id": "badge_border",
+      "label": "Badge border",
+      "default": "#511D29"
+    },
+    {
+      "type": "color",
+      "id": "badge_text",
+      "label": "Badge text",
+      "default": "#511D29"
+    },
+    {
+      "type": "color",
+      "id": "badge_shadow",
+      "label": "Badge shadow",
+      "default": "#511D29"
+    },
     {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"
