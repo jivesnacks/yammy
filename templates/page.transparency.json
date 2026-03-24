@@ -20,9 +20,109 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "rich_text_UPPXCH": {
+      "type": "rich-text",
+      "blocks": {
+        "text_iffBhj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Yammy, we believe that clean food starts with transparency. Here's what you need to know about lead levels in our sweet potatoes.</p><p>Lead is a naturally occurring element in the Earth’s crust (found in soil, water, and air everywhere on the planet), and as a root vegetable, it is very difficult for any sweet potato product to have \"zero\" lead. The goal is to source from soil that has the lowest possible background levels.</p>",
+            "accent_color": "#EE9441",
+            "font_size": 20
+          }
+        }
+      },
+      "block_order": [
+        "text_iffBhj"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "show_stars": false,
+        "show_stars_mobile": true,
+        "star_size": 24,
+        "star_1_top": 15,
+        "star_1_left": 8,
+        "star_2_top": 10,
+        "star_2_left": 82,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "comparison_table_8yTNDj": {
+      "type": "comparison-table",
+      "blocks": {
+        "feature_76DMYW": {
+          "type": "feature",
+          "settings": {
+            "feature": "Lead in Raw Sweet Potatoes",
+            "brand_value": "custom",
+            "brand_custom_text": "3-5 ppb [1]",
+            "competitor_value": "custom",
+            "competitor_custom_text": "10-20 ppb [2]"
+          }
+        }
+      },
+      "block_order": [
+        "feature_76DMYW"
+      ],
+      "name": "Comparison table",
+      "settings": {
+        "brand_name": "Yammy",
+        "competitor_name": "Industry Average",
+        "feature_column_width": 200,
+        "column_width": 200,
+        "header_font_size": 20,
+        "font_size": 20,
+        "icon_size": 36,
+        "check_color": "#2e7d32",
+        "cross_color": "#c62828",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_wjKhGV": {
+      "type": "rich-text",
+      "blocks": {
+        "text_fJUypR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>[1] Results reflect testing of representative samples at an independent third-party laboratory testing via ICP-MS of the finished product.</p><p>[2] Major studies by the FDA and Healthy Babies Bright Futures (<a href=\"https://hbbf.org/sites/default/files/2023-03/BabyFoodReport2022_R11_Web.pdf\" target=\"_blank\">pg. 52</a>) found that 100% of sweet potato products tested contained lead, with average levels ranging from 10–20 ppb (parts per billion). Our raw sweet potatoes test at a fraction of that amount.</p>",
+            "accent_color": "#EE9441",
+            "font_size": 20
+          }
+        }
+      },
+      "block_order": [
+        "text_fJUypR"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "show_stars": false,
+        "show_stars_mobile": true,
+        "star_size": 24,
+        "star_1_top": 15,
+        "star_1_left": 8,
+        "star_2_top": 10,
+        "star_2_left": 82,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "rich_text_UPPXCH",
+    "comparison_table_8yTNDj",
+    "rich_text_wjKhGV"
   ]
 }
