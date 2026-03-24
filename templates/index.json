@@ -26,7 +26,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "Sweet potato + real spices = an indulgence you can actually feel good about.",
+            "text": "Sweet potato + real spices = an indulgence you can <span style=\"text-decoration:underline\">actually</span> feel good about.",
             "text_size": 22,
             "text_style": "body"
           }
