@@ -99,7 +99,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "scheme-c94e40b1-0e10-4a7c-8fdc-116e3460adf6",
         "full_width": true,
         "show_stars": true,
         "show_stars_mobile": false,
@@ -145,7 +145,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "full_width": true,
         "show_stars": false,
         "show_stars_mobile": false,
