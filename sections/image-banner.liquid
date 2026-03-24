@@ -181,7 +181,7 @@
               {%- endfor -%}
             </h2>
           {%- when 'text' -%}
-            <div class="banner__text rte {{ block.settings.text_style }}" style="font-family: 'Landslide', sans-serif; font-size: {{ block.settings.text_size }}px;" {{ block.shopify_attributes }}>
+            <div class="banner__text rte {{ block.settings.text_style }}" style="font-size: {{ block.settings.text_size }}px;" {{ block.shopify_attributes }}>
               <p>{{ block.settings.text }}</p>
             </div>
           {%- when 'buttons' -%}
