@@ -15,9 +15,101 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "image_with_text_XPBmPz": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_H4iQWC": {
+          "type": "heading",
+          "settings": {
+            "heading": "Growing Up with [[Junk Food]]",
+            "badge_bg": "#FCC86C",
+            "badge_border": "#511D29",
+            "badge_text": "#511D29",
+            "badge_shadow": "#511D29",
+            "heading_size": "h1"
+          }
+        },
+        "text_kEQGxb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Stephanie and I grew up with junk food - our favorites were Reeses and Snickers. We loved the taste, but hated the sugar crash afterward.<br/><br/>When we started looking for a healthier option that actually delivered that same satisfaction, we hit a wall. It just didn't exist. So, we decided to make it ourselves.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_H4iQWC",
+        "text_kEQGxb"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/DennisStephanie.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "use_custom_image_border_thickness": false,
+        "custom_image_border_thickness": 1,
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_PWKjHz": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_DynNLq": {
+          "type": "heading",
+          "settings": {
+            "heading": "Inspired by ||  [[Asian Tradition]]",
+            "badge_bg": "#FCC86C",
+            "badge_border": "#511D29",
+            "badge_text": "#511D29",
+            "badge_shadow": "#511D29",
+            "letter_spacing": 0,
+            "heading_size": "h1"
+          }
+        },
+        "text_LVBhKb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>It turns out, the answer wasn't hiding in some high-tech food lab—it was in the past. We found our inspiration in a snack my mom grew up eating:</p>",
+            "accent_color": "#EE9441",
+            "font_size": 20
+          }
+        }
+      },
+      "block_order": [
+        "heading_DynNLq",
+        "text_LVBhKb"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "show_stars": false,
+        "show_stars_mobile": true,
+        "star_size": 24,
+        "star_1_top": 15,
+        "star_1_left": 8,
+        "star_2_top": 10,
+        "star_2_left": 82,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "image_with_text_XPBmPz",
+    "rich_text_PWKjHz"
   ]
 }
