@@ -27,7 +27,7 @@
             "badge_border": "#511D29",
             "badge_text": "#511D29",
             "badge_shadow": "#511D29",
-            "heading_size": "h1"
+            "heading_size": "h0"
           }
         },
         "text_kEQGxb": {
@@ -73,13 +73,13 @@
             "badge_text": "#511D29",
             "badge_shadow": "#511D29",
             "letter_spacing": 0,
-            "heading_size": "h1"
+            "heading_size": "h0"
           }
         },
         "text_LVBhKb": {
           "type": "text",
           "settings": {
-            "text": "<p>It turns out, the answer wasn't hiding in some high-tech food lab—it was in the past. We found our inspiration in a snack my mom grew up eating:</p>",
+            "text": "<p>It turns out, the answer wasn't hiding in some high-tech food lab. We found our inspiration in a snack my mom grew up eating: dried sweet potatoes. </p><p>People have been enjoying this simple, single-ingredient treat for hundreds of years because of its natural sweetness and the clean, steady energy it gives.</p>",
             "accent_color": "#EE9441",
             "font_size": 20
           }
@@ -88,6 +88,52 @@
       "block_order": [
         "heading_DynNLq",
         "text_LVBhKb"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "show_stars": true,
+        "show_stars_mobile": false,
+        "star_image": "shopify://shop_images/YammyStar.svg",
+        "star_size": 24,
+        "star_1_top": 15,
+        "star_1_left": 25,
+        "star_2_top": 36,
+        "star_2_left": 74,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_qRhitw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_GJQBDn": {
+          "type": "heading",
+          "settings": {
+            "heading": "Meet [[Yammy]]",
+            "badge_bg": "#FCC86C",
+            "badge_border": "#511D29",
+            "badge_text": "#511D29",
+            "badge_shadow": "#511D29",
+            "letter_spacing": 0,
+            "heading_size": "h0"
+          }
+        },
+        "text_rYTwHC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+            "accent_color": "#EE9441",
+            "font_size": 15
+          }
+        }
+      },
+      "block_order": [
+        "heading_GJQBDn",
+        "text_rYTwHC"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
@@ -110,6 +156,7 @@
   "order": [
     "main",
     "image_with_text_XPBmPz",
-    "rich_text_PWKjHz"
+    "rich_text_PWKjHz",
+    "rich_text_qRhitw"
   ]
 }
