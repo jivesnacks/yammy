@@ -17,14 +17,14 @@
         "announcement_eNhqAL": {
           "type": "announcement",
           "settings": {
-            "text": "Subscribe to Save 15% on Every Yammy Order",
+            "text": "SUBSCRIBE TO SAVE 15% ON EVERY ORDER",
             "link": "shopify://collections/dried-sweet-potato-snacks"
           }
         },
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Free Shipping on Orders $25+",
+            "text": "FREE SHIPPING ON ORDERS $25+",
             "link": "shopify://collections/dried-sweet-potato-snacks"
           }
         }
