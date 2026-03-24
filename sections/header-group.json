@@ -18,7 +18,7 @@
           "type": "announcement",
           "settings": {
             "text": "Subscribe to Save 15% on Every Yammy Order",
-            "link": ""
+            "link": "shopify://collections/dried-sweet-potato-snacks"
           }
         },
         "announcement-bar-0": {
