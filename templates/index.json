@@ -252,7 +252,7 @@
       "type": "featured-collection",
       "settings": {
         "collection": "dried-sweet-potato-snacks",
-        "products_to_show": 5,
+        "products_to_show": 25,
         "title": "",
         "heading_size": "h2",
         "description": "",
@@ -576,7 +576,7 @@
           "type": "button",
           "settings": {
             "button_label": "Subscribe & Save",
-            "button_link": "shopify://products/yammy-original-dried-sweet-potato-sticks-soft-chewy-asian-snack-5-pack",
+            "button_link": "shopify://products/yammy-original-dried-sweet-potato-sticks-5-pack-soft-chewy-asian-snack",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
