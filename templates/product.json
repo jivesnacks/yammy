@@ -90,9 +90,18 @@
         "collapsible-row-1": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Shipping & Returns",
+            "heading": "Shipping",
             "icon": "truck",
-            "content": "<p><strong>Shipping:</strong> Free shipping over $25. Arrives within 3-5 business days.<br/><br/><strong>Returns: </strong>Your satisfaction is guaranteed. Return for any reason, no questions asked.</p>",
+            "content": "<p>Free shipping over $25. Arrives within 3-5 business days.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_6RDaQe": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "100% Satisfaction Guarantee",
+            "icon": "check_mark",
+            "content": "<p>Your satisfaction is guaranteed. Return for any reason, no questions asked.</p>",
             "page": ""
           }
         },
@@ -117,6 +126,7 @@
         "collapsible_tab_gFBn9B",
         "collapsible-row-3",
         "collapsible-row-1",
+        "collapsible_tab_6RDaQe",
         "share"
       ],
       "settings": {
