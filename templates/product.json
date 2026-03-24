@@ -92,7 +92,7 @@
           "settings": {
             "heading": "Shipping & Returns",
             "icon": "truck",
-            "content": "<p><strong>Shipping:</strong> Free shipping over $35. Arrives within 3-5 business days.<br/><br/><strong>Returns: </strong>Your satisfaction is guaranteed. Return for any reason, no questions asked.</p>",
+            "content": "<p><strong>Shipping:</strong> Free shipping over $25. Arrives within 3-5 business days.<br/><br/><strong>Returns: </strong>Your satisfaction is guaranteed. Return for any reason, no questions asked.</p>",
             "page": ""
           }
         },
