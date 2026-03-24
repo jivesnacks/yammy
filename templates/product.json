@@ -65,7 +65,7 @@
           "settings": {
             "heading": "Ingredients",
             "icon": "leaf",
-            "content": "{{ block.settings.page.metafields.custom.ingredients | metafield_tag }}",
+            "content": "{{ product.metafields.custom.ingredients | metafield_tag }}",
             "page": ""
           }
         },
@@ -132,10 +132,10 @@
           "type": "heading",
           "settings": {
             "heading": "Try these other || [[awesome flavors]]",
-            "badge_bg": "#FCC86C",
-            "badge_border": "#511D29",
-            "badge_text": "#511D29",
-            "badge_shadow": "#511D29",
+            "badge_bg": "#fcc86c",
+            "badge_border": "#511d29",
+            "badge_text": "#511d29",
+            "badge_shadow": "#511d29",
             "letter_spacing": 0,
             "heading_size": "h0"
           }
