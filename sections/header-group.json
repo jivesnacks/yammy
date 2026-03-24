@@ -17,7 +17,7 @@
         "announcement_eNhqAL": {
           "type": "announcement",
           "settings": {
-            "text": "Love Yammy? Subscribe to Save 15% on Every Order",
+            "text": "Subscribe to Save 15% on Every Yammy Order",
             "link": ""
           }
         },
@@ -36,6 +36,7 @@
       "settings": {
         "auto_rotate": true,
         "change_slides_speed": 5,
+        "font_size": 14,
         "color_scheme": "scheme-4",
         "show_line_separator": true,
         "show_social": true,
