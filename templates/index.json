@@ -26,8 +26,8 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "SWEET POTATO + REAL SPICES = AN INDULGENCE YOU CAN <span style=\"text-decoration:underline\"><em>ACTUALLY</em></span> FEEL GOOD ABOUT.",
-            "text_size": 24,
+            "text": "Sweet potato + real spices = an indulgence you can actually feel good about.",
+            "text_size": 22,
             "text_style": "body"
           }
         },
@@ -624,7 +624,8 @@
           "type": "text",
           "settings": {
             "text": "<p>We're Dennis & Stephanie, co-founders of Yammy. Dried sweet potatoes have been a beloved family favorite since we were kids.</p><p>Today, we're bringing that delicious heritage to you using only the simplest ingredients.</p><p>No compromises, just real food that honors both your cravings and your wellbeing.</p>",
-            "text_style": "body"
+            "text_style": "body",
+            "font_size": 15
           }
         }
       },
