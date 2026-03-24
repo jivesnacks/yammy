@@ -14,19 +14,27 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_eNhqAL": {
+          "type": "announcement",
+          "settings": {
+            "text": "Love Yammy? Subscribe to Save 15% on Every Order",
+            "link": ""
+          }
+        },
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
-            "link": ""
+            "text": "Free Shipping on Orders $25+",
+            "link": "shopify://collections/dried-sweet-potato-snacks"
           }
         }
       },
       "block_order": [
+        "announcement_eNhqAL",
         "announcement-bar-0"
       ],
       "settings": {
-        "auto_rotate": false,
+        "auto_rotate": true,
         "change_slides_speed": 5,
         "color_scheme": "scheme-4",
         "show_line_separator": true,
