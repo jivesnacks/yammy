@@ -29,7 +29,7 @@
             "background_effect": "none",
             "gradient_color_end": "#333333",
             "hover_effect": "shine_lift",
-            "animation": "glow",
+            "animation": "shake",
             "button_icon": "arrow_right",
             "use_custom_text": false,
             "button_text": "Add to cart",
