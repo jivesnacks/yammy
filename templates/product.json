@@ -33,7 +33,7 @@
             "button_icon": "arrow_right",
             "use_custom_text": false,
             "button_text": "Add to cart",
-            "show_price": true,
+            "show_price": false,
             "round_price": false,
             "compare_at_price_color": "#999999"
           }
