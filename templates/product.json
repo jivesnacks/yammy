@@ -12,6 +12,32 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "section_store_block_atc_style_UfVVbU": {
+          "type": "shopify://apps/section-store/blocks/block-atc-style/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "settings": {
+            "background_color": "#ec6608",
+            "text_color": "#fef5ee",
+            "hover_background_color": "",
+            "hover_text_color": "",
+            "font_size": 0,
+            "font_weight": "default",
+            "border_style": "none",
+            "border_width": 1,
+            "border_color": "#000000",
+            "border_radius": -1,
+            "padding_vertical": 0,
+            "background_effect": "none",
+            "gradient_color_end": "#333333",
+            "hover_effect": "lift",
+            "animation": "none",
+            "button_icon": "arrow_right",
+            "use_custom_text": false,
+            "button_text": "Add to cart",
+            "show_price": true,
+            "round_price": false,
+            "compare_at_price_color": "#999999"
+          }
+        },
         "vendor": {
           "type": "text",
           "settings": {
@@ -117,6 +143,7 @@
         }
       },
       "block_order": [
+        "section_store_block_atc_style_UfVVbU",
         "vendor",
         "title",
         "judge_me_reviews_preview_badge_TnFUJU",
