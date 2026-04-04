@@ -12,6 +12,23 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "section_store_block_sticky_atc_kNyJkb": {
+          "type": "shopify://apps/section-store/blocks/block-sticky-atc/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "settings": {
+            "desktop_layout": "max-width",
+            "mobile_layout": "full-width-no-spacing",
+            "hide_image_mobile": true,
+            "stack_on_mobile": true,
+            "border": "none",
+            "border_thickness": 1,
+            "border_color": "#dcdcdc",
+            "radius": 8,
+            "background": "#ffffff",
+            "padding_vertical": 12,
+            "padding_horizontal": 16,
+            "change_text": "Change"
+          }
+        },
         "section_store_block_atc_style_UfVVbU": {
           "type": "shopify://apps/section-store/blocks/block-atc-style/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
           "settings": {
@@ -86,6 +103,38 @@
             "show_gift_card_recipient": true
           }
         },
+        "section_store_block_product_addons_bbaThy": {
+          "type": "shopify://apps/section-store/blocks/block-product-addons/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "settings": {
+            "products": [
+              "yammy-original-dried-sweet-potato-sticks-soft-chewy-asian-snack-5-pack",
+              "yammy-1-ingredient-superfood-snack-variety-pack"
+            ],
+            "product_list_style": "stack",
+            "variant_selector": "text_boxed",
+            "show_compare_price": true,
+            "use_discount_tag": false,
+            "discount_tag_background": "#C9FFC9",
+            "switch_style": "toggle",
+            "switch_size": 22,
+            "switch_position": "last",
+            "switch_vertical_position": "center",
+            "switch_color": "#000000",
+            "font_size": 12,
+            "font_weight": "normal",
+            "item_title_color": "#511d29",
+            "item_subtitle_color": "#000000",
+            "image_size": 50,
+            "item_border_style": "none",
+            "item_border_width": 1,
+            "item_border_color": "#d7d7d7",
+            "item_border_radius": 8,
+            "item_bg_color": "#fbe0c8",
+            "background_gradient": "",
+            "item_padding_vertical": 12,
+            "item_padding_horizontal": 16
+          }
+        },
         "description": {
           "type": "description",
           "settings": {}
@@ -143,6 +192,7 @@
         }
       },
       "block_order": [
+        "section_store_block_sticky_atc_kNyJkb",
         "section_store_block_atc_style_UfVVbU",
         "vendor",
         "title",
@@ -153,6 +203,7 @@
         "quantity_selector",
         "loop_subscriptions_loop_widget_fxJdyp",
         "buy_buttons",
+        "section_store_block_product_addons_bbaThy",
         "description",
         "collapsible-row-0",
         "collapsible_tab_gFBn9B",
