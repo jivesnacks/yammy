@@ -298,6 +298,16 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
+
+    <style>
+      /* Lower third-party launcher z-indexes so the sticky add to cart bar appears above them */
+      #smile-ui-lite-container {
+        z-index: 99 !important;
+      }
+      .chat-app {
+        z-index: 99 !important;
+      }
+    </style>
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
