@@ -202,7 +202,7 @@
           "button_color": "#ec6608",
           "secondary_color": "#fef5ee",
           "ternary_color": "#511d29",
-          "button_icon": "chat_bubble",
+          "button_icon": "hand_wave",
           "button_text": "no_text",
           "button_horizontal_position": "bottom_left",
           "button_vertical_position": "lowest",
