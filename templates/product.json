@@ -144,7 +144,7 @@
             "border": "none",
             "border_thickness": 1,
             "border_color": "#000000",
-            "radius": 0,
+            "radius": 8,
             "background": "",
             "padding_top": 0,
             "padding_bottom": 0,
