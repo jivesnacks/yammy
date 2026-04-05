@@ -15,7 +15,7 @@
         "section_store_block_sticky_atc_kNyJkb": {
           "type": "shopify://apps/section-store/blocks/block-sticky-atc/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
           "settings": {
-            "desktop_layout": "max-width",
+            "desktop_layout": "full-width",
             "mobile_layout": "full-width-no-spacing",
             "hide_image_mobile": true,
             "stack_on_mobile": true,
@@ -23,7 +23,7 @@
             "border_thickness": 1,
             "border_color": "#dcdcdc",
             "radius": 8,
-            "background": "#ffffff",
+            "background": "#fef5ee",
             "padding_vertical": 12,
             "padding_horizontal": 16,
             "change_text": "Change"
@@ -114,7 +114,7 @@
             "variant_selector": "text_boxed",
             "show_compare_price": true,
             "use_discount_tag": false,
-            "discount_tag_background": "#C9FFC9",
+            "discount_tag_background": "#c9ffc9",
             "switch_style": "toggle",
             "switch_size": 22,
             "switch_position": "last",
