@@ -70,6 +70,31 @@
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         },
+        "section_store_block_shipping_info_CngG94": {
+          "type": "shopify://apps/section-store/blocks/block-shipping-info/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "settings": {
+            "use_dot": true,
+            "icon_color": "#59c75f",
+            "icon_size": 12,
+            "ships_by_text": "Ships by",
+            "shipping_within_days": 3,
+            "include_weekend": true,
+            "ships_by_font_size": 14,
+            "ships_by_text_color": "#511d29",
+            "fast_shipping_text": "COUNTRY_FLAG <strong>Fast</strong> COUNTRY_CODE Shipping",
+            "allow_all_countries": false,
+            "allowed_countries": "US",
+            "fast_shipping_text_for_rest_countries": "International Shipping Not Available",
+            "fast_shipping_text_color": "#511d29",
+            "border_style": "none",
+            "border_width": 1,
+            "border_color": "#000",
+            "border_radius": 8,
+            "bg_color": "#fbe0c8",
+            "padding_vertical": 6,
+            "padding_horizontal": 15
+          }
+        },
         "caption": {
           "type": "text",
           "settings": {
@@ -194,6 +219,7 @@
         "vendor",
         "title",
         "judge_me_reviews_preview_badge_TnFUJU",
+        "section_store_block_shipping_info_CngG94",
         "caption",
         "price",
         "variant_picker",
