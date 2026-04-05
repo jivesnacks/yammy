@@ -103,35 +103,32 @@
             "show_gift_card_recipient": true
           }
         },
-        "section_store_block_product_addons_bbaThy": {
-          "type": "shopify://apps/section-store/blocks/block-product-addons/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+        "section_store_block_upsell_cdMjcB": {
+          "type": "shopify://apps/section-store/blocks/block-upsell/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
           "settings": {
-            "products": [
-              "yammy-original-dried-sweet-potato-sticks-soft-chewy-asian-snack-5-pack",
-              "yammy-1-ingredient-superfood-snack-variety-pack"
-            ],
+            "products": "{{ product.metafields.custom.upsells.value }}",
             "product_list_style": "stack",
             "variant_selector": "text_boxed",
+            "cart_app": "none",
+            "auto_detect_theme": true,
+            "theme_schema_name": "dawn",
+            "force_open_cart_page_on_click": false,
             "show_compare_price": true,
-            "use_discount_tag": false,
-            "discount_tag_background": "#c9ffc9",
-            "switch_style": "toggle",
-            "switch_size": 22,
-            "switch_position": "last",
-            "switch_vertical_position": "center",
-            "switch_color": "#000000",
-            "font_size": 12,
+            "font_size": 14,
             "font_weight": "normal",
             "item_title_color": "#511d29",
             "item_subtitle_color": "#000000",
             "image_size": 50,
+            "item_bg_color": "#ffdda9",
             "item_border_style": "none",
             "item_border_width": 1,
             "item_border_color": "#d7d7d7",
             "item_border_radius": 8,
-            "item_bg_color": "#fbe0c8",
-            "background_gradient": "",
-            "item_padding_vertical": 12,
+            "atc_button_text": "Add",
+            "atc_button_soldout_text": "Sold out",
+            "atc_button_text_color": "#fef5ee",
+            "atc_button_bg_color": "#ec6608",
+            "item_padding_vertical": 16,
             "item_padding_horizontal": 16
           }
         },
@@ -203,7 +200,7 @@
         "quantity_selector",
         "loop_subscriptions_loop_widget_fxJdyp",
         "buy_buttons",
-        "section_store_block_product_addons_bbaThy",
+        "section_store_block_upsell_cdMjcB",
         "description",
         "collapsible-row-0",
         "collapsible_tab_gFBn9B",
@@ -282,6 +279,12 @@
         "padding_bottom": 28
       }
     },
+    "1775360491415ac5e4": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
     "1775195616e6ea4e68": {
       "type": "apps",
       "blocks": {
@@ -307,6 +310,7 @@
     "main",
     "rich_text_MYkVnH",
     "related-products",
+    "1775360491415ac5e4",
     "1775195616e6ea4e68"
   ]
 }
