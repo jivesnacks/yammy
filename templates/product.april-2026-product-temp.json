@@ -55,11 +55,11 @@
             "compare_at_price_color": "#999999"
           }
         },
-        "vendor": {
+        "text_x48yEy": {
           "type": "text",
           "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
+            "text": "",
+            "text_style": "body"
           }
         },
         "title": {
@@ -69,6 +69,24 @@
         "judge_me_reviews_preview_badge_TnFUJU": {
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "text_xnhbhh": {
+          "type": "text",
+          "settings": {
+            "text": "Short Description",
+            "text_style": "body"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
         },
         "section_store_block_shipping_info_CngG94": {
           "type": "shopify://apps/section-store/blocks/block-shipping-info/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
@@ -102,10 +120,6 @@
             "text_style": "subtitle"
           }
         },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
         "section_store_block_coupon_code_9YFbhG": {
           "type": "shopify://apps/section-store/blocks/block-coupon-code/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
           "settings": {
@@ -125,13 +139,6 @@
             "padding_vertical": 4,
             "padding_horizontal": 0,
             "custom_css": ""
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
           }
         },
         "quantity_selector": {
@@ -224,15 +231,6 @@
             "page": ""
           }
         },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Storage Instructions",
-            "icon": "question_mark",
-            "content": "<p>Store in a cool, dry place away from light. Must be refrigerated after opening to maintain safety.</p>",
-            "page": ""
-          }
-        },
         "collapsible-row-1": {
           "type": "collapsible_tab",
           "settings": {
@@ -261,14 +259,15 @@
       "block_order": [
         "section_store_block_sticky_atc_kNyJkb",
         "section_store_block_atc_style_UfVVbU",
-        "vendor",
+        "text_x48yEy",
         "title",
         "judge_me_reviews_preview_badge_TnFUJU",
+        "price",
+        "text_xnhbhh",
+        "variant_picker",
         "section_store_block_shipping_info_CngG94",
         "caption",
-        "price",
         "section_store_block_coupon_code_9YFbhG",
-        "variant_picker",
         "quantity_selector",
         "loop_subscriptions_loop_widget_fxJdyp",
         "buy_buttons",
@@ -277,7 +276,6 @@
         "description",
         "collapsible-row-0",
         "collapsible_tab_gFBn9B",
-        "collapsible-row-3",
         "collapsible-row-1",
         "collapsible_tab_6RDaQe",
         "share"
