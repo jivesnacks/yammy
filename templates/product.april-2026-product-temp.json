@@ -1,0 +1,389 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "section_store_block_sticky_atc_kNyJkb": {
+          "type": "shopify://apps/section-store/blocks/block-sticky-atc/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "settings": {
+            "desktop_layout": "full-width",
+            "mobile_layout": "full-width-no-spacing",
+            "hide_image_mobile": true,
+            "stack_on_mobile": true,
+            "border": "none",
+            "border_thickness": 1,
+            "border_color": "#dcdcdc",
+            "radius": 8,
+            "background": "#fef5ee",
+            "padding_vertical": 12,
+            "padding_horizontal": 16,
+            "change_text": "Change"
+          }
+        },
+        "section_store_block_atc_style_UfVVbU": {
+          "type": "shopify://apps/section-store/blocks/block-atc-style/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "settings": {
+            "background_color": "#ec6608",
+            "text_color": "#fef5ee",
+            "hover_background_color": "",
+            "hover_text_color": "",
+            "font_size": 0,
+            "font_weight": "default",
+            "border_style": "none",
+            "border_width": 1,
+            "border_color": "#000000",
+            "border_radius": -1,
+            "padding_vertical": 0,
+            "background_effect": "none",
+            "gradient_color_end": "#333333",
+            "hover_effect": "shine_lift",
+            "animation": "shake",
+            "button_icon": "arrow_right",
+            "use_custom_text": false,
+            "button_text": "Add to cart",
+            "show_price": false,
+            "round_price": false,
+            "compare_at_price_color": "#999999"
+          }
+        },
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "judge_me_reviews_preview_badge_TnFUJU": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "section_store_block_shipping_info_CngG94": {
+          "type": "shopify://apps/section-store/blocks/block-shipping-info/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "settings": {
+            "use_dot": true,
+            "icon_color": "#59c75f",
+            "icon_size": 12,
+            "ships_by_text": "Ships by",
+            "shipping_within_days": 3,
+            "include_weekend": true,
+            "ships_by_font_size": 14,
+            "ships_by_text_color": "#511d29",
+            "fast_shipping_text": "COUNTRY_FLAG <strong>Fast</strong> COUNTRY_CODE Shipping",
+            "allow_all_countries": false,
+            "allowed_countries": "US",
+            "fast_shipping_text_for_rest_countries": "International Shipping Not Available",
+            "fast_shipping_text_color": "#511d29",
+            "border_style": "none",
+            "border_width": 1,
+            "border_color": "#000000",
+            "border_radius": 8,
+            "bg_color": "#fbe0c8",
+            "padding_vertical": 6,
+            "padding_horizontal": 15
+          }
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "section_store_block_coupon_code_9YFbhG": {
+          "type": "shopify://apps/section-store/blocks/block-coupon-code/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "settings": {
+            "top_text": "Get 10% Off $75+",
+            "bottom_text": "<p>Code: 10<em>OFF75</em></p>",
+            "text_size": 15,
+            "text_color": "#fef5ee",
+            "coupon": "10OFF75",
+            "copy_text": "Copy",
+            "copied_text": "Copied!",
+            "button_color": "#511d29",
+            "border": "none",
+            "border_thickness": 1,
+            "border_color": "#000000",
+            "radius": 6,
+            "bg_color": "#ec6608",
+            "padding_vertical": 4,
+            "padding_horizontal": 0,
+            "custom_css": ""
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "loop_subscriptions_loop_widget_fxJdyp": {
+          "type": "shopify://apps/loop-subscriptions/blocks/loop_widget/267a7c64-5cb3-4552-b817-5485165f0a0b",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "section_store_block_payment_icons_2_erBJw9": {
+          "type": "shopify://apps/section-store/blocks/block-payment-icons-2/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "settings": {
+            "icons_layout": "fixed_grid",
+            "icons_per_row": 10,
+            "icons_per_row_mobile": 8,
+            "gap": 10,
+            "icons_align": "center",
+            "icons_monochrome": false,
+            "enable_first_image": false,
+            "enable_second_image": false,
+            "enable_third_image": false,
+            "icon_size": 20,
+            "border": "none",
+            "border_thickness": 1,
+            "border_color": "#000000",
+            "radius": 8,
+            "background": "",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_left": 0,
+            "padding_right": 0
+          }
+        },
+        "section_store_block_upsell_cdMjcB": {
+          "type": "shopify://apps/section-store/blocks/block-upsell/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "settings": {
+            "products": "{{ product.metafields.custom.upsells.value }}",
+            "product_list_style": "stack",
+            "variant_selector": "text_boxed",
+            "cart_app": "none",
+            "auto_detect_theme": true,
+            "theme_schema_name": "dawn",
+            "force_open_cart_page_on_click": false,
+            "show_compare_price": true,
+            "font_size": 14,
+            "font_weight": "normal",
+            "item_title_color": "#511d29",
+            "item_subtitle_color": "#000000",
+            "image_size": 50,
+            "item_bg_color": "#ffdda9",
+            "item_border_style": "none",
+            "item_border_width": 1,
+            "item_border_color": "#d7d7d7",
+            "item_border_radius": 8,
+            "atc_button_text": "Add",
+            "atc_button_soldout_text": "Sold out",
+            "atc_button_text_color": "#fef5ee",
+            "atc_button_bg_color": "#ec6608",
+            "item_padding_vertical": 16,
+            "item_padding_horizontal": 16
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ingredients",
+            "icon": "leaf",
+            "content": "{{ product.metafields.custom.ingredients | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "collapsible_tab_gFBn9B": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Allergens",
+            "icon": "nut_free",
+            "content": "{{ product.metafields.shopify[\"allergen-information\"] | metafield_tag: field: 'label' }}",
+            "page": ""
+          }
+        },
+        "collapsible-row-3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Storage Instructions",
+            "icon": "question_mark",
+            "content": "<p>Store in a cool, dry place away from light. Must be refrigerated after opening to maintain safety.</p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Free Shipping Over $25",
+            "icon": "truck",
+            "content": "<p>Free shipping over $25. Arrives within 3-5 business days.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_6RDaQe": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "100% Satisfaction Guarantee",
+            "icon": "check_mark",
+            "content": "<p>Your satisfaction is guaranteed. Return for any reason, no questions asked.</p>",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "section_store_block_sticky_atc_kNyJkb",
+        "section_store_block_atc_style_UfVVbU",
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_TnFUJU",
+        "section_store_block_shipping_info_CngG94",
+        "caption",
+        "price",
+        "section_store_block_coupon_code_9YFbhG",
+        "variant_picker",
+        "quantity_selector",
+        "loop_subscriptions_loop_widget_fxJdyp",
+        "buy_buttons",
+        "section_store_block_payment_icons_2_erBJw9",
+        "section_store_block_upsell_cdMjcB",
+        "description",
+        "collapsible-row-0",
+        "collapsible_tab_gFBn9B",
+        "collapsible-row-3",
+        "collapsible-row-1",
+        "collapsible_tab_6RDaQe",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "rich_text_MYkVnH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_TLdkMV": {
+          "type": "heading",
+          "settings": {
+            "heading": "Try these other || [[awesome flavors]]",
+            "badge_bg": "#fcc86c",
+            "badge_border": "#511d29",
+            "badge_text": "#511d29",
+            "badge_shadow": "#511d29",
+            "letter_spacing": 0,
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "heading_TLdkMV"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "show_stars": false,
+        "show_stars_mobile": true,
+        "star_size": 24,
+        "star_1_top": 15,
+        "star_1_left": 8,
+        "star_2_top": 10,
+        "star_2_left": 82,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "1775360491415ac5e4": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1775195616e6ea4e68": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_qyC36b": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "real_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "hide_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_qyC36b"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_MYkVnH",
+    "related-products",
+    "1775360491415ac5e4",
+    "1775195616e6ea4e68"
+  ]
+}
