@@ -58,7 +58,7 @@
         "text_x48yEy": {
           "type": "text",
           "settings": {
-            "text": "",
+            "text": "Breadcrumbs for SEO",
             "text_style": "body"
           }
         },
@@ -88,6 +88,28 @@
             "swatch_shape": "circle"
           }
         },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "loop_subscriptions_loop_widget_fxJdyp": {
+          "type": "shopify://apps/loop-subscriptions/blocks/loop_widget/267a7c64-5cb3-4552-b817-5485165f0a0b",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
         "section_store_block_shipping_info_CngG94": {
           "type": "shopify://apps/section-store/blocks/block-shipping-info/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
           "settings": {
@@ -113,13 +135,6 @@
             "padding_horizontal": 15
           }
         },
-        "caption": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
-        },
         "section_store_block_coupon_code_9YFbhG": {
           "type": "shopify://apps/section-store/blocks/block-coupon-code/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
           "settings": {
@@ -139,21 +154,6 @@
             "padding_vertical": 4,
             "padding_horizontal": 0,
             "custom_css": ""
-          }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "loop_subscriptions_loop_widget_fxJdyp": {
-          "type": "shopify://apps/loop-subscriptions/blocks/loop_widget/267a7c64-5cb3-4552-b817-5485165f0a0b",
-          "settings": {}
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
           }
         },
         "section_store_block_payment_icons_2_erBJw9": {
@@ -211,6 +211,7 @@
         },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {}
         },
         "collapsible-row-0": {
@@ -248,12 +249,6 @@
             "content": "<p>Your satisfaction is guaranteed. Return for any reason, no questions asked.</p>",
             "page": ""
           }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
         }
       },
       "block_order": [
@@ -265,20 +260,19 @@
         "price",
         "text_xnhbhh",
         "variant_picker",
-        "section_store_block_shipping_info_CngG94",
         "caption",
-        "section_store_block_coupon_code_9YFbhG",
         "quantity_selector",
         "loop_subscriptions_loop_widget_fxJdyp",
         "buy_buttons",
+        "section_store_block_shipping_info_CngG94",
+        "section_store_block_coupon_code_9YFbhG",
         "section_store_block_payment_icons_2_erBJw9",
         "section_store_block_upsell_cdMjcB",
         "description",
         "collapsible-row-0",
         "collapsible_tab_gFBn9B",
         "collapsible-row-1",
-        "collapsible_tab_6RDaQe",
-        "share"
+        "collapsible_tab_6RDaQe"
       ],
       "settings": {
         "enable_sticky_info": true,
