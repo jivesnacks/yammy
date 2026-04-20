@@ -724,6 +724,7 @@
         "row_GxrAei": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/DitchSugarCrashSaltPepper.png",
             "caption": "",
             "heading": "Outdoor Adventure Essential",
             "text": "<p>Perfect for hiking, camping, or beach days. Lightweight, durable, and built to fuel you through all your adventures.</p>",
