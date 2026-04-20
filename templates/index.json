@@ -35,7 +35,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "SHOP NOW",
-            "button_link_1": "shopify://collections/all",
+            "button_link_1": "shopify://collections/sweet-potato-sticks",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -49,7 +49,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify://shop_images/YammyHero2.jpg",
+        "image": "shopify://shop_images/yammy-hero.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "image_behavior": "none",
