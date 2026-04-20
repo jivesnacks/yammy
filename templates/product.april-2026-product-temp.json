@@ -272,10 +272,10 @@
           "type": "heading",
           "settings": {
             "heading": "Snacking just got [[a whole lot simpler.]]",
-            "badge_bg": "#FCC86C",
-            "badge_border": "#511D29",
-            "badge_text": "#511D29",
-            "badge_shadow": "#511D29",
+            "badge_bg": "#fcc86c",
+            "badge_border": "#511d29",
+            "badge_text": "#511d29",
+            "badge_shadow": "#511d29",
             "letter_spacing": 0,
             "heading_size": "hxl"
           }
@@ -284,7 +284,7 @@
           "type": "text",
           "settings": {
             "text": "<p>Sweet potato snacks that are perfectly chewy, naturally sweet, and ridiculously satisfying.</p>",
-            "accent_color": "#EE9441",
+            "accent_color": "#ee9441",
             "font_size": 20
           }
         }
@@ -426,8 +426,8 @@
             "use_shadow": false,
             "button_color": "#121212",
             "button_hover_color": "#121212",
-            "button_bg_color": "#F7F7F7",
-            "button_bg_hover_color": "#FFFFFF",
+            "button_bg_color": "#f7f7f7",
+            "button_bg_hover_color": "#ffffff",
             "button_border_color": "#121212",
             "button_border_hover_color": "#121212"
           }
@@ -509,7 +509,7 @@
         "progress_bar_bg": "#5b1830",
         "image_item_border_color": "#121212",
         "background_style": "solid",
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "background_gradient": "linear-gradient(180deg, #FFFFFF 0%, #F2F2F2 100%)",
         "border_color": "#121212",
         "margin_top": 0,
@@ -597,6 +597,95 @@
         "padding_top": 40,
         "padding_bottom": 0
       }
+    },
+    "blocks_3ErJJU": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_b9ea56f_ErbUDt": {
+          "type": "ai_gen_block_b9ea56f",
+          "settings": {
+            "feature_column_label": "",
+            "column_1_label": "Yammy Sweet Potato Sticks",
+            "column_2_label": "Gummy Fruit Snacks",
+            "column_3_label": "Veggie Chips",
+            "column_4_label": "Protein Bars",
+            "feature_1": "Storage",
+            "feature_1_col1": "10GB",
+            "feature_1_col2": "50GB",
+            "feature_1_col3": "200GB",
+            "feature_1_col4": "Unlimited",
+            "feature_2": "Support",
+            "feature_2_col1": "Email",
+            "feature_2_col2": "Email & Chat",
+            "feature_2_col3": "24/7 Support",
+            "feature_2_col4": "Dedicated",
+            "feature_3": "Users",
+            "feature_3_col1": "1",
+            "feature_3_col2": "5",
+            "feature_3_col3": "25",
+            "feature_3_col4": "Unlimited",
+            "feature_4": "API Access",
+            "feature_4_col1": "no",
+            "feature_4_col2": "no",
+            "feature_4_col3": "yes",
+            "feature_4_col4": "yes",
+            "feature_5": "Analytics",
+            "feature_5_col1": "Basic",
+            "feature_5_col2": "Standard",
+            "feature_5_col3": "Advanced",
+            "feature_5_col4": "Custom",
+            "feature_6": "",
+            "feature_6_col1": "no",
+            "feature_6_col2": "yes",
+            "feature_6_col3": "yes",
+            "feature_6_col4": "yes",
+            "feature_7": "",
+            "feature_7_col1": "no",
+            "feature_7_col2": "yes",
+            "feature_7_col3": "yes",
+            "feature_7_col4": "yes",
+            "feature_8": "",
+            "feature_8_col1": "no",
+            "feature_8_col2": "yes",
+            "feature_8_col3": "yes",
+            "feature_8_col4": "yes",
+            "feature_9": "",
+            "feature_9_col1": "no",
+            "feature_9_col2": "yes",
+            "feature_9_col3": "yes",
+            "feature_9_col4": "yes",
+            "feature_10": "",
+            "feature_10_col1": "no",
+            "feature_10_col2": "yes",
+            "feature_10_col3": "yes",
+            "feature_10_col4": "yes",
+            "desktop_width_percent": 100,
+            "padding": 20,
+            "border_radius": 8,
+            "cell_padding": 16,
+            "border_width": 1,
+            "header_font_size": 16,
+            "cell_font_size": 14,
+            "icon_size": 20,
+            "background_color": "#ffffff",
+            "header_bg_color": "#511d29",
+            "header_text_color": "#ffffff",
+            "row_bg_color": "#ffffff",
+            "row_alt_bg_color": "#fef5ee",
+            "cell_text_color": "#511d29",
+            "feature_text_color": "#511d29",
+            "border_color": "#e0e0e0",
+            "checkmark_color": "#008060",
+            "cross_color": "#d82c0d"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_b9ea56f_ErbUDt"
+      ],
+      "name": "Comparison table",
+      "settings": {}
     },
     "multirow_Hprj8Q": {
       "type": "multirow",
@@ -703,17 +792,17 @@
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
         "caption": "",
-        "heading": "Collapsible content",
+        "heading": "Frequently Asked Questions",
         "heading_size": "h1",
         "heading_alignment": "center",
-        "layout": "none",
+        "layout": "row",
         "container_color_scheme": "",
         "color_scheme": "",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
     "1775195616e6ea4e68": {
@@ -798,6 +887,7 @@
     "ss_image_with_text_24_chnqAw",
     "1776681792512366d5",
     "rich_text_3PixQ6",
+    "blocks_3ErJJU",
     "multirow_Hprj8Q",
     "collapsible_content_3dJYdn",
     "1775195616e6ea4e68",
