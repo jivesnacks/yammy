@@ -271,7 +271,7 @@
         "heading_R8Hmai": {
           "type": "heading",
           "settings": {
-            "heading": "Snacking just got [[a whole lot simpler.]]",
+            "heading": "Snacking just got [[a whole lot simpler]]",
             "badge_bg": "#fcc86c",
             "badge_border": "#511d29",
             "badge_text": "#511d29",
@@ -405,7 +405,7 @@
         "item_dGDnpn": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/SweetPotato.jpg",
+            "image": "shopify://shop_images/1.png",
             "heading": "<h3>Starts with fresh Asian sweet potato</h3>",
             "text": "<p>A special, fragrant varietal.</p>"
           }
@@ -413,7 +413,7 @@
         "item_VdnmYL": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/SweetPotatoStrip.jpg",
+            "image": "shopify://shop_images/2.png",
             "heading": "<p>Cut into french fry-like strips</p>",
             "text": "<p>Except WAY healthier.</p>"
           }
@@ -421,7 +421,7 @@
         "item_QJ7LzT": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/DriedSweetPotato.jpg",
+            "image": "shopify://shop_images/3.png",
             "heading": "<h3>Baked at a low temperature</h3>",
             "text": "<p>No oils added, ever.</p>"
           }
@@ -429,8 +429,9 @@
         "item_xeN9yX": {
           "type": "item",
           "settings": {
+            "image": "{{ product.metafields.custom.seasoned_stick_image.value }}",
             "heading": "<h3>Seasoned with real, bold spices</h3>",
-            "text": "<p>Metafields on seasonings.</p>"
+            "text": "{{ product.metafields.custom.ingredients | metafield_tag }}"
           }
         }
       },
@@ -702,6 +703,7 @@
         "row_HKnDpF": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/Yammy_A4.png",
             "caption": "",
             "heading": "Lunchbox Hero Snack",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
