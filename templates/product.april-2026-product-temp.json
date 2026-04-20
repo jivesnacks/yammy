@@ -135,27 +135,6 @@
             "padding_horizontal": 15
           }
         },
-        "section_store_block_coupon_code_9YFbhG": {
-          "type": "shopify://apps/section-store/blocks/block-coupon-code/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
-          "settings": {
-            "top_text": "Get 10% Off $75+",
-            "bottom_text": "<p>Code: 10<em>OFF75</em></p>",
-            "text_size": 15,
-            "text_color": "#fef5ee",
-            "coupon": "10OFF75",
-            "copy_text": "Copy",
-            "copied_text": "Copied!",
-            "button_color": "#511d29",
-            "border": "none",
-            "border_thickness": 1,
-            "border_color": "#000000",
-            "radius": 6,
-            "bg_color": "#ec6608",
-            "padding_vertical": 4,
-            "padding_horizontal": 0,
-            "custom_css": ""
-          }
-        },
         "section_store_block_upsell_cdMjcB": {
           "type": "shopify://apps/section-store/blocks/block-upsell/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
           "settings": {
@@ -225,6 +204,27 @@
             "content": "",
             "page": ""
           }
+        },
+        "section_store_block_coupon_code_9YFbhG": {
+          "type": "shopify://apps/section-store/blocks/block-coupon-code/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "settings": {
+            "top_text": "Get 10% Off $75+",
+            "bottom_text": "<p>Code: 10<em>OFF75</em></p>",
+            "text_size": 15,
+            "text_color": "#fef5ee",
+            "coupon": "10OFF75",
+            "copy_text": "Copy",
+            "copied_text": "Copied!",
+            "button_color": "#511d29",
+            "border": "none",
+            "border_thickness": 1,
+            "border_color": "#000000",
+            "radius": 6,
+            "bg_color": "#ec6608",
+            "padding_vertical": 4,
+            "padding_horizontal": 0,
+            "custom_css": ""
+          }
         }
       },
       "block_order": [
@@ -241,13 +241,13 @@
         "loop_subscriptions_loop_widget_fxJdyp",
         "buy_buttons",
         "section_store_block_shipping_info_CngG94",
-        "section_store_block_coupon_code_9YFbhG",
         "section_store_block_upsell_cdMjcB",
         "description",
         "collapsible-row-0",
         "collapsible_tab_gFBn9B",
         "collapsible-row-1",
-        "collapsible_tab_6RDaQe"
+        "collapsible_tab_6RDaQe",
+        "section_store_block_coupon_code_9YFbhG"
       ],
       "settings": {
         "enable_sticky_info": true,
