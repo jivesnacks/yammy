@@ -478,7 +478,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".price {font-size: 1.5em !important; font-weight: 700 !important;}"
+      ".template-product .price {font-size: 1.5em !important; font-weight: 700 !important;}"
     ]
   }
 }
