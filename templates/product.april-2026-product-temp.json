@@ -271,39 +271,27 @@
         "heading_R8Hmai": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "Snacking just got [[a whole lot simpler.]]",
             "badge_bg": "#FCC86C",
             "badge_border": "#511D29",
             "badge_text": "#511D29",
             "badge_shadow": "#511D29",
             "letter_spacing": 0,
-            "heading_size": "h1"
+            "heading_size": "hxl"
           }
         },
         "text_JCKQTi": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+            "text": "<p>Perfectly chewy, naturally sweet, ridiculously satisfying. One ingredient. 12-13 vitamins. Zero junk.</p>",
             "accent_color": "#EE9441",
-            "font_size": 15
-          }
-        },
-        "button_9jFpgn": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "font_size": 20
           }
         }
       },
       "block_order": [
         "heading_R8Hmai",
-        "text_JCKQTi",
-        "button_9jFpgn"
+        "text_JCKQTi"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
@@ -318,8 +306,8 @@
         "star_1_left": 8,
         "star_2_top": 10,
         "star_2_left": 82,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     },
     "ss_scrolling_announcement_bar_BTAYCn": {
@@ -328,34 +316,55 @@
         "text_RXzKEj": {
           "type": "text",
           "settings": {
-            "text": "Free Shipping"
+            "text": "Fiber"
+          }
+        },
+        "text_zjFjpi": {
+          "type": "text",
+          "settings": {
+            "text": "Protein"
           }
         },
         "text_ciAdi9": {
           "type": "text",
           "settings": {
-            "text": "Free Returns"
+            "text": "Non-GMO Project Verified"
+          }
+        },
+        "text_JqEWma": {
+          "type": "text",
+          "settings": {
+            "text": "Vegan"
+          }
+        },
+        "text_PtkAkr": {
+          "type": "text",
+          "settings": {
+            "text": "Gluten Free"
           }
         }
       },
       "block_order": [
         "text_RXzKEj",
-        "text_ciAdi9"
+        "text_zjFjpi",
+        "text_ciAdi9",
+        "text_JqEWma",
+        "text_PtkAkr"
       ],
       "name": "SS - Scrolling announcement bar",
       "settings": {
-        "insert_css_class_target": ".header, .pageheader, .section-header, #announcement, .toolbar, .header__wrapper",
-        "text_custom": false,
-        "ss_font_family": "montserrat_n4",
-        "text_size": 12,
+        "insert_css_class_target": "",
+        "text_custom": true,
+        "ss_font_family": "questrial_n4",
+        "text_size": 24,
         "link": "",
-        "animation_duration": 44,
-        "animation_direction": "right",
-        "pause_hover": false,
-        "text_color": "#FFFFFF",
-        "bg": "#000000",
+        "animation_duration": 200,
+        "animation_direction": "left",
+        "pause_hover": true,
+        "text_color": "#fcc86c",
+        "bg": "#511d29",
         "hover_opacity": 90,
-        "padding_vertical": 1.5,
+        "padding_vertical": 2,
         "padding_horizontal": 0
       }
     },
