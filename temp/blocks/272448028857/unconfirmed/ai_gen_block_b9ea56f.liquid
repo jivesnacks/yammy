@@ -1,6 +1,1000 @@
+{% doc %}
+  @prompt
+    A 5 column comparison table
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-comparison-table-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    overflow-x: auto;
+    padding: {{ block.settings.padding }}px;
+    background-color: {{ block.settings.background_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+  }
+
+  .ai-comparison-table__wrapper-{{ ai_gen_id }} {
+    min-width: 600px;
+  }
+
+  .ai-comparison-table__table-{{ ai_gen_id }} {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  .ai-comparison-table__header-{{ ai_gen_id }} {
+    background-color: {{ block.settings.header_bg_color }};
+  }
+
+  .ai-comparison-table__header-cell-{{ ai_gen_id }} {
+    padding: {{ block.settings.cell_padding }}px;
+    text-align: center;
+    font-weight: 600;
+    font-size: {{ block.settings.header_font_size }}px;
+    color: {{ block.settings.header_text_color }};
+    border: {{ block.settings.border_width }}px solid {{ block.settings.border_color }};
+  }
+
+  .ai-comparison-table__header-cell-{{ ai_gen_id }}:first-child {
+    text-align: left;
+    width: 25%;
+  }
+
+  .ai-comparison-table__row-{{ ai_gen_id }} {
+    background-color: {{ block.settings.row_bg_color }};
+  }
+
+  .ai-comparison-table__row-{{ ai_gen_id }}:nth-child(even) {
+    background-color: {{ block.settings.row_alt_bg_color }};
+  }
+
+  .ai-comparison-table__cell-{{ ai_gen_id }} {
+    padding: {{ block.settings.cell_padding }}px;
+    text-align: center;
+    font-size: {{ block.settings.cell_font_size }}px;
+    color: {{ block.settings.cell_text_color }};
+    border: {{ block.settings.border_width }}px solid {{ block.settings.border_color }};
+  }
+
+  .ai-comparison-table__cell-{{ ai_gen_id }}:first-child {
+    text-align: left;
+    font-weight: 600;
+    color: {{ block.settings.feature_text_color }};
+  }
+
+  .ai-comparison-table__icon-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-comparison-table__icon-{{ ai_gen_id }} svg {
+    width: {{ block.settings.icon_size }}px;
+    height: {{ block.settings.icon_size }}px;
+  }
+
+  .ai-comparison-table__checkmark-{{ ai_gen_id }} {
+    color: {{ block.settings.checkmark_color }};
+  }
+
+  .ai-comparison-table__cross-{{ ai_gen_id }} {
+    color: {{ block.settings.cross_color }};
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-comparison-table-{{ ai_gen_id }} {
+      padding: {{ block.settings.padding | times: 0.5 }}px;
+    }
+
+    .ai-comparison-table__header-cell-{{ ai_gen_id }},
+    .ai-comparison-table__cell-{{ ai_gen_id }} {
+      padding: {{ block.settings.cell_padding | times: 0.7 }}px;
+      font-size: {{ block.settings.cell_font_size | times: 0.9 }}px;
+    }
+
+    .ai-comparison-table__header-cell-{{ ai_gen_id }} {
+      font-size: {{ block.settings.header_font_size | times: 0.9 }}px;
+    }
+  }
+{% endstyle %}
+
+<comparison-table-{{ ai_gen_id }} class="ai-comparison-table-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-comparison-table__wrapper-{{ ai_gen_id }}">
+    <table class="ai-comparison-table__table-{{ ai_gen_id }}">
+      <thead class="ai-comparison-table__header-{{ ai_gen_id }}">
+        <tr>
+          <th class="ai-comparison-table__header-cell-{{ ai_gen_id }}">{{ block.settings.feature_column_label }}</th>
+          <th class="ai-comparison-table__header-cell-{{ ai_gen_id }}">{{ block.settings.column_1_label }}</th>
+          <th class="ai-comparison-table__header-cell-{{ ai_gen_id }}">{{ block.settings.column_2_label }}</th>
+          <th class="ai-comparison-table__header-cell-{{ ai_gen_id }}">{{ block.settings.column_3_label }}</th>
+          <th class="ai-comparison-table__header-cell-{{ ai_gen_id }}">{{ block.settings.column_4_label }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for i in (1..10) %}
+          {% liquid
+            assign feature_key = 'feature_' | append: i
+            assign col1_key = 'feature_' | append: i | append: '_col1'
+            assign col2_key = 'feature_' | append: i | append: '_col2'
+            assign col3_key = 'feature_' | append: i | append: '_col3'
+            assign col4_key = 'feature_' | append: i | append: '_col4'
+
+            assign feature_name = block.settings[feature_key]
+            assign col1_value = block.settings[col1_key]
+            assign col2_value = block.settings[col2_key]
+            assign col3_value = block.settings[col3_key]
+            assign col4_value = block.settings[col4_key]
+          %}
+
+          {% if feature_name != blank %}
+            <tr class="ai-comparison-table__row-{{ ai_gen_id }}">
+              <td class="ai-comparison-table__cell-{{ ai_gen_id }}">{{ feature_name }}</td>
+              <td class="ai-comparison-table__cell-{{ ai_gen_id }}">
+                {% if col1_value == 'yes' %}
+                  <span class="ai-comparison-table__icon-{{ ai_gen_id }} ai-comparison-table__checkmark-{{ ai_gen_id }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </span>
+                {% elsif col1_value == 'no' %}
+                  <span class="ai-comparison-table__icon-{{ ai_gen_id }} ai-comparison-table__cross-{{ ai_gen_id }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="18" y1="6" x2="6" y2="18"></line>
+                      <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                  </span>
+                {% else %}
+                  {{ col1_value }}
+                {% endif %}
+              </td>
+              <td class="ai-comparison-table__cell-{{ ai_gen_id }}">
+                {% if col2_value == 'yes' %}
+                  <span class="ai-comparison-table__icon-{{ ai_gen_id }} ai-comparison-table__checkmark-{{ ai_gen_id }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </span>
+                {% elsif col2_value == 'no' %}
+                  <span class="ai-comparison-table__icon-{{ ai_gen_id }} ai-comparison-table__cross-{{ ai_gen_id }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="18" y1="6" x2="6" y2="18"></line>
+                      <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                  </span>
+                {% else %}
+                  {{ col2_value }}
+                {% endif %}
+              </td>
+              <td class="ai-comparison-table__cell-{{ ai_gen_id }}">
+                {% if col3_value == 'yes' %}
+                  <span class="ai-comparison-table__icon-{{ ai_gen_id }} ai-comparison-table__checkmark-{{ ai_gen_id }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </span>
+                {% elsif col3_value == 'no' %}
+                  <span class="ai-comparison-table__icon-{{ ai_gen_id }} ai-comparison-table__cross-{{ ai_gen_id }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="18" y1="6" x2="6" y2="18"></line>
+                      <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                  </span>
+                {% else %}
+                  {{ col3_value }}
+                {% endif %}
+              </td>
+              <td class="ai-comparison-table__cell-{{ ai_gen_id }}">
+                {% if col4_value == 'yes' %}
+                  <span class="ai-comparison-table__icon-{{ ai_gen_id }} ai-comparison-table__checkmark-{{ ai_gen_id }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </span>
+                {% elsif col4_value == 'no' %}
+                  <span class="ai-comparison-table__icon-{{ ai_gen_id }} ai-comparison-table__cross-{{ ai_gen_id }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="18" y1="6" x2="6" y2="18"></line>
+                      <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                  </span>
+                {% else %}
+                  {{ col4_value }}
+                {% endif %}
+              </td>
+            </tr>
+          {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</comparison-table-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class ComparisonTable{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.setupResponsiveScroll();
+      }
+
+      setupResponsiveScroll() {
+        const wrapper = this.querySelector('.ai-comparison-table__wrapper-{{ ai_gen_id }}');
+        if (wrapper && wrapper.scrollWidth > wrapper.clientWidth) {
+          this.style.cursor = 'grab';
+          
+          let isDown = false;
+          let startX;
+          let scrollLeft;
+
+          this.addEventListener('mousedown', (e) => {
+            isDown = true;
+            this.style.cursor = 'grabbing';
+            startX = e.pageX - this.offsetLeft;
+            scrollLeft = this.scrollLeft;
+          });
+
+          this.addEventListener('mouseleave', () => {
+            isDown = false;
+            this.style.cursor = 'grab';
+          });
+
+          this.addEventListener('mouseup', () => {
+            isDown = false;
+            this.style.cursor = 'grab';
+          });
+
+          this.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - this.offsetLeft;
+            const walk = (x - startX) * 2;
+            this.scrollLeft = scrollLeft - walk;
+          });
+        }
+      }
+    }
+
+    customElements.define('comparison-table-{{ ai_gen_id }}', ComparisonTable{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Comparison table",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Table headers"
+    },
+    {
+      "type": "text",
+      "id": "feature_column_label",
+      "label": "Feature column label",
+      "default": "Features"
+    },
+    {
+      "type": "text",
+      "id": "column_1_label",
+      "label": "Column 1 label",
+      "default": "Basic"
+    },
+    {
+      "type": "text",
+      "id": "column_2_label",
+      "label": "Column 2 label",
+      "default": "Standard"
+    },
+    {
+      "type": "text",
+      "id": "column_3_label",
+      "label": "Column 3 label",
+      "default": "Premium"
+    },
+    {
+      "type": "text",
+      "id": "column_4_label",
+      "label": "Column 4 label",
+      "default": "Enterprise"
+    },
+    {
+      "type": "header",
+      "content": "Feature 1"
+    },
+    {
+      "type": "text",
+      "id": "feature_1",
+      "label": "Feature name",
+      "default": "Storage"
+    },
+    {
+      "type": "select",
+      "id": "feature_1_col1",
+      "label": "Column 1",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "10GB", "label": "Custom text" }
+      ],
+      "default": "10GB"
+    },
+    {
+      "type": "select",
+      "id": "feature_1_col2",
+      "label": "Column 2",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "50GB", "label": "Custom text" }
+      ],
+      "default": "50GB"
+    },
+    {
+      "type": "select",
+      "id": "feature_1_col3",
+      "label": "Column 3",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "200GB", "label": "Custom text" }
+      ],
+      "default": "200GB"
+    },
+    {
+      "type": "select",
+      "id": "feature_1_col4",
+      "label": "Column 4",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "Unlimited", "label": "Custom text" }
+      ],
+      "default": "Unlimited"
+    },
+    {
+      "type": "header",
+      "content": "Feature 2"
+    },
+    {
+      "type": "text",
+      "id": "feature_2",
+      "label": "Feature name",
+      "default": "Support"
+    },
+    {
+      "type": "select",
+      "id": "feature_2_col1",
+      "label": "Column 1",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "Email", "label": "Custom text" }
+      ],
+      "default": "Email"
+    },
+    {
+      "type": "select",
+      "id": "feature_2_col2",
+      "label": "Column 2",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "Email & Chat", "label": "Custom text" }
+      ],
+      "default": "Email & Chat"
+    },
+    {
+      "type": "select",
+      "id": "feature_2_col3",
+      "label": "Column 3",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "24/7 Support", "label": "Custom text" }
+      ],
+      "default": "24/7 Support"
+    },
+    {
+      "type": "select",
+      "id": "feature_2_col4",
+      "label": "Column 4",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "Dedicated", "label": "Custom text" }
+      ],
+      "default": "Dedicated"
+    },
+    {
+      "type": "header",
+      "content": "Feature 3"
+    },
+    {
+      "type": "text",
+      "id": "feature_3",
+      "label": "Feature name",
+      "default": "Users"
+    },
+    {
+      "type": "select",
+      "id": "feature_3_col1",
+      "label": "Column 1",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "1", "label": "Custom text" }
+      ],
+      "default": "1"
+    },
+    {
+      "type": "select",
+      "id": "feature_3_col2",
+      "label": "Column 2",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "5", "label": "Custom text" }
+      ],
+      "default": "5"
+    },
+    {
+      "type": "select",
+      "id": "feature_3_col3",
+      "label": "Column 3",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "25", "label": "Custom text" }
+      ],
+      "default": "25"
+    },
+    {
+      "type": "select",
+      "id": "feature_3_col4",
+      "label": "Column 4",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "Unlimited", "label": "Custom text" }
+      ],
+      "default": "Unlimited"
+    },
+    {
+      "type": "header",
+      "content": "Feature 4"
+    },
+    {
+      "type": "text",
+      "id": "feature_4",
+      "label": "Feature name",
+      "default": "API Access"
+    },
+    {
+      "type": "select",
+      "id": "feature_4_col1",
+      "label": "Column 1",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "no"
+    },
+    {
+      "type": "select",
+      "id": "feature_4_col2",
+      "label": "Column 2",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "no"
+    },
+    {
+      "type": "select",
+      "id": "feature_4_col3",
+      "label": "Column 3",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "yes"
+    },
+    {
+      "type": "select",
+      "id": "feature_4_col4",
+      "label": "Column 4",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "yes"
+    },
+    {
+      "type": "header",
+      "content": "Feature 5"
+    },
+    {
+      "type": "text",
+      "id": "feature_5",
+      "label": "Feature name",
+      "default": "Analytics"
+    },
+    {
+      "type": "select",
+      "id": "feature_5_col1",
+      "label": "Column 1",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "Basic", "label": "Custom text" }
+      ],
+      "default": "Basic"
+    },
+    {
+      "type": "select",
+      "id": "feature_5_col2",
+      "label": "Column 2",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "Standard", "label": "Custom text" }
+      ],
+      "default": "Standard"
+    },
+    {
+      "type": "select",
+      "id": "feature_5_col3",
+      "label": "Column 3",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "Advanced", "label": "Custom text" }
+      ],
+      "default": "Advanced"
+    },
+    {
+      "type": "select",
+      "id": "feature_5_col4",
+      "label": "Column 4",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "Custom", "label": "Custom text" }
+      ],
+      "default": "Custom"
+    },
+    {
+      "type": "header",
+      "content": "Feature 6"
+    },
+    {
+      "type": "text",
+      "id": "feature_6",
+      "label": "Feature name"
+    },
+    {
+      "type": "select",
+      "id": "feature_6_col1",
+      "label": "Column 1",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "no"
+    },
+    {
+      "type": "select",
+      "id": "feature_6_col2",
+      "label": "Column 2",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "yes"
+    },
+    {
+      "type": "select",
+      "id": "feature_6_col3",
+      "label": "Column 3",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "yes"
+    },
+    {
+      "type": "select",
+      "id": "feature_6_col4",
+      "label": "Column 4",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "yes"
+    },
+    {
+      "type": "header",
+      "content": "Feature 7"
+    },
+    {
+      "type": "text",
+      "id": "feature_7",
+      "label": "Feature name"
+    },
+    {
+      "type": "select",
+      "id": "feature_7_col1",
+      "label": "Column 1",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "no"
+    },
+    {
+      "type": "select",
+      "id": "feature_7_col2",
+      "label": "Column 2",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "yes"
+    },
+    {
+      "type": "select",
+      "id": "feature_7_col3",
+      "label": "Column 3",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "yes"
+    },
+    {
+      "type": "select",
+      "id": "feature_7_col4",
+      "label": "Column 4",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "yes"
+    },
+    {
+      "type": "header",
+      "content": "Feature 8"
+    },
+    {
+      "type": "text",
+      "id": "feature_8",
+      "label": "Feature name"
+    },
+    {
+      "type": "select",
+      "id": "feature_8_col1",
+      "label": "Column 1",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "no"
+    },
+    {
+      "type": "select",
+      "id": "feature_8_col2",
+      "label": "Column 2",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "yes"
+    },
+    {
+      "type": "select",
+      "id": "feature_8_col3",
+      "label": "Column 3",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "yes"
+    },
+    {
+      "type": "select",
+      "id": "feature_8_col4",
+      "label": "Column 4",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "yes"
+    },
+    {
+      "type": "header",
+      "content": "Feature 9"
+    },
+    {
+      "type": "text",
+      "id": "feature_9",
+      "label": "Feature name"
+    },
+    {
+      "type": "select",
+      "id": "feature_9_col1",
+      "label": "Column 1",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "no"
+    },
+    {
+      "type": "select",
+      "id": "feature_9_col2",
+      "label": "Column 2",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "yes"
+    },
+    {
+      "type": "select",
+      "id": "feature_9_col3",
+      "label": "Column 3",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "yes"
+    },
+    {
+      "type": "select",
+      "id": "feature_9_col4",
+      "label": "Column 4",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "yes"
+    },
+    {
+      "type": "header",
+      "content": "Feature 10"
+    },
+    {
+      "type": "text",
+      "id": "feature_10",
+      "label": "Feature name"
+    },
+    {
+      "type": "select",
+      "id": "feature_10_col1",
+      "label": "Column 1",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "no"
+    },
+    {
+      "type": "select",
+      "id": "feature_10_col2",
+      "label": "Column 2",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "yes"
+    },
+    {
+      "type": "select",
+      "id": "feature_10_col3",
+      "label": "Column 3",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "yes"
+    },
+    {
+      "type": "select",
+      "id": "feature_10_col4",
+      "label": "Column 4",
+      "options": [
+        { "value": "yes", "label": "Yes (checkmark)" },
+        { "value": "no", "label": "No (cross)" },
+        { "value": "custom", "label": "Custom text" }
+      ],
+      "default": "yes"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "label": "Padding",
+      "min": 0,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "cell_padding",
+      "label": "Cell padding",
+      "min": 8,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "label": "Border width",
+      "min": 0,
+      "max": 5,
+      "step": 1,
+      "unit": "px",
+      "default": 1
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "header_font_size",
+      "label": "Header font size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "cell_font_size",
+      "label": "Cell font size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "label": "Icon size",
+      "min": 16,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "header_bg_color",
+      "label": "Header background",
+      "default": "#511d29"
+    },
+    {
+      "type": "color",
+      "id": "header_text_color",
+      "label": "Header text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "row_bg_color",
+      "label": "Row background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "row_alt_bg_color",
+      "label": "Alternate row background",
+      "default": "#fef5ee"
+    },
+    {
+      "type": "color",
+      "id": "cell_text_color",
+      "label": "Cell text",
+      "default": "#511d29"
+    },
+    {
+      "type": "color",
+      "id": "feature_text_color",
+      "label": "Feature text",
+      "default": "#511d29"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "color",
+      "id": "checkmark_color",
+      "label": "Checkmark",
+      "default": "#008060"
+    },
+    {
+      "type": "color",
+      "id": "cross_color",
+      "label": "Cross",
+      "default": "#d82c0d"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Comparison table"
+    }
+  ]
+}
 {% endschema %}
