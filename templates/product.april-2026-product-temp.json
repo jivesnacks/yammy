@@ -317,13 +317,13 @@
         "text_RXzKEj": {
           "type": "text",
           "settings": {
-            "text": "FIBER"
+            "text": "{{ product.metafields.custom.fiber.value }} FIBER"
           }
         },
         "text_zjFjpi": {
           "type": "text",
           "settings": {
-            "text": "PROTEIN"
+            "text": "{{ product.metafields.custom.protein.value }} PROTEIN"
           }
         },
         "text_ciAdi9": {
