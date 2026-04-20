@@ -562,6 +562,42 @@
         "include_margins": true
       }
     },
+    "rich_text_3PixQ6": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_JjQF8d": {
+          "type": "heading",
+          "settings": {
+            "heading": "Yammy vs. The Snack Aisle",
+            "badge_bg": "#fcc86c",
+            "badge_border": "#511d29",
+            "badge_text": "#511d29",
+            "badge_shadow": "#511d29",
+            "letter_spacing": 0,
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JjQF8d"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "show_stars": false,
+        "show_stars_mobile": true,
+        "star_size": 24,
+        "star_1_top": 45,
+        "star_1_left": 8,
+        "star_2_top": 10,
+        "star_2_left": 82,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
     "comparison_table_6RbbN4": {
       "type": "comparison-table",
       "blocks": {
@@ -617,76 +653,60 @@
         "padding_bottom": 36
       }
     },
-    "rich_text_MYkVnH": {
-      "type": "rich-text",
+    "multirow_Hprj8Q": {
+      "type": "multirow",
       "blocks": {
-        "heading_TLdkMV": {
-          "type": "heading",
+        "row_HKnDpF": {
+          "type": "row",
           "settings": {
-            "heading": "Try these other || [[awesome flavors]]",
-            "badge_bg": "#fcc86c",
-            "badge_border": "#511d29",
-            "badge_text": "#511d29",
-            "badge_shadow": "#511d29",
-            "letter_spacing": 0,
-            "heading_size": "h0"
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_WcEqXn": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_GxrAei": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
           }
         }
       },
       "block_order": [
-        "heading_TLdkMV"
+        "row_HKnDpF",
+        "row_WcEqXn",
+        "row_GxrAei"
       ],
-      "name": "t:sections.rich-text.presets.name",
+      "name": "t:sections.multirow.presets.name",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "show_stars": false,
-        "show_stars_mobile": true,
-        "star_size": 24,
-        "star_1_top": 45,
-        "star_1_left": 8,
-        "star_2_top": 10,
-        "star_2_left": 82,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
-    "rich_text_3PixQ6": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_JjQF8d": {
-          "type": "heading",
-          "settings": {
-            "heading": "Yammy vs. The Snack Aisle",
-            "badge_bg": "#fcc86c",
-            "badge_border": "#511d29",
-            "badge_text": "#511d29",
-            "badge_shadow": "#511d29",
-            "letter_spacing": 0,
-            "heading_size": "h0"
-          }
-        }
-      },
-      "block_order": [
-        "heading_JjQF8d"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "show_stars": false,
-        "show_stars_mobile": true,
-        "star_size": 24,
-        "star_1_top": 45,
-        "star_1_left": 8,
-        "star_2_top": 10,
-        "star_2_left": 82,
-        "padding_top": 40,
-        "padding_bottom": 0
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "collapsible_content_3dJYdn": {
@@ -771,6 +791,42 @@
         "include_margins": true
       }
     },
+    "rich_text_MYkVnH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_TLdkMV": {
+          "type": "heading",
+          "settings": {
+            "heading": "Try these other || [[awesome flavors]]",
+            "badge_bg": "#fcc86c",
+            "badge_border": "#511d29",
+            "badge_text": "#511d29",
+            "badge_shadow": "#511d29",
+            "letter_spacing": 0,
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "heading_TLdkMV"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "show_stars": false,
+        "show_stars_mobile": true,
+        "star_size": 24,
+        "star_1_top": 45,
+        "star_1_left": 8,
+        "star_2_top": 10,
+        "star_2_left": 82,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -788,6 +844,94 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "177668526241d3c9a2": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_b9ea56f_LzQxqG": {
+          "type": "ai_gen_block_b9ea56f",
+          "settings": {
+            "feature_column_label": "Features",
+            "column_1_label": "Basic",
+            "column_2_label": "Standard",
+            "column_3_label": "Premium",
+            "column_4_label": "Enterprise",
+            "feature_1": "Storage",
+            "feature_1_col1": "10GB",
+            "feature_1_col2": "50GB",
+            "feature_1_col3": "200GB",
+            "feature_1_col4": "Unlimited",
+            "feature_2": "Support",
+            "feature_2_col1": "Email",
+            "feature_2_col2": "Email & Chat",
+            "feature_2_col3": "24/7 Support",
+            "feature_2_col4": "Dedicated",
+            "feature_3": "Users",
+            "feature_3_col1": "1",
+            "feature_3_col2": "5",
+            "feature_3_col3": "25",
+            "feature_3_col4": "Unlimited",
+            "feature_4": "API Access",
+            "feature_4_col1": "no",
+            "feature_4_col2": "no",
+            "feature_4_col3": "yes",
+            "feature_4_col4": "yes",
+            "feature_5": "Analytics",
+            "feature_5_col1": "Basic",
+            "feature_5_col2": "Standard",
+            "feature_5_col3": "Advanced",
+            "feature_5_col4": "Custom",
+            "feature_6": "",
+            "feature_6_col1": "no",
+            "feature_6_col2": "yes",
+            "feature_6_col3": "yes",
+            "feature_6_col4": "yes",
+            "feature_7": "",
+            "feature_7_col1": "no",
+            "feature_7_col2": "yes",
+            "feature_7_col3": "yes",
+            "feature_7_col4": "yes",
+            "feature_8": "",
+            "feature_8_col1": "no",
+            "feature_8_col2": "yes",
+            "feature_8_col3": "yes",
+            "feature_8_col4": "yes",
+            "feature_9": "",
+            "feature_9_col1": "no",
+            "feature_9_col2": "yes",
+            "feature_9_col3": "yes",
+            "feature_9_col4": "yes",
+            "feature_10": "",
+            "feature_10_col1": "no",
+            "feature_10_col2": "yes",
+            "feature_10_col3": "yes",
+            "feature_10_col4": "yes",
+            "desktop_width_percent": 100,
+            "padding": 20,
+            "border_radius": 8,
+            "cell_padding": 16,
+            "border_width": 1,
+            "header_font_size": 16,
+            "cell_font_size": 14,
+            "icon_size": 20,
+            "background_color": "#ffffff",
+            "header_bg_color": "#511d29",
+            "header_text_color": "#ffffff",
+            "row_bg_color": "#ffffff",
+            "row_alt_bg_color": "#fef5ee",
+            "cell_text_color": "#511d29",
+            "feature_text_color": "#511d29",
+            "border_color": "#e0e0e0",
+            "checkmark_color": "#008060",
+            "cross_color": "#d82c0d"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_b9ea56f_LzQxqG"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -798,9 +942,11 @@
     "1776681792512366d5",
     "rich_text_3PixQ6",
     "comparison_table_6RbbN4",
-    "rich_text_MYkVnH",
+    "multirow_Hprj8Q",
     "collapsible_content_3dJYdn",
     "1775195616e6ea4e68",
-    "related-products"
+    "rich_text_MYkVnH",
+    "related-products",
+    "177668526241d3c9a2"
   ]
 }
