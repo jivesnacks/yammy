@@ -24,7 +24,7 @@
             "border_color": "#dcdcdc",
             "radius": 8,
             "background": "#fef5ee",
-            "padding_vertical": 12,
+            "padding_vertical": 18,
             "padding_horizontal": 16,
             "change_text": "Change"
           }
@@ -693,8 +693,8 @@
         "row_HKnDpF": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
-            "heading": "Row",
+            "caption": "",
+            "heading": "A Lunchbox Hero",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "button_label": "Button label",
             "button_link": ""
@@ -703,8 +703,8 @@
         "row_WcEqXn": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
-            "heading": "Row",
+            "caption": "",
+            "heading": "On-The-Go Ready",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "button_label": "Button label",
             "button_link": ""
