@@ -316,31 +316,31 @@
         "text_RXzKEj": {
           "type": "text",
           "settings": {
-            "text": "Fiber"
+            "text": "FIBER"
           }
         },
         "text_zjFjpi": {
           "type": "text",
           "settings": {
-            "text": "Protein"
+            "text": "PROTEIN"
           }
         },
         "text_ciAdi9": {
           "type": "text",
           "settings": {
-            "text": "Non-GMO Project Verified"
+            "text": "NON-GMO PROJECT VERIFIED"
           }
         },
         "text_JqEWma": {
           "type": "text",
           "settings": {
-            "text": "Vegan"
+            "text": "VEGAN"
           }
         },
         "text_PtkAkr": {
           "type": "text",
           "settings": {
-            "text": "Gluten Free"
+            "text": "GLUTEN FREE"
           }
         }
       },
