@@ -55,11 +55,11 @@
             "compare_at_price_color": "#999999"
           }
         },
-        "text_x48yEy": {
-          "type": "text",
+        "custom_liquid_wjGVwY": {
+          "type": "custom_liquid",
+          "name": "Breadcrumbs",
           "settings": {
-            "text": "Breadcrumbs for SEO",
-            "text_style": "body"
+            "custom_liquid": ""
           }
         },
         "title": {
@@ -156,30 +156,6 @@
             "custom_css": ""
           }
         },
-        "section_store_block_payment_icons_2_erBJw9": {
-          "type": "shopify://apps/section-store/blocks/block-payment-icons-2/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
-          "settings": {
-            "icons_layout": "fixed_grid",
-            "icons_per_row": 10,
-            "icons_per_row_mobile": 8,
-            "gap": 10,
-            "icons_align": "center",
-            "icons_monochrome": false,
-            "enable_first_image": false,
-            "enable_second_image": false,
-            "enable_third_image": false,
-            "icon_size": 20,
-            "border": "none",
-            "border_thickness": 1,
-            "border_color": "#000000",
-            "radius": 8,
-            "background": "",
-            "padding_top": 0,
-            "padding_bottom": 0,
-            "padding_left": 0,
-            "padding_right": 0
-          }
-        },
         "section_store_block_upsell_cdMjcB": {
           "type": "shopify://apps/section-store/blocks/block-upsell/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
           "settings": {
@@ -254,7 +230,7 @@
       "block_order": [
         "section_store_block_sticky_atc_kNyJkb",
         "section_store_block_atc_style_UfVVbU",
-        "text_x48yEy",
+        "custom_liquid_wjGVwY",
         "title",
         "judge_me_reviews_preview_badge_TnFUJU",
         "price",
@@ -266,7 +242,6 @@
         "buy_buttons",
         "section_store_block_shipping_info_CngG94",
         "section_store_block_coupon_code_9YFbhG",
-        "section_store_block_payment_icons_2_erBJw9",
         "section_store_block_upsell_cdMjcB",
         "description",
         "collapsible-row-0",

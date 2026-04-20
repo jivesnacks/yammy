@@ -78,7 +78,7 @@
           "type": "text",
           "settings": {
             "heading": "",
-            "subtext": "<p><strong>Address</strong></p><p>1401 21st St Suite R<br/>Sacramento, CA, 95811, US</p><p><strong>Email</strong></p><p><a href=\"mailto:support@jivesnacks.com\" target=\"_blank\" title=\"mailto:support@jivesnacks.com\">support@jivesnacks.com</a></p>"
+            "subtext": "<p><strong>Address</strong></p><p>1401 21st St Suite R<br/>Sacramento, CA, 95811 USA</p><p><strong>Email</strong></p><p><a href=\"mailto:support@jivesnacks.com\" target=\"_blank\" title=\"mailto:support@jivesnacks.com\">support@jivesnacks.com</a></p>"
           }
         },
         "footer-1": {
