@@ -369,109 +369,162 @@
         "padding_horizontal": 0
       }
     },
-    "image_banner_4DgWeK": {
-      "type": "image-banner",
+    "ss_image_with_text_24_chnqAw": {
+      "type": "ss-image-with-text-24",
       "blocks": {
-        "heading_UaUge9": {
+        "heading_hTgWrD": {
           "type": "heading",
           "settings": {
-            "heading": "Chewy. Chewy. Chewy.",
-            "heading_size": "hxl",
-            "badge_bg": "#FCC86C",
-            "badge_border": "#511D29",
-            "badge_text": "#511D29",
-            "badge_shadow": "#511D29"
+            "heading": "<h2>Chewy. Chewy. Chewy. + 100% Clean Ingredients</h2>",
+            "heading_custom": false,
+            "heading_font": "josefin_sans_n4",
+            "heading_size": 48,
+            "heading_size_mobile": 32,
+            "heading_advanced": false,
+            "heading_height": 130,
+            "heading_mt": 0,
+            "heading_mt_mobile": 0,
+            "heading_color": "#5b1830"
           }
         },
-        "text_WbBMMq": {
+        "text_8LAkQJ": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_size": 16,
-            "text_style": "body"
+            "text": "<p>Yammy hits different. Our sweet potato sticks are perfectly chewy and packed with bold, real seasoning. Once you start, good luck stopping.</p>",
+            "text_custom": false,
+            "text_font": "josefin_sans_n4",
+            "text_size": 18,
+            "text_size_mobile": 16,
+            "text_advanced": false,
+            "text_height": 150,
+            "text_mt": 12,
+            "text_mt_mobile": 12,
+            "text_color": "#121212"
           }
         },
-        "buttons_r4AHYq": {
-          "type": "buttons",
+        "button_LXVtUx": {
+          "type": "button",
           "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "button": "Shop now",
+            "button_url": "",
+            "open_in_new_tab": false,
+            "button_style": "outline",
+            "button_custom": false,
+            "button_font": "josefin_sans_n4",
+            "button_size": 16,
+            "button_size_mobile": 16,
+            "button_advanced": false,
+            "button_height": 100,
+            "button_padding_horizontal": 32,
+            "button_padding_horizontal_mobile": 32,
+            "button_padding_vertical": 16,
+            "button_padding_vertical_mobile": 16,
+            "button_radius": 100,
+            "button_border_thickness": 1,
+            "button_mt": 24,
+            "button_mt_mobile": 16,
+            "use_shadow": false,
+            "button_color": "#121212",
+            "button_hover_color": "#121212",
+            "button_bg_color": "#F7F7F7",
+            "button_bg_hover_color": "#FFFFFF",
+            "button_border_color": "#121212",
+            "button_border_hover_color": "#121212"
+          }
+        },
+        "item_dGDnpn": {
+          "type": "item",
+          "settings": {
+            "heading": "<h3>Feature heading</h3>",
+            "text": "<p>A short description of this feature.</p>"
+          }
+        },
+        "item_VdnmYL": {
+          "type": "item",
+          "settings": {
+            "heading": "<h3>Feature heading</h3>",
+            "text": "<p>A short description of this feature.</p>"
+          }
+        },
+        "item_xeN9yX": {
+          "type": "item",
+          "settings": {
+            "heading": "<h3>Feature heading</h3>",
+            "text": "<p>A short description of this feature.</p>"
+          }
+        },
+        "item_Cf8Bqp": {
+          "type": "item",
+          "settings": {
+            "heading": "<h3>Feature heading</h3>",
+            "text": "<p>A short description of this feature.</p>"
           }
         }
       },
       "block_order": [
-        "heading_UaUge9",
-        "text_WbBMMq",
-        "buttons_r4AHYq"
+        "heading_hTgWrD",
+        "text_8LAkQJ",
+        "button_LXVtUx",
+        "item_dGDnpn",
+        "item_VdnmYL",
+        "item_xeN9yX",
+        "item_Cf8Bqp"
       ],
-      "name": "t:sections.image-banner.presets.name",
+      "name": "SS - Image with text #24",
       "settings": {
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "image_behavior": "none",
-        "desktop_content_position": "middle-left",
-        "desktop_content_alignment": "left",
-        "show_text_box": false,
-        "content_box_width": 70,
-        "color_scheme": "",
-        "stack_images_on_mobile": true,
-        "mobile_image_position_x": 50,
-        "mobile_content_alignment": "center",
-        "show_text_below": true,
-        "show_decorations": false,
-        "show_decorations_mobile": false,
-        "decoration_size": 24,
-        "decoration_1_top": 15,
-        "decoration_1_left": 8,
-        "decoration_2_top": 10,
-        "decoration_2_left": 82,
-        "decoration_3_top": 70,
-        "decoration_3_left": 5,
-        "home_slant_left_height": 56,
-        "home_slant_right_height": 72,
-        "home_slant_left_color": "#efb487",
-        "home_slant_right_color": "#5b1830"
-      }
-    },
-    "ss_scrolling_announcement_bar_GDmmpn": {
-      "type": "ss-scrolling-announcement-bar",
-      "blocks": {
-        "text_zeGkUJ": {
-          "type": "text",
-          "settings": {
-            "text": "Free Shipping"
-          }
-        },
-        "text_PTVBJh": {
-          "type": "text",
-          "settings": {
-            "text": "Free Returns"
-          }
-        }
-      },
-      "block_order": [
-        "text_zeGkUJ",
-        "text_PTVBJh"
-      ],
-      "name": "SS - Scrolling announcement bar",
-      "settings": {
-        "insert_css_class_target": ".header, .pageheader, .section-header, #announcement, .toolbar, .header__wrapper",
-        "text_custom": false,
-        "ss_font_family": "montserrat_n4",
-        "text_size": 12,
-        "link": "",
-        "animation_duration": 44,
-        "animation_direction": "right",
-        "pause_hover": false,
-        "text_color": "#FFFFFF",
-        "bg": "#000000",
-        "hover_opacity": 90,
-        "padding_vertical": 1.5,
-        "padding_horizontal": 0
+        "layout": "image_content",
+        "image_item_width": 40,
+        "layout_gap": 60,
+        "content_align": "left",
+        "content_align_mobile": "center",
+        "features_advanced": true,
+        "items_mt": 80,
+        "items_mt_mobile": 20,
+        "items_gap": 100,
+        "item_padding_horizontal": 24,
+        "item_padding_horizontal_mobile": 0,
+        "progress_bar_width": 2,
+        "image_item_ratio": "portrait",
+        "image_item_ratio_mobile": "portrait",
+        "image_item_radius": 0,
+        "image_item_border_thickness": 0,
+        "item_heading_custom": true,
+        "item_heading_font": "questrial_n4",
+        "item_heading_size": 24,
+        "item_heading_size_mobile": 20,
+        "item_heading_advanced": false,
+        "item_heading_height": 130,
+        "item_heading_mt": 0,
+        "item_text_custom": false,
+        "item_text_font": "josefin_sans_n4",
+        "item_text_size": 18,
+        "item_text_size_mobile": 18,
+        "item_text_advanced": true,
+        "item_text_height": 150,
+        "item_text_mt": 12,
+        "item_text_mt_mobile": 12,
+        "text_hide_on_mobile": false,
+        "item_heading_color": "#5b1830",
+        "item_text_color": "#5b1830",
+        "progress_bar_bg": "#5b1830",
+        "image_item_border_color": "#121212",
+        "background_style": "solid",
+        "background_color": "#FFFFFF",
+        "background_gradient": "linear-gradient(180deg, #FFFFFF 0%, #F2F2F2 100%)",
+        "border_color": "#121212",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "width": "page",
+        "content_width": 1200,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
       }
     },
     "1776681792512366d5": {
@@ -600,6 +653,42 @@
         "padding_bottom": 0
       }
     },
+    "rich_text_3PixQ6": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_JjQF8d": {
+          "type": "heading",
+          "settings": {
+            "heading": "Yammy vs. The Snack Aisle",
+            "badge_bg": "#fcc86c",
+            "badge_border": "#511d29",
+            "badge_text": "#511d29",
+            "badge_shadow": "#511d29",
+            "letter_spacing": 0,
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JjQF8d"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "show_stars": false,
+        "show_stars_mobile": true,
+        "star_size": 24,
+        "star_1_top": 45,
+        "star_1_left": 8,
+        "star_2_top": 10,
+        "star_2_left": 82,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
     "collapsible_content_3dJYdn": {
       "type": "collapsible-content",
       "blocks": {
@@ -705,9 +794,9 @@
     "main",
     "rich_text_yQ87He",
     "ss_scrolling_announcement_bar_BTAYCn",
-    "image_banner_4DgWeK",
-    "ss_scrolling_announcement_bar_GDmmpn",
+    "ss_image_with_text_24_chnqAw",
     "1776681792512366d5",
+    "rich_text_3PixQ6",
     "comparison_table_6RbbN4",
     "rich_text_MYkVnH",
     "collapsible_content_3dJYdn",
