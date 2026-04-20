@@ -402,73 +402,45 @@
             "text_color": "#121212"
           }
         },
-        "button_LXVtUx": {
-          "type": "button",
-          "settings": {
-            "button": "Shop now",
-            "button_url": "",
-            "open_in_new_tab": false,
-            "button_style": "outline",
-            "button_custom": false,
-            "button_font": "josefin_sans_n4",
-            "button_size": 16,
-            "button_size_mobile": 16,
-            "button_advanced": false,
-            "button_height": 100,
-            "button_padding_horizontal": 32,
-            "button_padding_horizontal_mobile": 32,
-            "button_padding_vertical": 16,
-            "button_padding_vertical_mobile": 16,
-            "button_radius": 100,
-            "button_border_thickness": 1,
-            "button_mt": 24,
-            "button_mt_mobile": 16,
-            "use_shadow": false,
-            "button_color": "#121212",
-            "button_hover_color": "#121212",
-            "button_bg_color": "#f7f7f7",
-            "button_bg_hover_color": "#ffffff",
-            "button_border_color": "#121212",
-            "button_border_hover_color": "#121212"
-          }
-        },
         "item_dGDnpn": {
           "type": "item",
           "settings": {
-            "heading": "<h3>Feature heading</h3>",
-            "text": "<p>A short description of this feature.</p>"
+            "image": "shopify://shop_images/SweetPotato.jpg",
+            "heading": "<h3>Starts with fresh Asian sweet potato</h3>",
+            "text": "<p>A special, fragrant varietal.</p>"
           }
         },
         "item_VdnmYL": {
           "type": "item",
           "settings": {
-            "heading": "<h3>Feature heading</h3>",
-            "text": "<p>A short description of this feature.</p>"
+            "image": "shopify://shop_images/SweetPotatoStrip.jpg",
+            "heading": "<p>Cut into french fry-like strips</p>",
+            "text": "<p>Except WAY healthier.</p>"
+          }
+        },
+        "item_QJ7LzT": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/DriedSweetPotato.jpg",
+            "heading": "<h3>Baked at a low temperature</h3>",
+            "text": "<p>No oils added, ever.</p>"
           }
         },
         "item_xeN9yX": {
           "type": "item",
           "settings": {
-            "heading": "<h3>Feature heading</h3>",
-            "text": "<p>A short description of this feature.</p>"
-          }
-        },
-        "item_Cf8Bqp": {
-          "type": "item",
-          "settings": {
-            "heading": "<h3>Feature heading</h3>",
-            "text": "<p>A short description of this feature.</p>"
+            "heading": "<h3>Seasoned with real, bold spices</h3>",
+            "text": "<p>Metafields on seasonings.</p>"
           }
         }
       },
       "block_order": [
         "heading_hTgWrD",
         "text_8LAkQJ",
-        "button_LXVtUx",
         "item_dGDnpn",
         "item_VdnmYL",
-        "item_xeN9yX",
-        "item_Cf8Bqp"
+        "item_QJ7LzT",
+        "item_xeN9yX"
       ],
       "name": "SS - Image with text #24",
       "settings": {
@@ -509,11 +481,11 @@
         "progress_bar_bg": "#5b1830",
         "image_item_border_color": "#121212",
         "background_style": "solid",
-        "background_color": "#ffffff",
+        "background_color": "#fef5ee",
         "background_gradient": "linear-gradient(180deg, #FFFFFF 0%, #F2F2F2 100%)",
         "border_color": "#121212",
         "margin_top": 0,
-        "margin_bottom": 0,
+        "margin_bottom": 68,
         "margin_horizontal": 0,
         "margin_horizontal_mobile": 0,
         "padding_top": 36,
@@ -549,7 +521,7 @@
             "block_border_width": 1,
             "block_border_color": "#d7d7d7",
             "block_border_radius": 16,
-            "block_bg_color": "",
+            "block_bg_color": "#fef5ee",
             "block_padding_vertical": 30,
             "block_padding_horizontal": 10
           }
