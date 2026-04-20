@@ -446,7 +446,7 @@
       "name": "SS - Image with text #24",
       "settings": {
         "layout": "image_content",
-        "image_item_width": 40,
+        "image_item_width": 50,
         "layout_gap": 60,
         "content_align": "left",
         "content_align_mobile": "center",
