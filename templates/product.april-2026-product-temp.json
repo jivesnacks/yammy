@@ -499,6 +499,42 @@
         "lazy": true
       }
     },
+    "rich_text_YfqEHa": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_tfMCJh": {
+          "type": "heading",
+          "settings": {
+            "heading": "[[1,000,000+ bags]] snacked on",
+            "badge_bg": "#fcc86c",
+            "badge_border": "#511d29",
+            "badge_text": "#511d29",
+            "badge_shadow": "#511d29",
+            "letter_spacing": 0,
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tfMCJh"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "show_stars": false,
+        "show_stars_mobile": true,
+        "star_size": 24,
+        "star_1_top": 45,
+        "star_1_left": 8,
+        "star_2_top": 10,
+        "star_2_left": 82,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
     "1776681792512366d5": {
       "type": "apps",
       "blocks": {
@@ -858,6 +894,7 @@
     "rich_text_yQ87He",
     "ss_scrolling_announcement_bar_BTAYCn",
     "ss_image_with_text_24_chnqAw",
+    "rich_text_YfqEHa",
     "1776681792512366d5",
     "rich_text_3PixQ6",
     "blocks_3ErJJU",
