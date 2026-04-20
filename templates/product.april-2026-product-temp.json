@@ -20,7 +20,7 @@
             "hide_image_mobile": true,
             "stack_on_mobile": true,
             "border": "solid",
-            "border_thickness": 2,
+            "border_thickness": 3,
             "border_color": "#511d29",
             "radius": 8,
             "background": "#fef5ee",
@@ -558,6 +558,7 @@
       "block_order": [
         "section_store_block_video_carousel_Ad9d9H"
       ],
+      "custom_css": [],
       "settings": {
         "include_margins": true
       }
@@ -714,7 +715,7 @@
           "type": "row",
           "settings": {
             "caption": "",
-            "heading": "Row",
+            "heading": "Use Case #3",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "button_label": "Button label",
             "button_link": ""
