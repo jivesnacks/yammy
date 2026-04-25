@@ -117,93 +117,38 @@
         {% for i in (1..10) %}
           {% liquid
             assign feature_key = 'feature_' | append: i
-            assign col1_key = 'feature_' | append: i | append: '_col1'
-            assign col2_key = 'feature_' | append: i | append: '_col2'
-            assign col3_key = 'feature_' | append: i | append: '_col3'
-            assign col4_key = 'feature_' | append: i | append: '_col4'
-
             assign feature_name = block.settings[feature_key]
-            assign col1_value = block.settings[col1_key]
-            assign col2_value = block.settings[col2_key]
-            assign col3_value = block.settings[col3_key]
-            assign col4_value = block.settings[col4_key]
           %}
 
           {% if feature_name != blank %}
             <tr class="ai-comparison-table__row-{{ ai_gen_id }}">
               <td class="ai-comparison-table__cell-{{ ai_gen_id }}">{{ feature_name }}</td>
-              <td class="ai-comparison-table__cell-{{ ai_gen_id }}">
-                {% if col1_value == 'yes' %}
-                  <span class="ai-comparison-table__icon-{{ ai_gen_id }} ai-comparison-table__checkmark-{{ ai_gen_id }}">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                  </span>
-                {% elsif col1_value == 'no' %}
-                  <span class="ai-comparison-table__icon-{{ ai_gen_id }} ai-comparison-table__cross-{{ ai_gen_id }}">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="18" y1="6" x2="6" y2="18"></line>
-                      <line x1="6" y1="6" x2="18" y2="18"></line>
-                    </svg>
-                  </span>
-                {% else %}
-                  {{ col1_value }}
-                {% endif %}
-              </td>
-              <td class="ai-comparison-table__cell-{{ ai_gen_id }}">
-                {% if col2_value == 'yes' %}
-                  <span class="ai-comparison-table__icon-{{ ai_gen_id }} ai-comparison-table__checkmark-{{ ai_gen_id }}">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                  </span>
-                {% elsif col2_value == 'no' %}
-                  <span class="ai-comparison-table__icon-{{ ai_gen_id }} ai-comparison-table__cross-{{ ai_gen_id }}">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="18" y1="6" x2="6" y2="18"></line>
-                      <line x1="6" y1="6" x2="18" y2="18"></line>
-                    </svg>
-                  </span>
-                {% else %}
-                  {{ col2_value }}
-                {% endif %}
-              </td>
-              <td class="ai-comparison-table__cell-{{ ai_gen_id }}">
-                {% if col3_value == 'yes' %}
-                  <span class="ai-comparison-table__icon-{{ ai_gen_id }} ai-comparison-table__checkmark-{{ ai_gen_id }}">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                  </span>
-                {% elsif col3_value == 'no' %}
-                  <span class="ai-comparison-table__icon-{{ ai_gen_id }} ai-comparison-table__cross-{{ ai_gen_id }}">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="18" y1="6" x2="6" y2="18"></line>
-                      <line x1="6" y1="6" x2="18" y2="18"></line>
-                    </svg>
-                  </span>
-                {% else %}
-                  {{ col3_value }}
-                {% endif %}
-              </td>
-              <td class="ai-comparison-table__cell-{{ ai_gen_id }}">
-                {% if col4_value == 'yes' %}
-                  <span class="ai-comparison-table__icon-{{ ai_gen_id }} ai-comparison-table__checkmark-{{ ai_gen_id }}">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                  </span>
-                {% elsif col4_value == 'no' %}
-                  <span class="ai-comparison-table__icon-{{ ai_gen_id }} ai-comparison-table__cross-{{ ai_gen_id }}">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="18" y1="6" x2="6" y2="18"></line>
-                      <line x1="6" y1="6" x2="18" y2="18"></line>
-                    </svg>
-                  </span>
-                {% else %}
-                  {{ col4_value }}
-                {% endif %}
-              </td>
+              {% for col in (1..4) %}
+                {% liquid
+                  assign col_type_key = 'feature_' | append: i | append: '_col' | append: col
+                  assign col_text_key = 'feature_' | append: i | append: '_col' | append: col | append: '_text'
+                  assign col_type = block.settings[col_type_key]
+                  assign col_text = block.settings[col_text_key]
+                %}
+                <td class="ai-comparison-table__cell-{{ ai_gen_id }}">
+                  {% if col_type == 'yes' %}
+                    <span class="ai-comparison-table__icon-{{ ai_gen_id }} ai-comparison-table__checkmark-{{ ai_gen_id }}">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                    </span>
+                  {% elsif col_type == 'no' %}
+                    <span class="ai-comparison-table__icon-{{ ai_gen_id }} ai-comparison-table__cross-{{ ai_gen_id }}">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                      </svg>
+                    </span>
+                  {% elsif col_type == 'custom' %}
+                    {{ col_text }}
+                  {% endif %}
+                </td>
+              {% endfor %}
             </tr>
           {% endif %}
         {% endfor %}
@@ -227,7 +172,7 @@
         const wrapper = this.querySelector('.ai-comparison-table__wrapper-{{ ai_gen_id }}');
         if (wrapper && wrapper.scrollWidth > wrapper.clientWidth) {
           this.style.cursor = 'grab';
-          
+
           let isDown = false;
           let startX;
           let scrollLeft;
@@ -316,45 +261,69 @@
     {
       "type": "select",
       "id": "feature_1_col1",
-      "label": "Column 1",
+      "label": "Column 1 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
-        { "value": "10GB", "label": "Custom text" }
+        { "value": "custom", "label": "Custom text" }
       ],
+      "default": "custom"
+    },
+    {
+      "type": "text",
+      "id": "feature_1_col1_text",
+      "label": "Column 1 custom text",
       "default": "10GB"
     },
     {
       "type": "select",
       "id": "feature_1_col2",
-      "label": "Column 2",
+      "label": "Column 2 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
-        { "value": "50GB", "label": "Custom text" }
+        { "value": "custom", "label": "Custom text" }
       ],
+      "default": "custom"
+    },
+    {
+      "type": "text",
+      "id": "feature_1_col2_text",
+      "label": "Column 2 custom text",
       "default": "50GB"
     },
     {
       "type": "select",
       "id": "feature_1_col3",
-      "label": "Column 3",
+      "label": "Column 3 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
-        { "value": "200GB", "label": "Custom text" }
+        { "value": "custom", "label": "Custom text" }
       ],
+      "default": "custom"
+    },
+    {
+      "type": "text",
+      "id": "feature_1_col3_text",
+      "label": "Column 3 custom text",
       "default": "200GB"
     },
     {
       "type": "select",
       "id": "feature_1_col4",
-      "label": "Column 4",
+      "label": "Column 4 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
-        { "value": "Unlimited", "label": "Custom text" }
+        { "value": "custom", "label": "Custom text" }
       ],
+      "default": "custom"
+    },
+    {
+      "type": "text",
+      "id": "feature_1_col4_text",
+      "label": "Column 4 custom text",
       "default": "Unlimited"
     },
     {
@@ -370,45 +339,69 @@
     {
       "type": "select",
       "id": "feature_2_col1",
-      "label": "Column 1",
+      "label": "Column 1 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
-        { "value": "Email", "label": "Custom text" }
+        { "value": "custom", "label": "Custom text" }
       ],
+      "default": "custom"
+    },
+    {
+      "type": "text",
+      "id": "feature_2_col1_text",
+      "label": "Column 1 custom text",
       "default": "Email"
     },
     {
       "type": "select",
       "id": "feature_2_col2",
-      "label": "Column 2",
+      "label": "Column 2 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
-        { "value": "Email & Chat", "label": "Custom text" }
+        { "value": "custom", "label": "Custom text" }
       ],
+      "default": "custom"
+    },
+    {
+      "type": "text",
+      "id": "feature_2_col2_text",
+      "label": "Column 2 custom text",
       "default": "Email & Chat"
     },
     {
       "type": "select",
       "id": "feature_2_col3",
-      "label": "Column 3",
+      "label": "Column 3 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
-        { "value": "24/7 Support", "label": "Custom text" }
+        { "value": "custom", "label": "Custom text" }
       ],
+      "default": "custom"
+    },
+    {
+      "type": "text",
+      "id": "feature_2_col3_text",
+      "label": "Column 3 custom text",
       "default": "24/7 Support"
     },
     {
       "type": "select",
       "id": "feature_2_col4",
-      "label": "Column 4",
+      "label": "Column 4 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
-        { "value": "Dedicated", "label": "Custom text" }
+        { "value": "custom", "label": "Custom text" }
       ],
+      "default": "custom"
+    },
+    {
+      "type": "text",
+      "id": "feature_2_col4_text",
+      "label": "Column 4 custom text",
       "default": "Dedicated"
     },
     {
@@ -424,45 +417,69 @@
     {
       "type": "select",
       "id": "feature_3_col1",
-      "label": "Column 1",
+      "label": "Column 1 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
-        { "value": "1", "label": "Custom text" }
+        { "value": "custom", "label": "Custom text" }
       ],
+      "default": "custom"
+    },
+    {
+      "type": "text",
+      "id": "feature_3_col1_text",
+      "label": "Column 1 custom text",
       "default": "1"
     },
     {
       "type": "select",
       "id": "feature_3_col2",
-      "label": "Column 2",
+      "label": "Column 2 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
-        { "value": "5", "label": "Custom text" }
+        { "value": "custom", "label": "Custom text" }
       ],
+      "default": "custom"
+    },
+    {
+      "type": "text",
+      "id": "feature_3_col2_text",
+      "label": "Column 2 custom text",
       "default": "5"
     },
     {
       "type": "select",
       "id": "feature_3_col3",
-      "label": "Column 3",
+      "label": "Column 3 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
-        { "value": "25", "label": "Custom text" }
+        { "value": "custom", "label": "Custom text" }
       ],
+      "default": "custom"
+    },
+    {
+      "type": "text",
+      "id": "feature_3_col3_text",
+      "label": "Column 3 custom text",
       "default": "25"
     },
     {
       "type": "select",
       "id": "feature_3_col4",
-      "label": "Column 4",
+      "label": "Column 4 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
-        { "value": "Unlimited", "label": "Custom text" }
+        { "value": "custom", "label": "Custom text" }
       ],
+      "default": "custom"
+    },
+    {
+      "type": "text",
+      "id": "feature_3_col4_text",
+      "label": "Column 4 custom text",
       "default": "Unlimited"
     },
     {
@@ -478,18 +495,23 @@
     {
       "type": "select",
       "id": "feature_4_col1",
-      "label": "Column 1",
+      "label": "Column 1 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
         { "value": "custom", "label": "Custom text" }
       ],
       "default": "no"
+    },
+    {
+      "type": "text",
+      "id": "feature_4_col1_text",
+      "label": "Column 1 custom text"
     },
     {
       "type": "select",
       "id": "feature_4_col2",
-      "label": "Column 2",
+      "label": "Column 2 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
@@ -498,9 +520,14 @@
       "default": "no"
     },
     {
+      "type": "text",
+      "id": "feature_4_col2_text",
+      "label": "Column 2 custom text"
+    },
+    {
       "type": "select",
       "id": "feature_4_col3",
-      "label": "Column 3",
+      "label": "Column 3 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
@@ -509,15 +536,25 @@
       "default": "yes"
     },
     {
+      "type": "text",
+      "id": "feature_4_col3_text",
+      "label": "Column 3 custom text"
+    },
+    {
       "type": "select",
       "id": "feature_4_col4",
-      "label": "Column 4",
+      "label": "Column 4 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
         { "value": "custom", "label": "Custom text" }
       ],
       "default": "yes"
+    },
+    {
+      "type": "text",
+      "id": "feature_4_col4_text",
+      "label": "Column 4 custom text"
     },
     {
       "type": "header",
@@ -532,45 +569,69 @@
     {
       "type": "select",
       "id": "feature_5_col1",
-      "label": "Column 1",
+      "label": "Column 1 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
-        { "value": "Basic", "label": "Custom text" }
+        { "value": "custom", "label": "Custom text" }
       ],
+      "default": "custom"
+    },
+    {
+      "type": "text",
+      "id": "feature_5_col1_text",
+      "label": "Column 1 custom text",
       "default": "Basic"
     },
     {
       "type": "select",
       "id": "feature_5_col2",
-      "label": "Column 2",
+      "label": "Column 2 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
-        { "value": "Standard", "label": "Custom text" }
+        { "value": "custom", "label": "Custom text" }
       ],
+      "default": "custom"
+    },
+    {
+      "type": "text",
+      "id": "feature_5_col2_text",
+      "label": "Column 2 custom text",
       "default": "Standard"
     },
     {
       "type": "select",
       "id": "feature_5_col3",
-      "label": "Column 3",
+      "label": "Column 3 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
-        { "value": "Advanced", "label": "Custom text" }
+        { "value": "custom", "label": "Custom text" }
       ],
+      "default": "custom"
+    },
+    {
+      "type": "text",
+      "id": "feature_5_col3_text",
+      "label": "Column 3 custom text",
       "default": "Advanced"
     },
     {
       "type": "select",
       "id": "feature_5_col4",
-      "label": "Column 4",
+      "label": "Column 4 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
-        { "value": "Custom", "label": "Custom text" }
+        { "value": "custom", "label": "Custom text" }
       ],
+      "default": "custom"
+    },
+    {
+      "type": "text",
+      "id": "feature_5_col4_text",
+      "label": "Column 4 custom text",
       "default": "Custom"
     },
     {
@@ -585,7 +646,7 @@
     {
       "type": "select",
       "id": "feature_6_col1",
-      "label": "Column 1",
+      "label": "Column 1 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
@@ -594,20 +655,30 @@
       "default": "no"
     },
     {
+      "type": "text",
+      "id": "feature_6_col1_text",
+      "label": "Column 1 custom text"
+    },
+    {
       "type": "select",
       "id": "feature_6_col2",
-      "label": "Column 2",
+      "label": "Column 2 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
         { "value": "custom", "label": "Custom text" }
       ],
       "default": "yes"
+    },
+    {
+      "type": "text",
+      "id": "feature_6_col2_text",
+      "label": "Column 2 custom text"
     },
     {
       "type": "select",
       "id": "feature_6_col3",
-      "label": "Column 3",
+      "label": "Column 3 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
@@ -616,15 +687,25 @@
       "default": "yes"
     },
     {
+      "type": "text",
+      "id": "feature_6_col3_text",
+      "label": "Column 3 custom text"
+    },
+    {
       "type": "select",
       "id": "feature_6_col4",
-      "label": "Column 4",
+      "label": "Column 4 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
         { "value": "custom", "label": "Custom text" }
       ],
       "default": "yes"
+    },
+    {
+      "type": "text",
+      "id": "feature_6_col4_text",
+      "label": "Column 4 custom text"
     },
     {
       "type": "header",
@@ -638,7 +719,7 @@
     {
       "type": "select",
       "id": "feature_7_col1",
-      "label": "Column 1",
+      "label": "Column 1 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
@@ -647,20 +728,30 @@
       "default": "no"
     },
     {
+      "type": "text",
+      "id": "feature_7_col1_text",
+      "label": "Column 1 custom text"
+    },
+    {
       "type": "select",
       "id": "feature_7_col2",
-      "label": "Column 2",
+      "label": "Column 2 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
         { "value": "custom", "label": "Custom text" }
       ],
       "default": "yes"
+    },
+    {
+      "type": "text",
+      "id": "feature_7_col2_text",
+      "label": "Column 2 custom text"
     },
     {
       "type": "select",
       "id": "feature_7_col3",
-      "label": "Column 3",
+      "label": "Column 3 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
@@ -669,15 +760,25 @@
       "default": "yes"
     },
     {
+      "type": "text",
+      "id": "feature_7_col3_text",
+      "label": "Column 3 custom text"
+    },
+    {
       "type": "select",
       "id": "feature_7_col4",
-      "label": "Column 4",
+      "label": "Column 4 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
         { "value": "custom", "label": "Custom text" }
       ],
       "default": "yes"
+    },
+    {
+      "type": "text",
+      "id": "feature_7_col4_text",
+      "label": "Column 4 custom text"
     },
     {
       "type": "header",
@@ -691,7 +792,7 @@
     {
       "type": "select",
       "id": "feature_8_col1",
-      "label": "Column 1",
+      "label": "Column 1 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
@@ -700,20 +801,30 @@
       "default": "no"
     },
     {
+      "type": "text",
+      "id": "feature_8_col1_text",
+      "label": "Column 1 custom text"
+    },
+    {
       "type": "select",
       "id": "feature_8_col2",
-      "label": "Column 2",
+      "label": "Column 2 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
         { "value": "custom", "label": "Custom text" }
       ],
       "default": "yes"
+    },
+    {
+      "type": "text",
+      "id": "feature_8_col2_text",
+      "label": "Column 2 custom text"
     },
     {
       "type": "select",
       "id": "feature_8_col3",
-      "label": "Column 3",
+      "label": "Column 3 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
@@ -722,15 +833,25 @@
       "default": "yes"
     },
     {
+      "type": "text",
+      "id": "feature_8_col3_text",
+      "label": "Column 3 custom text"
+    },
+    {
       "type": "select",
       "id": "feature_8_col4",
-      "label": "Column 4",
+      "label": "Column 4 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
         { "value": "custom", "label": "Custom text" }
       ],
       "default": "yes"
+    },
+    {
+      "type": "text",
+      "id": "feature_8_col4_text",
+      "label": "Column 4 custom text"
     },
     {
       "type": "header",
@@ -744,7 +865,7 @@
     {
       "type": "select",
       "id": "feature_9_col1",
-      "label": "Column 1",
+      "label": "Column 1 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
@@ -753,20 +874,30 @@
       "default": "no"
     },
     {
+      "type": "text",
+      "id": "feature_9_col1_text",
+      "label": "Column 1 custom text"
+    },
+    {
       "type": "select",
       "id": "feature_9_col2",
-      "label": "Column 2",
+      "label": "Column 2 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
         { "value": "custom", "label": "Custom text" }
       ],
       "default": "yes"
+    },
+    {
+      "type": "text",
+      "id": "feature_9_col2_text",
+      "label": "Column 2 custom text"
     },
     {
       "type": "select",
       "id": "feature_9_col3",
-      "label": "Column 3",
+      "label": "Column 3 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
@@ -775,15 +906,25 @@
       "default": "yes"
     },
     {
+      "type": "text",
+      "id": "feature_9_col3_text",
+      "label": "Column 3 custom text"
+    },
+    {
       "type": "select",
       "id": "feature_9_col4",
-      "label": "Column 4",
+      "label": "Column 4 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
         { "value": "custom", "label": "Custom text" }
       ],
       "default": "yes"
+    },
+    {
+      "type": "text",
+      "id": "feature_9_col4_text",
+      "label": "Column 4 custom text"
     },
     {
       "type": "header",
@@ -797,7 +938,7 @@
     {
       "type": "select",
       "id": "feature_10_col1",
-      "label": "Column 1",
+      "label": "Column 1 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
@@ -806,20 +947,30 @@
       "default": "no"
     },
     {
+      "type": "text",
+      "id": "feature_10_col1_text",
+      "label": "Column 1 custom text"
+    },
+    {
       "type": "select",
       "id": "feature_10_col2",
-      "label": "Column 2",
+      "label": "Column 2 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
         { "value": "custom", "label": "Custom text" }
       ],
       "default": "yes"
+    },
+    {
+      "type": "text",
+      "id": "feature_10_col2_text",
+      "label": "Column 2 custom text"
     },
     {
       "type": "select",
       "id": "feature_10_col3",
-      "label": "Column 3",
+      "label": "Column 3 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
@@ -828,15 +979,25 @@
       "default": "yes"
     },
     {
+      "type": "text",
+      "id": "feature_10_col3_text",
+      "label": "Column 3 custom text"
+    },
+    {
       "type": "select",
       "id": "feature_10_col4",
-      "label": "Column 4",
+      "label": "Column 4 type",
       "options": [
         { "value": "yes", "label": "Yes (checkmark)" },
         { "value": "no", "label": "No (cross)" },
         { "value": "custom", "label": "Custom text" }
       ],
       "default": "yes"
+    },
+    {
+      "type": "text",
+      "id": "feature_10_col4_text",
+      "label": "Column 4 custom text"
     },
     {
       "type": "header",
