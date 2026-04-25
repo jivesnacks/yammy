@@ -178,21 +178,21 @@
             "page": ""
           }
         },
-        "collapsible_tab_gFBn9B": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Allergens",
-            "icon": "nut_free",
-            "content": "<p>{{ product.metafields.custom.allergen_statement.value }}</p>",
-            "page": ""
-          }
-        },
         "collapsible-row-1": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Nutrition Facts",
             "icon": "carrot",
             "content": "<p>{{ product.metafields.custom.nutrition_facts | metafield_tag }}</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_gFBn9B": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Allergens",
+            "icon": "nut_free",
+            "content": "<p>{{ product.metafields.custom.allergen_statement.value }}</p>",
             "page": ""
           }
         },
@@ -244,8 +244,8 @@
         "section_store_block_upsell_cdMjcB",
         "description",
         "collapsible-row-0",
-        "collapsible_tab_gFBn9B",
         "collapsible-row-1",
+        "collapsible_tab_gFBn9B",
         "collapsible_tab_6RDaQe",
         "section_store_block_coupon_code_9YFbhG"
       ],
