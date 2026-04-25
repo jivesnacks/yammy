@@ -192,7 +192,7 @@
           "settings": {
             "heading": "Nutrition Facts",
             "icon": "carrot",
-            "content": "",
+            "content": "<p>{{ block.settings.page.metafields.custom.nutrition_facts | metafield_tag }}</p>",
             "page": ""
           }
         },
@@ -201,7 +201,7 @@
           "settings": {
             "heading": "What It Tastes Like",
             "icon": "check_mark",
-            "content": "",
+            "content": "<p>{{ block.settings.page.metafields.custom.what_it_tastes_like | metafield_tag }}</p>",
             "page": ""
           }
         },
