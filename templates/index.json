@@ -331,7 +331,7 @@
         "item_kF3jHM": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/SweetPotato.jpg",
+            "image": "shopify://shop_images/1.png",
             "heading": "<h3>Everything starts with a fragrant Asian sweet potato.</h3>",
             "text": ""
           }
@@ -339,7 +339,7 @@
         "item_HXJdkw": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/SweetPotatoStrip.jpg",
+            "image": "shopify://shop_images/RAW.png",
             "heading": "<h3>Cut into snack-size strips.</h3>",
             "text": ""
           }
@@ -347,7 +347,7 @@
         "item_zAx98Q": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/DriedSweetPotato.jpg",
+            "image": "shopify://shop_images/OG.png",
             "heading": "<h3>Dried to chewy perfection.</h3>",
             "text": ""
           }
@@ -355,7 +355,7 @@
         "item_QrigmD": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/KBBQDriedSweetPotato.jpg",
+            "image": "shopify://shop_images/KBBQ.png",
             "heading": "<h3>Seasoned with real spices.</h3>",
             "text": ""
           }
@@ -406,11 +406,11 @@
         "progress_bar_bg": "#5b1830",
         "image_item_border_color": "#121212",
         "background_style": "solid",
-        "background_color": "#ffffff",
+        "background_color": "#fef5ee",
         "background_gradient": "linear-gradient(180deg, #FFFFFF 0%, #F2F2F2 100%)",
         "border_color": "#121212",
-        "margin_top": 0,
-        "margin_bottom": 0,
+        "margin_top": 80,
+        "margin_bottom": 80,
         "margin_horizontal": 0,
         "margin_horizontal_mobile": 0,
         "padding_top": 36,
