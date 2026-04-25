@@ -542,6 +542,8 @@
         "section_store_block_video_carousel_Ad9d9H": {
           "type": "shopify://apps/section-store/blocks/block-video-carousel/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
           "settings": {
+            "video_2": "shopify://files/videos/1c0fff29f5bc40b1a9bde503c7f1e277.MOV",
+            "video_3": "shopify://files/videos/download (1).mp4",
             "video_4": "shopify://files/videos/download.mp4",
             "slider_style": "arrows",
             "modal_style": "full",
@@ -553,7 +555,7 @@
             "item_border_color": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
             "item_border_radius": 16,
             "item_padding": 0,
-            "grid_items": "4",
+            "grid_items": "3",
             "thumbnail_shape": "rectangle",
             "block_border_style": "none",
             "block_border_width": 1,
