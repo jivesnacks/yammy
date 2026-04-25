@@ -77,7 +77,7 @@
         "text_xnhbhh": {
           "type": "text",
           "settings": {
-            "text": "",
+            "text": "{{ product.metafields.custom.short_description.value }}",
             "text_style": "body"
           }
         },
