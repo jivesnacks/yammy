@@ -805,45 +805,105 @@
         "collapsible_row_ADeDmj": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "{{ metaobjects.faq[\"whats-the-texture-like\"].question.value }}",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>{{ metaobjects.faq[\"whats-the-texture-like\"].answer | metafield_tag }}</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_gLAWcV": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "{{ metaobjects.faq[\"what-does-it-taste-like\"].question.value }}",
+            "icon": "check_mark",
+            "row_content": "<p>{{ metaobjects.faq[\"what-does-it-taste-like\"].answer | metafield_tag }}</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_4ADExH": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "{{ metaobjects.faq[\"is-this-actually-healthy\"].question.value }}",
+            "icon": "check_mark",
+            "row_content": "<p>{{ metaobjects.faq[\"is-this-actually-healthy\"].answer | metafield_tag }}</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_tfG73G": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "{{ metaobjects.faq[\"where-are-these-made\"].question.value }}",
+            "icon": "check_mark",
+            "row_content": "<p>{{ metaobjects.faq[\"where-are-these-made\"].answer | metafield_tag }}</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_hmtrw7": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "{{ metaobjects.faq[\"are-these-kid-friendly\"].question.value }}",
+            "icon": "check_mark",
+            "row_content": "<p>{{ metaobjects.faq[\"are-these-kid-friendly\"].answer | metafield_tag }}</p>",
             "page": ""
           }
         },
         "collapsible_row_7Xep68": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "{{ metaobjects.faq[\"are-these-school-safe\"].question.value }}",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>{{ metaobjects.faq[\"are-these-school-safe\"].answer | metafield_tag }}</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_mKzAUD": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "{{ metaobjects.faq[\"are-these-whole-30-paleo-or-keto-compatible\"].question.value }}",
+            "icon": "check_mark",
+            "row_content": "<p>{{ metaobjects.faq[\"are-these-whole-30-paleo-or-keto-compatible\"].answer | metafield_tag }}</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_KmMVQb": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "{{ metaobjects.faq[\"do-these-need-to-be-refrigerated\"].question.value }}",
+            "icon": "check_mark",
+            "row_content": "<p>{{ metaobjects.faq[\"do-these-need-to-be-refrigerated\"].answer | metafield_tag }}</p>",
             "page": ""
           }
         },
         "collapsible_row_qUNfgm": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "{{ metaobjects.faq[\"what-does-asian-sweet-potato-variety-actually-mean\"].question.value }}",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>{{ metaobjects.faq[\"what-does-asian-sweet-potato-variety-actually-mean\"].answer | metafield_tag }}</p>",
             "page": ""
           }
         },
-        "collapsible_row_88xWE7": {
+        "collapsible_row_mpaTwd": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "{{ metaobjects.faq[\"whats-your-satisfaction-guarantee\"].question.value }}",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>{{ metaobjects.faq[\"whats-your-satisfaction-guarantee\"].answer | metafield_tag }}</p>",
             "page": ""
           }
         }
       },
       "block_order": [
         "collapsible_row_ADeDmj",
+        "collapsible_row_gLAWcV",
+        "collapsible_row_4ADExH",
+        "collapsible_row_tfG73G",
+        "collapsible_row_hmtrw7",
         "collapsible_row_7Xep68",
+        "collapsible_row_mKzAUD",
+        "collapsible_row_KmMVQb",
         "collapsible_row_qUNfgm",
-        "collapsible_row_88xWE7"
+        "collapsible_row_mpaTwd"
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
