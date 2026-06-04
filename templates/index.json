@@ -225,11 +225,23 @@
             "accent_color": "#ee9441",
             "font_size": 20
           }
+        },
+        "button_Kgy8fT": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop All Flavors",
+            "button_link": "shopify://collections/sweet-potato-sticks",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
         }
       },
       "block_order": [
         "heading",
-        "text_bgKd7V"
+        "text_bgKd7V",
+        "button_Kgy8fT"
       ],
       "settings": {
         "desktop_content_position": "center",
