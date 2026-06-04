@@ -297,7 +297,7 @@
         "heading_9kFQDP": {
           "type": "heading",
           "settings": {
-            "heading": "Meet nature's || [[gummy candy]]",
+            "heading": "It chews like gummy candy. It's just [[sweet potato + real spices ]]",
             "badge_bg": "#fcc86c",
             "badge_border": "#511d29",
             "badge_text": "#511d29",
@@ -329,10 +329,10 @@
         "show_stars_mobile": false,
         "star_image": "shopify://shop_images/YammyStar.svg",
         "star_size": 36,
-        "star_1_top": 48,
+        "star_1_top": 56,
         "star_1_left": 78,
-        "star_2_top": 10,
-        "star_2_left": 20,
+        "star_2_top": 4,
+        "star_2_left": 16,
         "padding_top": 40,
         "padding_bottom": 52
       }
