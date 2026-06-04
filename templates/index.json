@@ -15,7 +15,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Chew on something [[good]]",
+            "heading": "Meet nature's [[gummy candy]] made from a veggie",
             "heading_size": "h0",
             "badge_bg": "#fcc86c",
             "badge_border": "#511d29",
@@ -26,8 +26,8 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "Sweet potato + real spices = an indulgence you can <span style=\"text-decoration:underline\">actually</span> feel good about.",
-            "text_size": 22,
+            "text": "Soft, chewy sweet potato with real spices. Sweet enough to curb a craving, clean enough to feel good about.",
+            "text_size": 20,
             "text_style": "body"
           }
         },
@@ -209,7 +209,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Find your new snack || [[obsession]]",
+            "heading": "Meet your new snack || [[obsession,]] seriously",
             "badge_bg": "#fcc86c",
             "badge_border": "#511d29",
             "badge_text": "#511d29",
@@ -252,13 +252,13 @@
       "type": "featured-collection",
       "settings": {
         "collection": "dried-sweet-potato-snacks",
-        "products_to_show": 25,
+        "products_to_show": 5,
         "title": "",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "enable_desktop_slider": true,
         "full_width": true,
         "show_view_all": false,
@@ -274,7 +274,7 @@
         "product_title_size_mobile": 16,
         "product_title_size_desktop": 20,
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
