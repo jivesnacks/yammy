@@ -672,6 +672,266 @@
         "padding_top": 100,
         "padding_bottom": 100
       }
+    },
+    "ss_scrolling_announcement_bar_eytN9F": {
+      "type": "ss-scrolling-announcement-bar",
+      "blocks": {
+        "text_E3EfDy": {
+          "type": "text",
+          "settings": {
+            "text": "Free Shipping"
+          }
+        },
+        "text_A4kaUU": {
+          "type": "text",
+          "settings": {
+            "text": "Free Returns"
+          }
+        }
+      },
+      "block_order": [
+        "text_E3EfDy",
+        "text_A4kaUU"
+      ],
+      "disabled": true,
+      "name": "SS - Scrolling announcement bar",
+      "settings": {
+        "insert_css_class_target": ".header, .pageheader, .section-header, #announcement, .toolbar, .header__wrapper",
+        "text_custom": false,
+        "ss_font_family": "montserrat_n4",
+        "text_size": 12,
+        "link": "",
+        "animation_duration": 44,
+        "animation_direction": "right",
+        "pause_hover": false,
+        "text_color": "#FFFFFF",
+        "bg": "#000000",
+        "hover_opacity": 90,
+        "padding_vertical": 1.5,
+        "padding_horizontal": 0
+      }
+    },
+    "17817944513b487ca1": {
+      "type": "apps",
+      "blocks": {
+        "section_store_block_comments_HbdAjG": {
+          "type": "shopify://apps/section-store/blocks/block-comments/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "settings": {
+            "content_alignment": "center",
+            "comment_verified_badge_position": "none",
+            "verified_badge_color": "#187BFC",
+            "verified_badge_text": "Verified Customer",
+            "slide_style": "arrows",
+            "autoplay": 0,
+            "comment_name_1": "Dan Rowden",
+            "comment_1": "Really impressed with the quality. It's exactly what I was looking for and arrived faster than expected. Would definitely order again",
+            "comment_name_2": "Sarah Moth",
+            "comment_2": "Looks even better in person. Great attention to detail and you can tell it's well made. Very happy with this purchase.",
+            "comment_name_3": "",
+            "comment_3": "",
+            "avatar_border_radius": 16,
+            "avatar_size": 50,
+            "author_font_size": 13,
+            "author_font_weight": 500,
+            "author_font_color": "#121212",
+            "star_style": "mild",
+            "star_color": "#121212",
+            "star_size": 14,
+            "item_border_style": "solid",
+            "item_border_width": 1,
+            "item_border_color": "#E7E4E4",
+            "item_border_radius": 10,
+            "item_bg_color": "#FFFFFF",
+            "effect": "none",
+            "item_padding_vertical": 10,
+            "item_padding_horizontal": 16
+          }
+        }
+      },
+      "block_order": [
+        "section_store_block_comments_HbdAjG"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "featured_product_gNHPPY": {
+      "type": "featured-product",
+      "blocks": {
+        "title_JdaUPd": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_Ckn8XX": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_6fJrTK": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "text_mtiyMn": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.custom.short_description.value }}",
+            "text_style": "body"
+          }
+        },
+        "quantity_selector_yR4Gmd": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_XLqbBL": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "title_JdaUPd",
+        "price_Ckn8XX",
+        "variant_picker_6fJrTK",
+        "text_mtiyMn",
+        "quantity_selector_yR4Gmd",
+        "buy_buttons_XLqbBL"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "yammy-single-ingredient-dried-fruit-veggie-variety-pack-the-texture-taste-test-copy",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "17817944892dde03e5": {
+      "type": "apps",
+      "blocks": {
+        "section_store_block_video_carousel_mP8iCi": {
+          "type": "shopify://apps/section-store/blocks/block-video-carousel/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "settings": {
+            "slider_style": "arrows",
+            "modal_style": "side",
+            "video_autoplay": "true",
+            "play_button_position": "none",
+            "play_button_size": "small",
+            "item_border_style": "none",
+            "item_border_width": 1,
+            "item_border_color": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+            "item_border_radius": 16,
+            "item_padding": 0,
+            "grid_items": "4",
+            "thumbnail_shape": "rectangle",
+            "block_border_style": "none",
+            "block_border_width": 1,
+            "block_border_color": "#d7d7d7",
+            "block_border_radius": 16,
+            "block_bg_color": "",
+            "block_padding_vertical": 8,
+            "block_padding_horizontal": 0
+          }
+        }
+      },
+      "block_order": [
+        "section_store_block_video_carousel_mP8iCi"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "featured_collection_hLTDY3": {
+      "type": "featured-collection",
+      "disabled": true,
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "",
+        "products_to_show": 4,
+        "title": "Featured collection",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "quick_add_button_style": "secondary",
+        "product_title_size_mobile": 12,
+        "product_title_size_desktop": 13,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "newsletter_pX4bgr": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_M8Axw3": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "badge_bg": "#FCC86C",
+            "badge_border": "#511D29",
+            "badge_text": "#511D29",
+            "badge_shadow": "#511D29",
+            "heading_size": "h1",
+            "text_alignment": "center"
+          }
+        },
+        "paragraph_X3MHP8": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.</p>",
+            "font_size": 15,
+            "text_alignment": "center"
+          }
+        },
+        "email_form_f4qfcT": {
+          "type": "email_form",
+          "settings": {
+            "text_alignment": "center",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_M8Axw3",
+        "paragraph_X3MHP8",
+        "email_form_f4qfcT"
+      ],
+      "disabled": true,
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -685,6 +945,12 @@
     "rich_text_r4La6H",
     "comparison_table_AbeWNw",
     "rich_text_FegwLY",
-    "image_with_text_mXxk48"
+    "image_with_text_mXxk48",
+    "ss_scrolling_announcement_bar_eytN9F",
+    "17817944513b487ca1",
+    "featured_product_gNHPPY",
+    "17817944892dde03e5",
+    "featured_collection_hLTDY3",
+    "newsletter_pX4bgr"
   ]
 }
