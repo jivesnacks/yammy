@@ -330,11 +330,11 @@
         "star_image": "shopify://shop_images/YammyStar.svg",
         "star_size": 36,
         "star_1_top": 56,
-        "star_1_left": 78,
+        "star_1_left": 93,
         "star_2_top": 4,
         "star_2_left": 16,
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 0
       }
     },
     "ss_image_with_text_24_HCJ9EY": {
@@ -382,12 +382,12 @@
       "name": "SS - Scrolling image with text",
       "settings": {
         "layout": "image_content",
-        "image_item_width": 40,
-        "layout_gap": 60,
+        "image_item_width": 55,
+        "layout_gap": 10,
         "content_align": "left",
         "content_align_mobile": "center",
         "features_advanced": true,
-        "items_mt": 80,
+        "items_mt": 20,
         "items_mt_mobile": 20,
         "items_gap": 100,
         "item_padding_horizontal": 24,
@@ -419,7 +419,7 @@
         "image_item_border_color": "#121212",
         "background_style": "solid",
         "background_color": "#fef5ee",
-        "background_gradient": "linear-gradient(180deg, #FFFFFF 0%, #F2F2F2 100%)",
+        "background_gradient": "linear-gradient(180deg, rgba(254, 245, 238, 1), rgba(242, 242, 242, 1) 100%)",
         "border_color": "#121212",
         "margin_top": 80,
         "margin_bottom": 80,
