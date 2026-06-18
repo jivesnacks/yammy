@@ -646,7 +646,7 @@
         "icon_size": 48,
         "check_color": "#2e7d32",
         "cross_color": "#c62828",
-        "color_scheme": "scheme-d01e4061-0369-4979-bf0a-70fd04a83492",
+        "color_scheme": "scheme-1",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -737,7 +737,7 @@
         "animation_duration": 44,
         "animation_direction": "right",
         "pause_hover": false,
-        "text_color": "#FFFFFF",
+        "text_color": "#ffffff",
         "bg": "#000000",
         "hover_opacity": 90,
         "padding_vertical": 1.5,
@@ -752,7 +752,7 @@
           "settings": {
             "content_alignment": "center",
             "comment_verified_badge_position": "none",
-            "verified_badge_color": "#187BFC",
+            "verified_badge_color": "#187bfc",
             "verified_badge_text": "Verified Customer",
             "slide_style": "arrows",
             "autoplay": 0,
@@ -772,9 +772,9 @@
             "star_size": 14,
             "item_border_style": "solid",
             "item_border_width": 1,
-            "item_border_color": "#E7E4E4",
+            "item_border_color": "#e7e4e4",
             "item_border_radius": 10,
-            "item_bg_color": "#FFFFFF",
+            "item_bg_color": "#ffffff",
             "effect": "none",
             "item_padding_vertical": 10,
             "item_padding_horizontal": 16
@@ -899,10 +899,10 @@
           "type": "heading",
           "settings": {
             "heading": "Subscribe to our emails",
-            "badge_bg": "#FCC86C",
-            "badge_border": "#511D29",
-            "badge_text": "#511D29",
-            "badge_shadow": "#511D29",
+            "badge_bg": "#fcc86c",
+            "badge_border": "#511d29",
+            "badge_text": "#511d29",
+            "badge_shadow": "#511d29",
             "heading_size": "h1",
             "text_alignment": "center"
           }
