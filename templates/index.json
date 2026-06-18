@@ -209,7 +209,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Meet your new snack || [[obsession]] (seriously).",
+            "heading": "Meet your new snack || [[obsession]] (seriously)",
             "badge_bg": "#fcc86c",
             "badge_border": "#511d29",
             "badge_text": "#511d29",
@@ -221,7 +221,7 @@
         "text_bgKd7V": {
           "type": "text",
           "settings": {
-            "text": "<p>Chewy, naturally sweet, and made from real sweet potato. Five bold flavors, no added junk, and under 200 calories a bag. One bite and you'll get why people can't stop at one.</p>",
+            "text": "<p>Chewy, naturally sweet, and made from real sweet potatoes. Five flavors, no added junk, and under 200 calories a bag. One bite and you'll get why people can't stop.</p>",
             "accent_color": "#ee9441",
             "font_size": 20
           }
@@ -624,7 +624,7 @@
         "heading_g983Ld": {
           "type": "heading",
           "settings": {
-            "heading": "From our family memory to [[your pantry]]",
+            "heading": "From our family memory [[to your pantry!]]",
             "badge_bg": "#fcc86c",
             "badge_border": "#511d29",
             "badge_text": "#511d29",
@@ -637,18 +637,27 @@
           "settings": {
             "text": "<p>We're Dennis & Stephanie, co-founders of Yammy. Dried sweet potatoes have been a beloved family favorite since we were kids.</p><p>Today, we're bringing that delicious heritage to you using only the simplest ingredients.</p><p>No compromises, just real food that honors both your cravings and your wellbeing.</p>",
             "text_style": "body",
-            "font_size": 15
+            "font_size": 17
+          }
+        },
+        "button_wxQh4D": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read our story",
+            "button_link": "shopify://pages/our-story",
+            "button_style_secondary": false
           }
         }
       },
       "block_order": [
         "heading_g983Ld",
-        "text_dx9VVP"
+        "text_dx9VVP",
+        "button_wxQh4D"
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/DennisStephanie.jpg",
-        "height": "adapt",
+        "height": "small",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "image_behavior": "none",
@@ -660,8 +669,8 @@
         "mobile_content_alignment": "left",
         "section_color_scheme": "scheme-c94e40b1-0e10-4a7c-8fdc-116e3460adf6",
         "color_scheme": "scheme-c94e40b1-0e10-4a7c-8fdc-116e3460adf6",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     }
   },
