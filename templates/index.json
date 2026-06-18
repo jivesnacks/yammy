@@ -344,7 +344,7 @@
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/1.png",
-            "heading": "<h3>Everything starts with a fragrant Asian sweet potato.</h3>",
+            "heading": "<h3>Everything starts with a fresh, fragrant Asian sweet potato</h3>",
             "text": ""
           }
         },
@@ -352,7 +352,7 @@
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/RAW.png",
-            "heading": "<h3>Cut into snack-size strips.</h3>",
+            "heading": "<h3>Cut into snack-size sticks</h3>",
             "text": ""
           }
         },
@@ -360,7 +360,7 @@
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/OG.png",
-            "heading": "<h3>Dried to chewy perfection.</h3>",
+            "heading": "<h3>Oven-dried to chewy perfection</h3>",
             "text": ""
           }
         },
@@ -368,7 +368,7 @@
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/KBBQ.png",
-            "heading": "<h3>Seasoned with real spices.</h3>",
+            "heading": "<h3>And seasoned with real spices</h3>",
             "text": ""
           }
         }
@@ -783,7 +783,6 @@
         "text_E3EfDy",
         "text_A4kaUU"
       ],
-      "disabled": true,
       "name": "SS - Scrolling announcement bar",
       "settings": {
         "insert_css_class_target": ".header, .pageheader, .section-header, #announcement, .toolbar, .header__wrapper",
@@ -915,8 +914,13 @@
         "section_store_block_video_carousel_mP8iCi": {
           "type": "shopify://apps/section-store/blocks/block-video-carousel/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
           "settings": {
-            "slider_style": "arrows",
-            "modal_style": "side",
+            "video_1": "shopify://files/videos/ult.ipe-post-7648482390976875790-0.mp4",
+            "video_2": "shopify://files/videos/graci.barros.ugc-post-7649528382379527455-0.mp4",
+            "video_3": "shopify://files/videos/carrievee2022-post-7643241833862057246-0.mp4",
+            "video_4": "shopify://files/videos/godforbidshereads-post-7640745039961869581-0.mp4",
+            "video_5": "shopify://files/videos/suzette_lost_it-post-7645038977187171597-0.mp4",
+            "slider_style": "progress_bar",
+            "modal_style": "none",
             "video_autoplay": "true",
             "play_button_position": "none",
             "play_button_size": "small",
@@ -925,7 +929,7 @@
             "item_border_color": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
             "item_border_radius": 16,
             "item_padding": 0,
-            "grid_items": "4",
+            "grid_items": "3",
             "thumbnail_shape": "rectangle",
             "block_border_style": "none",
             "block_border_width": 1,
@@ -940,7 +944,6 @@
       "block_order": [
         "section_store_block_video_carousel_mP8iCi"
       ],
-      "disabled": true,
       "settings": {
         "include_margins": true
       }
