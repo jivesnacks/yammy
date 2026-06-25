@@ -965,13 +965,13 @@
             "products": [],
             "star_rating": "all",
             "show_review_media": true,
-            "display_order": "most_recent",
+            "display_order": "media_first",
             "no_image_fallback": "review_text_only",
             "max_reviews": 20,
             "review_length": "medium",
             "text_size": "medium",
-            "image_ratio": "1",
-            "reviews_shown": 5,
+            "image_ratio": "0.75",
+            "reviews_shown": 4,
             "show_reviewer_name": true,
             "show_product_name": true,
             "hide_arrows_mobile": true,
@@ -984,7 +984,7 @@
             "stars_color": "",
             "arrows_color": "#000000",
             "transition_speed": 5,
-            "header_text": "Customers are saying",
+            "header_text": "",
             "show_average_rating": true,
             "rating_display": "default"
           }
@@ -1007,15 +1007,15 @@
     "rich_text_wCA3Xb",
     "ss_image_with_text_24_HCJ9EY",
     "multirow_bQMepk",
+    "17817944892dde03e5",
     "rich_text_r4La6H",
     "comparison_table_AbeWNw",
     "image_with_text_mXxk48",
     "ss_scrolling_announcement_bar_eytN9F",
     "featured_product_gNHPPY",
-    "17817944892dde03e5",
+    "178238860994c27a94",
     "featured_collection_hLTDY3",
     "newsletter_pX4bgr",
-    "rich_text_FegwLY",
-    "178238860994c27a94"
+    "rich_text_FegwLY"
   ]
 }
