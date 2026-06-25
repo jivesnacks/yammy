@@ -436,46 +436,6 @@
         "lazy": true
       }
     },
-    "17817944892dde03e5": {
-      "type": "apps",
-      "blocks": {
-        "section_store_block_video_carousel_mP8iCi": {
-          "type": "shopify://apps/section-store/blocks/block-video-carousel/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
-          "settings": {
-            "video_1": "shopify://files/videos/ult.ipe-post-7648482390976875790-0.mp4",
-            "video_2": "shopify://files/videos/graci.barros.ugc-post-7649528382379527455-0.mp4",
-            "video_3": "shopify://files/videos/carrievee2022-post-7643241833862057246-0.mp4",
-            "video_4": "shopify://files/videos/godforbidshereads-post-7640745039961869581-0.mp4",
-            "video_5": "shopify://files/videos/suzette_lost_it-post-7645038977187171597-0.mp4",
-            "slider_style": "progress_bar",
-            "modal_style": "none",
-            "video_autoplay": "true",
-            "play_button_position": "none",
-            "play_button_size": "small",
-            "item_border_style": "none",
-            "item_border_width": 1,
-            "item_border_color": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-            "item_border_radius": 16,
-            "item_padding": 0,
-            "grid_items": "3",
-            "thumbnail_shape": "rectangle",
-            "block_border_style": "none",
-            "block_border_width": 1,
-            "block_border_color": "#d7d7d7",
-            "block_border_radius": 16,
-            "block_bg_color": "",
-            "block_padding_vertical": 8,
-            "block_padding_horizontal": 0
-          }
-        }
-      },
-      "block_order": [
-        "section_store_block_video_carousel_mP8iCi"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "multirow_bQMepk": {
       "type": "multirow",
       "blocks": {
@@ -749,50 +709,6 @@
         "padding_horizontal": 0
       }
     },
-    "17817944513b487ca1": {
-      "type": "apps",
-      "blocks": {
-        "section_store_block_comments_HbdAjG": {
-          "type": "shopify://apps/section-store/blocks/block-comments/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
-          "settings": {
-            "content_alignment": "center",
-            "comment_verified_badge_position": "none",
-            "verified_badge_color": "#187bfc",
-            "verified_badge_text": "Verified Customer",
-            "slide_style": "arrows",
-            "autoplay": 0,
-            "comment_name_1": "Dan Rowden",
-            "comment_1": "Really impressed with the quality. It's exactly what I was looking for and arrived faster than expected. Would definitely order again",
-            "comment_name_2": "Sarah Moth",
-            "comment_2": "Looks even better in person. Great attention to detail and you can tell it's well made. Very happy with this purchase.",
-            "comment_name_3": "",
-            "comment_3": "",
-            "avatar_border_radius": 16,
-            "avatar_size": 50,
-            "author_font_size": 13,
-            "author_font_weight": 500,
-            "author_font_color": "#121212",
-            "star_style": "mild",
-            "star_color": "#121212",
-            "star_size": 14,
-            "item_border_style": "solid",
-            "item_border_width": 1,
-            "item_border_color": "#e7e4e4",
-            "item_border_radius": 10,
-            "item_bg_color": "#ffffff",
-            "effect": "none",
-            "item_padding_vertical": 10,
-            "item_padding_horizontal": 16
-          }
-        }
-      },
-      "block_order": [
-        "section_store_block_comments_HbdAjG"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "featured_product_gNHPPY": {
       "type": "featured-product",
       "blocks": {
@@ -854,6 +770,46 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "17817944892dde03e5": {
+      "type": "apps",
+      "blocks": {
+        "section_store_block_video_carousel_mP8iCi": {
+          "type": "shopify://apps/section-store/blocks/block-video-carousel/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "settings": {
+            "video_1": "shopify://files/videos/ult.ipe-post-7648482390976875790-0.mp4",
+            "video_2": "shopify://files/videos/graci.barros.ugc-post-7649528382379527455-0.mp4",
+            "video_3": "shopify://files/videos/carrievee2022-post-7643241833862057246-0.mp4",
+            "video_4": "shopify://files/videos/godforbidshereads-post-7640745039961869581-0.mp4",
+            "video_5": "shopify://files/videos/suzette_lost_it-post-7645038977187171597-0.mp4",
+            "slider_style": "progress_bar",
+            "modal_style": "none",
+            "video_autoplay": "true",
+            "play_button_position": "none",
+            "play_button_size": "small",
+            "item_border_style": "none",
+            "item_border_width": 1,
+            "item_border_color": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+            "item_border_radius": 16,
+            "item_padding": 0,
+            "grid_items": "3",
+            "thumbnail_shape": "rectangle",
+            "block_border_style": "none",
+            "block_border_width": 1,
+            "block_border_color": "#d7d7d7",
+            "block_border_radius": 16,
+            "block_bg_color": "",
+            "block_padding_vertical": 8,
+            "block_padding_horizontal": 0
+          }
+        }
+      },
+      "block_order": [
+        "section_store_block_video_carousel_mP8iCi"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "featured_collection_hLTDY3": {
@@ -997,6 +953,49 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "178238860994c27a94": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_cards_carousel_gXF8Kc": {
+          "type": "shopify://apps/judge-me-reviews/blocks/cards_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "show_sample_reviews": true,
+            "reviews_selection": "all",
+            "products": [],
+            "star_rating": "all",
+            "show_review_media": true,
+            "display_order": "most_recent",
+            "no_image_fallback": "review_text_only",
+            "max_reviews": 20,
+            "review_length": "medium",
+            "text_size": "medium",
+            "image_ratio": "1",
+            "reviews_shown": 5,
+            "show_reviewer_name": true,
+            "show_product_name": true,
+            "hide_arrows_mobile": true,
+            "arrows_position": "bottom",
+            "max_width": 1100,
+            "corner_styling": "soft",
+            "header_text_color": "#000000",
+            "text_color": "#000000",
+            "card_color": "#F9F9F9",
+            "stars_color": "",
+            "arrows_color": "#000000",
+            "transition_speed": 5,
+            "header_text": "Customers are saying",
+            "show_average_rating": true,
+            "rating_display": "default"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_cards_carousel_gXF8Kc"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -1012,11 +1011,11 @@
     "comparison_table_AbeWNw",
     "image_with_text_mXxk48",
     "ss_scrolling_announcement_bar_eytN9F",
-    "17817944513b487ca1",
     "featured_product_gNHPPY",
     "17817944892dde03e5",
     "featured_collection_hLTDY3",
     "newsletter_pX4bgr",
-    "rich_text_FegwLY"
+    "rich_text_FegwLY",
+    "178238860994c27a94"
   ]
 }
