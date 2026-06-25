@@ -422,7 +422,7 @@
         "background_gradient": "linear-gradient(180deg, rgba(254, 245, 238, 1), rgba(242, 242, 242, 1) 100%)",
         "border_color": "#121212",
         "margin_top": 80,
-        "margin_bottom": 80,
+        "margin_bottom": 0,
         "margin_horizontal": 0,
         "margin_horizontal_mobile": 0,
         "padding_top": 36,
@@ -442,31 +442,34 @@
         "row_TE3itQ": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
-            "button_link": ""
+            "image": "shopify://shop_images/Image_Recreation_Instructions.png",
+            "caption": "THE TEXTURE",
+            "heading": "The chew you've been missing in a snack",
+            "text": "<p>Soft, chewy dried sweet potato sticks — not crunchy chips, not mushy fruit leather. Just the satisfying chew your cravings have been asking for. <br/></p><p>Pro tip: they're even better chilled.</p>",
+            "button_label": "SHOP NOW",
+            "button_link": "shopify://collections/sweet-potato-sticks"
           }
         },
         "row_tb3Wcb": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
-            "button_link": ""
+            "image": "shopify://shop_images/Rectangle_15_2.png",
+            "caption": "THE INGREDIENTS",
+            "heading": "Ingredients you can actually pronounce",
+            "text": "<p>Just sweet potato and real spices. No seed oils, no \"natural flavors.\" Real food that respects your body and your taste buds.</p>",
+            "button_label": "Shop Now",
+            "button_link": "shopify://collections/sweet-potato-sticks"
           }
         },
         "row_KJxUpC": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
-            "button_link": ""
+            "image": "shopify://shop_images/Rectangle_15_3.png",
+            "caption": "THE NUTRITION",
+            "heading": "Nutrition that actually does something",
+            "text": "<p>4g fiber, 3g protein, and 12 vitamins and minerals per serving, under 200 calories a bag. A real-food sweet potato snack that keeps you full for hours, no sugar crash.</p>",
+            "button_label": "Shop Now",
+            "button_link": "shopify://collections/sweet-potato-sticks"
           }
         }
       },
@@ -482,14 +485,54 @@
         "image_layout": "alternate-left",
         "heading_size": "h1",
         "text_style": "body",
-        "button_style": "secondary",
+        "button_style": "primary",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "mobile_content_alignment": "left",
         "section_color_scheme": "",
         "row_color_scheme": "",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 72
+      }
+    },
+    "17817944892dde03e5": {
+      "type": "apps",
+      "blocks": {
+        "section_store_block_video_carousel_mP8iCi": {
+          "type": "shopify://apps/section-store/blocks/block-video-carousel/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "settings": {
+            "video_1": "shopify://files/videos/ult.ipe-post-7648482390976875790-0.mp4",
+            "video_2": "shopify://files/videos/graci.barros.ugc-post-7649528382379527455-0.mp4",
+            "video_3": "shopify://files/videos/carrievee2022-post-7643241833862057246-0.mp4",
+            "video_4": "shopify://files/videos/godforbidshereads-post-7640745039961869581-0.mp4",
+            "video_5": "shopify://files/videos/suzette_lost_it-post-7645038977187171597-0.mp4",
+            "slider_style": "progress_bar",
+            "modal_style": "none",
+            "video_autoplay": "true",
+            "play_button_position": "none",
+            "play_button_size": "small",
+            "item_border_style": "none",
+            "item_border_width": 1,
+            "item_border_color": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+            "item_border_radius": 16,
+            "item_padding": 0,
+            "grid_items": "3",
+            "thumbnail_shape": "rectangle",
+            "block_border_style": "none",
+            "block_border_width": 1,
+            "block_border_color": "#d7d7d7",
+            "block_border_radius": 16,
+            "block_bg_color": "",
+            "block_padding_vertical": 8,
+            "block_padding_horizontal": 0
+          }
+        }
+      },
+      "block_order": [
+        "section_store_block_video_carousel_mP8iCi"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "rich_text_r4La6H": {
@@ -672,43 +715,6 @@
         "padding_bottom": 100
       }
     },
-    "ss_scrolling_announcement_bar_eytN9F": {
-      "type": "ss-scrolling-announcement-bar",
-      "blocks": {
-        "text_E3EfDy": {
-          "type": "text",
-          "settings": {
-            "text": "Free Shipping"
-          }
-        },
-        "text_A4kaUU": {
-          "type": "text",
-          "settings": {
-            "text": "Free Returns"
-          }
-        }
-      },
-      "block_order": [
-        "text_E3EfDy",
-        "text_A4kaUU"
-      ],
-      "name": "SS - Scrolling announcement bar",
-      "settings": {
-        "insert_css_class_target": ".header, .pageheader, .section-header, #announcement, .toolbar, .header__wrapper",
-        "text_custom": false,
-        "ss_font_family": "montserrat_n4",
-        "text_size": 12,
-        "link": "",
-        "animation_duration": 44,
-        "animation_direction": "right",
-        "pause_hover": false,
-        "text_color": "#ffffff",
-        "bg": "#000000",
-        "hover_opacity": 90,
-        "padding_vertical": 1.5,
-        "padding_horizontal": 0
-      }
-    },
     "featured_product_gNHPPY": {
       "type": "featured-product",
       "blocks": {
@@ -768,45 +774,48 @@
         "image_zoom": "lightbox",
         "hide_variants": false,
         "enable_video_looping": false,
-        "padding_top": 36,
+        "padding_top": 100,
         "padding_bottom": 36
       }
     },
-    "17817944892dde03e5": {
+    "178238860994c27a94": {
       "type": "apps",
       "blocks": {
-        "section_store_block_video_carousel_mP8iCi": {
-          "type": "shopify://apps/section-store/blocks/block-video-carousel/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+        "judge_me_reviews_cards_carousel_gXF8Kc": {
+          "type": "shopify://apps/judge-me-reviews/blocks/cards_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "video_1": "shopify://files/videos/ult.ipe-post-7648482390976875790-0.mp4",
-            "video_2": "shopify://files/videos/graci.barros.ugc-post-7649528382379527455-0.mp4",
-            "video_3": "shopify://files/videos/carrievee2022-post-7643241833862057246-0.mp4",
-            "video_4": "shopify://files/videos/godforbidshereads-post-7640745039961869581-0.mp4",
-            "video_5": "shopify://files/videos/suzette_lost_it-post-7645038977187171597-0.mp4",
-            "slider_style": "progress_bar",
-            "modal_style": "none",
-            "video_autoplay": "true",
-            "play_button_position": "none",
-            "play_button_size": "small",
-            "item_border_style": "none",
-            "item_border_width": 1,
-            "item_border_color": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-            "item_border_radius": 16,
-            "item_padding": 0,
-            "grid_items": "3",
-            "thumbnail_shape": "rectangle",
-            "block_border_style": "none",
-            "block_border_width": 1,
-            "block_border_color": "#d7d7d7",
-            "block_border_radius": 16,
-            "block_bg_color": "",
-            "block_padding_vertical": 8,
-            "block_padding_horizontal": 0
+            "show_sample_reviews": true,
+            "reviews_selection": "all",
+            "products": [],
+            "star_rating": "all",
+            "show_review_media": true,
+            "display_order": "media_first",
+            "no_image_fallback": "review_text_only",
+            "max_reviews": 20,
+            "review_length": "medium",
+            "text_size": "medium",
+            "image_ratio": "0.75",
+            "reviews_shown": 4,
+            "show_reviewer_name": true,
+            "show_product_name": true,
+            "hide_arrows_mobile": true,
+            "arrows_position": "bottom",
+            "max_width": 1100,
+            "corner_styling": "soft",
+            "header_text_color": "#000000",
+            "text_color": "#000000",
+            "card_color": "#F9F9F9",
+            "stars_color": "",
+            "arrows_color": "#000000",
+            "transition_speed": 5,
+            "header_text": "",
+            "show_average_rating": true,
+            "rating_display": "default"
           }
         }
       },
       "block_order": [
-        "section_store_block_video_carousel_mP8iCi"
+        "judge_me_reviews_cards_carousel_gXF8Kc"
       ],
       "settings": {
         "include_margins": true
@@ -953,49 +962,6 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "178238860994c27a94": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_cards_carousel_gXF8Kc": {
-          "type": "shopify://apps/judge-me-reviews/blocks/cards_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "show_sample_reviews": true,
-            "reviews_selection": "all",
-            "products": [],
-            "star_rating": "all",
-            "show_review_media": true,
-            "display_order": "media_first",
-            "no_image_fallback": "review_text_only",
-            "max_reviews": 20,
-            "review_length": "medium",
-            "text_size": "medium",
-            "image_ratio": "0.75",
-            "reviews_shown": 4,
-            "show_reviewer_name": true,
-            "show_product_name": true,
-            "hide_arrows_mobile": true,
-            "arrows_position": "bottom",
-            "max_width": 1100,
-            "corner_styling": "soft",
-            "header_text_color": "#000000",
-            "text_color": "#000000",
-            "card_color": "#F9F9F9",
-            "stars_color": "",
-            "arrows_color": "#000000",
-            "transition_speed": 5,
-            "header_text": "",
-            "show_average_rating": true,
-            "rating_display": "default"
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_cards_carousel_gXF8Kc"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
@@ -1006,12 +972,11 @@
     "featured_collection",
     "rich_text_wCA3Xb",
     "ss_image_with_text_24_HCJ9EY",
-    "multirow_bQMepk",
-    "17817944892dde03e5",
     "rich_text_r4La6H",
     "comparison_table_AbeWNw",
+    "multirow_bQMepk",
+    "17817944892dde03e5",
     "image_with_text_mXxk48",
-    "ss_scrolling_announcement_bar_eytN9F",
     "featured_product_gNHPPY",
     "178238860994c27a94",
     "featured_collection_hLTDY3",
