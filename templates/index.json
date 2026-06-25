@@ -442,7 +442,7 @@
         "heading_H3nF6M": {
           "type": "heading",
           "settings": {
-            "heading": "Ditch the || [[sugar crash]]",
+            "heading": "[[Snack smarter]] || than chips or candy",
             "badge_bg": "#fcc86c",
             "badge_border": "#511d29",
             "badge_text": "#511d29",
@@ -454,9 +454,9 @@
         "text_9fqNm9": {
           "type": "text",
           "settings": {
-            "text": "<p>Swap empty calories for <span style=\"text-decoration:underline\">real</span> nutrition and all-day energy.</p>",
+            "text": "<p>Swap empty calories for a real-food sweet potato snack with fiber, protein, and all-day energy.</p>",
             "accent_color": "#ec6608",
-            "font_size": 28
+            "font_size": 25
           }
         }
       },
@@ -487,6 +487,7 @@
       "blocks": {
         "ai_gen_block_b9ea56f_ngtfNP": {
           "type": "ai_gen_block_b9ea56f",
+          "disabled": true,
           "settings": {
             "feature_column_label": "Features",
             "column_1_label": "Basic",
@@ -672,7 +673,6 @@
         "feature_NGjwe6",
         "feature_Jfx9Kn"
       ],
-      "disabled": true,
       "name": "Comparison table",
       "settings": {
         "brand_image": "shopify://shop_images/YammyOriginalComparison.png",
@@ -748,46 +748,6 @@
         "row_color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 72
-      }
-    },
-    "17817944892dde03e5": {
-      "type": "apps",
-      "blocks": {
-        "section_store_block_video_carousel_mP8iCi": {
-          "type": "shopify://apps/section-store/blocks/block-video-carousel/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
-          "settings": {
-            "video_1": "shopify://files/videos/ult.ipe-post-7648482390976875790-0.mp4",
-            "video_2": "shopify://files/videos/graci.barros.ugc-post-7649528382379527455-0.mp4",
-            "video_3": "shopify://files/videos/carrievee2022-post-7643241833862057246-0.mp4",
-            "video_4": "shopify://files/videos/godforbidshereads-post-7640745039961869581-0.mp4",
-            "video_5": "shopify://files/videos/suzette_lost_it-post-7645038977187171597-0.mp4",
-            "slider_style": "progress_bar",
-            "modal_style": "none",
-            "video_autoplay": "true",
-            "play_button_position": "none",
-            "play_button_size": "small",
-            "item_border_style": "none",
-            "item_border_width": 1,
-            "item_border_color": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-            "item_border_radius": 16,
-            "item_padding": 0,
-            "grid_items": "3",
-            "thumbnail_shape": "rectangle",
-            "block_border_style": "none",
-            "block_border_width": 1,
-            "block_border_color": "#d7d7d7",
-            "block_border_radius": 16,
-            "block_bg_color": "",
-            "block_padding_vertical": 8,
-            "block_padding_horizontal": 0
-          }
-        }
-      },
-      "block_order": [
-        "section_store_block_video_carousel_mP8iCi"
-      ],
-      "settings": {
-        "include_margins": true
       }
     },
     "image_with_text_mXxk48": {
@@ -951,6 +911,46 @@
         "include_margins": true
       }
     },
+    "17817944892dde03e5": {
+      "type": "apps",
+      "blocks": {
+        "section_store_block_video_carousel_mP8iCi": {
+          "type": "shopify://apps/section-store/blocks/block-video-carousel/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "settings": {
+            "video_1": "shopify://files/videos/ult.ipe-post-7648482390976875790-0.mp4",
+            "video_2": "shopify://files/videos/graci.barros.ugc-post-7649528382379527455-0.mp4",
+            "video_3": "shopify://files/videos/carrievee2022-post-7643241833862057246-0.mp4",
+            "video_4": "shopify://files/videos/godforbidshereads-post-7640745039961869581-0.mp4",
+            "video_5": "shopify://files/videos/suzette_lost_it-post-7645038977187171597-0.mp4",
+            "slider_style": "progress_bar",
+            "modal_style": "none",
+            "video_autoplay": "true",
+            "play_button_position": "none",
+            "play_button_size": "small",
+            "item_border_style": "none",
+            "item_border_width": 1,
+            "item_border_color": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+            "item_border_radius": 16,
+            "item_padding": 0,
+            "grid_items": "3",
+            "thumbnail_shape": "rectangle",
+            "block_border_style": "none",
+            "block_border_width": 1,
+            "block_border_color": "#d7d7d7",
+            "block_border_radius": 16,
+            "block_bg_color": "",
+            "block_padding_vertical": 8,
+            "block_padding_horizontal": 0
+          }
+        }
+      },
+      "block_order": [
+        "section_store_block_video_carousel_mP8iCi"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "featured_collection_hLTDY3": {
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
@@ -1109,8 +1109,8 @@
     "image_with_text_mXxk48",
     "featured_product_gNHPPY",
     "178238860994c27a94",
-    "featured_collection_hLTDY3",
     "17817944892dde03e5",
+    "featured_collection_hLTDY3",
     "newsletter_pX4bgr",
     "rich_text_FegwLY"
   ]
