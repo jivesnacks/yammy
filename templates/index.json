@@ -209,7 +209,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Meet your new snack || [[obsession]] (seriously)",
+            "heading": "Meet your new sweet potato || snack [[obsession]]",
             "badge_bg": "#fcc86c",
             "badge_border": "#511d29",
             "badge_text": "#511d29",
@@ -221,7 +221,7 @@
         "text_bgKd7V": {
           "type": "text",
           "settings": {
-            "text": "<p>Chewy, naturally sweet, and made from real sweet potatoes. Five flavors, no added junk, and under 200 calories a bag. One bite and you'll get why people can't stop reaching for a dried sweet potato snack this good.</p>",
+            "text": "<p>Chewy, naturally sweet dried sweet potato made from one real vegetable — no seed oils, no added junk, 4g fiber, under 200 calories a bag. The real-food sweet potato snack that actually keeps you full. One bite and you'll get why people can't stop.</p>",
             "accent_color": "#ee9441",
             "font_size": 20
           }
@@ -434,6 +434,46 @@
         "border_thickness": 0,
         "section_radius": 0,
         "lazy": true
+      }
+    },
+    "17817944892dde03e5": {
+      "type": "apps",
+      "blocks": {
+        "section_store_block_video_carousel_mP8iCi": {
+          "type": "shopify://apps/section-store/blocks/block-video-carousel/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "settings": {
+            "video_1": "shopify://files/videos/ult.ipe-post-7648482390976875790-0.mp4",
+            "video_2": "shopify://files/videos/graci.barros.ugc-post-7649528382379527455-0.mp4",
+            "video_3": "shopify://files/videos/carrievee2022-post-7643241833862057246-0.mp4",
+            "video_4": "shopify://files/videos/godforbidshereads-post-7640745039961869581-0.mp4",
+            "video_5": "shopify://files/videos/suzette_lost_it-post-7645038977187171597-0.mp4",
+            "slider_style": "progress_bar",
+            "modal_style": "none",
+            "video_autoplay": "true",
+            "play_button_position": "none",
+            "play_button_size": "small",
+            "item_border_style": "none",
+            "item_border_width": 1,
+            "item_border_color": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+            "item_border_radius": 16,
+            "item_padding": 0,
+            "grid_items": "3",
+            "thumbnail_shape": "rectangle",
+            "block_border_style": "none",
+            "block_border_width": 1,
+            "block_border_color": "#d7d7d7",
+            "block_border_radius": 16,
+            "block_bg_color": "",
+            "block_padding_vertical": 8,
+            "block_padding_horizontal": 0
+          }
+        }
+      },
+      "block_order": [
+        "section_store_block_video_carousel_mP8iCi"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "multirow_bQMepk": {
@@ -816,46 +856,6 @@
         "padding_bottom": 36
       }
     },
-    "17817944892dde03e5": {
-      "type": "apps",
-      "blocks": {
-        "section_store_block_video_carousel_mP8iCi": {
-          "type": "shopify://apps/section-store/blocks/block-video-carousel/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
-          "settings": {
-            "video_1": "shopify://files/videos/ult.ipe-post-7648482390976875790-0.mp4",
-            "video_2": "shopify://files/videos/graci.barros.ugc-post-7649528382379527455-0.mp4",
-            "video_3": "shopify://files/videos/carrievee2022-post-7643241833862057246-0.mp4",
-            "video_4": "shopify://files/videos/godforbidshereads-post-7640745039961869581-0.mp4",
-            "video_5": "shopify://files/videos/suzette_lost_it-post-7645038977187171597-0.mp4",
-            "slider_style": "progress_bar",
-            "modal_style": "none",
-            "video_autoplay": "true",
-            "play_button_position": "none",
-            "play_button_size": "small",
-            "item_border_style": "none",
-            "item_border_width": 1,
-            "item_border_color": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-            "item_border_radius": 16,
-            "item_padding": 0,
-            "grid_items": "3",
-            "thumbnail_shape": "rectangle",
-            "block_border_style": "none",
-            "block_border_width": 1,
-            "block_border_color": "#d7d7d7",
-            "block_border_radius": 16,
-            "block_bg_color": "",
-            "block_padding_vertical": 8,
-            "block_padding_horizontal": 0
-          }
-        }
-      },
-      "block_order": [
-        "section_store_block_video_carousel_mP8iCi"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "featured_collection_hLTDY3": {
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
@@ -1007,7 +1007,6 @@
     "featured_collection",
     "rich_text_wCA3Xb",
     "ss_image_with_text_24_HCJ9EY",
-    "17817944892dde03e5",
     "multirow_bQMepk",
     "rich_text_r4La6H",
     "comparison_table_AbeWNw",
@@ -1015,6 +1014,7 @@
     "ss_scrolling_announcement_bar_eytN9F",
     "17817944513b487ca1",
     "featured_product_gNHPPY",
+    "17817944892dde03e5",
     "featured_collection_hLTDY3",
     "newsletter_pX4bgr",
     "rich_text_FegwLY"
