@@ -124,7 +124,7 @@
         "insert_css_class_target": "",
         "text_custom": true,
         "ss_font_family": "questrial_n4",
-        "text_size": 30,
+        "text_size": 25,
         "link": "",
         "animation_duration": 200,
         "animation_direction": "left",
@@ -436,105 +436,6 @@
         "lazy": true
       }
     },
-    "multirow_bQMepk": {
-      "type": "multirow",
-      "blocks": {
-        "row_TE3itQ": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/Image_Recreation_Instructions.png",
-            "caption": "THE TEXTURE",
-            "heading": "The chew you've been missing in a snack",
-            "text": "<p>Soft, chewy dried sweet potato sticks — not crunchy chips, not mushy fruit leather. Just the satisfying chew your cravings have been asking for. <br/></p><p>Pro tip: they're even better chilled.</p>",
-            "button_label": "SHOP NOW",
-            "button_link": "shopify://collections/sweet-potato-sticks"
-          }
-        },
-        "row_tb3Wcb": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_15_2.png",
-            "caption": "THE INGREDIENTS",
-            "heading": "Ingredients you can actually pronounce",
-            "text": "<p>Just sweet potato and real spices. No seed oils, no \"natural flavors.\" Real food that respects your body and your taste buds.</p>",
-            "button_label": "Shop Now",
-            "button_link": "shopify://collections/sweet-potato-sticks"
-          }
-        },
-        "row_KJxUpC": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_15_3.png",
-            "caption": "THE NUTRITION",
-            "heading": "Nutrition that actually does something",
-            "text": "<p>4g fiber, 3g protein, and 12 vitamins and minerals per serving, under 200 calories a bag. A real-food sweet potato snack that keeps you full for hours, no sugar crash.</p>",
-            "button_label": "Shop Now",
-            "button_link": "shopify://collections/sweet-potato-sticks"
-          }
-        }
-      },
-      "block_order": [
-        "row_TE3itQ",
-        "row_tb3Wcb",
-        "row_KJxUpC"
-      ],
-      "name": "t:sections.multirow.presets.name",
-      "settings": {
-        "image_height": "medium",
-        "desktop_image_width": "medium",
-        "image_layout": "alternate-left",
-        "heading_size": "h1",
-        "text_style": "body",
-        "button_style": "primary",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "",
-        "row_color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 72
-      }
-    },
-    "17817944892dde03e5": {
-      "type": "apps",
-      "blocks": {
-        "section_store_block_video_carousel_mP8iCi": {
-          "type": "shopify://apps/section-store/blocks/block-video-carousel/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
-          "settings": {
-            "video_1": "shopify://files/videos/ult.ipe-post-7648482390976875790-0.mp4",
-            "video_2": "shopify://files/videos/graci.barros.ugc-post-7649528382379527455-0.mp4",
-            "video_3": "shopify://files/videos/carrievee2022-post-7643241833862057246-0.mp4",
-            "video_4": "shopify://files/videos/godforbidshereads-post-7640745039961869581-0.mp4",
-            "video_5": "shopify://files/videos/suzette_lost_it-post-7645038977187171597-0.mp4",
-            "slider_style": "progress_bar",
-            "modal_style": "none",
-            "video_autoplay": "true",
-            "play_button_position": "none",
-            "play_button_size": "small",
-            "item_border_style": "none",
-            "item_border_width": 1,
-            "item_border_color": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-            "item_border_radius": 16,
-            "item_padding": 0,
-            "grid_items": "3",
-            "thumbnail_shape": "rectangle",
-            "block_border_style": "none",
-            "block_border_width": 1,
-            "block_border_color": "#d7d7d7",
-            "block_border_radius": 16,
-            "block_bg_color": "",
-            "block_padding_vertical": 8,
-            "block_padding_horizontal": 0
-          }
-        }
-      },
-      "block_order": [
-        "section_store_block_video_carousel_mP8iCi"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "rich_text_r4La6H": {
       "type": "rich-text",
       "blocks": {
@@ -658,6 +559,105 @@
         "color_scheme": "scheme-1",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "multirow_bQMepk": {
+      "type": "multirow",
+      "blocks": {
+        "row_TE3itQ": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Image_Recreation_Instructions.png",
+            "caption": "THE TEXTURE",
+            "heading": "The chew you've been missing in a snack",
+            "text": "<p>Soft, chewy dried sweet potato sticks — not crunchy chips, not mushy fruit leather. Just the satisfying chew your cravings have been asking for. <br/></p><p>Pro tip: they're even better chilled.</p>",
+            "button_label": "SHOP NOW",
+            "button_link": "shopify://collections/sweet-potato-sticks"
+          }
+        },
+        "row_tb3Wcb": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_15_2.png",
+            "caption": "THE INGREDIENTS",
+            "heading": "Ingredients you can actually pronounce",
+            "text": "<p>Just sweet potato and real spices. No seed oils, no \"natural flavors.\" Real food that respects your body and your taste buds.</p>",
+            "button_label": "Shop Now",
+            "button_link": "shopify://collections/sweet-potato-sticks"
+          }
+        },
+        "row_KJxUpC": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_15_3.png",
+            "caption": "THE NUTRITION",
+            "heading": "Nutrition that actually does something",
+            "text": "<p>4g fiber, 3g protein, and 12 vitamins and minerals per serving, under 200 calories a bag. A real-food sweet potato snack that keeps you full for hours, no sugar crash.</p>",
+            "button_label": "Shop Now",
+            "button_link": "shopify://collections/sweet-potato-sticks"
+          }
+        }
+      },
+      "block_order": [
+        "row_TE3itQ",
+        "row_tb3Wcb",
+        "row_KJxUpC"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "primary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 72
+      }
+    },
+    "17817944892dde03e5": {
+      "type": "apps",
+      "blocks": {
+        "section_store_block_video_carousel_mP8iCi": {
+          "type": "shopify://apps/section-store/blocks/block-video-carousel/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "settings": {
+            "video_1": "shopify://files/videos/ult.ipe-post-7648482390976875790-0.mp4",
+            "video_2": "shopify://files/videos/graci.barros.ugc-post-7649528382379527455-0.mp4",
+            "video_3": "shopify://files/videos/carrievee2022-post-7643241833862057246-0.mp4",
+            "video_4": "shopify://files/videos/godforbidshereads-post-7640745039961869581-0.mp4",
+            "video_5": "shopify://files/videos/suzette_lost_it-post-7645038977187171597-0.mp4",
+            "slider_style": "progress_bar",
+            "modal_style": "none",
+            "video_autoplay": "true",
+            "play_button_position": "none",
+            "play_button_size": "small",
+            "item_border_style": "none",
+            "item_border_width": 1,
+            "item_border_color": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+            "item_border_radius": 16,
+            "item_padding": 0,
+            "grid_items": "3",
+            "thumbnail_shape": "rectangle",
+            "block_border_style": "none",
+            "block_border_width": 1,
+            "block_border_color": "#d7d7d7",
+            "block_border_radius": 16,
+            "block_bg_color": "",
+            "block_padding_vertical": 8,
+            "block_padding_horizontal": 0
+          }
+        }
+      },
+      "block_order": [
+        "section_store_block_video_carousel_mP8iCi"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "image_with_text_mXxk48": {
@@ -962,6 +962,135 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "blocks_ifMa9Q": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_b9ea56f_ngtfNP": {
+          "type": "ai_gen_block_b9ea56f",
+          "settings": {
+            "feature_column_label": "Features",
+            "column_1_label": "Basic",
+            "column_2_label": "Standard",
+            "column_3_label": "Premium",
+            "column_4_label": "Enterprise",
+            "feature_1": "Storage",
+            "feature_1_col1": "custom",
+            "feature_1_col1_text": "10GB",
+            "feature_1_col2": "custom",
+            "feature_1_col2_text": "50GB",
+            "feature_1_col3": "custom",
+            "feature_1_col3_text": "200GB",
+            "feature_1_col4": "custom",
+            "feature_1_col4_text": "Unlimited",
+            "feature_2": "Support",
+            "feature_2_col1": "custom",
+            "feature_2_col1_text": "Email",
+            "feature_2_col2": "custom",
+            "feature_2_col2_text": "Email & Chat",
+            "feature_2_col3": "custom",
+            "feature_2_col3_text": "24/7 Support",
+            "feature_2_col4": "custom",
+            "feature_2_col4_text": "Dedicated",
+            "feature_3": "Users",
+            "feature_3_col1": "custom",
+            "feature_3_col1_text": "1",
+            "feature_3_col2": "custom",
+            "feature_3_col2_text": "5",
+            "feature_3_col3": "custom",
+            "feature_3_col3_text": "25",
+            "feature_3_col4": "custom",
+            "feature_3_col4_text": "Unlimited",
+            "feature_4": "API Access",
+            "feature_4_col1": "no",
+            "feature_4_col1_text": "",
+            "feature_4_col2": "no",
+            "feature_4_col2_text": "",
+            "feature_4_col3": "yes",
+            "feature_4_col3_text": "",
+            "feature_4_col4": "yes",
+            "feature_4_col4_text": "",
+            "feature_5": "Analytics",
+            "feature_5_col1": "custom",
+            "feature_5_col1_text": "Basic",
+            "feature_5_col2": "custom",
+            "feature_5_col2_text": "Standard",
+            "feature_5_col3": "custom",
+            "feature_5_col3_text": "Advanced",
+            "feature_5_col4": "custom",
+            "feature_5_col4_text": "Custom",
+            "feature_6": "",
+            "feature_6_col1": "no",
+            "feature_6_col1_text": "",
+            "feature_6_col2": "yes",
+            "feature_6_col2_text": "",
+            "feature_6_col3": "yes",
+            "feature_6_col3_text": "",
+            "feature_6_col4": "yes",
+            "feature_6_col4_text": "",
+            "feature_7": "",
+            "feature_7_col1": "no",
+            "feature_7_col1_text": "",
+            "feature_7_col2": "yes",
+            "feature_7_col2_text": "",
+            "feature_7_col3": "yes",
+            "feature_7_col3_text": "",
+            "feature_7_col4": "yes",
+            "feature_7_col4_text": "",
+            "feature_8": "",
+            "feature_8_col1": "no",
+            "feature_8_col1_text": "",
+            "feature_8_col2": "yes",
+            "feature_8_col2_text": "",
+            "feature_8_col3": "yes",
+            "feature_8_col3_text": "",
+            "feature_8_col4": "yes",
+            "feature_8_col4_text": "",
+            "feature_9": "",
+            "feature_9_col1": "no",
+            "feature_9_col1_text": "",
+            "feature_9_col2": "yes",
+            "feature_9_col2_text": "",
+            "feature_9_col3": "yes",
+            "feature_9_col3_text": "",
+            "feature_9_col4": "yes",
+            "feature_9_col4_text": "",
+            "feature_10": "",
+            "feature_10_col1": "no",
+            "feature_10_col1_text": "",
+            "feature_10_col2": "yes",
+            "feature_10_col2_text": "",
+            "feature_10_col3": "yes",
+            "feature_10_col3_text": "",
+            "feature_10_col4": "yes",
+            "feature_10_col4_text": "",
+            "desktop_width_percent": 100,
+            "padding": 20,
+            "border_radius": 8,
+            "cell_padding": 16,
+            "border_width": 1,
+            "header_font_size": 16,
+            "cell_font_size": 14,
+            "icon_size": 20,
+            "background_color": "#ffffff",
+            "header_bg_color": "#511d29",
+            "header_text_color": "#ffffff",
+            "row_bg_color": "#ffffff",
+            "row_alt_bg_color": "#fef5ee",
+            "cell_text_color": "#511d29",
+            "feature_text_color": "#511d29",
+            "border_color": "#e0e0e0",
+            "checkmark_color": "#008060",
+            "cross_color": "#d82c0d"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_b9ea56f_ngtfNP"
+      ],
+      "name": "Comparison table",
+      "settings": {}
     }
   },
   "order": [
@@ -973,6 +1102,7 @@
     "rich_text_wCA3Xb",
     "ss_image_with_text_24_HCJ9EY",
     "rich_text_r4La6H",
+    "blocks_ifMa9Q",
     "comparison_table_AbeWNw",
     "multirow_bQMepk",
     "17817944892dde03e5",
