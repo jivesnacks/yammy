@@ -672,6 +672,7 @@
         "feature_NGjwe6",
         "feature_Jfx9Kn"
       ],
+      "disabled": true,
       "name": "Comparison table",
       "settings": {
         "brand_image": "shopify://shop_images/YammyOriginalComparison.png",
@@ -1105,11 +1106,11 @@
     "blocks_ifMa9Q",
     "comparison_table_AbeWNw",
     "multirow_bQMepk",
-    "17817944892dde03e5",
     "image_with_text_mXxk48",
     "featured_product_gNHPPY",
     "178238860994c27a94",
     "featured_collection_hLTDY3",
+    "17817944892dde03e5",
     "newsletter_pX4bgr",
     "rich_text_FegwLY"
   ]
