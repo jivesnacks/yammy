@@ -26,7 +26,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "Soft, chewy sweet potato with real spices. Bold enough to curb a craving, clean enough to feel good about.",
+            "text": "The dried sweet potato snack that's soft, chewy, and made with real spices. Bold enough to curb a craving, clean enough to feel good about.",
             "text_size": 20,
             "text_style": "body"
           }
@@ -221,7 +221,7 @@
         "text_bgKd7V": {
           "type": "text",
           "settings": {
-            "text": "<p>Chewy, naturally sweet, and made from real sweet potatoes. Five flavors, no added junk, and under 200 calories a bag. One bite and you'll get why people can't stop.</p>",
+            "text": "<p>Chewy, naturally sweet, and made from real sweet potatoes. Five flavors, no added junk, and under 200 calories a bag. One bite and you'll get why people can't stop reaching for a dried sweet potato snack this good.</p>",
             "accent_color": "#ee9441",
             "font_size": 20
           }
@@ -438,7 +438,6 @@
     },
     "featured_collection_hLTDY3": {
       "type": "featured-collection",
-      "disabled": true,
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "collection": "",
@@ -508,7 +507,6 @@
         "row_tb3Wcb",
         "row_KJxUpC"
       ],
-      "disabled": true,
       "name": "t:sections.multirow.presets.name",
       "settings": {
         "image_height": "medium",
@@ -726,7 +724,6 @@
         "text_E3EfDy",
         "text_A4kaUU"
       ],
-      "disabled": true,
       "name": "SS - Scrolling announcement bar",
       "settings": {
         "insert_css_class_target": ".header, .pageheader, .section-header, #announcement, .toolbar, .header__wrapper",
@@ -784,7 +781,6 @@
       "block_order": [
         "section_store_block_comments_HbdAjG"
       ],
-      "disabled": true,
       "settings": {
         "include_margins": true
       }
@@ -898,43 +894,50 @@
         "heading_M8Axw3": {
           "type": "heading",
           "settings": {
-            "heading": "Subscribe to our emails",
+            "heading": "Get in on the [[good stuff!]]",
             "badge_bg": "#fcc86c",
             "badge_border": "#511d29",
             "badge_text": "#511d29",
             "badge_shadow": "#511d29",
-            "heading_size": "h1",
-            "text_alignment": "center"
+            "heading_size": "h0",
+            "text_alignment": "left"
           }
         },
         "paragraph_X3MHP8": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.</p>",
-            "font_size": 15,
-            "text_alignment": "center"
+            "text": "<p>New flavors. Secret recipes. The occasional sweet potato fact. Sign up and stay snacking.</p>",
+            "font_size": 20,
+            "text_alignment": "left"
           }
         },
         "email_form_f4qfcT": {
           "type": "email_form",
           "settings": {
-            "text_alignment": "center",
-            "button_text": ""
+            "text_alignment": "left",
+            "button_text": "SIGN UP"
+          }
+        },
+        "image_d4kWEx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Yammy_3_1.png",
+            "image_position": "right"
           }
         }
       },
       "block_order": [
         "heading_M8Axw3",
         "paragraph_X3MHP8",
-        "email_form_f4qfcT"
+        "email_form_f4qfcT",
+        "image_d4kWEx"
       ],
-      "disabled": true,
       "name": "t:sections.newsletter.presets.name",
       "settings": {
         "color_scheme": "",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 0
       }
     },
     "rich_text_FegwLY": {
@@ -977,6 +980,7 @@
         "text_tdQPHi",
         "button_7k73Wx"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
