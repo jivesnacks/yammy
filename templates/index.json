@@ -294,13 +294,59 @@
     "video_carousel_yammy": {
       "type": "video-carousel",
       "blocks": {
-        "v1": { "type": "video", "settings": { "video_file": "ugc-1.mp4", "poster_file": "ugc-1-poster.jpg", "link": "/products/yammy-original-dried-sweet-potato-sticks-soft-chewy-asian-snack-18-pack", "cta_label": "Shop Original" } },
-        "v2": { "type": "video", "settings": { "video_file": "ugc-2.mp4", "poster_file": "ugc-2-poster.jpg", "link": "/products/yammy-single-ingredient-dried-fruit-veggie-variety-pack-the-texture-taste-test-copy", "cta_label": "Shop Variety Pack" } },
-        "v3": { "type": "video", "settings": { "video_file": "ugc-3.mp4", "poster_file": "ugc-3-poster.jpg", "link": "/products/korean-bbq-dried-sweet-potato-sticks-soft-chewy-savory-asian-snack-18-pack", "cta_label": "Shop Korean BBQ" } },
-        "v4": { "type": "video", "settings": { "video_file": "ugc-4.mp4", "poster_file": "ugc-4-poster.jpg", "link": "/products/snickerdoodle-dried-sweet-potato-sticks-soft-chewy-sweet-asian-snack-18-pack", "cta_label": "Shop Snickerdoodle" } },
-        "v5": { "type": "video", "settings": { "video_file": "ugc-5.mp4", "poster_file": "ugc-5-poster.jpg", "link": "/products/salt-pepper-dried-sweet-potato-sticks-soft-chewy-salty-asian-snack-18-pack", "cta_label": "Shop Salt & Pepper" } }
+        "v1": {
+          "type": "video",
+          "settings": {
+            "video_file": "ugc-1.mp4",
+            "poster_file": "ugc-1-poster.jpg",
+            "link": "/products/yammy-original-dried-sweet-potato-sticks-soft-chewy-asian-snack-18-pack",
+            "cta_label": "Shop Original"
+          }
+        },
+        "v2": {
+          "type": "video",
+          "settings": {
+            "video_file": "ugc-2.mp4",
+            "poster_file": "ugc-2-poster.jpg",
+            "link": "/products/yammy-single-ingredient-dried-fruit-veggie-variety-pack-the-texture-taste-test-copy",
+            "cta_label": "Shop Variety Pack"
+          }
+        },
+        "v3": {
+          "type": "video",
+          "settings": {
+            "video_file": "ugc-3.mp4",
+            "poster_file": "ugc-3-poster.jpg",
+            "link": "/products/korean-bbq-dried-sweet-potato-sticks-soft-chewy-savory-asian-snack-18-pack",
+            "cta_label": "Shop Korean BBQ"
+          }
+        },
+        "v4": {
+          "type": "video",
+          "settings": {
+            "video_file": "ugc-4.mp4",
+            "poster_file": "ugc-4-poster.jpg",
+            "link": "/products/snickerdoodle-dried-sweet-potato-sticks-soft-chewy-sweet-asian-snack-18-pack",
+            "cta_label": "Shop Snickerdoodle"
+          }
+        },
+        "v5": {
+          "type": "video",
+          "settings": {
+            "video_file": "ugc-5.mp4",
+            "poster_file": "ugc-5-poster.jpg",
+            "link": "/products/salt-pepper-dried-sweet-potato-sticks-soft-chewy-salty-asian-snack-18-pack",
+            "cta_label": "Shop Salt & Pepper"
+          }
+        }
       },
-      "block_order": ["v1", "v2", "v3", "v4", "v5"],
+      "block_order": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
       "settings": {
         "heading": "Don't just take our word for it",
         "heading_size": "h1",
@@ -506,7 +552,6 @@
     },
     "blocks_ifMa9Q": {
       "type": "_blocks",
-      "disabled": true,
       "blocks": {
         "ai_gen_block_b9ea56f_ngtfNP": {
           "type": "ai_gen_block_b9ea56f",
@@ -632,6 +677,7 @@
       "block_order": [
         "ai_gen_block_b9ea56f_ngtfNP"
       ],
+      "disabled": true,
       "name": "Comparison table",
       "settings": {}
     },
@@ -775,7 +821,6 @@
     },
     "image_with_text_mXxk48": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "heading_g983Ld": {
           "type": "heading",
@@ -810,6 +855,7 @@
         "text_dx9VVP",
         "button_wxQh4D"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/DennisStephanie.jpg",
@@ -878,7 +924,7 @@
       ],
       "name": "t:sections.featured-product.presets.name",
       "settings": {
-        "product": "yammy-single-ingredient-dried-fruit-veggie-variety-pack-the-texture-taste-test-copy",
+        "product": "chewy-dried-sweet-potato-sticks-variety-pack-pack-of-10",
         "color_scheme": "scheme-1",
         "secondary_background": false,
         "media_size": "medium",
@@ -937,7 +983,6 @@
     },
     "17817944892dde03e5": {
       "type": "apps",
-      "disabled": true,
       "blocks": {
         "section_store_block_video_carousel_mP8iCi": {
           "type": "shopify://apps/section-store/blocks/block-video-carousel/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
@@ -972,6 +1017,7 @@
       "block_order": [
         "section_store_block_video_carousel_mP8iCi"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
