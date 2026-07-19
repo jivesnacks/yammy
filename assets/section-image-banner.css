@@ -533,6 +533,36 @@
 }
 
 @media screen and (max-width: 749px) {
+  /* Cap the hero headline on mobile so the CTA stays near the fold */
+  .banner__heading {
+    font-size: 3.6rem;
+    line-height: 1.1;
+  }
+
+  /* Right-size hero description on mobile (was 20px) */
+  .banner__text {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+
+  /* Home hero: place the text ABOVE the image on mobile (not below) */
+  .banner--home-slants {
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .banner--home-slants .banner__content {
+    order: -1 !important;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 2rem;
+  }
+
+  .banner--home-slants .banner__media {
+    order: 0 !important;
+    width: 100%;
+  }
+
   .banner--content-align-mobile-right .banner__buttons--multiple {
     justify-content: flex-end;
   }

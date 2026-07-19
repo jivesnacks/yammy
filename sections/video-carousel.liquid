@@ -1,0 +1,217 @@
+{%- comment -%}
+  Video Carousel (UGC / social proof)
+  Reusable section: swipeable portrait videos, muted autoplay, tap to unmute,
+  each card links to a product. Videos may be served from the theme assets
+  (video_file = filename) or a full CDN URL (video_url).
+{%- endcomment -%}
+
+{{ 'section-video-carousel.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="video-carousel color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+  <div class="page-width">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="video-carousel__heading {{ section.settings.heading_size }} inline-richtext">
+        {{ section.settings.heading }}
+      </h2>
+    {%- endif -%}
+    {%- if section.settings.subheading != blank -%}
+      <p class="video-carousel__subheading">{{ section.settings.subheading }}</p>
+    {%- endif -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <div class="video-carousel__wrapper">
+        {%- if section.settings.show_arrows -%}
+          <button type="button" class="video-carousel__arrow video-carousel__arrow--prev" aria-label="Previous">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        {%- endif -%}
+
+        <ul class="video-carousel__track" role="list">
+          {%- for block in section.blocks -%}
+            {%- liquid
+              assign src = ''
+              if block.settings.video_url != blank
+                assign src = block.settings.video_url
+              elsif block.settings.video_file != blank
+                assign src = block.settings.video_file | asset_url
+              endif
+              assign poster = ''
+              if block.settings.poster != blank
+                assign poster = block.settings.poster | image_url: width: 640
+              elsif block.settings.poster_file != blank
+                assign poster = block.settings.poster_file | asset_url
+              endif
+            -%}
+            <li class="video-carousel__item" {{ block.shopify_attributes }}>
+              <div class="video-carousel__card">
+                {%- if src != blank -%}
+                  <video
+                    class="video-carousel__video"
+                    playsinline
+                    muted
+                    loop
+                    autoplay
+                    preload="none"
+                    {% if poster != blank %}poster="{{ poster }}"{% endif %}
+                    data-src="{{ src }}"
+                  ></video>
+                  <button type="button" class="video-carousel__sound" aria-label="Toggle sound" data-muted="true">
+                    <svg class="icon-muted" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/><path d="M16 9l4 6M20 9l-4 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    <svg class="icon-unmuted" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="display:none"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/><path d="M16 8a5 5 0 010 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  </button>
+                {%- endif -%}
+
+                {%- if block.settings.link != blank -%}
+                  <a class="video-carousel__shop button button--primary" href="{{ block.settings.link }}">
+                    {{ block.settings.cta_label | default: 'Shop this' }}
+                  </a>
+                {%- endif -%}
+              </div>
+            </li>
+          {%- endfor -%}
+        </ul>
+
+        {%- if section.settings.show_arrows -%}
+          <button type="button" class="video-carousel__arrow video-carousel__arrow--next" aria-label="Next">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}
+      <div class="video-carousel__cta">
+        <a href="{{ section.settings.button_link }}" class="button button--primary">{{ section.settings.button_label }}</a>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+<script>
+  (function () {
+    var section = document.querySelector('.video-carousel.section-{{ section.id }}-padding');
+    if (!section) return;
+
+    var videos = section.querySelectorAll('.video-carousel__video');
+    var track = section.querySelector('.video-carousel__track');
+
+    // Lazy-load sources
+    function load(v) {
+      if (v.dataset.src && !v.src) { v.src = v.dataset.src; }
+    }
+
+    // Play only the videos in view; pause the rest (protects mobile data/CPU)
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          var v = e.target;
+          if (e.isIntersecting && e.intersectionRatio > 0.6) {
+            load(v);
+            var p = v.play(); if (p && p.catch) p.catch(function () {});
+          } else {
+            v.pause();
+          }
+        });
+      }, { threshold: [0, 0.6, 1] });
+      videos.forEach(function (v) { io.observe(v); });
+    } else {
+      videos.forEach(function (v) { load(v); v.play && v.play(); });
+    }
+
+    // Tap-to-unmute (one at a time)
+    section.querySelectorAll('.video-carousel__sound').forEach(function (btn) {
+      btn.addEventListener('click', function (ev) {
+        ev.preventDefault(); ev.stopPropagation();
+        var card = btn.closest('.video-carousel__card');
+        var v = card && card.querySelector('.video-carousel__video');
+        if (!v) return;
+        var willUnmute = v.muted;
+        if (willUnmute) {
+          // mute all others first
+          videos.forEach(function (o) { o.muted = true; });
+          section.querySelectorAll('.video-carousel__sound').forEach(function (b) { setIcon(b, true); });
+          v.muted = false; load(v); v.play && v.play();
+        } else {
+          v.muted = true;
+        }
+        setIcon(btn, v.muted);
+      });
+    });
+
+    function setIcon(btn, muted) {
+      btn.dataset.muted = muted ? 'true' : 'false';
+      var m = btn.querySelector('.icon-muted'), u = btn.querySelector('.icon-unmuted');
+      if (m && u) { m.style.display = muted ? '' : 'none'; u.style.display = muted ? 'none' : ''; }
+    }
+
+    // Arrows
+    var prev = section.querySelector('.video-carousel__arrow--prev');
+    var next = section.querySelector('.video-carousel__arrow--next');
+    function step(dir) {
+      if (!track) return;
+      var card = track.querySelector('.video-carousel__item');
+      var amt = card ? card.getBoundingClientRect().width + 16 : 300;
+      track.scrollBy({ left: dir * amt, behavior: 'smooth' });
+    }
+    if (prev) prev.addEventListener('click', function () { step(-1); });
+    if (next) next.addEventListener('click', function () { step(1); });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Video carousel",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    { "type": "inline_richtext", "id": "heading", "label": "Heading", "default": "Join thousands who love Yammy" },
+    {
+      "type": "select", "id": "heading_size", "label": "Heading size",
+      "options": [
+        { "value": "h2", "label": "Medium" },
+        { "value": "h1", "label": "Large" },
+        { "value": "h0", "label": "Extra large" }
+      ], "default": "h1"
+    },
+    { "type": "text", "id": "subheading", "label": "Subheading" },
+    { "type": "checkbox", "id": "show_arrows", "label": "Show arrows (desktop)", "default": true },
+    { "type": "header", "content": "Footer call to action" },
+    { "type": "text", "id": "button_label", "label": "Button label" },
+    { "type": "url", "id": "button_link", "label": "Button link" },
+    { "type": "header", "content": "Appearance" },
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color scheme", "default": "background-1" },
+    { "type": "range", "id": "padding_top", "label": "Padding top", "min": 0, "max": 100, "step": 4, "unit": "px", "default": 48 },
+    { "type": "range", "id": "padding_bottom", "label": "Padding bottom", "min": 0, "max": 100, "step": 4, "unit": "px", "default": 48 }
+  ],
+  "blocks": [
+    {
+      "type": "video",
+      "name": "Video",
+      "settings": [
+        { "type": "text", "id": "video_url", "label": "Video URL (CDN .mp4)", "info": "Paste a Shopify Files video URL, or use Video file below." },
+        { "type": "text", "id": "video_file", "label": "Video file (in theme assets)", "info": "Filename only, e.g. ugc-1.mp4" },
+        { "type": "image_picker", "id": "poster", "label": "Cover image (optional)" },
+        { "type": "text", "id": "poster_file", "label": "Cover file (in theme assets)", "info": "Filename only, e.g. ugc-1-poster.jpg" },
+        { "type": "url", "id": "link", "label": "Links to (product)" },
+        { "type": "text", "id": "cta_label", "label": "Card button label", "default": "Shop this" }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "Video carousel", "blocks": [ { "type": "video" }, { "type": "video" }, { "type": "video" } ] }
+  ]
+}
+{% endschema %}

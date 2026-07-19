@@ -51,7 +51,7 @@
       "settings": {
         "image": "shopify://shop_images/yammy-hero.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "large",
+        "image_height": "medium",
         "image_behavior": "none",
         "desktop_content_position": "middle-left",
         "desktop_content_alignment": "left",
@@ -221,7 +221,7 @@
         "text_bgKd7V": {
           "type": "text",
           "settings": {
-            "text": "<p>Chewy, naturally sweet dried sweet potato made from one real vegetable. The real-food sweet potato snack that actually keeps you full. One bite and you'll get why people can't stop.</p><p>No seed oils, no added junk, 4g fiber, and under 200 calories a bag. </p>",
+            "text": "<p>Chewy, naturally sweet dried sweet potato sticks made from real sweet potato and spices. The snack that actually keeps you full, one bite and you'll get why people can't stop.</p><p>No seed oils, no added junk, 4g fiber, under 200 calories a bag.</p>",
             "accent_color": "#ee9441",
             "font_size": 20
           }
@@ -283,12 +283,34 @@
         "show_rating": false,
         "quick_add": "standard",
         "quick_add_button_style": "primary",
-        "product_title_size_mobile": 16,
+        "product_title_size_mobile": 18,
         "product_title_size_desktop": 20,
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "video_carousel_yammy": {
+      "type": "video-carousel",
+      "blocks": {
+        "v1": { "type": "video", "settings": { "video_file": "ugc-1.mp4", "poster_file": "ugc-1-poster.jpg", "link": "/products/yammy-original-dried-sweet-potato-sticks-soft-chewy-asian-snack-18-pack", "cta_label": "Shop Original" } },
+        "v2": { "type": "video", "settings": { "video_file": "ugc-2.mp4", "poster_file": "ugc-2-poster.jpg", "link": "/products/yammy-single-ingredient-dried-fruit-veggie-variety-pack-the-texture-taste-test-copy", "cta_label": "Shop Variety Pack" } },
+        "v3": { "type": "video", "settings": { "video_file": "ugc-3.mp4", "poster_file": "ugc-3-poster.jpg", "link": "/products/korean-bbq-dried-sweet-potato-sticks-soft-chewy-savory-asian-snack-18-pack", "cta_label": "Shop Korean BBQ" } },
+        "v4": { "type": "video", "settings": { "video_file": "ugc-4.mp4", "poster_file": "ugc-4-poster.jpg", "link": "/products/snickerdoodle-dried-sweet-potato-sticks-soft-chewy-sweet-asian-snack-18-pack", "cta_label": "Shop Snickerdoodle" } },
+        "v5": { "type": "video", "settings": { "video_file": "ugc-5.mp4", "poster_file": "ugc-5-poster.jpg", "link": "/products/salt-pepper-dried-sweet-potato-sticks-soft-chewy-salty-asian-snack-18-pack", "cta_label": "Shop Salt & Pepper" } }
+      },
+      "block_order": ["v1", "v2", "v3", "v4", "v5"],
+      "settings": {
+        "heading": "Join thousands who love Yammy",
+        "heading_size": "h1",
+        "subheading": "Real people, real chewy sweet potato obsession.",
+        "show_arrows": true,
+        "button_label": "Shop all flavors",
+        "button_link": "/collections/sweet-potato-sticks",
+        "color_scheme": "background-1",
+        "padding_top": 48,
+        "padding_bottom": 48
       }
     },
     "rich_text_wCA3Xb": {
@@ -752,6 +774,7 @@
     },
     "image_with_text_mXxk48": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "heading_g983Ld": {
           "type": "heading",
@@ -913,6 +936,7 @@
     },
     "17817944892dde03e5": {
       "type": "apps",
+      "disabled": true,
       "blocks": {
         "section_store_block_video_carousel_mP8iCi": {
           "type": "shopify://apps/section-store/blocks/block-video-carousel/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
@@ -975,10 +999,10 @@
         "show_rating": false,
         "quick_add": "standard",
         "quick_add_button_style": "primary",
-        "product_title_size_mobile": 12,
+        "product_title_size_mobile": 18,
         "product_title_size_desktop": 13,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
         "padding_top": 72,
         "padding_bottom": 72
       }
@@ -1100,6 +1124,7 @@
     "multicolumn",
     "rich_text",
     "featured_collection",
+    "video_carousel_yammy",
     "rich_text_wCA3Xb",
     "ss_image_with_text_24_HCJ9EY",
     "rich_text_r4La6H",

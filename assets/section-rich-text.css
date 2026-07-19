@@ -19,6 +19,19 @@
   .rich-text__stars--hide-mobile {
     display: none;
   }
+
+  /* Right-size body copy + headings on mobile (were 20px / 40px) */
+  .rich-text__text,
+  .rich-text__text p,
+  .rich-text__text li {
+    font-size: 1.6rem !important;
+    line-height: 1.5;
+  }
+
+  .rich-text__heading {
+    font-size: 3rem !important;
+    line-height: 1.45;
+  }
 }
 
 .rich-text__wrapper {

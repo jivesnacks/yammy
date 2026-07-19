@@ -108,8 +108,14 @@
           {{ money_price }}
         </span>
       </div>
-      {%- if product.selected_or_first_available_variant.unit_price_measurement -%}
-        {% render 'unit-price', price: product.selected_or_first_available_variant.unit_price, measurement: product.selected_or_first_available_variant.unit_price_measurement %}
+      {%- assign per_bag_variant = product.selected_or_first_available_variant -%}
+      {%- assign per_bag_upm = per_bag_variant.unit_price_measurement -%}
+      {%- if per_bag_upm and per_bag_upm.measured_type == 'count' -%}
+        {%- assign per_bag_qty = per_bag_upm.quantity_value | round -%}
+        {%- if per_bag_qty > 1 -%}
+          {%- assign per_bag_price = per_bag_variant.price | divided_by: per_bag_qty -%}
+          <span class="price__per-bag">{{ per_bag_price | money }} per bag</span>
+        {%- endif -%}
       {%- endif -%}
     </div>
     {%- if show_badges -%}
