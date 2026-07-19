@@ -949,7 +949,7 @@
         "judge_me_reviews_cards_carousel_gXF8Kc": {
           "type": "shopify://apps/judge-me-reviews/blocks/cards_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "show_sample_reviews": true,
+            "show_sample_reviews": false,
             "reviews_selection": "all",
             "products": [],
             "star_rating": "all",
@@ -1057,50 +1057,6 @@
         "swipe_on_mobile": true,
         "padding_top": 72,
         "padding_bottom": 72
-      }
-    },
-    "rich_text_health": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_health": {
-          "type": "heading",
-          "settings": {
-            "heading": "The power of the sweet potato",
-            "badge_bg": "#fcc86c",
-            "badge_border": "#511d29",
-            "badge_text": "#511d29",
-            "badge_shadow": "#511d29",
-            "letter_spacing": 0,
-            "heading_size": "h1"
-          }
-        },
-        "text_health": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Sweet potatoes are one of nature's most nutrient-dense vegetables. Each one brings fiber for steady energy, vitamin A from beta-carotene (that's the orange), potassium, and vitamin C. As a complex carb, it digests slower than refined snacks, which is part of why a sweet potato snack actually satisfies. Yammy starts with whole Asian sweet potatoes and does as little as possible to them, so you get the good of the vegetable in a chewy, snackable form.</p>",
-            "accent_color": "#ee9441",
-            "font_size": 15
-          }
-        }
-      },
-      "block_order": [
-        "heading_health",
-        "text_health"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "show_stars": false,
-        "show_stars_mobile": true,
-        "star_size": 24,
-        "star_1_top": 15,
-        "star_1_left": 8,
-        "star_2_top": 10,
-        "star_2_left": 82,
-        "padding_top": 40,
-        "padding_bottom": 40
       }
     },
     "newsletter_pX4bgr": {
@@ -1232,7 +1188,6 @@
     "178238860994c27a94",
     "17817944892dde03e5",
     "featured_collection_hLTDY3",
-    "rich_text_health",
     "newsletter_pX4bgr",
     "rich_text_FegwLY"
   ]
