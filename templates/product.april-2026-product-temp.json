@@ -390,7 +390,7 @@
         "text_8LAkQJ": {
           "type": "text",
           "settings": {
-            "text": "<p>Yammy hits different. Our sweet potato sticks are perfectly chewy and packed with bold, real seasoning. Once you start, good luck stopping.</p>",
+            "text": "<p>Yammy hits different. Chewy dried sweet potato sticks made from real sweet potato and bold spices. Naturally sweet, seriously satisfying, and clean enough to feel good about. One bite and good luck stopping.</p>",
             "text_custom": false,
             "text_font": "josefin_sans_n4",
             "text_size": 18,
@@ -399,7 +399,7 @@
             "text_height": 150,
             "text_mt": 12,
             "text_mt_mobile": 12,
-            "text_color": "#121212"
+            "text_color": "#5b1830"
           }
         },
         "item_dGDnpn": {
@@ -999,6 +999,15 @@
         "padding_bottom": 0
       }
     },
+    "rich_text_health": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_health": { "type": "heading", "settings": { "heading": "The power of the sweet potato", "heading_size": "h1" } },
+        "text_health": { "type": "text", "settings": { "text": "<p>Sweet potatoes are one of nature's most nutrient-dense vegetables. Each one brings fiber for steady energy, vitamin A from beta-carotene (that's the orange), potassium, and vitamin C. As a complex carb, it digests slower than refined snacks, which is part of why a sweet potato snack actually satisfies. Yammy starts with whole Asian sweet potatoes and does as little as possible to them, so you get the good of the vegetable in a chewy, snackable form.</p>" } }
+      },
+      "block_order": ["heading_health", "text_health"],
+      "settings": { "color_scheme": "", "padding_top": 40, "padding_bottom": 40 }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -1032,6 +1041,7 @@
     "collapsible_content_3dJYdn",
     "1775195616e6ea4e68",
     "rich_text_MYkVnH",
+    "rich_text_health",
     "related-products"
   ]
 }
