@@ -28,9 +28,16 @@
     line-height: 1.5;
   }
 
-  .rich-text__heading {
+  /* Cap the large homepage headings, but let intentionally-huge (hxl) ones stay big */
+  .rich-text__heading.h0,
+  .rich-text__heading.h1 {
     font-size: 3rem !important;
     line-height: 1.45;
+  }
+
+  .rich-text__heading.hxl {
+    font-size: 4rem !important;
+    line-height: 1.15;
   }
 }
 
