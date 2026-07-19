@@ -547,11 +547,11 @@
       },
       "block_order": ["v1", "v2", "v3", "v4", "v5"],
       "settings": {
-        "heading": "Don't just take our word for it",
+        "heading": "",
         "heading_size": "h1",
-        "subheading": "Real people, real chewy sweet potato obsession.",
+        "subheading": "",
         "show_arrows": true,
-        "button_label": "Shop all flavors",
+        "button_label": "",
         "button_link": "/collections/sweet-potato-sticks",
         "color_scheme": "background-1",
         "padding_top": 48,
@@ -560,6 +560,7 @@
     },
     "1776681792512366d5": {
       "type": "apps",
+      "disabled": true,
       "blocks": {
         "section_store_block_video_carousel_Ad9d9H": {
           "type": "shopify://apps/section-store/blocks/block-video-carousel/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
@@ -635,6 +636,7 @@
     },
     "blocks_3ErJJU": {
       "type": "_blocks",
+      "disabled": true,
       "blocks": {
         "ai_gen_block_b9ea56f_ErbUDt": {
           "type": "ai_gen_block_b9ea56f",
@@ -761,6 +763,18 @@
       ],
       "name": "Comparison table",
       "settings": {}
+    },
+    "comparison_table_pdp": {
+      "type": "comparison-table",
+      "blocks": {
+        "f1": { "type": "feature", "settings": { "feature": "Main Ingredient", "brand_value": "custom", "brand_custom_text": "Real sweet potatoes", "competitor_value": "custom", "competitor_custom_text": "Sugars and sweeteners" } },
+        "f2": { "type": "feature", "settings": { "feature": "No Seed Oils", "brand_value": "yes", "competitor_value": "no" } },
+        "f3": { "type": "feature", "settings": { "feature": "4g Fiber", "brand_value": "yes", "competitor_value": "no" } },
+        "f4": { "type": "feature", "settings": { "feature": "3g Protein", "brand_value": "yes", "competitor_value": "no" } },
+        "f5": { "type": "feature", "settings": { "feature": "12 Vitamins & Minerals", "brand_value": "yes", "competitor_value": "no" } }
+      },
+      "block_order": ["f1", "f2", "f3", "f4", "f5"],
+      "settings": { "brand_image": "shopify://shop_images/YammyOriginalComparison.png", "brand_name": "Yammy Sweet Potato Sticks", "competitor_image": "shopify://shop_images/GummyCandyComparison.png", "competitor_name": "The Snack Aisle", "feature_column_width": 150, "column_width": 200, "header_font_size": 20, "font_size": 20, "icon_size": 48, "check_color": "#2e7d32", "cross_color": "#c62828", "color_scheme": "scheme-1", "padding_top": 20, "padding_bottom": 40 }
     },
     "multirow_Hprj8Q": {
       "type": "multirow",
@@ -1037,6 +1051,7 @@
     "1776681792512366d5",
     "rich_text_3PixQ6",
     "blocks_3ErJJU",
+    "comparison_table_pdp",
     "multirow_Hprj8Q",
     "collapsible_content_3dJYdn",
     "1775195616e6ea4e68",
