@@ -26,7 +26,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "The dried sweet potato snack that's soft, chewy, and made with real spices. Bold enough to curb a craving, clean enough to feel good about.",
+            "text": "Chewy dried sweet potato sticks, made with real spices. Bold enough to curb a craving, clean enough to feel good about.",
             "text_size": 20,
             "text_style": "body"
           }
@@ -84,7 +84,7 @@
         "text_AyQBfG": {
           "type": "text",
           "settings": {
-            "text": "THE ASIAN SUPERFOOD SNACK"
+            "text": "ALL NATURAL INGREDIENTS"
           }
         },
         "text_aJkja8": {
@@ -302,7 +302,7 @@
       },
       "block_order": ["v1", "v2", "v3", "v4", "v5"],
       "settings": {
-        "heading": "Join thousands who love Yammy",
+        "heading": "Don't just take our word for it",
         "heading_size": "h1",
         "subheading": "Real people, real chewy sweet potato obsession.",
         "show_arrows": true,
@@ -366,7 +366,7 @@
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/1.png",
-            "heading": "<h3>Everything starts with a fresh, fragrant Asian sweet potato</h3>",
+            "heading": "<h3>It starts with a fresh, fragrant Asian sweet potato</h3>",
             "text": ""
           }
         },
@@ -464,7 +464,7 @@
         "heading_H3nF6M": {
           "type": "heading",
           "settings": {
-            "heading": "[[Snack smarter]] || than chips or candy",
+            "heading": "[[Snack smarter]] || than candy",
             "badge_bg": "#fcc86c",
             "badge_border": "#511d29",
             "badge_text": "#511d29",
@@ -476,7 +476,7 @@
         "text_9fqNm9": {
           "type": "text",
           "settings": {
-            "text": "<p>Swap empty calories for a real-food sweet potato snack with fiber, protein, and all-day energy.</p>",
+            "text": "<p>Swap the sugar crash for real food that holds you. Chewy dried sweet potato sticks with 4g fiber and 3g protein a serving, so a treat can actually pull its weight.</p>",
             "accent_color": "#ec6608",
             "font_size": 25
           }
@@ -506,6 +506,7 @@
     },
     "blocks_ifMa9Q": {
       "type": "_blocks",
+      "disabled": true,
       "blocks": {
         "ai_gen_block_b9ea56f_ngtfNP": {
           "type": "ai_gen_block_b9ea56f",
@@ -650,7 +651,7 @@
         "feature_jNaiDG": {
           "type": "feature",
           "settings": {
-            "feature": "No Added Sugar",
+            "feature": "No Seed Oils",
             "brand_value": "yes",
             "brand_custom_text": "",
             "competitor_value": "no",
@@ -722,7 +723,7 @@
             "image": "shopify://shop_images/Image_Recreation_Instructions.png",
             "caption": "THE TEXTURE",
             "heading": "The chew you've been missing in a snack",
-            "text": "<p>Soft, chewy dried sweet potato sticks — not crunchy chips, not mushy fruit leather. Just the satisfying chew your cravings have been asking for. <br/></p><p>Pro tip: they're even better chilled.</p>",
+            "text": "<p>If you love Medjool dates or a good fruit leather, meet your new favorite. Soft, chewy dried sweet potato sticks with the satisfying chew your cravings have been asking for.</p><p>Pro tip: they taste even better chilled.</p>",
             "button_label": "SHOP NOW",
             "button_link": "shopify://collections/sweet-potato-sticks"
           }
