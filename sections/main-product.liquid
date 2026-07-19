@@ -732,8 +732,38 @@
       endif
     -%}
 
+    {%- liquid
+      assign schema_variant = product.selected_or_first_available_variant
+      assign schema_rating = product.metafields.reviews.rating.value
+      assign schema_rating_count = product.metafields.reviews.rating_count.value
+    -%}
     <script type="application/ld+json">
-      {{ product | structured_data }}
+      {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": {{ product.title | json }},
+        "url": {{ request.origin | append: product.url | json }},
+        "description": {{ product.description | strip_html | truncate: 400 | json }},
+        {% if seo_media %}"image": {{ seo_media | image_url: width: 1200 | prepend: 'https:' | json }},{% endif %}
+        "brand": { "@type": "Brand", "name": {{ product.vendor | default: 'Yammy' | json }} },
+        "sku": {{ schema_variant.sku | json }},
+        {% if schema_variant.barcode != blank %}"gtin": {{ schema_variant.barcode | json }},{% endif %}
+        {%- if schema_rating and schema_rating_count and schema_rating_count > 0 -%}
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": {{ schema_rating.rating | json }},
+          "bestRating": {{ schema_rating.scale_max | json }},
+          "reviewCount": {{ schema_rating_count | json }}
+        },
+        {%- endif -%}
+        "offers": {
+          "@type": "Offer",
+          "url": {{ request.origin | append: product.url | json }},
+          "priceCurrency": {{ cart.currency.iso_code | json }},
+          "price": {{ schema_variant.price | divided_by: 100.0 | json }},
+          "availability": "{% if product.available %}https://schema.org/InStock{% else %}https://schema.org/OutOfStock{% endif %}"
+        }
+      }
     </script>
   </div>
 </product-info>
