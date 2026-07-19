@@ -121,3 +121,11 @@
   letter-spacing: 0.03em;
   line-height: 1.25;
 }
+
+/* Keep price, "per bag" pill, and Sale badge aligned on one wrapping row */
+.price {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.8rem;
+}
