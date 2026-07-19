@@ -1,0 +1,190 @@
+{%- comment -%}
+  Breadcrumbs with BreadcrumbList structured data (schema.org).
+  Renders on product, collection, article, blog, page, and search templates.
+  Hidden on the homepage, cart, and account pages.
+{%- endcomment -%}
+
+{%- comment -%}
+  NOTE: 'product' is intentionally excluded — the product template already
+  renders its own breadcrumb (with collection + BreadcrumbList schema).
+  This snippet fills the gap on all other page types.
+{%- endcomment -%}
+{%- liquid
+  assign show_breadcrumb = false
+  case request.page_type
+    when 'collection', 'article', 'blog', 'page', 'list-collections', 'search'
+      assign show_breadcrumb = true
+  endcase
+-%}
+
+{%- if show_breadcrumb -%}
+  <nav class="breadcrumb page-width" role="navigation" aria-label="breadcrumbs">
+    <ol
+      class="breadcrumb__list"
+      itemscope
+      itemtype="https://schema.org/BreadcrumbList"
+    >
+      <li
+        class="breadcrumb__item"
+        itemprop="itemListElement"
+        itemscope
+        itemtype="https://schema.org/ListItem"
+      >
+        <a href="{{ routes.root_url }}" itemprop="item">
+          <span itemprop="name">Home</span>
+        </a>
+        <meta itemprop="position" content="1">
+      </li>
+
+      {%- case request.page_type -%}
+        {%- when 'product' -%}
+          {%- if collection.url -%}
+            <li
+              class="breadcrumb__item"
+              itemprop="itemListElement"
+              itemscope
+              itemtype="https://schema.org/ListItem"
+            >
+              <a href="{{ collection.url }}" itemprop="item">
+                <span itemprop="name">{{ collection.title | escape }}</span>
+              </a>
+              <meta itemprop="position" content="2">
+            </li>
+            <li
+              class="breadcrumb__item breadcrumb__item--current"
+              itemprop="itemListElement"
+              itemscope
+              itemtype="https://schema.org/ListItem"
+            >
+              <span itemprop="name" aria-current="page">{{ product.title | escape }}</span>
+              <meta itemprop="position" content="3">
+            </li>
+          {%- else -%}
+            <li
+              class="breadcrumb__item breadcrumb__item--current"
+              itemprop="itemListElement"
+              itemscope
+              itemtype="https://schema.org/ListItem"
+            >
+              <span itemprop="name" aria-current="page">{{ product.title | escape }}</span>
+              <meta itemprop="position" content="2">
+            </li>
+          {%- endif -%}
+
+        {%- when 'collection' -%}
+          <li
+            class="breadcrumb__item breadcrumb__item--current"
+            itemprop="itemListElement"
+            itemscope
+            itemtype="https://schema.org/ListItem"
+          >
+            <span itemprop="name" aria-current="page">{{ collection.title | escape }}</span>
+            <meta itemprop="position" content="2">
+          </li>
+
+        {%- when 'article' -%}
+          <li
+            class="breadcrumb__item"
+            itemprop="itemListElement"
+            itemscope
+            itemtype="https://schema.org/ListItem"
+          >
+            <a href="{{ blog.url }}" itemprop="item">
+              <span itemprop="name">{{ blog.title | escape }}</span>
+            </a>
+            <meta itemprop="position" content="2">
+          </li>
+          <li
+            class="breadcrumb__item breadcrumb__item--current"
+            itemprop="itemListElement"
+            itemscope
+            itemtype="https://schema.org/ListItem"
+          >
+            <span itemprop="name" aria-current="page">{{ article.title | escape }}</span>
+            <meta itemprop="position" content="3">
+          </li>
+
+        {%- when 'blog' -%}
+          <li
+            class="breadcrumb__item breadcrumb__item--current"
+            itemprop="itemListElement"
+            itemscope
+            itemtype="https://schema.org/ListItem"
+          >
+            <span itemprop="name" aria-current="page">{{ blog.title | escape }}</span>
+            <meta itemprop="position" content="2">
+          </li>
+
+        {%- when 'page' -%}
+          <li
+            class="breadcrumb__item breadcrumb__item--current"
+            itemprop="itemListElement"
+            itemscope
+            itemtype="https://schema.org/ListItem"
+          >
+            <span itemprop="name" aria-current="page">{{ page.title | escape }}</span>
+            <meta itemprop="position" content="2">
+          </li>
+
+        {%- when 'list-collections' -%}
+          <li
+            class="breadcrumb__item breadcrumb__item--current"
+            itemprop="itemListElement"
+            itemscope
+            itemtype="https://schema.org/ListItem"
+          >
+            <span itemprop="name" aria-current="page">Collections</span>
+            <meta itemprop="position" content="2">
+          </li>
+
+        {%- when 'search' -%}
+          <li
+            class="breadcrumb__item breadcrumb__item--current"
+            itemprop="itemListElement"
+            itemscope
+            itemtype="https://schema.org/ListItem"
+          >
+            <span itemprop="name" aria-current="page">Search</span>
+            <meta itemprop="position" content="2">
+          </li>
+      {%- endcase -%}
+    </ol>
+  </nav>
+
+  {%- style -%}
+    .breadcrumb {
+      padding-top: 1.2rem;
+      padding-bottom: 0.4rem;
+      font-size: 1.3rem;
+    }
+    .breadcrumb__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .breadcrumb__item {
+      display: inline-flex;
+      align-items: center;
+      color: rgba(var(--color-foreground), 0.7);
+    }
+    .breadcrumb__item + .breadcrumb__item::before {
+      content: "›";
+      margin: 0 0.6rem 0 0.2rem;
+      color: rgba(var(--color-foreground), 0.45);
+    }
+    .breadcrumb__item a {
+      color: rgba(var(--color-foreground), 0.7);
+      text-decoration: none;
+    }
+    .breadcrumb__item a:hover {
+      text-decoration: underline;
+    }
+    .breadcrumb__item--current span {
+      color: rgb(var(--color-foreground));
+    }
+  {%- endstyle -%}
+{%- endif -%}
