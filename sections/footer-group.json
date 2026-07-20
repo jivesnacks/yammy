@@ -77,6 +77,7 @@
         },
         "footer-2": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "heading": "",
             "subtext": "<p><strong>Address</strong></p><p>1401 21st St Suite R<br/>Sacramento, CA, 95811 USA</p><p><strong>Email</strong></p><p><a href=\"mailto:support@jivesnacks.com\" target=\"_blank\" title=\"mailto:support@jivesnacks.com\">support@jivesnacks.com</a></p>"
@@ -85,27 +86,45 @@
         "footer-1": {
           "type": "link_list",
           "settings": {
-            "heading": "",
-            "menu": "footer",
-            "menu_font_size": 16
+            "heading": "Shop",
+            "menu": "shop",
+            "menu_font_size": 14
+          }
+        },
+        "link_list_r7mNKP": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Company",
+            "menu": "company",
+            "menu_font_size": 14
+          }
+        },
+        "link_list_pxmTQh": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Help",
+            "menu": "help",
+            "menu_font_size": 14
           }
         }
       },
       "block_order": [
         "image_nbqQk9",
         "footer-2",
-        "footer-1"
+        "footer-1",
+        "link_list_r7mNKP",
+        "link_list_pxmTQh"
       ],
       "settings": {
         "color_scheme": "scheme-5",
         "newsletter_enable": false,
-        "newsletter_heading": "Subscribe to our emails",
+        "newsletter_heading": "Snack smarter",
         "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": false,
         "enable_language_selector": false,
         "payment_enable": true,
-        "show_policy": true,
+        "show_policy": false,
         "desktop_block_spacing": 60,
         "margin_top": 0,
         "padding_top": 72,

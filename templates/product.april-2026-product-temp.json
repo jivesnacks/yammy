@@ -14,6 +14,7 @@
       "blocks": {
         "section_store_block_sticky_atc_kNyJkb": {
           "type": "shopify://apps/section-store/blocks/block-sticky-atc/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+          "disabled": true,
           "settings": {
             "desktop_layout": "full-width",
             "mobile_layout": "full-width-no-spacing",
@@ -92,7 +93,7 @@
           "type": "quantity_selector",
           "settings": {}
         },
-        "loop_subscriptions_loop_widget_LCYYwh": {
+        "loop_subscriptions_loop_widget_fxJdyp": {
           "type": "shopify://apps/loop-subscriptions/blocks/loop_widget/267a7c64-5cb3-4552-b817-5485165f0a0b",
           "settings": {}
         },
@@ -101,6 +102,12 @@
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
+          }
+        },
+        "trust_row": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<ul class=\"pdp-trust-row\"><li>Gluten-free</li><li>Vegan</li><li>Non-GMO</li></ul><style>.pdp-trust-row{list-style:none;display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;margin:1.3rem 0 .3rem;padding:0}.pdp-trust-row li{font-size:1.3rem;font-weight:600;color:rgb(var(--color-foreground));display:flex;align-items:center;gap:.45rem}.pdp-trust-row li::before{content:\"\\2713\";color:#c8622b;font-weight:800}</style>"
           }
         },
         "section_store_block_coupon_code_9YFbhG": {
@@ -230,8 +237,9 @@
         "variant_picker",
         "caption",
         "quantity_selector",
-        "loop_subscriptions_loop_widget_LCYYwh",
+        "loop_subscriptions_loop_widget_fxJdyp",
         "buy_buttons",
+        "trust_row",
         "section_store_block_coupon_code_9YFbhG",
         "section_store_block_shipping_info_CngG94",
         "section_store_block_upsell_cdMjcB",
@@ -1086,6 +1094,60 @@
         "include_margins": true
       }
     },
+    "multicolumn_BjBnTH": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_ggFXLD": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_npmQqT": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_HyjaGx": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_ggFXLD",
+        "column_npmQqT",
+        "column_HyjaGx"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Learn more about the power of sweet potatoes",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "rich_text_MYkVnH": {
       "type": "rich-text",
       "blocks": {
@@ -1122,50 +1184,6 @@
         "padding_bottom": 0
       }
     },
-    "rich_text_health": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_health": {
-          "type": "heading",
-          "settings": {
-            "heading": "The power of the sweet potato",
-            "badge_bg": "#fcc86c",
-            "badge_border": "#511d29",
-            "badge_text": "#511d29",
-            "badge_shadow": "#511d29",
-            "letter_spacing": 0,
-            "heading_size": "h1"
-          }
-        },
-        "text_health": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Sweet potatoes are one of nature's most nutrient-dense vegetables. Each one brings fiber for steady energy, vitamin A from beta-carotene (that's the orange), potassium, and vitamin C. As a complex carb, it digests slower than refined snacks, which is part of why a sweet potato snack actually satisfies. Yammy starts with whole Asian sweet potatoes and does as little as possible to them, so you get the good of the vegetable in a chewy, snackable form.</p>",
-            "accent_color": "#ee9441",
-            "font_size": 15
-          }
-        }
-      },
-      "block_order": [
-        "heading_health",
-        "text_health"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "show_stars": false,
-        "show_stars_mobile": true,
-        "star_size": 24,
-        "star_1_top": 15,
-        "star_1_left": 8,
-        "star_2_top": 10,
-        "star_2_left": 82,
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -1179,7 +1197,7 @@
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
-        "show_rating": false,
+        "show_rating": true,
         "padding_top": 36,
         "padding_bottom": 28
       }
@@ -1199,8 +1217,8 @@
     "multirow_Hprj8Q",
     "collapsible_content_3dJYdn",
     "1775195616e6ea4e68",
+    "multicolumn_BjBnTH",
     "rich_text_MYkVnH",
-    "rich_text_health",
     "related-products"
   ]
 }
