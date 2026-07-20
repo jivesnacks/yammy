@@ -46,10 +46,19 @@
     margin: 1.6rem 0;
   }
 
-  /* Allow the highlight badge to wrap on small screens so long
-     collection titles never run off the edge of the viewport. */
+  /* On mobile, drop the yellow badge block (it reads awkward wrapping to
+     two lines) and show the title as clean brand-maroon text. */
+  .collection-hero__title .ybadge-shadow,
+  .collection-hero__title .ybadge-back {
+    display: none;
+  }
+
   .collection-hero__title .ybadge-front {
+    background: transparent;
+    clip-path: none;
+    padding: 0;
     white-space: normal;
+    color: rgb(var(--color-foreground));
   }
 }
 
