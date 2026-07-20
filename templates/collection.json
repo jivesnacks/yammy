@@ -41,20 +41,10 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "rich_text_health": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_health": { "type": "heading", "settings": { "heading": "The power of the sweet potato", "heading_size": "h1" } },
-        "text_health": { "type": "text", "settings": { "text": "<p>Sweet potatoes are one of nature's most nutrient-dense vegetables. Each one brings fiber for steady energy, vitamin A from beta-carotene (that's the orange), potassium, and vitamin C. As a complex carb, it digests slower than refined snacks, which is part of why a sweet potato snack actually satisfies. Yammy starts with whole Asian sweet potatoes and does as little as possible to them, so you get the good of the vegetable in a chewy, snackable form.</p>" } }
-      },
-      "block_order": ["heading_health", "text_health"],
-      "settings": { "color_scheme": "", "padding_top": 40, "padding_bottom": 40 }
     }
   },
   "order": [
     "banner",
-    "product-grid",
-    "rich_text_health"
+    "product-grid"
   ]
 }
