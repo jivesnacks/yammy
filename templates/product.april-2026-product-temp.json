@@ -1100,28 +1100,28 @@
         "column_ggFXLD": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "title": "The Complete Guide to Sweet Potatoes",
+            "text": "<p>Everything on sweet potato nutrition, benefits, types, and cooking.</p>",
+            "link_label": "Learn more",
+            "link": "/blogs/news/sweet-potato-guide"
           }
         },
         "column_npmQqT": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "title": "How Much Protein Is in a Sweet Potato?",
+            "text": "<p>The exact protein numbers and easy ways to get more.</p>",
+            "link_label": "Learn more",
+            "link": "/blogs/news/sweet-potato-protein"
           }
         },
         "column_HyjaGx": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "title": "How Much Fiber Is in a Sweet Potato?",
+            "text": "<p>The fiber count, soluble vs insoluble, and why it matters.</p>",
+            "link_label": "Learn more",
+            "link": "/blogs/news/sweet-potato-fiber"
           }
         }
       },
