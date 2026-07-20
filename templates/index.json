@@ -949,9 +949,20 @@
         "judge_me_reviews_cards_carousel_gXF8Kc": {
           "type": "shopify://apps/judge-me-reviews/blocks/cards_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "show_sample_reviews": true,
-            "reviews_selection": "all",
-            "products": [],
+            "show_sample_reviews": false,
+            "reviews_selection": "custom_products",
+            "products": [
+              "chewy-dried-sweet-potato-sticks-variety-pack-pack-of-10",
+              "korean-bbq-chewy-dried-sweet-potato-sticks-pack-of-18",
+              "korean-bbq-chewy-dried-sweet-potato-sticks-pack-of-5",
+              "original-chewy-dried-sweet-potato-sticks-pack-of-5",
+              "yammy-original-dried-sweet-potato-sticks-soft-chewy-asian-snack-18-pack",
+              "salt-pepper-chewy-dried-sweet-potato-sticks-pack-of-18",
+              "salt-pepper-chewy-dried-sweet-potato-sticks-pack-of-5",
+              "snickerdoodle-chewy-dried-sweet-potato-sticks-pack-of-18",
+              "snickerdoodle-chewy-dried-sweet-potato-sticks-pack-of-5",
+              "sriracha-chewy-dried-sweet-potato-sticks-pack-of-5"
+            ],
             "star_rating": "all",
             "show_review_media": true,
             "display_order": "media_first",
