@@ -9,12 +9,12 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "main-account",
+    "pf-d5df2b48": {
+      "type": "pf-d5df2b48",
       "settings": {}
     }
   },
   "order": [
-    "main"
+    "pf-d5df2b48"
   ]
 }

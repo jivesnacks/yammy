@@ -684,6 +684,10 @@
       </div>
     </div>
 
+    {%- unless product == blank -%}
+      {% render 'sticky-atc', product: product %}
+    {%- endunless -%}
+
     {% render 'product-media-modal', variant_images: variant_images %}
 
     {% assign popups = section.blocks | where: 'type', 'popup' %}

@@ -20,7 +20,6 @@
     "spacing_sections": 0,
     "spacing_grid_horizontal": 24,
     "spacing_grid_vertical": 8,
-    "animations_reveal_on_scroll": true,
     "buttons_border_thickness": 1,
     "buttons_border_opacity": 100,
     "buttons_radius": 6,
@@ -65,10 +64,10 @@
     "collection_card_shadow_horizontal_offset": 0,
     "collection_card_shadow_vertical_offset": 4,
     "collection_card_shadow_blur": 5,
-    "blog_card_style": "card",
+    "blog_card_style": "standard",
     "blog_card_image_padding": 0,
     "blog_card_text_alignment": "left",
-    "blog_card_color_scheme": "scheme-c94e40b1-0e10-4a7c-8fdc-116e3460adf6",
+    "blog_card_color_scheme": "scheme-2",
     "blog_card_border_thickness": 0,
     "blog_card_border_opacity": 10,
     "blog_card_corner_radius": 0,
@@ -120,7 +119,7 @@
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
     "currency_code_enabled": true,
-    "cart_type": "notification",
+    "cart_type": "drawer",
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
@@ -153,8 +152,8 @@
           "enable_swatch_product_card_1": false,
           "enable_swatch_product_card_2": false,
           "swatch_option_identifiers": "Color, Colour, Couleur, Colore, Farbe,\nPattern, Patrón, Motif, Muster, Motivo,\nMaterial, Matériau, Materiale,\nFinish, Finition, Finitura, Oberfläche, Acabado",
-          "custom_css_prod": "/* Custom CSS */",
-          "custom_css_card": "/* Custom CSS */"
+          "custom_css_prod": "",
+          "custom_css_card": ""
         }
       },
       "6174324309569838175": {
@@ -195,14 +194,14 @@
         "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": false,
         "settings": {
-          "greeting_message": "",
           "button_color": "#ec6608",
           "secondary_color": "#fef5ee",
           "ternary_color": "#511d29",
           "button_icon": "hand_wave",
           "button_text": "no_text",
           "button_horizontal_position": "bottom_left",
-          "button_vertical_position": "lowest"
+          "button_vertical_position": "lowest",
+          "greeting_message": ""
         }
       },
       "4015264832934714879": {
@@ -247,9 +246,9 @@
       },
       "scheme-4": {
         "settings": {
-          "background": "#ec6608",
+          "background": "#5C4049",
           "background_gradient": "",
-          "text": "#fef5ee",
+          "text": "#F3DC94",
           "button": "#ffffff",
           "button_label": "#121212",
           "secondary_button_label": "#ffffff",

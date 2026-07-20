@@ -66,12 +66,12 @@
         "show_decorations_mobile": false,
         "decoration_image": "shopify://shop_images/YammyStar.svg",
         "decoration_size": 36,
-        "decoration_1_top": 8,
+        "decoration_1_top": 12,
         "decoration_1_left": 16,
         "decoration_2_top": 85,
-        "decoration_2_left": 24,
+        "decoration_2_left": 20,
         "decoration_3_top": 24,
-        "decoration_3_left": 39,
+        "decoration_3_left": 36,
         "home_slant_left_height": 90,
         "home_slant_right_height": 120,
         "home_slant_left_color": "#fef5ee",
@@ -81,10 +81,10 @@
     "ss_scrolling_announcement_bar_9rHzTM": {
       "type": "ss-scrolling-announcement-bar",
       "blocks": {
-        "text_pqybaG": {
+        "text_AyQBfG": {
           "type": "text",
           "settings": {
-            "text": "OVER 1,000,000 BAGS EATEN"
+            "text": "ALL NATURAL INGREDIENTS"
           }
         },
         "text_aJkja8": {
@@ -105,10 +105,10 @@
             "text": "1,000+ 5-STAR REVIEWS"
           }
         },
-        "text_AyQBfG": {
+        "text_pqybaG": {
           "type": "text",
           "settings": {
-            "text": "ALL NATURAL INGREDIENTS"
+            "text": "OVER 1,000,000 BAGS EATEN"
           }
         }
       },
@@ -221,7 +221,7 @@
         "text_bgKd7V": {
           "type": "text",
           "settings": {
-            "text": "<p>Chewy, naturally sweet dried sweet potato sticks made from real sweet potato and spices. The snack that actually keeps you full. No seed oils, no added junk, 4g fiber, under 200 calories a bag.</p>",
+            "text": "<p>Chewy, naturally sweet dried sweet potato sticks made from real sweet potato and spices. The snack that actually keeps you full, one bite and you'll get why people can't stop.</p><p>No seed oils, no added junk, 4g fiber, under 200 calories a bag.</p>",
             "accent_color": "#ee9441",
             "font_size": 20
           }
@@ -263,7 +263,7 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "collection": "chewy-dried-sweet-potato-sticks-5-packs",
+        "collection": "dried-sweet-potato-snacks-5-packs",
         "products_to_show": 5,
         "title": "",
         "heading_size": "h2",
@@ -280,7 +280,7 @@
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
-        "show_rating": false,
+        "show_rating": true,
         "quick_add": "standard",
         "quick_add_button_style": "primary",
         "product_title_size_mobile": 18,
@@ -297,7 +297,6 @@
         "v1": {
           "type": "video",
           "settings": {
-            "video_url": "",
             "video_file": "ugc-1.mp4",
             "poster_file": "ugc-1-poster.jpg",
             "link": "/products/yammy-original-dried-sweet-potato-sticks-soft-chewy-asian-snack-18-pack",
@@ -307,7 +306,6 @@
         "v2": {
           "type": "video",
           "settings": {
-            "video_url": "",
             "video_file": "ugc-2.mp4",
             "poster_file": "ugc-2-poster.jpg",
             "link": "/products/yammy-single-ingredient-dried-fruit-veggie-variety-pack-the-texture-taste-test-copy",
@@ -317,7 +315,6 @@
         "v3": {
           "type": "video",
           "settings": {
-            "video_url": "",
             "video_file": "ugc-3.mp4",
             "poster_file": "ugc-3-poster.jpg",
             "link": "/products/korean-bbq-dried-sweet-potato-sticks-soft-chewy-savory-asian-snack-18-pack",
@@ -327,7 +324,6 @@
         "v4": {
           "type": "video",
           "settings": {
-            "video_url": "",
             "video_file": "ugc-4.mp4",
             "poster_file": "ugc-4-poster.jpg",
             "link": "/products/snickerdoodle-dried-sweet-potato-sticks-soft-chewy-sweet-asian-snack-18-pack",
@@ -337,7 +333,6 @@
         "v5": {
           "type": "video",
           "settings": {
-            "video_url": "",
             "video_file": "ugc-5.mp4",
             "poster_file": "ugc-5-poster.jpg",
             "link": "/products/salt-pepper-dried-sweet-potato-sticks-soft-chewy-salty-asian-snack-18-pack",
@@ -547,9 +542,9 @@
         "show_stars_mobile": false,
         "star_image": "shopify://shop_images/YammyStar.svg",
         "star_size": 36,
-        "star_1_top": 39,
+        "star_1_top": 49,
         "star_1_left": 24,
-        "star_2_top": 23,
+        "star_2_top": 26,
         "star_2_left": 72,
         "padding_top": 40,
         "padding_bottom": 52
@@ -557,6 +552,7 @@
     },
     "blocks_ifMa9Q": {
       "type": "_blocks",
+      "disabled": true,
       "blocks": {
         "ai_gen_block_b9ea56f_ngtfNP": {
           "type": "ai_gen_block_b9ea56f",
@@ -682,7 +678,6 @@
       "block_order": [
         "ai_gen_block_b9ea56f_ngtfNP"
       ],
-      "disabled": true,
       "name": "Comparison table",
       "settings": {}
     },
@@ -826,6 +821,7 @@
     },
     "image_with_text_mXxk48": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "heading_g983Ld": {
           "type": "heading",
@@ -860,7 +856,6 @@
         "text_dx9VVP",
         "button_wxQh4D"
       ],
-      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/DennisStephanie.jpg",
@@ -929,7 +924,7 @@
       ],
       "name": "t:sections.featured-product.presets.name",
       "settings": {
-        "product": "chewy-dried-sweet-potato-sticks-variety-pack-pack-of-10",
+        "product": "yammy-single-ingredient-dried-fruit-veggie-variety-pack-the-texture-taste-test-copy",
         "color_scheme": "scheme-1",
         "secondary_background": false,
         "media_size": "medium",
@@ -949,20 +944,9 @@
         "judge_me_reviews_cards_carousel_gXF8Kc": {
           "type": "shopify://apps/judge-me-reviews/blocks/cards_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "show_sample_reviews": false,
-            "reviews_selection": "custom_products",
-            "products": [
-              "chewy-dried-sweet-potato-sticks-variety-pack-pack-of-10",
-              "korean-bbq-chewy-dried-sweet-potato-sticks-pack-of-18",
-              "korean-bbq-chewy-dried-sweet-potato-sticks-pack-of-5",
-              "original-chewy-dried-sweet-potato-sticks-pack-of-5",
-              "original-chewy-dried-sweet-potato-sticks-pack-of-18",
-              "salt-pepper-chewy-dried-sweet-potato-sticks-pack-of-18",
-              "salt-pepper-chewy-dried-sweet-potato-sticks-pack-of-5",
-              "snickerdoodle-chewy-dried-sweet-potato-sticks-pack-of-18",
-              "snickerdoodle-chewy-dried-sweet-potato-sticks-pack-of-5",
-              "sriracha-chewy-dried-sweet-potato-sticks-pack-of-5"
-            ],
+            "show_sample_reviews": true,
+            "reviews_selection": "all",
+            "products": [],
             "star_rating": "all",
             "show_review_media": true,
             "display_order": "media_first",
@@ -999,6 +983,7 @@
     },
     "17817944892dde03e5": {
       "type": "apps",
+      "disabled": true,
       "blocks": {
         "section_store_block_video_carousel_mP8iCi": {
           "type": "shopify://apps/section-store/blocks/block-video-carousel/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
@@ -1033,7 +1018,6 @@
       "block_order": [
         "section_store_block_video_carousel_mP8iCi"
       ],
-      "disabled": true,
       "settings": {
         "include_margins": true
       }
@@ -1042,7 +1026,7 @@
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "collection": "chewy-dried-sweet-potato-sticks-5-packs",
+        "collection": "dried-sweet-potato-snacks-5-packs",
         "products_to_show": 4,
         "title": "Join thousands already snacking smarter",
         "heading_size": "h0",
@@ -1059,7 +1043,7 @@
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
-        "show_rating": false,
+        "show_rating": true,
         "quick_add": "standard",
         "quick_add_button_style": "primary",
         "product_title_size_mobile": 18,

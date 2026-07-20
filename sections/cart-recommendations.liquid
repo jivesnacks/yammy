@@ -1,0 +1,45 @@
+{%- comment -%}
+  Compact "Frequently snacked with" recommendations, fetched by the cart drawer's
+  <product-recommendations> element (global.js) seeded by the cart's most recent item.
+  Renders related products the shopper doesn't already have in the cart, with quick-add.
+{%- endcomment -%}
+<product-recommendations
+  class="cart-recommendations"
+  data-url="{{ routes.product_recommendations_url }}?limit=8&intent=related"
+  data-section-id="{{ section.id }}"
+  data-product-id="{{ recommendations.products.first.id }}"
+>
+  {%- if recommendations.performed and recommendations.products_count > 0 -%}
+    <p class="cart-recommendations__heading">Frequently snacked with</p>
+    <ul class="cart-recommendations__list" role="list">
+      {%- assign shown = 0 -%}
+      {%- for rec in recommendations.products -%}
+        {%- assign in_cart = false -%}
+        {%- for item in cart.items -%}
+          {%- if item.product_id == rec.id -%}{%- assign in_cart = true -%}{%- endif -%}
+        {%- endfor -%}
+        {%- unless in_cart -%}
+          {%- if shown < 3 -%}
+            <li class="grid__item">
+              {% render 'card-product',
+                card_product: rec,
+                media_aspect_ratio: 'square',
+                quick_add: 'standard',
+                show_rating: true,
+                section_id: section.id
+              %}
+            </li>
+            {%- assign shown = shown | plus: 1 -%}
+          {%- endif -%}
+        {%- endunless -%}
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+</product-recommendations>
+
+{% schema %}
+{
+  "name": "Cart recommendations",
+  "settings": []
+}
+{% endschema %}

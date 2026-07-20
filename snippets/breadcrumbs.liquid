@@ -182,5 +182,17 @@
     .breadcrumb__item--current span {
       color: rgb(var(--color-foreground));
     }
+    /* Mobile: drop the long current crumb (it repeats in the H1 right below) so the trail stays on one clean line */
+    @media screen and (max-width: 749px) {
+      .breadcrumb {
+        font-size: 1.2rem;
+      }
+      .breadcrumb__list {
+        flex-wrap: nowrap;
+      }
+      .breadcrumb__item--current {
+        display: none;
+      }
+    }
   {%- endstyle -%}
 {%- endif -%}
