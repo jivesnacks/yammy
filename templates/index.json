@@ -221,7 +221,7 @@
         "text_bgKd7V": {
           "type": "text",
           "settings": {
-            "text": "<p>Chewy, naturally sweet dried sweet potato sticks made from real sweet potato and spices. The snack that actually keeps you full, one bite and you'll get why people can't stop.</p><p>No seed oils, no added junk, 4g fiber, under 200 calories a bag.</p>",
+            "text": "<p>Chewy, naturally sweet dried sweet potato sticks made from real sweet potato and spices. The snack that actually keeps you full. No seed oils, no added junk, 4g fiber, under 200 calories a bag.</p>",
             "accent_color": "#ee9441",
             "font_size": 20
           }
@@ -547,9 +547,9 @@
         "show_stars_mobile": false,
         "star_image": "shopify://shop_images/YammyStar.svg",
         "star_size": 36,
-        "star_1_top": 49,
+        "star_1_top": 39,
         "star_1_left": 24,
-        "star_2_top": 26,
+        "star_2_top": 23,
         "star_2_left": 72,
         "padding_top": 40,
         "padding_bottom": 52
@@ -1070,50 +1070,6 @@
         "padding_bottom": 72
       }
     },
-    "rich_text_health": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_health": {
-          "type": "heading",
-          "settings": {
-            "heading": "The power of the sweet potato",
-            "badge_bg": "#fcc86c",
-            "badge_border": "#511d29",
-            "badge_text": "#511d29",
-            "badge_shadow": "#511d29",
-            "letter_spacing": 0,
-            "heading_size": "h1"
-          }
-        },
-        "text_health": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Sweet potatoes are one of nature's most nutrient-dense vegetables. Each one brings fiber for steady energy, vitamin A from beta-carotene (that's the orange), potassium, and vitamin C. As a complex carb, it digests slower than refined snacks, which is part of why a sweet potato snack actually satisfies. Yammy starts with whole Asian sweet potatoes and does as little as possible to them, so you get the good of the vegetable in a chewy, snackable form.</p>",
-            "accent_color": "#ee9441",
-            "font_size": 15
-          }
-        }
-      },
-      "block_order": [
-        "heading_health",
-        "text_health"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "show_stars": false,
-        "show_stars_mobile": true,
-        "star_size": 24,
-        "star_1_top": 15,
-        "star_1_left": 8,
-        "star_2_top": 10,
-        "star_2_left": 82,
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
     "newsletter_pX4bgr": {
       "type": "newsletter",
       "blocks": {
@@ -1243,7 +1199,6 @@
     "178238860994c27a94",
     "17817944892dde03e5",
     "featured_collection_hLTDY3",
-    "rich_text_health",
     "newsletter_pX4bgr",
     "rich_text_FegwLY"
   ]
