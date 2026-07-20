@@ -81,10 +81,10 @@
     "ss_scrolling_announcement_bar_9rHzTM": {
       "type": "ss-scrolling-announcement-bar",
       "blocks": {
-        "text_AyQBfG": {
+        "text_pqybaG": {
           "type": "text",
           "settings": {
-            "text": "ALL NATURAL INGREDIENTS"
+            "text": "OVER 1,000,000 BAGS EATEN"
           }
         },
         "text_aJkja8": {
@@ -105,10 +105,10 @@
             "text": "1,000+ 5-STAR REVIEWS"
           }
         },
-        "text_pqybaG": {
+        "text_AyQBfG": {
           "type": "text",
           "settings": {
-            "text": "OVER 1,000,000 BAGS EATEN"
+            "text": "ALL NATURAL INGREDIENTS"
           }
         }
       },
@@ -294,13 +294,64 @@
     "video_carousel_yammy": {
       "type": "video-carousel",
       "blocks": {
-        "v1": { "type": "video", "settings": { "video_file": "ugc-1.mp4", "poster_file": "ugc-1-poster.jpg", "link": "/products/yammy-original-dried-sweet-potato-sticks-soft-chewy-asian-snack-18-pack", "cta_label": "Shop Original" } },
-        "v2": { "type": "video", "settings": { "video_file": "ugc-2.mp4", "poster_file": "ugc-2-poster.jpg", "link": "/products/yammy-single-ingredient-dried-fruit-veggie-variety-pack-the-texture-taste-test-copy", "cta_label": "Shop Variety Pack" } },
-        "v3": { "type": "video", "settings": { "video_file": "ugc-3.mp4", "poster_file": "ugc-3-poster.jpg", "link": "/products/korean-bbq-dried-sweet-potato-sticks-soft-chewy-savory-asian-snack-18-pack", "cta_label": "Shop Korean BBQ" } },
-        "v4": { "type": "video", "settings": { "video_file": "ugc-4.mp4", "poster_file": "ugc-4-poster.jpg", "link": "/products/snickerdoodle-dried-sweet-potato-sticks-soft-chewy-sweet-asian-snack-18-pack", "cta_label": "Shop Snickerdoodle" } },
-        "v5": { "type": "video", "settings": { "video_file": "ugc-5.mp4", "poster_file": "ugc-5-poster.jpg", "link": "/products/salt-pepper-dried-sweet-potato-sticks-soft-chewy-salty-asian-snack-18-pack", "cta_label": "Shop Salt & Pepper" } }
+        "v1": {
+          "type": "video",
+          "settings": {
+            "video_url": "",
+            "video_file": "ugc-1.mp4",
+            "poster_file": "ugc-1-poster.jpg",
+            "link": "/products/yammy-original-dried-sweet-potato-sticks-soft-chewy-asian-snack-18-pack",
+            "cta_label": "Shop Original"
+          }
+        },
+        "v2": {
+          "type": "video",
+          "settings": {
+            "video_url": "",
+            "video_file": "ugc-2.mp4",
+            "poster_file": "ugc-2-poster.jpg",
+            "link": "/products/yammy-single-ingredient-dried-fruit-veggie-variety-pack-the-texture-taste-test-copy",
+            "cta_label": "Shop Variety Pack"
+          }
+        },
+        "v3": {
+          "type": "video",
+          "settings": {
+            "video_url": "",
+            "video_file": "ugc-3.mp4",
+            "poster_file": "ugc-3-poster.jpg",
+            "link": "/products/korean-bbq-dried-sweet-potato-sticks-soft-chewy-savory-asian-snack-18-pack",
+            "cta_label": "Shop Korean BBQ"
+          }
+        },
+        "v4": {
+          "type": "video",
+          "settings": {
+            "video_url": "",
+            "video_file": "ugc-4.mp4",
+            "poster_file": "ugc-4-poster.jpg",
+            "link": "/products/snickerdoodle-dried-sweet-potato-sticks-soft-chewy-sweet-asian-snack-18-pack",
+            "cta_label": "Shop Snickerdoodle"
+          }
+        },
+        "v5": {
+          "type": "video",
+          "settings": {
+            "video_url": "",
+            "video_file": "ugc-5.mp4",
+            "poster_file": "ugc-5-poster.jpg",
+            "link": "/products/salt-pepper-dried-sweet-potato-sticks-soft-chewy-salty-asian-snack-18-pack",
+            "cta_label": "Shop Salt & Pepper"
+          }
+        }
       },
-      "block_order": ["v1", "v2", "v3", "v4", "v5"],
+      "block_order": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
       "settings": {
         "heading": "Don't just take our word for it",
         "heading_size": "h1",
@@ -506,7 +557,6 @@
     },
     "blocks_ifMa9Q": {
       "type": "_blocks",
-      "disabled": true,
       "blocks": {
         "ai_gen_block_b9ea56f_ngtfNP": {
           "type": "ai_gen_block_b9ea56f",
@@ -632,6 +682,7 @@
       "block_order": [
         "ai_gen_block_b9ea56f_ngtfNP"
       ],
+      "disabled": true,
       "name": "Comparison table",
       "settings": {}
     },
@@ -775,7 +826,6 @@
     },
     "image_with_text_mXxk48": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "heading_g983Ld": {
           "type": "heading",
@@ -810,6 +860,7 @@
         "text_dx9VVP",
         "button_wxQh4D"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/DennisStephanie.jpg",
@@ -878,7 +929,7 @@
       ],
       "name": "t:sections.featured-product.presets.name",
       "settings": {
-        "product": "yammy-single-ingredient-dried-fruit-veggie-variety-pack-the-texture-taste-test-copy",
+        "product": "chewy-dried-sweet-potato-sticks-variety-pack-pack-of-10",
         "color_scheme": "scheme-1",
         "secondary_background": false,
         "media_size": "medium",
@@ -937,7 +988,6 @@
     },
     "17817944892dde03e5": {
       "type": "apps",
-      "disabled": true,
       "blocks": {
         "section_store_block_video_carousel_mP8iCi": {
           "type": "shopify://apps/section-store/blocks/block-video-carousel/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
@@ -972,6 +1022,7 @@
       "block_order": [
         "section_store_block_video_carousel_mP8iCi"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
@@ -1011,11 +1062,46 @@
     "rich_text_health": {
       "type": "rich-text",
       "blocks": {
-        "heading_health": { "type": "heading", "settings": { "heading": "The power of the sweet potato", "heading_size": "h1" } },
-        "text_health": { "type": "text", "settings": { "text": "<p>Sweet potatoes are one of nature's most nutrient-dense vegetables. Each one brings fiber for steady energy, vitamin A from beta-carotene (that's the orange), potassium, and vitamin C. As a complex carb, it digests slower than refined snacks, which is part of why a sweet potato snack actually satisfies. Yammy starts with whole Asian sweet potatoes and does as little as possible to them, so you get the good of the vegetable in a chewy, snackable form.</p>" } }
+        "heading_health": {
+          "type": "heading",
+          "settings": {
+            "heading": "The power of the sweet potato",
+            "badge_bg": "#fcc86c",
+            "badge_border": "#511d29",
+            "badge_text": "#511d29",
+            "badge_shadow": "#511d29",
+            "letter_spacing": 0,
+            "heading_size": "h1"
+          }
+        },
+        "text_health": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Sweet potatoes are one of nature's most nutrient-dense vegetables. Each one brings fiber for steady energy, vitamin A from beta-carotene (that's the orange), potassium, and vitamin C. As a complex carb, it digests slower than refined snacks, which is part of why a sweet potato snack actually satisfies. Yammy starts with whole Asian sweet potatoes and does as little as possible to them, so you get the good of the vegetable in a chewy, snackable form.</p>",
+            "accent_color": "#ee9441",
+            "font_size": 15
+          }
+        }
       },
-      "block_order": ["heading_health", "text_health"],
-      "settings": { "color_scheme": "", "padding_top": 40, "padding_bottom": 40 }
+      "block_order": [
+        "heading_health",
+        "text_health"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "show_stars": false,
+        "show_stars_mobile": true,
+        "star_size": 24,
+        "star_1_top": 15,
+        "star_1_left": 8,
+        "star_2_top": 10,
+        "star_2_left": 82,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
     },
     "newsletter_pX4bgr": {
       "type": "newsletter",
