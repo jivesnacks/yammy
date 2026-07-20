@@ -1,0 +1,48 @@
+{%- comment -%}
+  "Frequently snacked with" — server-rendered upsell inside the cart drawer.
+  Compact rows, fixed thumbnails, and a self-contained Add handler that uses Shopify's
+  /cart/add.js + section rendering to add the item and refresh the drawer (no dependency on
+  the theme's product-form wiring, which was failing here). Skips items already in the cart.
+{%- endcomment -%}
+{%- assign upsell_col = settings.cart_drawer_collection -%}
+{%- if upsell_col == blank -%}
+  {%- assign upsell_col = collections['sweet-potato-sticks'] -%}
+{%- endif -%}
+{%- if upsell_col != blank and upsell_col.products_count > 0 and cart.item_count > 0 -%}
+  {%- assign shown = 0 -%}
+  <div class="cart-upsell">
+    <p class="cart-upsell__heading">Frequently snacked with</p>
+    {%- for p in upsell_col.products -%}
+      {%- if shown >= 3 -%}{%- break -%}{%- endif -%}
+      {%- assign in_cart = false -%}
+      {%- for item in cart.items -%}
+        {%- if item.product_id == p.id -%}{%- assign in_cart = true -%}{%- endif -%}
+      {%- endfor -%}
+      {%- if in_cart == false and p.available -%}
+        {%- assign v = p.selected_or_first_available_variant -%}
+        <div class="cart-upsell__item">
+          <a href="{{ p.url }}" class="cart-upsell__media">
+            {%- if p.featured_media -%}
+              {{ p.featured_media | image_url: width: 140 | image_tag: loading: 'lazy', widths: '70,140', class: 'cart-upsell__img', alt: p.title | escape }}
+            {%- endif -%}
+          </a>
+          <div class="cart-upsell__info">
+            <a href="{{ p.url }}" class="cart-upsell__title">{{ p.title | escape }}</a>
+            <span class="cart-upsell__price">{{ v.price | money }}</span>
+          </div>
+          {%- if p.variants.size > 1 -%}
+            <a href="{{ p.url }}" class="cart-upsell__add button button--secondary">Options</a>
+          {%- else -%}
+            <button
+              type="button"
+              class="cart-upsell__add button button--secondary js-cart-upsell-add"
+              data-variant-id="{{ v.id }}"
+              aria-label="Add {{ p.title | escape }} to cart"
+            >Add</button>
+          {%- endif -%}
+        </div>
+        {%- assign shown = shown | plus: 1 -%}
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+{%- endif -%}

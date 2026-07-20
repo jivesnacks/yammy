@@ -7,9 +7,72 @@
 
 {{ 'quantity-popover.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'quick-add.css' | asset_url | stylesheet_tag }}
 
 <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'quantity-popover.js' | asset_url }}" defer="defer"></script>
+{%- comment -%} needed so the "Frequently snacked with" quick-add works inside the drawer {%- endcomment -%}
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+
+<style>
+  .cart-drawer__upsell {
+    padding: 0.4rem 1.5rem 0.8rem;
+    border-top: 1px solid rgba(var(--color-foreground), 0.12);
+  }
+  .cart-upsell__heading {
+    margin: 1.2rem 0 0.6rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  .cart-upsell__item {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    padding: 0.9rem 0;
+    border-bottom: 1px solid rgba(var(--color-foreground), 0.08);
+  }
+  .cart-upsell__item:last-child { border-bottom: 0; }
+  .cart-upsell__media { flex: 0 0 auto; display: block; }
+  .cart-upsell__img {
+    width: 5.4rem;
+    height: 5.4rem;
+    object-fit: cover;
+    border-radius: 0.8rem;
+    display: block;
+  }
+  .cart-upsell__info {
+    flex: 1 1 auto;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .cart-upsell__title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.25;
+    color: rgb(var(--color-foreground));
+    text-decoration: none;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .cart-upsell__price { font-size: 1.3rem; font-weight: 700; }
+  .cart-upsell__form { flex: 0 0 auto; }
+  .cart-upsell__add {
+    flex: 0 0 auto;
+    margin: 0;
+    font-size: 1.2rem;
+    padding: 0.8rem 1.6rem;
+    min-height: 0;
+    white-space: nowrap;
+  }
+  .cart-upsell__add .loading__spinner { display: none; }
+  .cart-upsell__add.loading .loading__spinner { display: inline-flex; }
+</style>
 
 <style>
   .drawer {
@@ -87,6 +150,7 @@
         >
           <div id="CartDrawer-CartItems" class="drawer__contents js-contents">
             {%- if cart != empty -%}
+              {% render 'free-shipping-bar' %}
               <div class="drawer__cart-items-wrapper">
                 <table class="cart-items" role="table">
                   <thead role="rowgroup">
@@ -465,6 +529,9 @@
                   </tbody>
                 </table>
               </div>
+              <div class="cart-drawer__upsell">
+                {% render 'cart-upsell' %}
+              </div>
             {%- endif -%}
             <p id="CartDrawer-LiveRegionText" class="visually-hidden" role="status"></p>
             <p id="CartDrawer-LineItemStatus" class="visually-hidden" aria-hidden="true" role="status">
@@ -579,3 +646,56 @@
     </div>
   </div>
 </cart-drawer>
+
+<script>
+  {%- comment -%} Bound once on page load (delegated), so it works for the "Frequently snacked with" Add buttons even after the drawer re-renders {%- endcomment -%}
+  if (!window.__yammyCartUpsellBound) {
+    window.__yammyCartUpsellBound = true;
+    (function () {
+      var root = (window.Shopify && Shopify.routes && Shopify.routes.root) || '/';
+      function refreshDrawer(sectionHTML) {
+        var doc = new DOMParser().parseFromString(sectionHTML, 'text/html');
+        ['cart-drawer-items', '.cart-drawer__footer'].forEach(function (sel) {
+          var fresh = doc.querySelector(sel);
+          var cur = document.querySelector(sel);
+          if (fresh && cur) cur.replaceWith(fresh);
+        });
+        var drawer = document.querySelector('cart-drawer');
+        if (drawer) { drawer.classList.remove('is-empty'); }
+      }
+      function updateBubble() {
+        fetch(root + 'cart.js', { headers: { Accept: 'application/json' } })
+          .then(function (r) { return r.json(); })
+          .then(function (cart) {
+            document.querySelectorAll('.cart-count-bubble span[aria-hidden="true"]').forEach(function (el) {
+              el.textContent = cart.item_count;
+            });
+          }).catch(function () {});
+      }
+      document.addEventListener('click', function (e) {
+        var btn = e.target.closest('.js-cart-upsell-add');
+        if (!btn || btn.getAttribute('aria-busy') === 'true') return;
+        e.preventDefault();
+        btn.setAttribute('aria-busy', 'true');
+        btn.classList.add('loading');
+        fetch(root + 'cart/add.js', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify({
+            id: btn.dataset.variantId,
+            quantity: 1,
+            sections: 'cart-drawer',
+            sections_url: window.location.pathname
+          })
+        })
+          .then(function (r) { return r.json(); })
+          .then(function (res) {
+            if (res.sections && res.sections['cart-drawer']) refreshDrawer(res.sections['cart-drawer']);
+            updateBubble();
+          })
+          .catch(function () {})
+          .finally(function () { btn.classList.remove('loading'); btn.removeAttribute('aria-busy'); });
+      });
+    })();
+  }
+</script>
