@@ -66,12 +66,12 @@
         "show_decorations_mobile": false,
         "decoration_image": "shopify://shop_images/YammyStar.svg",
         "decoration_size": 36,
-        "decoration_1_top": 12,
+        "decoration_1_top": 10,
         "decoration_1_left": 16,
-        "decoration_2_top": 85,
+        "decoration_2_top": 88,
         "decoration_2_left": 20,
         "decoration_3_top": 24,
-        "decoration_3_left": 36,
+        "decoration_3_left": 42,
         "home_slant_left_height": 90,
         "home_slant_right_height": 120,
         "home_slant_left_color": "#fef5ee",
@@ -221,7 +221,7 @@
         "text_bgKd7V": {
           "type": "text",
           "settings": {
-            "text": "<p>Chewy, naturally sweet dried sweet potato sticks made from real sweet potato and spices. The snack that actually keeps you full, one bite and you'll get why people can't stop.</p><p>No seed oils, no added junk, 4g fiber, under 200 calories a bag.</p>",
+            "text": "<p>Chewy, naturally sweet dried sweet potato sticks made from real sweet potato and spices. The snack that actually keeps you full. No seed oils, no added junk, 4g fiber, under 200 calories a bag.</p>",
             "accent_color": "#ee9441",
             "font_size": 20
           }
@@ -354,7 +354,7 @@
       ],
       "settings": {
         "heading": "Don't just take our word for it",
-        "heading_size": "h1",
+        "heading_size": "h0",
         "subheading": "Real people, real chewy sweet potato obsession.",
         "show_arrows": true,
         "button_label": "Shop all flavors",
@@ -521,7 +521,7 @@
             "badge_text": "#511d29",
             "badge_shadow": "#511d29",
             "letter_spacing": -2,
-            "heading_size": "h0"
+            "heading_size": "hxl"
           }
         },
         "text_9fqNm9": {
@@ -547,7 +547,7 @@
         "show_stars_mobile": false,
         "star_image": "shopify://shop_images/YammyStar.svg",
         "star_size": 36,
-        "star_1_top": 49,
+        "star_1_top": 40,
         "star_1_left": 24,
         "star_2_top": 26,
         "star_2_left": 72,
