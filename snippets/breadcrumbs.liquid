@@ -4,15 +4,10 @@
   Hidden on the homepage, cart, and account pages.
 {%- endcomment -%}
 
-{%- comment -%}
-  NOTE: 'product' is intentionally excluded — the product template already
-  renders its own breadcrumb (with collection + BreadcrumbList schema).
-  This snippet fills the gap on all other page types.
-{%- endcomment -%}
 {%- liquid
   assign show_breadcrumb = false
   case request.page_type
-    when 'collection', 'article', 'blog', 'page', 'list-collections', 'search'
+    when 'product', 'collection', 'article', 'blog', 'page', 'list-collections', 'search'
       assign show_breadcrumb = true
   endcase
 -%}
@@ -38,15 +33,16 @@
 
       {%- case request.page_type -%}
         {%- when 'product' -%}
-          {%- if collection.url -%}
+          {%- assign bc_collection = collection | default: product.collections.first -%}
+          {%- if bc_collection.url -%}
             <li
               class="breadcrumb__item"
               itemprop="itemListElement"
               itemscope
               itemtype="https://schema.org/ListItem"
             >
-              <a href="{{ collection.url }}" itemprop="item">
-                <span itemprop="name">{{ collection.title | escape }}</span>
+              <a href="{{ bc_collection.url }}" itemprop="item">
+                <span itemprop="name">{{ bc_collection.title | escape }}</span>
               </a>
               <meta itemprop="position" content="2">
             </li>
