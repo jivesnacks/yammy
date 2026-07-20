@@ -263,7 +263,7 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "collection": "dried-sweet-potato-snacks-5-packs",
+        "collection": "chewy-dried-sweet-potato-sticks-5-packs",
         "products_to_show": 5,
         "title": "",
         "heading_size": "h2",
@@ -1042,7 +1042,7 @@
       "type": "featured-collection",
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "collection": "dried-sweet-potato-snacks-5-packs",
+        "collection": "chewy-dried-sweet-potato-sticks-5-packs",
         "products_to_show": 4,
         "title": "Join thousands already snacking smarter",
         "heading_size": "h0",
