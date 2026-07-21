@@ -765,6 +765,7 @@
           "url": {{ request.origin | append: product.url | json }},
           "priceCurrency": {{ cart.currency.iso_code | json }},
           "price": {{ schema_variant.price | divided_by: 100.0 | json }},
+          "priceValidUntil": "{{ 'now' | date: '%Y' | plus: 1 }}-12-31",
           "availability": "{% if product.available %}https://schema.org/InStock{% else %}https://schema.org/OutOfStock{% endif %}"
         }
       }
