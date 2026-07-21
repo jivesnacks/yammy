@@ -1,0 +1,113 @@
+{%- comment -%}
+  Yammy front-end enhancements, rendered once before </body>:
+  - Read-more toggle on the collection description
+  - Back-to-top button (mobile-friendly)
+  - Bigger, less-scrunched mobile header logo
+  - Raise the Smile "Rewards" launcher above the sticky Add-to-Cart on mobile
+{%- endcomment -%}
+<style>
+  /* --- Collection description: word-wrap + read-more clamp --- */
+  .collection-hero__description {
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+  .collection-hero__description.rm-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .collection-hero__description.rm-expanded {
+    -webkit-line-clamp: unset;
+    overflow: visible;
+  }
+  .rm-toggle {
+    display: inline-block;
+    background: none;
+    border: 0;
+    padding: 0;
+    margin: 0.6rem 0 0;
+    color: rgb(var(--color-foreground));
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+
+  /* --- Featured product (homepage): clickable title + image --- */
+  .product__title-link { color: inherit; text-decoration: none; }
+  .product__title-link:hover { text-decoration: underline; }
+  .featured-product .product__media-wrapper { position: relative; }
+  .featured-product__media-link { position: absolute; inset: 0; z-index: 3; }
+
+  /* --- Mobile header: bigger logo, more breathing room --- */
+  @media screen and (max-width: 749px) {
+    .header {
+      padding-top: 1.4rem;
+      padding-bottom: 1.4rem;
+    }
+    .header__heading-logo,
+    .header__heading-link .header__heading-logo {
+      max-width: 13rem !important;
+      width: 13rem !important;
+    }
+    /* keep the Rewards launcher + chat "little hand" clear of the sticky Add-to-Cart / content */
+    #smile-ui-lite-launcher-frame-container,
+    #ShopifyChat {
+      bottom: 92px !important;
+    }
+
+    /* Homepage headings were rendering too small/squished on mobile — size them all up */
+    .banner__heading.h0,
+    .rich-text__heading.h0,
+    .video-carousel__heading.h0,
+    .image-with-text__heading.h0 {
+      font-size: 4rem !important;
+      line-height: 1.2 !important;
+    }
+    .banner__heading.h1,
+    .rich-text__heading.h1,
+    .video-carousel__heading.h1,
+    .image-with-text__heading.h1 {
+      font-size: 3.4rem !important;
+      line-height: 1.25 !important;
+    }
+    .banner__heading.hxl,
+    .rich-text__heading.hxl,
+    .video-carousel__heading.hxl,
+    .image-with-text__heading.hxl {
+      font-size: 5rem !important;
+      line-height: 1.12 !important;
+    }
+  }
+
+  /* --- Hide Judge.me Q&A ("No questions") next to the review count --- */
+  .jdgm-qa-badge { display: none !important; }
+</style>
+
+<script>
+  (function () {
+    // Read-more on collection description
+    document.querySelectorAll('.collection-hero__description').forEach(function (desc) {
+      if (desc.dataset.rmInit) return;
+      desc.dataset.rmInit = '1';
+      desc.classList.add('rm-clamp');
+      // let layout settle, then decide if a toggle is needed
+      requestAnimationFrame(function () {
+        if (desc.scrollHeight <= desc.clientHeight + 4) {
+          desc.classList.remove('rm-clamp');
+          return;
+        }
+        var btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'rm-toggle';
+        btn.textContent = 'Read more';
+        btn.addEventListener('click', function () {
+          var expanded = desc.classList.toggle('rm-expanded');
+          btn.textContent = expanded ? 'Read less' : 'Read more';
+        });
+        desc.parentNode.insertBefore(btn, desc.nextSibling);
+      });
+    });
+  })();
+</script>

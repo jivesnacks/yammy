@@ -18,14 +18,14 @@
           "type": "announcement",
           "settings": {
             "text": "SUBSCRIBE TO SAVE 15% ON EVERY ORDER",
-            "link": "shopify://collections/dried-sweet-potato-snacks"
+            "link": "shopify://collections/sweet-potato-sticks"
           }
         },
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
             "text": "FREE SHIPPING ON ORDERS $25+",
-            "link": "shopify://collections/dried-sweet-potato-snacks"
+            "link": "shopify://collections/sweet-potato-sticks"
           }
         }
       },
@@ -51,7 +51,7 @@
         "mobile_logo_position": "center",
         "menu": "main-menu",
         "menu_type_desktop": "dropdown",
-        "sticky_header_type": "on-scroll-up",
+        "sticky_header_type": "always",
         "show_line_separator": true,
         "menu_font_size": 18,
         "color_scheme": "scheme-1",
