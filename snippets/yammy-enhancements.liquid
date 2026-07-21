@@ -96,6 +96,18 @@
 
 <script>
   (function () {
+    // Featured product: make the whole image clickable to the product page (reliable, no CSS sizing needed)
+    document.querySelectorAll('.featured-product .product__media-wrapper').forEach(function (mw) {
+      var link = mw.querySelector('.featured-product__media-link');
+      if (!link || mw.dataset.ymClick) return;
+      mw.dataset.ymClick = '1';
+      mw.style.cursor = 'pointer';
+      mw.addEventListener('click', function (e) {
+        if (e.target.closest('button, input, [role="button"], a:not(.featured-product__media-link)')) return;
+        window.location.href = link.getAttribute('href');
+      });
+    });
+
     // Read-more on collection description
     document.querySelectorAll('.collection-hero__description').forEach(function (desc) {
       if (desc.dataset.rmInit) return;
