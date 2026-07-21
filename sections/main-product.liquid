@@ -766,6 +766,7 @@
           "priceCurrency": {{ cart.currency.iso_code | json }},
           "price": {{ schema_variant.price | divided_by: 100.0 | json }},
           "priceValidUntil": "{{ 'now' | date: '%Y' | plus: 1 }}-12-31",
+          "validFrom": {{ product.published_at | date: '%Y-%m-%d' | default: '2024-01-01' | json }},
           "availability": "{% if product.available %}https://schema.org/InStock{% else %}https://schema.org/OutOfStock{% endif %}"
         }
       }
