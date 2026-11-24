@@ -15,7 +15,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Meet nature's [[gummy candy]] made from a veggie",
+            "heading": "Meet nature's [[chewy snack]] made from a veggie",
             "heading_size": "h0",
             "badge_bg": "#fcc86c",
             "badge_border": "#511d29",
@@ -370,7 +370,7 @@
         "heading_9kFQDP": {
           "type": "heading",
           "settings": {
-            "heading": "It chews like gummy candy. It's just [[sweet potato ]] + [[real spices]]",
+            "heading": "It chews like a fruit leather. It's just [[sweet potato ]] + [[real spices]]",
             "badge_bg": "#fcc86c",
             "badge_border": "#511d29",
             "badge_text": "#511d29",
@@ -433,7 +433,7 @@
           "type": "item",
           "settings": {
             "image": "shopify://shop_images/OG.png",
-            "heading": "<h3>Oven-dried to chewy perfection</h3>",
+            "heading": "<h3>Soft-baked to chewy perfection</h3>",
             "text": ""
           }
         },
@@ -752,7 +752,7 @@
         "brand_image": "shopify://shop_images/YammyOriginalComparison.png",
         "brand_name": "Yammy Sweet Potato Sticks (Original)",
         "competitor_image": "shopify://shop_images/GummyCandyComparison.png",
-        "competitor_name": "Gummy Candies & Fruit Snacks",
+        "competitor_name": "Candy & Fruit Snacks",
         "feature_column_width": 150,
         "column_width": 200,
         "header_font_size": 20,
@@ -963,6 +963,9 @@
               "snickerdoodle-chewy-dried-sweet-potato-sticks-pack-of-18",
               "sriracha-chewy-dried-sweet-potato-sticks-pack-of-18"
             ],
+            "filter_pinned": false,
+            "filter_featured": false,
+            "filter_custom_tags": "",
             "star_rating": "all",
             "show_review_media": true,
             "display_order": "media_first",
@@ -999,40 +1002,6 @@
     },
     "17817944892dde03e5": {
       "type": "apps",
-      "blocks": {
-        "section_store_block_video_carousel_mP8iCi": {
-          "type": "shopify://apps/section-store/blocks/block-video-carousel/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
-          "settings": {
-            "video_1": "shopify://files/videos/ult.ipe-post-7648482390976875790-0.mp4",
-            "video_2": "shopify://files/videos/graci.barros.ugc-post-7649528382379527455-0.mp4",
-            "video_3": "shopify://files/videos/carrievee2022-post-7643241833862057246-0.mp4",
-            "video_4": "shopify://files/videos/godforbidshereads-post-7640745039961869581-0.mp4",
-            "video_5": "shopify://files/videos/suzette_lost_it-post-7645038977187171597-0.mp4",
-            "slider_style": "progress_bar",
-            "modal_style": "none",
-            "video_autoplay": "true",
-            "play_button_position": "none",
-            "play_button_size": "small",
-            "item_border_style": "none",
-            "item_border_width": 1,
-            "item_border_color": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-            "item_border_radius": 16,
-            "item_padding": 0,
-            "grid_items": "3",
-            "thumbnail_shape": "rectangle",
-            "block_border_style": "none",
-            "block_border_width": 1,
-            "block_border_color": "#d7d7d7",
-            "block_border_radius": 16,
-            "block_bg_color": "",
-            "block_padding_vertical": 8,
-            "block_padding_horizontal": 0
-          }
-        }
-      },
-      "block_order": [
-        "section_store_block_video_carousel_mP8iCi"
-      ],
       "disabled": true,
       "settings": {
         "include_margins": true
